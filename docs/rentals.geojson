@@ -44,6 +44,26 @@
             "km": 0.224
           },
           {
+            "name": "Davis, Ca (DAV)",
+            "km": 0.244
+          },
+          {
+            "name": "Davis",
+            "km": 0.27
+          },
+          {
+            "name": "Davis",
+            "km": 0.31
+          },
+          {
+            "name": "Amtrak",
+            "km": 0.31
+          },
+          {
+            "name": "Amtrak",
+            "km": 0.316
+          },
+          {
             "name": "5th Street & D Street / Downtown (EB)",
             "km": 0.326
           },
@@ -52,36 +72,16 @@
             "km": 0.369
           },
           {
+            "name": "Davis",
+            "km": 0.373
+          },
+          {
             "name": "F St & 6th St/Davis Food Co-op (SB)",
             "km": 0.389
           },
           {
             "name": "B St & 4th St / Central Park (NB)",
             "km": 0.416
-          },
-          {
-            "name": "2nd St & B St (EB)",
-            "km": 0.43
-          },
-          {
-            "name": "B St & 4th St / Central Park (SB)",
-            "km": 0.436
-          },
-          {
-            "name": "F St & 6th Street/Davis Food Co-op (NB)",
-            "km": 0.441
-          },
-          {
-            "name": "3rd St & K St (WB)",
-            "km": 0.453
-          },
-          {
-            "name": "3rd St & K St (EB)",
-            "km": 0.483
-          },
-          {
-            "name": "L St & 425 (SB)",
-            "km": 0.588
           }
         ],
         "listing_rent_trend": [
@@ -290,6 +290,30 @@
             "km": 0.038
           },
           {
+            "name": "Davis, Ca (DAV)",
+            "km": 0.059
+          },
+          {
+            "name": "Davis",
+            "km": 0.083
+          },
+          {
+            "name": "Amtrak",
+            "km": 0.124
+          },
+          {
+            "name": "Amtrak",
+            "km": 0.129
+          },
+          {
+            "name": "Davis",
+            "km": 0.159
+          },
+          {
+            "name": "Davis",
+            "km": 0.212
+          },
+          {
             "name": "2nd St & E St / Downtown (WB)",
             "km": 0.223
           },
@@ -312,30 +336,6 @@
           {
             "name": "5th Street & D Street / Downtown (EB)",
             "km": 0.513
-          },
-          {
-            "name": "L St & 4th St (NB)",
-            "km": 0.552
-          },
-          {
-            "name": "5th Street & D Street / Downtown (WB)",
-            "km": 0.556
-          },
-          {
-            "name": "F St & 6th St/Davis Food Co-op (SB)",
-            "km": 0.557
-          },
-          {
-            "name": "L St & 425 (SB)",
-            "km": 0.564
-          },
-          {
-            "name": "B St & 4th St / Central Park (NB)",
-            "km": 0.568
-          },
-          {
-            "name": "B St & 4th St / Central Park (SB)",
-            "km": 0.589
           }
         ],
         "listing_rent_trend": [
@@ -409,60 +409,60 @@
         "convenience_nearest_km": 0.2809,
         "unitrans_stops": [
           {
-            "name": "2nd St & B St (EB)",
-            "km": 0.623
+            "name": "Unitrans stop",
+            "km": 0.121
           },
           {
-            "name": "B St & 4th St / Central Park (SB)",
-            "km": 0.728
+            "name": "Silo Terminal",
+            "km": 0.259
           },
           {
-            "name": "B St & 4th St / Central Park (NB)",
-            "km": 0.732
+            "name": "Silo Terminal",
+            "km": 0.284
           },
           {
-            "name": "Russell & A St (EB)",
-            "km": 0.753
+            "name": "Silo Terminal",
+            "km": 0.288
           },
           {
-            "name": "Russell Blvd & A Street/City Hall (WB)",
-            "km": 0.783
+            "name": "Silo Terminal",
+            "km": 0.288
           },
           {
-            "name": "2nd St & E St / Downtown (EB)",
-            "km": 0.867
+            "name": "Hutchinson Dr & California Way",
+            "km": 0.31
           },
           {
-            "name": "2nd St & E St / Downtown (WB)",
-            "km": 0.894
+            "name": "Silo Terminal",
+            "km": 0.318
           },
           {
-            "name": "5th Street & D Street / Downtown (WB)",
-            "km": 0.982
+            "name": "Silo Terminal",
+            "km": 0.319
           },
           {
-            "name": "5th Street & D Street / Downtown (EB)",
-            "km": 1.008
+            "name": "Silo Terminal",
+            "km": 0.324
           },
           {
-            "name": "Hutchison & Extension Center Drive",
-            "km": 1.053
+            "name": "Silo Terminal",
+            "km": 0.324
           },
           {
-            "name": "H St & 2nd St / Amtrak (SB)",
-            "km": 1.14
+            "name": "Memorial Union Terminal",
+            "km": 0.403
           },
           {
-            "name": "H St & 2nd St / Amtrak (NB)",
-            "km": 1.151
+            "name": "Memorial Union Terminal",
+            "km": 0.407
           },
           {
-            "name": "F St & 6th St/Davis Food Co-op (SB)",
-            "km": 1.215
+            "name": "Memorial Union Terminal",
+            "km": 0.413
           },
           {
-            "name": "F St & 6th Street/Davis Food Co-op (NB)",
-            "km": 1.262
+            "name": "Memorial Union Terminal",
+            "km": 0.434
           }
         ],
         "listing_rent_trend": [
@@ -568,28 +568,28 @@
             "km": 0.355
           },
           {
+            "name": "Davis",
+            "km": 0.366
+          },
+          {
+            "name": "Davis, Ca (DAV)",
+            "km": 0.366
+          },
+          {
             "name": "H St & 2nd St / Amtrak (NB)",
             "km": 0.369
           },
           {
-            "name": "F St & 6th St/Davis Food Co-op (SB)",
-            "km": 0.477
+            "name": "Davis",
+            "km": 0.402
           },
           {
-            "name": "Russell & A St (EB)",
-            "km": 0.478
+            "name": "Amtrak",
+            "km": 0.443
           },
           {
-            "name": "Russell Blvd & A Street/City Hall (WB)",
-            "km": 0.48
-          },
-          {
-            "name": "F St & 6th Street/Davis Food Co-op (NB)",
-            "km": 0.533
-          },
-          {
-            "name": "3rd St & K St (WB)",
-            "km": 0.661
+            "name": "Amtrak",
+            "km": 0.447
           }
         ],
         "listing_rent_trend": [
@@ -798,6 +798,14 @@
             "km": 0.032
           },
           {
+            "name": "Unitrans stop",
+            "km": 0.183
+          },
+          {
+            "name": "Davis (University Mall)",
+            "km": 0.304
+          },
+          {
             "name": "Sycamore & 8th (SB)",
             "km": 0.388
           },
@@ -812,6 +820,10 @@
           {
             "name": "Sycamore Ln & Cornell Drive (NB)",
             "km": 0.696
+          },
+          {
+            "name": "Russell & Arthur St. (Westbound)",
+            "km": 0.802
           },
           {
             "name": "Sycamore Ln & Bucknell Drive (NB)",
@@ -832,18 +844,6 @@
           {
             "name": "Unitrans stop",
             "km": 1.095
-          },
-          {
-            "name": "Jade St at Sage St - Drop Off Only (WB)",
-            "km": 1.123
-          },
-          {
-            "name": "Unitrans stop",
-            "km": 1.142
-          },
-          {
-            "name": "Unitrans stop",
-            "km": 1.175
           }
         ],
         "listing_rent_trend": [
@@ -1548,8 +1548,8 @@
             "km": 0.983
           },
           {
-            "name": "5th St & Spafford (WB)",
-            "km": 1.156
+            "name": "Davis",
+            "km": 1.065
           }
         ],
         "listing_rent_trend": [
@@ -1705,8 +1705,20 @@
             "km": 0.637
           },
           {
+            "name": "Memorial Union Terminal",
+            "km": 0.784
+          },
+          {
+            "name": "Davis (University Mall)",
+            "km": 0.79
+          },
+          {
             "name": "F St & 8th St (SB)",
             "km": 0.79
+          },
+          {
+            "name": "Memorial Union Terminal",
+            "km": 0.793
           },
           {
             "name": "5th Street & D Street / Downtown (WB)",
@@ -1717,36 +1729,24 @@
             "km": 0.805
           },
           {
+            "name": "Memorial Union Terminal",
+            "km": 0.809
+          },
+          {
+            "name": "Memorial Union Terminal",
+            "km": 0.834
+          },
+          {
+            "name": "Memorial Union Terminal",
+            "km": 0.836
+          },
+          {
+            "name": "Memorial Union Terminal",
+            "km": 0.838
+          },
+          {
             "name": "B St & 4th St / Central Park (SB)",
             "km": 0.842
-          },
-          {
-            "name": "5th Street & D Street / Downtown (EB)",
-            "km": 0.843
-          },
-          {
-            "name": "B St & 4th St / Central Park (NB)",
-            "km": 0.862
-          },
-          {
-            "name": "F St & 6th Street/Davis Food Co-op (NB)",
-            "km": 0.882
-          },
-          {
-            "name": "Unitrans stop",
-            "km": 0.888
-          },
-          {
-            "name": "F St & 12th St (NB)",
-            "km": 0.889
-          },
-          {
-            "name": "F St & 6th St/Davis Food Co-op (SB)",
-            "km": 0.894
-          },
-          {
-            "name": "F St & 14th St (NB)",
-            "km": 0.985
           }
         ],
         "listing_rent_trend": [

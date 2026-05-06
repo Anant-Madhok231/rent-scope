@@ -261,6 +261,11 @@ def main() -> None:
     df.loc[~df["room_type"].isin(["shared", "private", "unknown"]), "room_type"] = "unknown"
 
     amenities = load_amenities(RAW_AMENITIES)
+    for a in amenities:
+        if a.get("amenity_type") == "transit":
+            d = haversine_km(a["lat"], a["lon"], UC_DAVIS[0], UC_DAVIS[1])
+            if d <= 2.4:
+                a["amenity_type"] = "unitrans"
     acs = load_acs_series()
 
     rent_per_sqft = []
