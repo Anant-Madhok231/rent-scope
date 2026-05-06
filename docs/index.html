@@ -7,22 +7,31 @@
   <title>RentScope · Davis rental map</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
+  <div class="ambient" aria-hidden="true">
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>
+    <div class="orb orb-c"></div>
+    <div class="grid-lines"></div>
+  </div>
+
   <div class="app">
     <header class="top-bar">
       <div class="brand">
-        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-mark" aria-hidden="true">
+          <span class="brand-mark-inner"></span>
+        </span>
         <div>
           <h1>RentScope</h1>
           <p class="tagline">Spatial scoring for Davis rentals</p>
         </div>
       </div>
       <div class="header-meta">
-        <span class="pill">OpenStreetMap amenities</span>
+        <span class="pill"><span class="pill-dot"></span> OpenStreetMap</span>
         <span class="pill">GeoJSON · Leaflet</span>
       </div>
     </header>
@@ -82,6 +91,7 @@
       </aside>
 
       <section class="map-wrap panel">
+        <div class="map-chrome" aria-hidden="true"></div>
         <div id="map" role="application" aria-label="Interactive map of rental listings"></div>
         <div class="legend">
           <span class="legend-title">Score</span>

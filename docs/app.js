@@ -8,6 +8,7 @@
   let layerGroup;
   let allFeatures = [];
   let markersById = new Map();
+  let firstSummary = true;
 
   function scoreColor(score) {
     const s = Number(score) || 0;
@@ -21,10 +22,22 @@
   function formatMoney(n) {
     const x = Number(n);
     if (!Number.isFinite(x)) return "—";
-    return (
-      "$" +
-      x.toLocaleString("en-US", { maximumFractionDigits: 0 })
-    );
+    return "$" + x.toLocaleString("en-US", { maximumFractionDigits: 0 });
+  }
+
+  function easeOutCubic(t) {
+    return 1 - Math.pow(1 - t, 3);
+  }
+
+  function runTween(ms, onFrame) {
+    const t0 = performance.now();
+    function frame(now) {
+      const u = Math.min(1, (now - t0) / ms);
+      const done = u >= 1;
+      onFrame(done ? 1 : easeOutCubic(u), done);
+      if (!done) requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
   }
 
   function featureId(f) {
@@ -73,12 +86,19 @@
 
   function updateSummary(features) {
     const n = features.length;
-    document.getElementById("metric-count").textContent = n.toString();
+    const intro = firstSummary && n > 0;
+    if (intro) firstSummary = false;
+
+    const elCount = document.getElementById("metric-count");
+    const elAvg = document.getElementById("metric-avg-rent");
+    const elBest = document.getElementById("metric-best");
+    const elCheap = document.getElementById("metric-cheapest");
 
     if (!n) {
-      document.getElementById("metric-avg-rent").textContent = "—";
-      document.getElementById("metric-best").textContent = "—";
-      document.getElementById("metric-cheapest").textContent = "—";
+      elCount.textContent = "0";
+      elAvg.textContent = "—";
+      elBest.textContent = "—";
+      elCheap.textContent = "—";
       return;
     }
 
@@ -93,9 +113,29 @@
       cheapest = Math.min(cheapest, r);
     }
 
-    document.getElementById("metric-avg-rent").textContent = formatMoney(rentSum / n);
-    document.getElementById("metric-best").textContent = best.toFixed(1);
-    document.getElementById("metric-cheapest").textContent = formatMoney(cheapest);
+    const avg = rentSum / n;
+
+    if (!intro) {
+      elCount.textContent = n.toString();
+      elAvg.textContent = formatMoney(avg);
+      elBest.textContent = best.toFixed(1);
+      elCheap.textContent = formatMoney(cheapest);
+      return;
+    }
+
+    runTween(820, (e, done) => {
+      if (done) {
+        elCount.textContent = n.toString();
+        elAvg.textContent = formatMoney(avg);
+        elBest.textContent = best.toFixed(1);
+        elCheap.textContent = formatMoney(cheapest);
+        return;
+      }
+      elCount.textContent = Math.max(0, Math.round(n * e)).toString();
+      elAvg.textContent = formatMoney(avg * e);
+      elBest.textContent = (best * e).toFixed(1);
+      elCheap.textContent = formatMoney(cheapest * e);
+    });
   }
 
   function renderRanking(features) {
@@ -111,12 +151,14 @@
       )
       .slice(0, 10);
 
-    sorted.forEach((f) => {
+    sorted.forEach((f, idx) => {
       const p = f.properties;
       const id = featureId(f);
       const li = document.createElement("li");
       li.tabIndex = 0;
       li.dataset.fid = id;
+      li.className = "rank-item";
+      li.style.setProperty("--ri", String(idx));
       li.innerHTML =
         '<div class="rank-row-top">' +
         '<span class="rank-addr" title="' +
@@ -233,11 +275,11 @@
       const latlng = [coords[1], coords[0]];
       const id = featureId(f);
       const m = L.circleMarker(latlng, {
-        radius: 9,
+        radius: 10,
         weight: 2,
-        color: "rgba(255,255,255,0.35)",
+        color: "rgba(255,255,255,0.42)",
         fillColor: scoreColor(p.opportunity_score),
-        fillOpacity: 0.92,
+        fillOpacity: 0.94,
       });
       m.bindPopup(popupHtml(p), { maxWidth: 320 });
       m.addTo(layerGroup);
@@ -281,6 +323,8 @@
     if (bounds.isValid()) {
       map.fitBounds(bounds.pad(0.12));
     }
+
+    document.body.classList.add("app-ready");
   }
 
   function wireFilters() {
@@ -299,5 +343,6 @@
     console.error(err);
     document.getElementById("metric-count").textContent = "!";
     document.getElementById("metric-avg-rent").textContent = "Data error";
+    document.body.classList.add("app-ready");
   });
 })();
