@@ -62,10 +62,20 @@
   function listingHref(props) {
     const u = String(props.listing_url || "").trim();
     if (u) return u;
-    return (
-      "https://www.google.com/search?q=" +
-      encodeURIComponent(String(props.address || "") + " Davis CA apartments for rent")
-    );
+    const name = String(props.listing_name || "").trim();
+    const addr = String(props.address || "").trim();
+    const q =
+      (name ? name + " " : "") + addr + " Davis CA apartments for rent";
+    return "https://www.google.com/search?q=" + encodeURIComponent(q);
+  }
+
+  /** Building / community name and street address for display */
+  function listingTitle(props) {
+    const name = String(props.listing_name || "").trim();
+    const addr = String(props.address || "").trim();
+    if (name && addr) return name + " — " + addr;
+    if (addr) return addr;
+    return name || "Listing";
   }
 
   function roomLabel(rt) {
@@ -375,9 +385,9 @@
       li.innerHTML =
         '<div class="rank-row-top">' +
         '<span class="rank-addr" title="' +
-        escapeAttr(p.address) +
+        escapeAttr(listingTitle(p)) +
         '">' +
-        escapeHtml(p.address) +
+        escapeHtml(listingTitle(p)) +
         roomBadgeHtml(p.room_type) +
         "</span>" +
         '<span class="rank-score">' +
@@ -559,7 +569,7 @@
     const reviewUrl = escapeAttr(offcampusActionUrl(props));
     return (
       '<p class="rail-addr">' +
-      escapeHtml(props.address || "") +
+      escapeHtml(listingTitle(props)) +
       roomBadgeHtml(props.room_type) +
       "</p>" +
       formatOffcampusBlock(props, fid) +
@@ -606,17 +616,18 @@
     const school = props.offcampus_school_url || "https://www.offcampusreview.com/school/uc-davis";
     const brand = props.offcampus_brand_url || "https://www.offcampusreview.com/";
 
-    titleEl.textContent = String(props.address || "Listing");
+    titleEl.textContent = listingTitle(props);
     if (!matched || !url) {
       subEl.innerHTML =
-        '<p class="ocr-modal-lead">No landlord profile matched. Browse <a href="' +
+        '<p class="ocr-modal-lead">No OffCampusReview profile is linked to this listing yet, so there are no student reviews to show here.</p>' +
+        '<p class="ocr-modal-lead">If you lived here, open the <a href="' +
         escapeAttr(school) +
-        '" target="_blank" rel="noopener noreferrer">UC Davis on OffCampusReview</a>.</p>';
+        '" target="_blank" rel="noopener noreferrer">UC Davis hub on OffCampusReview</a> to add the place or leave the first review.</p>';
       listEl.innerHTML = "";
       footEl.innerHTML =
         '<a class="ocr-modal-cta" href="' +
-        escapeAttr(brand) +
-        '" target="_blank" rel="noopener noreferrer">OffCampusReview home</a>';
+        escapeAttr(school) +
+        '" target="_blank" rel="noopener noreferrer">OffCampusReview · UC Davis</a>';
     } else {
       const av = props.offcampus_avg_rating;
       const cnt = Number(props.offcampus_review_count) || 0;
@@ -636,7 +647,10 @@
 
       const revs = props.offcampus_reviews;
       let listHtml = "";
-      if (Array.isArray(revs) && revs.length) {
+      if (cnt === 0) {
+        listHtml =
+          "<p class=\"ocr-modal-empty\">No OffCampus reviews yet. If you lived here, be the first to leave one on OffCampusReview.</p>";
+      } else if (Array.isArray(revs) && revs.length) {
         revs.forEach(function (rv) {
           listHtml +=
             '<article class="ocr-modal-card"><div class="ocr-modal-card-head"><span class="ocr-modal-card-r">' +
@@ -654,7 +668,8 @@
             '<p class="ocr-modal-card-text">' + escapeHtml(rv.text || "") + "</p></article>";
         });
       } else {
-        listHtml = "<p class=\"ocr-modal-empty\">No excerpted reviews in this dataset.</p>";
+        listHtml =
+          "<p class=\"ocr-modal-empty\">No review excerpts in this export yet. Open OffCampusReview for full text—or add a review if you lived here.</p>";
       }
       listEl.innerHTML = listHtml;
       footEl.innerHTML =
@@ -711,9 +726,9 @@
 
     if (!matched || !url) {
       html +=
-        '<p class="ocr-note-lg">No landlord matched to this address. <a href="' +
+        '<p class="ocr-note-lg">No OffCampusReview entry matched this rental yet, so there are no student reviews to show. If you lived here, you can <a href="' +
         school +
-        '" target="_blank" rel="noopener noreferrer">Search UC Davis</a> on OffCampusReview.</p></div>';
+        '" target="_blank" rel="noopener noreferrer">add the place or leave the first review</a> on OffCampusReview (UC Davis).</p></div>';
       return html;
     }
 
@@ -727,8 +742,18 @@
         '<span class="ocr-big-count">' +
         cnt +
         " reviews</span>";
+    } else {
+      html +=
+        '<span class="ocr-big-count">' +
+        cnt +
+        " reviews on OffCampusReview</span>";
     }
     html += "</div>";
+
+    if (cnt === 0) {
+      html +=
+        '<p class="ocr-note-lg" style="margin-top:0.55rem">No reviews posted yet—if you lived here, leave one on OffCampusReview to help the next renter.</p>';
+    }
 
     html +=
       '<p class="ocr-landlord-lg"><a href="' +
@@ -781,7 +806,7 @@
     const reviewUrl = escapeAttr(offcampusActionUrl(props));
     return (
       '<div class="popup-title">' +
-      escapeHtml(props.address) +
+      escapeHtml(listingTitle(props)) +
       roomBadgeHtml(props.room_type) +
       "</div>" +
       formatOffcampusBlock(props, fid) +

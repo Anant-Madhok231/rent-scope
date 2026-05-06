@@ -66,6 +66,13 @@ def _geocode_missing(rows: list[dict]) -> None:
             rec["longitude"] = float(loc.longitude)
 
 
+def _slug_to_listing_label(slug: str) -> str:
+    s = str(slug or "").strip()
+    if not s:
+        return ""
+    return " ".join(part.capitalize() for part in s.replace("-", " ").split())
+
+
 def _from_rentcast(api_key: str) -> pd.DataFrame:
     headers = {"X-Api-Key": api_key, "Accept": "application/json"}
     params = {"city": "Davis", "state": "CA", "limit": 500}
@@ -88,9 +95,21 @@ def _from_rentcast(api_key: str) -> pd.DataFrame:
             or item.get("sourceUrl")
             or ""
         )
+        listing_name = (
+            item.get("propertyName")
+            or item.get("communityName")
+            or item.get("name")
+            or item.get("buildingName")
+            or ""
+        )
+        if listing_name is not None:
+            listing_name = str(listing_name).strip()
+        else:
+            listing_name = ""
         records.append(
             {
                 "address": addr,
+                "listing_name": listing_name,
                 "rent": float(item.get("price") or 0),
                 "beds": int(item.get("bedrooms") or 0),
                 "baths": float(item.get("bathrooms") or 0),
@@ -132,9 +151,18 @@ def main() -> None:
     if "offcampus_slug" not in df.columns:
         df["offcampus_slug"] = ""
     df["offcampus_slug"] = df["offcampus_slug"].fillna("").astype(str)
+    if "listing_name" not in df.columns:
+        df["listing_name"] = ""
+    df["listing_name"] = df["listing_name"].fillna("").astype(str)
+    empty_name = df["listing_name"].str.strip() == ""
+    if empty_name.any():
+        df.loc[empty_name, "listing_name"] = df.loc[empty_name, "offcampus_slug"].map(
+            _slug_to_listing_label
+        )
 
     cols = [
         "address",
+        "listing_name",
         "rent",
         "beds",
         "baths",

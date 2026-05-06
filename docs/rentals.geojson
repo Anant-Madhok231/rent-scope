@@ -12,6 +12,7 @@
       },
       "properties": {
         "address": "303 3rd St, Davis, CA 95616",
+        "listing_name": "Identity Davis",
         "rent": 1550.0,
         "beds": 1,
         "baths": 1.0,
@@ -347,6 +348,7 @@
       },
       "properties": {
         "address": "801 L St, Davis, CA 95616",
+        "listing_name": "Identity Davis",
         "rent": 1650.0,
         "beds": 1,
         "baths": 1.0,
@@ -682,6 +684,7 @@
       },
       "properties": {
         "address": "408 F St, Davis, CA 95616",
+        "listing_name": "Identity Davis",
         "rent": 1895.0,
         "beds": 2,
         "baths": 1.0,
@@ -1017,6 +1020,7 @@
       },
       "properties": {
         "address": "1 Shields Ave, Davis, CA 95616",
+        "listing_name": "Identity Davis",
         "rent": 1750.0,
         "beds": 2,
         "baths": 1.0,
@@ -1352,6 +1356,7 @@
       },
       "properties": {
         "address": "450 J St, Davis, CA 95616",
+        "listing_name": "Identity Davis",
         "rent": 2450.0,
         "beds": 3,
         "baths": 2.0,
@@ -1687,6 +1692,7 @@
       },
       "properties": {
         "address": "1100 Alvarado Ave, Davis, CA 95616",
+        "listing_name": "Tandem",
         "rent": 1380.0,
         "beds": 1,
         "baths": 1.0,
@@ -1926,6 +1932,7 @@
       },
       "properties": {
         "address": "1800 Shasta Dr, Davis, CA 95616",
+        "listing_name": "The Green",
         "rent": 1980.0,
         "beds": 2,
         "baths": 1.0,
@@ -2153,6 +2160,7 @@
       },
       "properties": {
         "address": "500 Pole Line Rd, Davis, CA 95618",
+        "listing_name": "Axis at Davis",
         "rent": 1425.0,
         "beds": 1,
         "baths": 1.0,
@@ -2368,6 +2376,7 @@
       },
       "properties": {
         "address": "250 Cowell Blvd, Davis, CA 95618",
+        "listing_name": "The Greens at West Village",
         "rent": 1495.0,
         "beds": 1,
         "baths": 1.0,
@@ -2592,6 +2601,7 @@
       },
       "properties": {
         "address": "2000 Moore Blvd, Davis, CA 95618",
+        "listing_name": "Ryder on Olive",
         "rent": 1595.0,
         "beds": 1,
         "baths": 1.0,
@@ -2763,6 +2773,7 @@
       },
       "properties": {
         "address": "720 Alvarado Ave, Davis, CA 95616",
+        "listing_name": "Tandem",
         "rent": 1850.0,
         "beds": 2,
         "baths": 1.0,
@@ -3002,6 +3013,7 @@
       },
       "properties": {
         "address": "1321 Alhambra Dr, Davis, CA 95616",
+        "listing_name": "Tandem",
         "rent": 2750.0,
         "beds": 4,
         "baths": 2.5,
@@ -3236,6 +3248,7 @@
       },
       "properties": {
         "address": "600 Drake Dr, Davis, CA 95616",
+        "listing_name": "Colleges at La Rue",
         "rent": 2200.0,
         "beds": 3,
         "baths": 2.0,
@@ -3446,6 +3459,7 @@
       },
       "properties": {
         "address": "2500 Da Vinci Ct, Davis, CA 95618",
+        "listing_name": "Sol at West Village",
         "rent": 2100.0,
         "beds": 2,
         "baths": 2.0,
@@ -3626,6 +3640,7 @@
       },
       "properties": {
         "address": "425 Russell Blvd, Davis, CA 95616",
+        "listing_name": "Octave Apartments",
         "rent": 2400.0,
         "beds": 3,
         "baths": 2.0,
@@ -3841,6 +3856,7 @@
       },
       "properties": {
         "address": "815 Cranbrook Ct, Davis, CA 95616",
+        "listing_name": "The Greens at West Village",
         "rent": 2280.0,
         "beds": 3,
         "baths": 2.0,
@@ -4104,6 +4120,7 @@
       },
       "properties": {
         "address": "812 Sycamore Ln, Davis, CA 95616",
+        "listing_name": "Sol at West Village",
         "rent": 1725.0,
         "beds": 2,
         "baths": 1.0,
@@ -4314,6 +4331,7 @@
       },
       "properties": {
         "address": "3333 Alvarado Ave, Davis, CA 95616",
+        "listing_name": "Tandem",
         "rent": 3100.0,
         "beds": 4,
         "baths": 3.0,
@@ -4553,6 +4571,7 @@
       },
       "properties": {
         "address": "616 Cantrill Dr, Davis, CA 95616",
+        "listing_name": "Orchard Park",
         "rent": 3200.0,
         "beds": 4,
         "baths": 3.0,
@@ -4769,6 +4788,7 @@
       },
       "properties": {
         "address": "3500 Sycamore Ln, Davis, CA 95616",
+        "listing_name": "Sol at West Village",
         "rent": 2650.0,
         "beds": 3,
         "baths": 2.5,

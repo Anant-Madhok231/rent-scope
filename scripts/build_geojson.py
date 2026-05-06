@@ -91,6 +91,7 @@ def main() -> None:
 
         props = {
             "address": str(row["address"]),
+            "listing_name": str(row.get("listing_name") or "").strip(),
             "rent": float(row["rent"]),
             "beds": int(row["beds"]),
             "baths": float(row["baths"]),
