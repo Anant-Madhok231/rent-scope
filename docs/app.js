@@ -955,13 +955,19 @@
       map.removeLayer(baseLayer);
       baseLayer = null;
     }
-    /* OpenStreetMap: dense labels (streets, buildings, POIs) without a Google Maps API key. */
-    baseLayer = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-      maxZoom: 19,
-      maxNativeZoom: 19,
-    });
+    /*
+     * Esri World Street Map: clean “road map” look similar to Google Maps (no API key).
+     * Tile order is /{z}/{y}/{x} per ArcGIS map cache convention.
+     */
+    baseLayer = L.tileLayer(
+      "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+      {
+        attribution:
+          'Tiles &copy; <a href="https://www.esri.com/">Esri</a> &mdash; ' +
+          "Esri, Garmin, USGS, NGA, EPA, USDA, NPS",
+        maxZoom: 19,
+      }
+    );
     baseLayer.addTo(map);
   }
 
