@@ -779,11 +779,10 @@
     map = L.map("map", {
       scrollWheelZoom: true,
       zoomControl: true,
-      gestureHandling: true,
       zoomSnap: 0.25,
       zoomDelta: 0.5,
-      wheelPxPerZoomLevel: 110,
-      wheelDebounceTime: 40,
+      wheelPxPerZoomLevel: 88,
+      wheelDebounceTime: 36,
       tap: true,
       tapTolerance: 18,
       inertia: true,

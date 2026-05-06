@@ -9,7 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet-gesture-handling@1.2.2/dist/leaflet-gesture-handling.min.css" crossorigin="" />
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
@@ -107,7 +106,7 @@
 
       <section class="map-wrap panel">
         <div class="map-chrome" aria-hidden="true"></div>
-        <p class="map-hint" id="map-hint">Map: pinch or two fingers to move on phones · Ctrl/⌘ + scroll to zoom on desktop</p>
+        <p class="map-hint" id="map-hint">Map: scroll wheel to zoom · drag to pan · pinch on phones</p>
         <div id="map" role="application" aria-label="Interactive map of rental listings"></div>
         <div class="legend">
           <span class="legend-title">Score</span>
@@ -140,7 +139,6 @@
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-  <script src="https://unpkg.com/leaflet-gesture-handling@1.2.2/dist/leaflet-gesture-handling.min.js" crossorigin=""></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" crossorigin="anonymous"></script>
   <script src="./app.js"></script>
 </body>
