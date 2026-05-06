@@ -866,6 +866,13 @@ body.app-ready .card.metric:nth-child(4) {
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
 }
 
+.map-hint a {
+  pointer-events: auto;
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 @media (min-width: 961px) {
   .map-hint {
     max-width: 420px;
@@ -880,6 +887,12 @@ body.modal-open {
 
 .leaflet-container {
   font-family: var(--font);
+}
+
+/* Dark theme: same OSM tiles with inverted colors so labels stay readable */
+html[data-theme="dark"] .leaflet-container .leaflet-tile-pane {
+  filter: invert(100%) hue-rotate(180deg) brightness(0.92) contrast(1.05)
+    saturate(0.9);
 }
 
 .rs-popup-wrap .leaflet-popup-content {

@@ -14,7 +14,6 @@
   let marketTrend = [];
   let chartInstance = null;
   let baseLayer = null;
-  let campusLayer = null;
   let selectedFid = null;
 
   const RAIL_EMPTY =
@@ -956,55 +955,14 @@
       map.removeLayer(baseLayer);
       baseLayer = null;
     }
-    if (campusLayer) {
-      map.removeLayer(campusLayer);
-      campusLayer = null;
-    }
-    const isLight =
-      document.documentElement.getAttribute("data-theme") === "light";
-    baseLayer = isLight
-      ? L.tileLayer(
-          "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
-          {
-            attribution:
-              '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> ' +
-              '&copy; <a href="https://carto.com/attributions">CARTO</a>',
-            subdomains: "abcd",
-            maxZoom: 20,
-          }
-        )
-      : L.tileLayer(
-          "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
-          {
-            attribution:
-              '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> ' +
-              '&copy; <a href="https://carto.com/attributions">CARTO</a>',
-            subdomains: "abcd",
-            maxZoom: 20,
-          }
-        );
+    /* OpenStreetMap: dense labels (streets, buildings, POIs) without a Google Maps API key. */
+    baseLayer = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      maxZoom: 19,
+      maxNativeZoom: 19,
+    });
     baseLayer.addTo(map);
-
-    if (typeof L !== "undefined" && L.esri && L.esri.dynamicMapLayer) {
-      try {
-        if (!map.getPane("ucdCampusPane")) {
-          map.createPane("ucdCampusPane");
-          map.getPane("ucdCampusPane").style.zIndex = 350;
-        }
-        campusLayer = L.esri.dynamicMapLayer({
-          url:
-            "https://gis.ucdavis.edu/server/rest/services/Base_UC_Davis_Basemap/MapServer",
-          pane: "ucdCampusPane",
-          opacity: isLight ? 0.74 : 0.66,
-          attribution:
-            'Campus map © <a href="https://campusmap.ucdavis.edu/">UC Davis</a>',
-        });
-        campusLayer.addTo(map);
-      } catch (err) {
-        console.warn("UC Davis campus layer skipped:", err);
-        campusLayer = null;
-      }
-    }
   }
 
   function setDocumentTheme(t) {
@@ -1052,6 +1010,20 @@
     map.on("popupclose", function () {
       destroyActiveChart();
     });
+
+    window.addEventListener("resize", function () {
+      map.invalidateSize();
+    });
+  }
+
+  function scheduleMapInvalidate() {
+    if (!map) return;
+    function tick() {
+      map.invalidateSize();
+    }
+    requestAnimationFrame(tick);
+    setTimeout(tick, 350);
+    setTimeout(tick, 950);
   }
 
   function initTheme() {
@@ -1115,6 +1087,11 @@
     if (bounds.isValid()) {
       map.fitBounds(bounds.pad(0.12));
     }
+
+    scheduleMapInvalidate();
+    setTimeout(function () {
+      if (bounds.isValid()) map.fitBounds(bounds.pad(0.12));
+    }, 450);
 
     document.body.classList.add("app-ready");
   }

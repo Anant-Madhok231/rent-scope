@@ -36,7 +36,7 @@
           <span class="theme-icon theme-icon-sun" aria-hidden="true"></span>
         </button>
         <span class="pill"><span class="pill-dot"></span> All listings in data</span>
-        <span class="pill">UC Davis campus map</span>
+        <span class="pill">OpenStreetMap (street labels)</span>
         <span class="pill">OffCampus = reviews only</span>
       </div>
     </header>
@@ -106,7 +106,7 @@
 
       <section class="map-wrap panel">
         <div class="map-chrome" aria-hidden="true"></div>
-        <p class="map-hint" id="map-hint">UC Davis buildings &amp; roads overlay · scroll to zoom · pinch on phones · every pin is a rental listing</p>
+        <p class="map-hint" id="map-hint">Street map (like Google Maps, no API key) · <a href="https://campusmap.ucdavis.edu/" target="_blank" rel="noopener noreferrer">UC Davis campus map</a> for dorms &amp; halls · every pin is a listing</p>
         <div id="map" role="application" aria-label="Interactive map of rental listings"></div>
         <div class="legend">
           <span class="legend-title">Score</span>
@@ -161,7 +161,6 @@
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-  <script src="https://unpkg.com/esri-leaflet@3.0.10/dist/esri-leaflet.js" crossorigin=""></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" crossorigin="anonymous"></script>
   <script src="./app.js"></script>
 </body>
