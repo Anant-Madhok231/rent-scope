@@ -2,11 +2,28 @@
 
 Geospatial rental analysis for **Davis, California**: listings (RentCast or a local sample), OSM amenities via Overpass, a batch-relative **opportunity score** (0–100), and a Leaflet map in `docs/`.
 
-## What’s in the box
+## Features
 
-- Python pipeline: `collect_rentals.py`, `collect_osm_amenities.py`, `score_rentals.py`, `build_geojson.py`, orchestrated by `run_pipeline.py`.
-- Map UI: `docs/index.html`, `docs/style.css`, `docs/app.js`, data in `docs/rentals.geojson`.
-- Fallback data: `data/sample_rentals.csv` when `RENTCAST_API_KEY` is not set (optional `.env` from `.env.example`).
+**Data**
+
+- Rental listings: RentCast API when `RENTCAST_API_KEY` is present; otherwise `data/sample_rentals.csv` (Davis-shaped fields: address, rent, beds, baths, sqft, coordinates, source, listing URL, property type). Output: `data/raw/rentals.csv`.
+- Amenities from OpenStreetMap (Overpass): groceries, cafés, gyms, parks, libraries, transit stops, restaurants, pharmacies. Output: `data/raw/amenities.geojson`.
+- Scored export: `data/processed/scored_rentals.csv` with `opportunity_score` (0–100) and `score_explanation` per row.
+- Map data: `docs/rentals.geojson` built from the scored CSV.
+
+**Web app (`docs/`)**
+
+- Leaflet map centered on Davis, dark CARTO basemap, markers colored by score.
+- Popups: address, rent, beds, baths, sqft, score, explanation text.
+- Sidebar: top ten listings by score (updates with filters).
+- Filters: max rent, bedrooms, minimum score, property type.
+- Summary strip: listing count, average rent, best score, lowest rent (for the current filter set).
+- Responsive layout; static assets only (no bundler).
+
+**Pipeline**
+
+- `run_pipeline.py` runs: `collect_rentals.py` → `collect_osm_amenities.py` → `score_rentals.py` → `build_geojson.py`.
+- Optional `.env` from `.env.example` for RentCast. Nominatim via geopy (rate-limited) can backfill coordinates on RentCast rows that lack lat/lon.
 
 ## Layout
 
@@ -19,12 +36,6 @@ rent_scope/
   scripts/
   docs/
 ```
-
-## Pipeline (short)
-
-RentCast pull or sample copy → raw `rentals.csv`. Overpass query → `amenities.geojson`. Scorer writes `scored_rentals.csv` with `opportunity_score` and `score_explanation`. `build_geojson.py` emits `docs/rentals.geojson` for the map.
-
-Nominatim (geopy, rate-limited) fills missing coordinates when RentCast omits them.
 
 ## Scoring (short)
 
