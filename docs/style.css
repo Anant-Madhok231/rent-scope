@@ -239,6 +239,52 @@ body {
   align-items: center;
 }
 
+.header-map-tools {
+  display: flex;
+  align-items: center;
+}
+
+.pin-tool {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0.28rem 0.55rem 0.28rem 0.65rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  font-size: 0.72rem;
+}
+
+.pin-tool-label {
+  color: var(--muted);
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.62rem;
+}
+
+.pin-tool select {
+  font-family: var(--font);
+  font-size: 0.72rem;
+  padding: 0.2rem 0.35rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  max-width: 9.5rem;
+}
+
+.pin-tool input[type="color"] {
+  width: 32px;
+  height: 28px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  background: transparent;
+}
+
 .theme-toggle {
   display: inline-flex;
   align-items: center;
@@ -1073,6 +1119,11 @@ html[data-theme="dark"] #map {
   );
   background-size: 200% 100%;
   animation: barShimmer 5s linear infinite;
+}
+
+.legend-bar.legend-bar--solid {
+  animation: none;
+  background-size: 100% 100%;
 }
 
 .legend-labels {

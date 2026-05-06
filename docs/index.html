@@ -31,7 +31,17 @@
         </div>
       </div>
       <div class="header-meta">
-        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch color theme" title="Theme">
+        <div class="header-map-tools" title="Map pins use opportunity score unless you pick one color">
+          <label class="pin-tool">
+            <span class="pin-tool-label">Pin color</span>
+            <select id="pin-palette" aria-label="How to color map pins">
+              <option value="score">By score (default)</option>
+              <option value="solid">Custom</option>
+            </select>
+            <input type="color" id="pin-color" value="#2a9d8f" aria-label="Custom pin color" title="Used when Pin color is Custom" />
+          </label>
+        </div>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch color theme" title="Theme: dark (default) or light">
           <span class="theme-icon theme-icon-moon" aria-hidden="true"></span>
           <span class="theme-icon theme-icon-sun" aria-hidden="true"></span>
         </button>
@@ -116,7 +126,7 @@
             <span>50</span>
             <span>100</span>
           </div>
-          <p class="legend-caption">Colored dot = listing. Small badge = OffCampusReview score/reviews when matched.</p>
+          <p class="legend-caption" id="legend-caption">Colored dot = opportunity score. Small badge = OffCampusReview when matched.</p>
         </div>
       </section>
 

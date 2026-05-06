@@ -16,6 +16,11 @@
   let baseLayer = null;
   let selectedFid = null;
 
+  const pinPrefs = {
+    palette: "score",
+    solidHex: "#2a9d8f",
+  };
+
   const RAIL_EMPTY =
     '<p class="right-rail-placeholder">Every rental in the dataset appears on the map (sample CSV, RentCast, etc.). Choose a pin or a <strong>Top opportunities</strong> row for miles, nearby places, and scores. <strong>OffCampusReview</strong> is only an extra layer for student-written reviews when we can match a landlord—it never decides which listings exist.</p>';
 
@@ -26,6 +31,78 @@
     if (s < 70) return "#2a9d8f";
     if (s < 85) return "#6bcf7a";
     return "#c8e850";
+  }
+
+  function loadPinPrefs() {
+    try {
+      const p = localStorage.getItem("rentscope-pin-palette");
+      if (p === "solid" || p === "score") pinPrefs.palette = p;
+      const c = localStorage.getItem("rentscope-pin-solid");
+      if (c && /^#[0-9a-fA-F]{6}$/.test(c)) pinPrefs.solidHex = c;
+    } catch (err) {}
+  }
+
+  function savePinPrefs() {
+    try {
+      localStorage.setItem("rentscope-pin-palette", pinPrefs.palette);
+      localStorage.setItem("rentscope-pin-solid", pinPrefs.solidHex);
+    } catch (err) {}
+  }
+
+  function markerFillForProps(p) {
+    if (pinPrefs.palette === "solid") return pinPrefs.solidHex;
+    return scoreColor(p.opportunity_score);
+  }
+
+  function updateLegendBar() {
+    const bar = document.getElementById("legend-bar");
+    const cap = document.getElementById("legend-caption");
+    if (!bar) return;
+    bar.classList.remove("legend-bar--solid");
+    bar.style.background = "";
+    if (pinPrefs.palette === "solid") {
+      bar.classList.add("legend-bar--solid");
+      bar.style.background = pinPrefs.solidHex;
+      if (cap) {
+        cap.textContent =
+          "Custom color for every listing (header). OffCampusReview badge unchanged when matched.";
+      }
+    } else {
+      if (cap) {
+        cap.textContent =
+          "Colored dot = opportunity score. Small badge = OffCampusReview when matched.";
+      }
+    }
+  }
+
+  function initPinAppearance() {
+    loadPinPrefs();
+    const sel = document.getElementById("pin-palette");
+    const col = document.getElementById("pin-color");
+    if (sel) sel.value = pinPrefs.palette;
+    if (col) col.value = pinPrefs.solidHex;
+    function applyFromPrefs() {
+      savePinPrefs();
+      updateLegendBar();
+      redraw();
+    }
+    if (sel) {
+      sel.addEventListener("change", function () {
+        pinPrefs.palette = sel.value === "solid" ? "solid" : "score";
+        applyFromPrefs();
+      });
+    }
+    if (col) {
+      col.addEventListener("input", function () {
+        pinPrefs.solidHex = col.value;
+        savePinPrefs();
+        if (pinPrefs.palette === "solid") {
+          updateLegendBar();
+          redraw();
+        }
+      });
+    }
+    updateLegendBar();
   }
 
   function formatMoney(n) {
@@ -126,7 +203,7 @@
   }
 
   function rentScopeDivIcon(p) {
-    const fill = scoreColor(p.opportunity_score);
+    const fill = markerFillForProps(p);
     const matched = ocrMatched(p);
     const av = p.offcampus_avg_rating;
     const cnt = Number(p.offcampus_review_count) || 0;
@@ -1037,13 +1114,7 @@
     try {
       saved = localStorage.getItem("rentscope-theme");
     } catch (err) {}
-    const prefers =
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: light)").matches;
-    document.documentElement.setAttribute(
-      "data-theme",
-      saved || (prefers ? "light" : "dark")
-    );
+    document.documentElement.setAttribute("data-theme", saved || "dark");
     try {
       localStorage.setItem(
         "rentscope-theme",
@@ -1120,6 +1191,7 @@
   wireOcrModal();
   initMap();
   initTheme();
+  initPinAppearance();
   wireFilters();
   loadData().catch(function (err) {
     console.error(err);

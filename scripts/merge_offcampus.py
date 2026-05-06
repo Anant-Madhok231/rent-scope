@@ -24,6 +24,57 @@ MIN_AUTO_SCORE = 5.5
 PREVIEW_N = 45
 TEXT_MAX = 420
 
+# OffCampusReview sometimes lists the same operator twice (e.g. "Axis" vs "Axis at Davis").
+# Absorb these slugs into the canonical record so one pin gets merged reviews + one profile URL.
+_SLUG_ABSORB_INTO_CANONICAL = {
+    "axis": "axis-at-davis",
+}
+
+# CSV hints that should resolve to the canonical slug after merges.
+_HINT_SLUG_ALIASES = {
+    "axis": "axis-at-davis",
+}
+
+
+def _avg_rating(reviews: list) -> float:
+    rs = []
+    for r in reviews or []:
+        v = r.get("rating")
+        if v is None:
+            continue
+        try:
+            rs.append(float(v))
+        except (TypeError, ValueError):
+            continue
+    if not rs:
+        return math.nan
+    return sum(rs) / len(rs)
+
+
+def _merge_absorbed_landlords(landlords: list) -> list:
+    by_slug = {str(x.get("slug")): x for x in landlords if x.get("slug")}
+    remove_slugs: set[str] = set()
+    for src_slug, dest_slug in _SLUG_ABSORB_INTO_CANONICAL.items():
+        if src_slug not in by_slug or dest_slug not in by_slug:
+            continue
+        primary = by_slug[dest_slug]
+        secondary = by_slug[src_slug]
+        seen = {str(r.get("id")) for r in primary.get("reviews") or []}
+        for r in secondary.get("reviews") or []:
+            rid = str(r.get("id"))
+            if rid in seen:
+                continue
+            seen.add(rid)
+            primary.setdefault("reviews", []).append(r)
+        revs = primary.get("reviews") or []
+        primary["reviewCount"] = len(revs)
+        ar = _avg_rating(revs)
+        primary["averageRating"] = round(ar, 2) if not math.isnan(ar) else None
+        remove_slugs.add(src_slug)
+    if not remove_slugs:
+        return landlords
+    return [L for L in landlords if str(L.get("slug")) not in remove_slugs]
+
 _SYNONYMS = {
     "st": "street",
     "ave": "avenue",
@@ -257,9 +308,11 @@ def main() -> None:
     r = requests.get(API_URL, headers=HEADERS, timeout=60)
     r.raise_for_status()
     payload = r.json()
+    landlords = list(payload.get("landlords") or [])
+    landlords = _merge_absorbed_landlords(landlords)
+    payload["landlords"] = landlords
     RAW_JSON.write_text(json.dumps(payload, indent=2), encoding="utf-8")
     uni_slug = str(payload.get("slug") or "uc-davis")
-    landlords = payload.get("landlords") or []
     by_slug = {str(x.get("slug")): x for x in landlords if x.get("slug")}
 
     df = pd.read_csv(SCORED)
@@ -279,6 +332,8 @@ def main() -> None:
         addr = str(row.get("address") or "")
         street_line = addr.split(",")[0].strip()
         hint = _norm_hint(row.get("offcampus_slug"))
+        if hint in _HINT_SLUG_ALIASES:
+            hint = _HINT_SLUG_ALIASES[hint]
         chosen = None
         if hint and hint in by_slug:
             cand = by_slug[hint]
