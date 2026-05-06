@@ -948,9 +948,6 @@
 
     updateSummary(visible);
     renderRanking(visible);
-    if (layerGroup) {
-      layerGroup.bringToFront();
-    }
   }
 
   function syncMapBasemap() {
@@ -989,18 +986,24 @@
     baseLayer.addTo(map);
 
     if (typeof L !== "undefined" && L.esri && L.esri.dynamicMapLayer) {
-      campusLayer = L.esri.dynamicMapLayer({
-        url:
-          "https://gis.ucdavis.edu/server/rest/services/Base_UC_Davis_Basemap/MapServer",
-        opacity: isLight ? 0.74 : 0.66,
-        attribution:
-          'Campus map © <a href="https://campusmap.ucdavis.edu/">UC Davis</a>',
-      });
-      campusLayer.addTo(map);
-    }
-
-    if (layerGroup) {
-      layerGroup.bringToFront();
+      try {
+        if (!map.getPane("ucdCampusPane")) {
+          map.createPane("ucdCampusPane");
+          map.getPane("ucdCampusPane").style.zIndex = 350;
+        }
+        campusLayer = L.esri.dynamicMapLayer({
+          url:
+            "https://gis.ucdavis.edu/server/rest/services/Base_UC_Davis_Basemap/MapServer",
+          pane: "ucdCampusPane",
+          opacity: isLight ? 0.74 : 0.66,
+          attribution:
+            'Campus map © <a href="https://campusmap.ucdavis.edu/">UC Davis</a>',
+        });
+        campusLayer.addTo(map);
+      } catch (err) {
+        console.warn("UC Davis campus layer skipped:", err);
+        campusLayer = null;
+      }
     }
   }
 
@@ -1069,13 +1072,19 @@
         document.documentElement.getAttribute("data-theme")
       );
     } catch (err) {}
-    syncMapBasemap();
+    try {
+      syncMapBasemap();
+    } catch (err) {
+      console.error("syncMapBasemap failed:", err);
+    }
     const btn = document.getElementById("theme-toggle");
-    btn.addEventListener("click", function () {
-      const cur = document.documentElement.getAttribute("data-theme");
-      setDocumentTheme(cur === "light" ? "dark" : "light");
-      destroyActiveChart();
-    });
+    if (btn) {
+      btn.addEventListener("click", function () {
+        const cur = document.documentElement.getAttribute("data-theme");
+        setDocumentTheme(cur === "light" ? "dark" : "light");
+        destroyActiveChart();
+      });
+    }
   }
 
   async function loadData() {
@@ -1119,6 +1128,7 @@
       "filter-type",
     ].forEach(function (id) {
       const el = document.getElementById(id);
+      if (!el) return;
       el.addEventListener("input", redraw);
       el.addEventListener("change", redraw);
     });
