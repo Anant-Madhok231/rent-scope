@@ -6,355 +6,19 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.74012,
-          38.54501
-        ]
-      },
-      "properties": {
-        "address": "303 3rd St, Davis, CA 95616",
-        "listing_name": "Identity Davis",
-        "rent": 1550.0,
-        "beds": 1,
-        "baths": 1.0,
-        "sqft": 540.0,
-        "opportunity_score": 80.41,
-        "score_explanation": "Rent efficiency looks strong for the layout; about 1.3 mi straight-line from campus core; Memorial Union 0.56 mi \u00b7 Silo 0.72 mi \u00b7 1 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u2264~0.9 mi; steps from downtown dining and errands; walkable cluster with 96 food and daily-life spots nearby; several transit stops within a short walk; versus median $1620 for 1br nearby",
-        "property_type": "Apartment",
-        "source": "sample_davis_ca",
-        "listing_url": "https://www.zillow.com/davis-ca/rentals/",
-        "room_type": "private",
-        "dist_km_memorial_union": 0.9072,
-        "dist_km_silo": 1.1607,
-        "dist_mi_memorial_union": 0.5637,
-        "dist_mi_silo": 0.7212,
-        "dist_mi_campus": 1.2576,
-        "dist_mi_downtown": 0.0232,
-        "convenience_800m_count": 1,
-        "convenience_nearest_km": 0.1821,
-        "convenience_nearest_mi": 0.1132,
-        "nearby_grocery": [
-          {
-            "name": "Myu Myu",
-            "kind": "convenience",
-            "mi": 0.11
-          },
-          {
-            "name": "Davis Food Cooperative",
-            "kind": "grocery",
-            "mi": 0.31
-          },
-          {
-            "name": "Grocery Outlet",
-            "kind": "grocery",
-            "mi": 0.77
-          },
-          {
-            "name": "Silo Market",
-            "kind": "convenience",
-            "mi": 0.83
-          },
-          {
-            "name": "Safeway",
-            "kind": "grocery",
-            "mi": 0.85
-          },
-          {
-            "name": "Trader Joe's",
-            "kind": "grocery",
-            "mi": 1.16
-          }
-        ],
-        "nearby_food": [
-          {
-            "name": "Steve's Pizza",
-            "kind": "restaurant",
-            "mi": 0.02
-          },
-          {
-            "name": "Taste of Thai",
-            "kind": "restaurant",
-            "mi": 0.03
-          },
-          {
-            "name": "Bistro 33",
-            "kind": "restaurant",
-            "mi": 0.04
-          },
-          {
-            "name": "Panera Bread",
-            "kind": "restaurant",
-            "mi": 0.04
-          },
-          {
-            "name": "Manna Korean BBQ",
-            "kind": "restaurant",
-            "mi": 0.04
-          },
-          {
-            "name": "Temple Coffee",
-            "kind": "cafe",
-            "mi": 0.04
-          }
-        ],
-        "bike_escooter_index": 67.48,
-        "traffic_calm_index": 83.45,
-        "parking_summary": "Parking ~0.01 mi (OSM has no fee/charge tag); Parking ~0.04 mi (OSM has no fee/charge tag); Parking ~0.05 mi (OSM has no fee/charge tag); Parking ~0.06 mi (fee likely)",
-        "unitrans_stops": [
-          {
-            "name": "2nd St & E St / Downtown (WB)",
-            "mi": 0.12
-          },
-          {
-            "name": "H St & 2nd St / Amtrak (SB)",
-            "mi": 0.13
-          },
-          {
-            "name": "H St & 2nd St / Amtrak (NB)",
-            "mi": 0.13
-          },
-          {
-            "name": "2nd St & E St / Downtown (EB)",
-            "mi": 0.14
-          },
-          {
-            "name": "Davis, Ca (DAV)",
-            "mi": 0.15
-          },
-          {
-            "name": "Davis",
-            "mi": 0.17
-          },
-          {
-            "name": "Davis",
-            "mi": 0.19
-          },
-          {
-            "name": "Amtrak",
-            "mi": 0.19
-          },
-          {
-            "name": "5th Street & D Street / Downtown (EB)",
-            "mi": 0.2
-          },
-          {
-            "name": "Amtrak",
-            "mi": 0.2
-          },
-          {
-            "name": "Davis",
-            "mi": 0.23
-          },
-          {
-            "name": "5th Street & D Street / Downtown (WB)",
-            "mi": 0.23
-          },
-          {
-            "name": "F St & 6th St/Davis Food Co-op (SB)",
-            "mi": 0.24
-          },
-          {
-            "name": "B St & 4th St / Central Park (NB)",
-            "mi": 0.26
-          }
-        ],
-        "listing_rent_trend": [
-          {
-            "year": 2015,
-            "rent_est": 920.0
-          },
-          {
-            "year": 2016,
-            "rent_est": 957.0
-          },
-          {
-            "year": 2017,
-            "rent_est": 1005.0
-          },
-          {
-            "year": 2018,
-            "rent_est": 1057.0
-          },
-          {
-            "year": 2019,
-            "rent_est": 1105.0
-          },
-          {
-            "year": 2020,
-            "rent_est": 1143.0
-          },
-          {
-            "year": 2021,
-            "rent_est": 1231.0
-          },
-          {
-            "year": 2022,
-            "rent_est": 1381.0
-          },
-          {
-            "year": 2023,
-            "rent_est": 1467.0
-          },
-          {
-            "year": 2024,
-            "rent_est": 1550.0
-          }
-        ],
-        "offcampus_match": true,
-        "offcampus_brand_url": "https://www.offcampusreview.com/",
-        "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
-        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/identity-davis",
-        "offcampus_landlord_name": "Identity Davis",
-        "offcampus_landlord_slug": "identity-davis",
-        "offcampus_avg_rating": 3.0,
-        "offcampus_review_count": 21,
-        "offcampus_reviews": [
-          {
-            "rating": 1,
-            "date": "May 2, 2026",
-            "text": "its pretty alright",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 2,
-            "date": "Apr 27, 2026",
-            "text": "alright ig",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 23, 2026",
-            "text": "Very mid",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 20, 2026",
-            "text": "Very thin walls and the trash cute are never working even after contacting maintenance",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 20, 2026",
-            "text": "Predator chased me inside my apartment and Identity did nothing!!!!!",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Apr 19, 2026",
-            "text": "I like the events, and everyone at the office is super nice",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 5,
-            "date": "Apr 13, 2026",
-            "text": "Overall was an amazing, safe, and comfortable space.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 13, 2026",
-            "text": "they killed my second cat",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 13, 2026",
-            "text": "they killed my cat",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Apr 7, 2026",
-            "text": "Very pretty good living situation",
-            "propertyAddress": "515 Sycamore Ln"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 6, 2026",
-            "text": "My apartment got egged and identity did not do anything to help. Four eggs stained my carpet, and Identity just watched. I feel unsafe entering my own apartment. Do not rent here if you care about your safety.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Apr 5, 2026",
-            "text": "mid place",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 5,
-            "date": "Apr 2, 2026",
-            "text": "Really good living space i am living with 7 other guys and we renewed all our leases and most probably gonna be living here till senior year",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Mar 30, 2026",
-            "text": "Pretty good, close to campus",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Mar 28, 2026",
-            "text": "Make sure to get roommates who are properly clean. Make great use of the roommate search as early as possible.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 5,
-            "date": "Mar 28, 2026",
-            "text": "Best housing in Davis! It\u2019s close to campus, is very secure despite being next to the freeway, and repairs are quick.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Mar 28, 2026",
-            "text": "The property is clean with safe neighborhood.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Mar 27, 2026",
-            "text": "Too many homeless people",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Mar 14, 2026",
-            "text": "when we moved in, everything was messy and dirty. we had to clean everything up.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Mar 12, 2026",
-            "text": "Too many people take hard drugs here",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 5,
-            "date": "Mar 11, 2026",
-            "text": "Great area. close to campus. next to park but facilities are amazing. check out the billiards table. Game room is lit \ud83d\udd25\ud83d\udd25\ud83d\udd25",
-            "propertyAddress": "525 Oxford Cir"
-          }
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -121.73988,
           38.55134
         ]
       },
       "properties": {
         "address": "801 L St, Davis, CA 95616",
-        "listing_name": "Identity Davis",
+        "listing_name": "801 L St (sample)",
         "rent": 1650.0,
         "beds": 1,
         "baths": 1.0,
         "sqft": 625.0,
-        "opportunity_score": 70.24,
-        "score_explanation": "Rent efficiency looks strong for the layout; about 1.5 mi straight-line from campus core; Memorial Union 0.86 mi \u00b7 Silo 1.00 mi \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u2264~0.9 mi; reachable to downtown without a long drive; walkable cluster with 32 food and daily-life spots nearby; several transit stops within a short walk; versus median $1550 for 1br nearby",
+        "opportunity_score": 70.9,
+        "score_explanation": "Rent efficiency looks strong for the layout; about 1.5 mi straight-line from campus core; Memorial Union 0.86 mi \u00b7 Silo 1.00 mi \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u2264~0.9 mi; reachable to downtown without a long drive; walkable cluster with 32 food and daily-life spots nearby; several transit stops within a short walk; versus median $1595 for 1br nearby",
         "property_type": "Condo",
         "source": "sample_davis_ca",
         "listing_url": "https://www.rent.com/california/davis-apartments",
@@ -535,140 +199,247 @@
             "rent_est": 1650.0
           }
         ],
+        "offcampus_match": false,
+        "offcampus_brand_url": "https://www.offcampusreview.com/",
+        "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
+        "offcampus_landlord_url": "nan",
+        "offcampus_landlord_name": "nan",
+        "offcampus_landlord_slug": "nan",
+        "offcampus_avg_rating": null,
+        "offcampus_review_count": 0,
+        "offcampus_reviews": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7359354,
+          38.5427203
+        ]
+      },
+      "properties": {
+        "address": "1133 Olive Dr, Davis, CA 95616",
+        "listing_name": "Ryder on Olive",
+        "rent": 1595.0,
+        "beds": 1,
+        "baths": 1.0,
+        "sqft": 610.0,
+        "opportunity_score": 70.55,
+        "score_explanation": "Rent efficiency looks strong for the layout; about 1.4 mi straight-line from campus core; Memorial Union 0.74 mi \u00b7 Silo 0.89 mi \u00b7 1 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u2264~0.9 mi; reachable to downtown without a long drive; walkable cluster with 89 food and daily-life spots nearby; several transit stops within a short walk; versus median $1455 for 1br nearby",
+        "property_type": "Apartment",
+        "source": "sample_davis_ca",
+        "listing_url": "https://www.apartments.com/davis-ca/",
+        "room_type": "private",
+        "dist_km_memorial_union": 1.1877,
+        "dist_km_silo": 1.4367,
+        "dist_mi_memorial_union": 0.738,
+        "dist_mi_silo": 0.8927,
+        "dist_mi_campus": 1.4273,
+        "dist_mi_downtown": 0.2906,
+        "convenience_800m_count": 1,
+        "convenience_nearest_km": 0.4523,
+        "convenience_nearest_mi": 0.281,
+        "nearby_grocery": [
+          {
+            "name": "Myu Myu",
+            "kind": "convenience",
+            "mi": 0.28
+          },
+          {
+            "name": "Davis Food Cooperative",
+            "kind": "grocery",
+            "mi": 0.52
+          },
+          {
+            "name": "Safeway",
+            "kind": "grocery",
+            "mi": 0.59
+          },
+          {
+            "name": "Grocery Outlet",
+            "kind": "grocery",
+            "mi": 0.77
+          },
+          {
+            "name": "Silo Market",
+            "kind": "convenience",
+            "mi": 0.96
+          },
+          {
+            "name": "Nugget Markets",
+            "kind": "grocery",
+            "mi": 1.27
+          }
+        ],
+        "nearby_food": [
+          {
+            "name": "Volt Coffee",
+            "kind": "cafe",
+            "mi": 0.03
+          },
+          {
+            "name": "Village Bakery",
+            "kind": "cafe",
+            "mi": 0.14
+          },
+          {
+            "name": "In-N-Out Burger",
+            "kind": "restaurant",
+            "mi": 0.14
+          },
+          {
+            "name": "Subway",
+            "kind": "restaurant",
+            "mi": 0.15
+          },
+          {
+            "name": "Pachamama Coffee",
+            "kind": "cafe",
+            "mi": 0.16
+          },
+          {
+            "name": "Paesano's",
+            "kind": "restaurant",
+            "mi": 0.17
+          }
+        ],
+        "bike_escooter_index": 72.13,
+        "traffic_calm_index": 52.61,
+        "parking_summary": "Parking ~0.12 mi (OSM has no fee/charge tag); Parking ~0.14 mi (OSM has no fee/charge tag); Parking ~0.17 mi (OSM has no fee/charge tag); Parking ~0.18 mi (OSM has no fee/charge tag)",
+        "unitrans_stops": [
+          {
+            "name": "Davis",
+            "mi": 0.08
+          },
+          {
+            "name": "Amtrak",
+            "mi": 0.08
+          },
+          {
+            "name": "Amtrak",
+            "mi": 0.08
+          },
+          {
+            "name": "Davis",
+            "mi": 0.11
+          },
+          {
+            "name": "Davis, Ca (DAV)",
+            "mi": 0.13
+          },
+          {
+            "name": "H St & 2nd St / Amtrak (NB)",
+            "mi": 0.14
+          },
+          {
+            "name": "Davis",
+            "mi": 0.15
+          },
+          {
+            "name": "H St & 2nd St / Amtrak (SB)",
+            "mi": 0.15
+          },
+          {
+            "name": "3rd St & K St (EB)",
+            "mi": 0.21
+          },
+          {
+            "name": "3rd St & K St (WB)",
+            "mi": 0.22
+          },
+          {
+            "name": "2nd St & E St / Downtown (WB)",
+            "mi": 0.27
+          },
+          {
+            "name": "2nd St & E St / Downtown (EB)",
+            "mi": 0.29
+          },
+          {
+            "name": "L St & 4th St (NB)",
+            "mi": 0.34
+          },
+          {
+            "name": "L St & 425 (SB)",
+            "mi": 0.36
+          }
+        ],
+        "listing_rent_trend": [
+          {
+            "year": 2015,
+            "rent_est": 947.0
+          },
+          {
+            "year": 2016,
+            "rent_est": 985.0
+          },
+          {
+            "year": 2017,
+            "rent_est": 1034.0
+          },
+          {
+            "year": 2018,
+            "rent_est": 1087.0
+          },
+          {
+            "year": 2019,
+            "rent_est": 1137.0
+          },
+          {
+            "year": 2020,
+            "rent_est": 1176.0
+          },
+          {
+            "year": 2021,
+            "rent_est": 1267.0
+          },
+          {
+            "year": 2022,
+            "rent_est": 1421.0
+          },
+          {
+            "year": 2023,
+            "rent_est": 1509.0
+          },
+          {
+            "year": 2024,
+            "rent_est": 1595.0
+          }
+        ],
         "offcampus_match": true,
         "offcampus_brand_url": "https://www.offcampusreview.com/",
         "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
-        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/identity-davis",
-        "offcampus_landlord_name": "Identity Davis",
-        "offcampus_landlord_slug": "identity-davis",
-        "offcampus_avg_rating": 3.0,
-        "offcampus_review_count": 21,
+        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/ryder-on-olive",
+        "offcampus_landlord_name": "Ryder on Olive",
+        "offcampus_landlord_slug": "ryder-on-olive",
+        "offcampus_avg_rating": 3.3,
+        "offcampus_review_count": 4,
         "offcampus_reviews": [
           {
-            "rating": 1,
-            "date": "May 2, 2026",
-            "text": "its pretty alright",
-            "propertyAddress": "525 Oxford Cir"
+            "rating": 3,
+            "date": "Apr 20, 2026",
+            "text": "Lot of people who steal",
+            "propertyAddress": "1133 Olive Ryder"
           },
           {
             "rating": 2,
-            "date": "Apr 27, 2026",
-            "text": "alright ig",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 23, 2026",
-            "text": "Very mid",
-            "propertyAddress": "525 Oxford Cir"
+            "date": "Apr 13, 2026",
+            "text": "Homeless guy came into pool once",
+            "propertyAddress": "1133 Olive Dr"
           },
           {
             "rating": 4,
-            "date": "Apr 20, 2026",
-            "text": "Very thin walls and the trash cute are never working even after contacting maintenance",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 20, 2026",
-            "text": "Predator chased me inside my apartment and Identity did nothing!!!!!",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Apr 19, 2026",
-            "text": "I like the events, and everyone at the office is super nice",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 5,
-            "date": "Apr 13, 2026",
-            "text": "Overall was an amazing, safe, and comfortable space.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 13, 2026",
-            "text": "they killed my second cat",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 13, 2026",
-            "text": "they killed my cat",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Apr 7, 2026",
-            "text": "Very pretty good living situation",
-            "propertyAddress": "515 Sycamore Ln"
-          },
-          {
-            "rating": 1,
             "date": "Apr 6, 2026",
-            "text": "My apartment got egged and identity did not do anything to help. Four eggs stained my carpet, and Identity just watched. I feel unsafe entering my own apartment. Do not rent here if you care about your safety.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Apr 5, 2026",
-            "text": "mid place",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 5,
-            "date": "Apr 2, 2026",
-            "text": "Really good living space i am living with 7 other guys and we renewed all our leases and most probably gonna be living here till senior year",
-            "propertyAddress": "525 Oxford Cir"
+            "text": "Place is good not the safest but it's ok over tall overpriced though",
+            "propertyAddress": "Olive Dr"
           },
           {
             "rating": 4,
-            "date": "Mar 30, 2026",
-            "text": "Pretty good, close to campus",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Mar 28, 2026",
-            "text": "Make sure to get roommates who are properly clean. Make great use of the roommate search as early as possible.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 5,
-            "date": "Mar 28, 2026",
-            "text": "Best housing in Davis! It\u2019s close to campus, is very secure despite being next to the freeway, and repairs are quick.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Mar 28, 2026",
-            "text": "The property is clean with safe neighborhood.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Mar 27, 2026",
-            "text": "Too many homeless people",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
             "date": "Mar 14, 2026",
-            "text": "when we moved in, everything was messy and dirty. we had to clean everything up.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Mar 12, 2026",
-            "text": "Too many people take hard drugs here",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 5,
-            "date": "Mar 11, 2026",
-            "text": "Great area. close to campus. next to park but facilities are amazing. check out the billiards table. Game room is lit \ud83d\udd25\ud83d\udd25\ud83d\udd25",
-            "propertyAddress": "525 Oxford Cir"
+            "text": "Great but expensive place of living! Gym and outdoor space is very nice.",
+            "propertyAddress": "1133 Olive Dr"
           }
         ]
       }
@@ -684,7 +455,7 @@
       },
       "properties": {
         "address": "408 F St, Davis, CA 95616",
-        "listing_name": "Identity Davis",
+        "listing_name": "408 F St (sample)",
         "rent": 1895.0,
         "beds": 2,
         "baths": 1.0,
@@ -871,142 +642,15 @@
             "rent_est": 1895.0
           }
         ],
-        "offcampus_match": true,
+        "offcampus_match": false,
         "offcampus_brand_url": "https://www.offcampusreview.com/",
         "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
-        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/identity-davis",
-        "offcampus_landlord_name": "Identity Davis",
-        "offcampus_landlord_slug": "identity-davis",
-        "offcampus_avg_rating": 3.0,
-        "offcampus_review_count": 21,
-        "offcampus_reviews": [
-          {
-            "rating": 1,
-            "date": "May 2, 2026",
-            "text": "its pretty alright",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 2,
-            "date": "Apr 27, 2026",
-            "text": "alright ig",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 23, 2026",
-            "text": "Very mid",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 20, 2026",
-            "text": "Very thin walls and the trash cute are never working even after contacting maintenance",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 20, 2026",
-            "text": "Predator chased me inside my apartment and Identity did nothing!!!!!",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Apr 19, 2026",
-            "text": "I like the events, and everyone at the office is super nice",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 5,
-            "date": "Apr 13, 2026",
-            "text": "Overall was an amazing, safe, and comfortable space.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 13, 2026",
-            "text": "they killed my second cat",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 13, 2026",
-            "text": "they killed my cat",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Apr 7, 2026",
-            "text": "Very pretty good living situation",
-            "propertyAddress": "515 Sycamore Ln"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 6, 2026",
-            "text": "My apartment got egged and identity did not do anything to help. Four eggs stained my carpet, and Identity just watched. I feel unsafe entering my own apartment. Do not rent here if you care about your safety.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Apr 5, 2026",
-            "text": "mid place",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 5,
-            "date": "Apr 2, 2026",
-            "text": "Really good living space i am living with 7 other guys and we renewed all our leases and most probably gonna be living here till senior year",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Mar 30, 2026",
-            "text": "Pretty good, close to campus",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Mar 28, 2026",
-            "text": "Make sure to get roommates who are properly clean. Make great use of the roommate search as early as possible.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 5,
-            "date": "Mar 28, 2026",
-            "text": "Best housing in Davis! It\u2019s close to campus, is very secure despite being next to the freeway, and repairs are quick.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Mar 28, 2026",
-            "text": "The property is clean with safe neighborhood.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Mar 27, 2026",
-            "text": "Too many homeless people",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Mar 14, 2026",
-            "text": "when we moved in, everything was messy and dirty. we had to clean everything up.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Mar 12, 2026",
-            "text": "Too many people take hard drugs here",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 5,
-            "date": "Mar 11, 2026",
-            "text": "Great area. close to campus. next to park but facilities are amazing. check out the billiards table. Game room is lit \ud83d\udd25\ud83d\udd25\ud83d\udd25",
-            "propertyAddress": "525 Oxford Cir"
-          }
-        ]
+        "offcampus_landlord_url": "nan",
+        "offcampus_landlord_name": "nan",
+        "offcampus_landlord_slug": "nan",
+        "offcampus_avg_rating": null,
+        "offcampus_review_count": 0,
+        "offcampus_reviews": []
       }
     },
     {
@@ -1229,7 +873,7 @@
       },
       "properties": {
         "address": "1 Shields Ave, Davis, CA 95616",
-        "listing_name": "Identity Davis",
+        "listing_name": "1 Shields Ave (sample)",
         "rent": 1750.0,
         "beds": 2,
         "baths": 1.0,
@@ -1416,142 +1060,15 @@
             "rent_est": 1750.0
           }
         ],
-        "offcampus_match": true,
+        "offcampus_match": false,
         "offcampus_brand_url": "https://www.offcampusreview.com/",
         "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
-        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/identity-davis",
-        "offcampus_landlord_name": "Identity Davis",
-        "offcampus_landlord_slug": "identity-davis",
-        "offcampus_avg_rating": 3.0,
-        "offcampus_review_count": 21,
-        "offcampus_reviews": [
-          {
-            "rating": 1,
-            "date": "May 2, 2026",
-            "text": "its pretty alright",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 2,
-            "date": "Apr 27, 2026",
-            "text": "alright ig",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 23, 2026",
-            "text": "Very mid",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 20, 2026",
-            "text": "Very thin walls and the trash cute are never working even after contacting maintenance",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 20, 2026",
-            "text": "Predator chased me inside my apartment and Identity did nothing!!!!!",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Apr 19, 2026",
-            "text": "I like the events, and everyone at the office is super nice",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 5,
-            "date": "Apr 13, 2026",
-            "text": "Overall was an amazing, safe, and comfortable space.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 13, 2026",
-            "text": "they killed my second cat",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 13, 2026",
-            "text": "they killed my cat",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Apr 7, 2026",
-            "text": "Very pretty good living situation",
-            "propertyAddress": "515 Sycamore Ln"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 6, 2026",
-            "text": "My apartment got egged and identity did not do anything to help. Four eggs stained my carpet, and Identity just watched. I feel unsafe entering my own apartment. Do not rent here if you care about your safety.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Apr 5, 2026",
-            "text": "mid place",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 5,
-            "date": "Apr 2, 2026",
-            "text": "Really good living space i am living with 7 other guys and we renewed all our leases and most probably gonna be living here till senior year",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Mar 30, 2026",
-            "text": "Pretty good, close to campus",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Mar 28, 2026",
-            "text": "Make sure to get roommates who are properly clean. Make great use of the roommate search as early as possible.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 5,
-            "date": "Mar 28, 2026",
-            "text": "Best housing in Davis! It\u2019s close to campus, is very secure despite being next to the freeway, and repairs are quick.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Mar 28, 2026",
-            "text": "The property is clean with safe neighborhood.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Mar 27, 2026",
-            "text": "Too many homeless people",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Mar 14, 2026",
-            "text": "when we moved in, everything was messy and dirty. we had to clean everything up.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Mar 12, 2026",
-            "text": "Too many people take hard drugs here",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 5,
-            "date": "Mar 11, 2026",
-            "text": "Great area. close to campus. next to park but facilities are amazing. check out the billiards table. Game room is lit \ud83d\udd25\ud83d\udd25\ud83d\udd25",
-            "propertyAddress": "525 Oxford Cir"
-          }
-        ]
+        "offcampus_landlord_url": "nan",
+        "offcampus_landlord_name": "nan",
+        "offcampus_landlord_slug": "nan",
+        "offcampus_avg_rating": null,
+        "offcampus_review_count": 0,
+        "offcampus_reviews": []
       }
     },
     {
@@ -1570,8 +1087,8 @@
         "beds": 1,
         "baths": 1.0,
         "sqft": 575.0,
-        "opportunity_score": 62.54,
-        "score_explanation": "Rent efficiency looks strong for the layout; about 1.7 mi straight-line from campus core; Memorial Union 0.99 mi \u00b7 Silo 1.14 mi \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u2264~0.9 mi; walkable cluster with 27 food and daily-life spots nearby; some nearby transit access; versus median $1550 for 1br nearby",
+        "opportunity_score": 63.05,
+        "score_explanation": "Rent efficiency looks strong for the layout; about 1.7 mi straight-line from campus core; Memorial Union 0.99 mi \u00b7 Silo 1.14 mi \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u2264~0.9 mi; walkable cluster with 27 food and daily-life spots nearby; some nearby transit access; versus median $1595 for 1br nearby",
         "property_type": "Apartment",
         "source": "sample_davis_ca",
         "listing_url": "https://www.zillow.com/davis-ca/rentals/",
@@ -1774,7 +1291,7 @@
       },
       "properties": {
         "address": "1520 Olive Dr, Davis, CA 95616",
-        "listing_name": "Ryder on Olive",
+        "listing_name": "Olive Row Townhomes",
         "rent": 1980.0,
         "beds": 2,
         "baths": 1.5,
@@ -1961,38 +1478,349 @@
             "rent_est": 1980.0
           }
         ],
+        "offcampus_match": false,
+        "offcampus_brand_url": "https://www.offcampusreview.com/",
+        "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
+        "offcampus_landlord_url": "nan",
+        "offcampus_landlord_name": "nan",
+        "offcampus_landlord_slug": "nan",
+        "offcampus_avg_rating": null,
+        "offcampus_review_count": 0,
+        "offcampus_reviews": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.765011,
+          38.5474396
+        ]
+      },
+      "properties": {
+        "address": "525 Oxford Cir, Davis, CA 95616",
+        "listing_name": "Identity Davis",
+        "rent": 1550.0,
+        "beds": 1,
+        "baths": 1.0,
+        "sqft": 540.0,
+        "opportunity_score": 60.83,
+        "score_explanation": "Rent efficiency looks strong for the layout; about 0.7 mi straight-line from campus core; Memorial Union 0.94 mi \u00b7 Silo 0.84 mi \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u2264~0.9 mi; 14 walkable amenities in the corridor; several transit stops within a short walk; limited peer comps nearby",
+        "property_type": "Apartment",
+        "source": "sample_davis_ca",
+        "listing_url": "https://www.zillow.com/davis-ca/rentals/",
+        "room_type": "private",
+        "dist_km_memorial_union": 1.5062,
+        "dist_km_silo": 1.3439,
+        "dist_mi_memorial_union": 0.9359,
+        "dist_mi_silo": 0.835,
+        "dist_mi_campus": 0.6613,
+        "dist_mi_downtown": 1.3345,
+        "convenience_800m_count": 0,
+        "convenience_nearest_km": 0.901,
+        "convenience_nearest_mi": 0.5599,
+        "nearby_grocery": [
+          {
+            "name": "Trader Joe's",
+            "kind": "grocery",
+            "mi": 0.2
+          },
+          {
+            "name": "Sage Street Market",
+            "kind": "convenience",
+            "mi": 0.56
+          },
+          {
+            "name": "Silo Market",
+            "kind": "convenience",
+            "mi": 0.92
+          },
+          {
+            "name": "Savemart",
+            "kind": "grocery",
+            "mi": 0.93
+          },
+          {
+            "name": "ExtraMile",
+            "kind": "convenience",
+            "mi": 0.95
+          },
+          {
+            "name": "(unnamed on OSM)",
+            "kind": "convenience",
+            "mi": 0.97
+          }
+        ],
+        "nearby_food": [
+          {
+            "name": "Cuarto Dining Commons",
+            "kind": "restaurant",
+            "mi": 0.09
+          },
+          {
+            "name": "Shah's Halal Food",
+            "kind": "restaurant",
+            "mi": 0.26
+          },
+          {
+            "name": "The Melt",
+            "kind": "restaurant",
+            "mi": 0.28
+          },
+          {
+            "name": "Fluffy Donuts",
+            "kind": "cafe",
+            "mi": 0.3
+          },
+          {
+            "name": "Subway",
+            "kind": "restaurant",
+            "mi": 0.31
+          },
+          {
+            "name": "Segundo Dining Commons",
+            "kind": "restaurant",
+            "mi": 0.44
+          }
+        ],
+        "bike_escooter_index": 94.11,
+        "traffic_calm_index": 57.92,
+        "parking_summary": "Parking ~0.02 mi (OSM has no fee/charge tag); Parking ~0.02 mi (OSM has no fee/charge tag); Parking ~0.08 mi (tagged no fee); Parking ~0.1 mi (tagged no fee)",
+        "unitrans_stops": [
+          {
+            "name": "Unitrans stop",
+            "mi": 0.11
+          },
+          {
+            "name": "Sycamore Ln & Russell/Trader Joe's (SB)",
+            "mi": 0.16
+          },
+          {
+            "name": "Sycamore Ln & Russell/Trader Joe's (NB)",
+            "mi": 0.17
+          },
+          {
+            "name": "Sycamore & 8th (SB)",
+            "mi": 0.22
+          },
+          {
+            "name": "Sycamore Ln & 8th St (NB)",
+            "mi": 0.24
+          },
+          {
+            "name": "Russell & Arthur St. (Westbound)",
+            "mi": 0.33
+          },
+          {
+            "name": "Davis (University Mall)",
+            "mi": 0.35
+          },
+          {
+            "name": "Sycamore Ln & Cornell Drive (SB)",
+            "mi": 0.4
+          },
+          {
+            "name": "Sycamore Ln & Cornell Drive (NB)",
+            "mi": 0.42
+          },
+          {
+            "name": "Sycamore Ln & Bucknell Drive (NB)",
+            "mi": 0.52
+          },
+          {
+            "name": "Sycamore Ln & Colby Drive (SB)",
+            "mi": 0.54
+          },
+          {
+            "name": "Unitrans stop",
+            "mi": 0.55
+          },
+          {
+            "name": "Jade St at Sage St - Drop Off Only (WB)",
+            "mi": 0.57
+          },
+          {
+            "name": "Unitrans stop",
+            "mi": 0.58
+          }
+        ],
+        "listing_rent_trend": [
+          {
+            "year": 2015,
+            "rent_est": 920.0
+          },
+          {
+            "year": 2016,
+            "rent_est": 957.0
+          },
+          {
+            "year": 2017,
+            "rent_est": 1005.0
+          },
+          {
+            "year": 2018,
+            "rent_est": 1057.0
+          },
+          {
+            "year": 2019,
+            "rent_est": 1105.0
+          },
+          {
+            "year": 2020,
+            "rent_est": 1143.0
+          },
+          {
+            "year": 2021,
+            "rent_est": 1231.0
+          },
+          {
+            "year": 2022,
+            "rent_est": 1381.0
+          },
+          {
+            "year": 2023,
+            "rent_est": 1467.0
+          },
+          {
+            "year": 2024,
+            "rent_est": 1550.0
+          }
+        ],
         "offcampus_match": true,
         "offcampus_brand_url": "https://www.offcampusreview.com/",
         "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
-        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/ryder-on-olive",
-        "offcampus_landlord_name": "Ryder on Olive",
-        "offcampus_landlord_slug": "ryder-on-olive",
-        "offcampus_avg_rating": 3.3,
-        "offcampus_review_count": 4,
+        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/identity-davis",
+        "offcampus_landlord_name": "Identity Davis",
+        "offcampus_landlord_slug": "identity-davis",
+        "offcampus_avg_rating": 3.0,
+        "offcampus_review_count": 21,
         "offcampus_reviews": [
           {
-            "rating": 3,
-            "date": "Apr 20, 2026",
-            "text": "Lot of people who steal",
-            "propertyAddress": "1133 Olive Ryder"
+            "rating": 1,
+            "date": "May 2, 2026",
+            "text": "its pretty alright",
+            "propertyAddress": "525 Oxford Cir"
           },
           {
             "rating": 2,
+            "date": "Apr 27, 2026",
+            "text": "alright ig",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 1,
+            "date": "Apr 23, 2026",
+            "text": "Very mid",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 4,
+            "date": "Apr 20, 2026",
+            "text": "Very thin walls and the trash cute are never working even after contacting maintenance",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 1,
+            "date": "Apr 20, 2026",
+            "text": "Predator chased me inside my apartment and Identity did nothing!!!!!",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 3,
+            "date": "Apr 19, 2026",
+            "text": "I like the events, and everyone at the office is super nice",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 5,
             "date": "Apr 13, 2026",
-            "text": "Homeless guy came into pool once",
-            "propertyAddress": "1133 Olive Dr"
+            "text": "Overall was an amazing, safe, and comfortable space.",
+            "propertyAddress": "525 Oxford Cir"
           },
           {
-            "rating": 4,
+            "rating": 1,
+            "date": "Apr 13, 2026",
+            "text": "they killed my second cat",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 1,
+            "date": "Apr 13, 2026",
+            "text": "they killed my cat",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 3,
+            "date": "Apr 7, 2026",
+            "text": "Very pretty good living situation",
+            "propertyAddress": "515 Sycamore Ln"
+          },
+          {
+            "rating": 1,
             "date": "Apr 6, 2026",
-            "text": "Place is good not the safest but it's ok over tall overpriced though",
-            "propertyAddress": "Olive Dr"
+            "text": "My apartment got egged and identity did not do anything to help. Four eggs stained my carpet, and Identity just watched. I feel unsafe entering my own apartment. Do not rent here if you care about your safety.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 3,
+            "date": "Apr 5, 2026",
+            "text": "mid place",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 5,
+            "date": "Apr 2, 2026",
+            "text": "Really good living space i am living with 7 other guys and we renewed all our leases and most probably gonna be living here till senior year",
+            "propertyAddress": "525 Oxford Cir"
           },
           {
             "rating": 4,
+            "date": "Mar 30, 2026",
+            "text": "Pretty good, close to campus",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 4,
+            "date": "Mar 28, 2026",
+            "text": "Make sure to get roommates who are properly clean. Make great use of the roommate search as early as possible.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 5,
+            "date": "Mar 28, 2026",
+            "text": "Best housing in Davis! It\u2019s close to campus, is very secure despite being next to the freeway, and repairs are quick.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 4,
+            "date": "Mar 28, 2026",
+            "text": "The property is clean with safe neighborhood.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 3,
+            "date": "Mar 27, 2026",
+            "text": "Too many homeless people",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 3,
             "date": "Mar 14, 2026",
-            "text": "Great but expensive place of living! Gym and outdoor space is very nice.",
-            "propertyAddress": "1133 Olive Dr"
+            "text": "when we moved in, everything was messy and dirty. we had to clean everything up.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 4,
+            "date": "Mar 12, 2026",
+            "text": "Too many people take hard drugs here",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 5,
+            "date": "Mar 11, 2026",
+            "text": "Great area. close to campus. next to park but facilities are amazing. check out the billiards table. Game room is lit \ud83d\udd25\ud83d\udd25\ud83d\udd25",
+            "propertyAddress": "525 Oxford Cir"
           }
         ]
       }
@@ -2008,7 +1836,7 @@
       },
       "properties": {
         "address": "450 J St, Davis, CA 95616",
-        "listing_name": "Identity Davis",
+        "listing_name": "450 J St (sample)",
         "rent": 2450.0,
         "beds": 3,
         "baths": 2.0,
@@ -2195,142 +2023,15 @@
             "rent_est": 2450.0
           }
         ],
-        "offcampus_match": true,
+        "offcampus_match": false,
         "offcampus_brand_url": "https://www.offcampusreview.com/",
         "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
-        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/identity-davis",
-        "offcampus_landlord_name": "Identity Davis",
-        "offcampus_landlord_slug": "identity-davis",
-        "offcampus_avg_rating": 3.0,
-        "offcampus_review_count": 21,
-        "offcampus_reviews": [
-          {
-            "rating": 1,
-            "date": "May 2, 2026",
-            "text": "its pretty alright",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 2,
-            "date": "Apr 27, 2026",
-            "text": "alright ig",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 23, 2026",
-            "text": "Very mid",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 20, 2026",
-            "text": "Very thin walls and the trash cute are never working even after contacting maintenance",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 20, 2026",
-            "text": "Predator chased me inside my apartment and Identity did nothing!!!!!",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Apr 19, 2026",
-            "text": "I like the events, and everyone at the office is super nice",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 5,
-            "date": "Apr 13, 2026",
-            "text": "Overall was an amazing, safe, and comfortable space.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 13, 2026",
-            "text": "they killed my second cat",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 13, 2026",
-            "text": "they killed my cat",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Apr 7, 2026",
-            "text": "Very pretty good living situation",
-            "propertyAddress": "515 Sycamore Ln"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 6, 2026",
-            "text": "My apartment got egged and identity did not do anything to help. Four eggs stained my carpet, and Identity just watched. I feel unsafe entering my own apartment. Do not rent here if you care about your safety.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Apr 5, 2026",
-            "text": "mid place",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 5,
-            "date": "Apr 2, 2026",
-            "text": "Really good living space i am living with 7 other guys and we renewed all our leases and most probably gonna be living here till senior year",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Mar 30, 2026",
-            "text": "Pretty good, close to campus",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Mar 28, 2026",
-            "text": "Make sure to get roommates who are properly clean. Make great use of the roommate search as early as possible.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 5,
-            "date": "Mar 28, 2026",
-            "text": "Best housing in Davis! It\u2019s close to campus, is very secure despite being next to the freeway, and repairs are quick.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Mar 28, 2026",
-            "text": "The property is clean with safe neighborhood.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Mar 27, 2026",
-            "text": "Too many homeless people",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Mar 14, 2026",
-            "text": "when we moved in, everything was messy and dirty. we had to clean everything up.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Mar 12, 2026",
-            "text": "Too many people take hard drugs here",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 5,
-            "date": "Mar 11, 2026",
-            "text": "Great area. close to campus. next to park but facilities are amazing. check out the billiards table. Game room is lit \ud83d\udd25\ud83d\udd25\ud83d\udd25",
-            "propertyAddress": "525 Oxford Cir"
-          }
-        ]
+        "offcampus_landlord_url": "nan",
+        "offcampus_landlord_name": "nan",
+        "offcampus_landlord_slug": "nan",
+        "offcampus_avg_rating": null,
+        "offcampus_review_count": 0,
+        "offcampus_reviews": []
       }
     },
     {
@@ -2344,13 +2045,13 @@
       },
       "properties": {
         "address": "1100 Alvarado Ave, Davis, CA 95616",
-        "listing_name": "Tandem",
+        "listing_name": "1100 Alvarado Ave (sample)",
         "rent": 1380.0,
         "beds": 1,
         "baths": 1.0,
         "sqft": 520.0,
-        "opportunity_score": 57.58,
-        "score_explanation": "Rent efficiency looks strong for the layout; about 1.8 mi straight-line from campus core; Memorial Union 1.13 mi \u00b7 Silo 1.27 mi \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u2264~0.9 mi; 12 walkable amenities in the corridor; several transit stops within a short walk; versus median $1550 for 1br nearby",
+        "opportunity_score": 58.07,
+        "score_explanation": "Rent efficiency looks strong for the layout; about 1.8 mi straight-line from campus core; Memorial Union 1.13 mi \u00b7 Silo 1.27 mi \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u2264~0.9 mi; 12 walkable amenities in the corridor; several transit stops within a short walk; versus median $1595 for 1br nearby",
         "property_type": "Apartment",
         "source": "sample_davis_ca",
         "listing_url": "https://www.zillow.com/davis-ca/rentals/",
@@ -2531,46 +2232,15 @@
             "rent_est": 1380.0
           }
         ],
-        "offcampus_match": true,
+        "offcampus_match": false,
         "offcampus_brand_url": "https://www.offcampusreview.com/",
         "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
-        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/tandem",
-        "offcampus_landlord_name": "Tandem",
-        "offcampus_landlord_slug": "tandem",
-        "offcampus_avg_rating": 3.6,
-        "offcampus_review_count": 5,
-        "offcampus_reviews": [
-          {
-            "rating": 3,
-            "date": "Apr 13, 2026",
-            "text": "Alright but don't care about concerns",
-            "propertyAddress": "310 Parkway Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 6, 2026",
-            "text": "chill landlord. chill roomies. chill year.",
-            "propertyAddress": "400 Parkway Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 6, 2026",
-            "text": "He is amazing",
-            "propertyAddress": "310 Pkwy"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 6, 2026",
-            "text": "kinda dirty tbh but it's what it's",
-            "propertyAddress": "320 Parkway Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Apr 6, 2026",
-            "text": "solid",
-            "propertyAddress": "310 Parkway Cir"
-          }
-        ]
+        "offcampus_landlord_url": "nan",
+        "offcampus_landlord_name": "nan",
+        "offcampus_landlord_slug": "nan",
+        "offcampus_avg_rating": null,
+        "offcampus_review_count": 0,
+        "offcampus_reviews": []
       }
     },
     {
@@ -2589,8 +2259,8 @@
         "beds": 1,
         "baths": 1.0,
         "sqft": 600.0,
-        "opportunity_score": 56.82,
-        "score_explanation": "Rent efficiency looks strong for the layout; about 1.1 mi straight-line from campus core; Memorial Union 0.65 mi \u00b7 Silo 0.73 mi \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u2264~0.9 mi; 8 walkable amenities in the corridor; several transit stops within a short walk; versus median $1550 for 1br nearby",
+        "opportunity_score": 57.58,
+        "score_explanation": "Rent efficiency looks strong for the layout; about 1.1 mi straight-line from campus core; Memorial Union 0.65 mi \u00b7 Silo 0.73 mi \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u2264~0.9 mi; 8 walkable amenities in the corridor; several transit stops within a short walk; versus median $1595 for 1br nearby",
         "property_type": "Apartment",
         "source": "sample_davis_ca",
         "listing_url": "https://www.apartments.com/davis-ca/",
@@ -2787,13 +2457,433 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.7619,
+          38.54765
+        ]
+      },
+      "properties": {
+        "address": "1800 Shasta Dr, Davis, CA 95616",
+        "listing_name": "1800 Shasta Dr (sample)",
+        "rent": 1980.0,
+        "beds": 2,
+        "baths": 1.0,
+        "sqft": 820.0,
+        "opportunity_score": 55.9,
+        "score_explanation": "Rent is reasonable on a per-bedroom basis; about 0.7 mi straight-line from campus core; Memorial Union 0.80 mi \u00b7 Silo 0.71 mi \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u2264~0.9 mi; 12 walkable amenities in the corridor; several transit stops within a short walk; versus median $2100 for 2br nearby",
+        "property_type": "Duplex",
+        "source": "sample_davis_ca",
+        "listing_url": "https://www.rent.com/california/davis-apartments",
+        "room_type": "shared",
+        "dist_km_memorial_union": 1.282,
+        "dist_km_silo": 1.1463,
+        "dist_mi_memorial_union": 0.7966,
+        "dist_mi_silo": 0.7123,
+        "dist_mi_campus": 0.6514,
+        "dist_mi_downtown": 1.1704,
+        "convenience_800m_count": 0,
+        "convenience_nearest_km": 1.1112,
+        "convenience_nearest_mi": 0.6905,
+        "nearby_grocery": [
+          {
+            "name": "Trader Joe's",
+            "kind": "grocery",
+            "mi": 0.07
+          },
+          {
+            "name": "Sage Street Market",
+            "kind": "convenience",
+            "mi": 0.69
+          },
+          {
+            "name": "Silo Market",
+            "kind": "convenience",
+            "mi": 0.82
+          },
+          {
+            "name": "Savemart",
+            "kind": "grocery",
+            "mi": 0.86
+          },
+          {
+            "name": "ExtraMile",
+            "kind": "convenience",
+            "mi": 0.89
+          },
+          {
+            "name": "(unnamed on OSM)",
+            "kind": "convenience",
+            "mi": 0.9
+          }
+        ],
+        "nearby_food": [
+          {
+            "name": "Cuarto Dining Commons",
+            "kind": "restaurant",
+            "mi": 0.08
+          },
+          {
+            "name": "Shah's Halal Food",
+            "kind": "restaurant",
+            "mi": 0.11
+          },
+          {
+            "name": "The Melt",
+            "kind": "restaurant",
+            "mi": 0.12
+          },
+          {
+            "name": "Fluffy Donuts",
+            "kind": "cafe",
+            "mi": 0.13
+          },
+          {
+            "name": "Subway",
+            "kind": "restaurant",
+            "mi": 0.14
+          },
+          {
+            "name": "Segundo Dining Commons",
+            "kind": "restaurant",
+            "mi": 0.33
+          }
+        ],
+        "bike_escooter_index": 83.27,
+        "traffic_calm_index": 77.89,
+        "parking_summary": "Parking ~0.03 mi (tagged no fee); Parking ~0.1 mi (tagged no fee); Parking ~0.12 mi (OSM has no fee/charge tag); Parking ~0.12 mi (OSM has no fee/charge tag)",
+        "unitrans_stops": [
+          {
+            "name": "Sycamore Ln & Russell/Trader Joe's (NB)",
+            "mi": 0.01
+          },
+          {
+            "name": "Sycamore Ln & Russell/Trader Joe's (SB)",
+            "mi": 0.02
+          },
+          {
+            "name": "Unitrans stop",
+            "mi": 0.11
+          },
+          {
+            "name": "Davis (University Mall)",
+            "mi": 0.19
+          },
+          {
+            "name": "Sycamore & 8th (SB)",
+            "mi": 0.24
+          },
+          {
+            "name": "Sycamore Ln & 8th St (NB)",
+            "mi": 0.26
+          },
+          {
+            "name": "Sycamore Ln & Cornell Drive (SB)",
+            "mi": 0.42
+          },
+          {
+            "name": "Sycamore Ln & Cornell Drive (NB)",
+            "mi": 0.43
+          },
+          {
+            "name": "Russell & Arthur St. (Westbound)",
+            "mi": 0.5
+          },
+          {
+            "name": "Sycamore Ln & Bucknell Drive (NB)",
+            "mi": 0.53
+          },
+          {
+            "name": "Sycamore Ln & Colby Drive (SB)",
+            "mi": 0.55
+          },
+          {
+            "name": "Hutchison & Extension Center Drive",
+            "mi": 0.6
+          },
+          {
+            "name": "Sycamore Ln & Villanova Drive (NB)",
+            "mi": 0.63
+          },
+          {
+            "name": "Unitrans stop",
+            "mi": 0.68
+          }
+        ],
+        "listing_rent_trend": [
+          {
+            "year": 2015,
+            "rent_est": 1175.0
+          },
+          {
+            "year": 2016,
+            "rent_est": 1223.0
+          },
+          {
+            "year": 2017,
+            "rent_est": 1284.0
+          },
+          {
+            "year": 2018,
+            "rent_est": 1350.0
+          },
+          {
+            "year": 2019,
+            "rent_est": 1412.0
+          },
+          {
+            "year": 2020,
+            "rent_est": 1460.0
+          },
+          {
+            "year": 2021,
+            "rent_est": 1573.0
+          },
+          {
+            "year": 2022,
+            "rent_est": 1765.0
+          },
+          {
+            "year": 2023,
+            "rent_est": 1873.0
+          },
+          {
+            "year": 2024,
+            "rent_est": 1980.0
+          }
+        ],
+        "offcampus_match": false,
+        "offcampus_brand_url": "https://www.offcampusreview.com/",
+        "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
+        "offcampus_landlord_url": "nan",
+        "offcampus_landlord_name": "nan",
+        "offcampus_landlord_slug": "nan",
+        "offcampus_avg_rating": null,
+        "offcampus_review_count": 0,
+        "offcampus_reviews": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7238281,
+          38.5453369
+        ]
+      },
+      "properties": {
+        "address": "2555 Research Park Dr, Davis, CA 95618",
+        "listing_name": "Axis at Davis",
+        "rent": 1425.0,
+        "beds": 1,
+        "baths": 1.0,
+        "sqft": 590.0,
+        "opportunity_score": 54.84,
+        "score_explanation": "Rent is reasonable on a per-bedroom basis; about 2.1 mi straight-line from campus core; Memorial Union 1.41 mi \u00b7 Silo 1.57 mi \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u2264~0.9 mi; walkable cluster with 19 food and daily-life spots nearby; several transit stops within a short walk; versus median $1525 for 1br nearby",
+        "property_type": "Apartment",
+        "source": "sample_davis_ca",
+        "listing_url": "https://www.zillow.com/davis-ca/rentals/",
+        "room_type": "private",
+        "dist_km_memorial_union": 2.2739,
+        "dist_km_silo": 2.5255,
+        "dist_mi_memorial_union": 1.4129,
+        "dist_mi_silo": 1.5693,
+        "dist_mi_campus": 2.1055,
+        "dist_mi_downtown": 0.9029,
+        "convenience_800m_count": 0,
+        "convenience_nearest_km": 1.5094,
+        "convenience_nearest_mi": 0.9379,
+        "nearby_grocery": [
+          {
+            "name": "Safeway",
+            "kind": "grocery",
+            "mi": 0.3
+          },
+          {
+            "name": "Grocery Outlet",
+            "kind": "grocery",
+            "mi": 0.6
+          },
+          {
+            "name": "Davis Food Cooperative",
+            "kind": "grocery",
+            "mi": 0.91
+          },
+          {
+            "name": "Myu Myu",
+            "kind": "convenience",
+            "mi": 0.94
+          },
+          {
+            "name": "Nugget Markets",
+            "kind": "grocery",
+            "mi": 1.19
+          }
+        ],
+        "nearby_food": [
+          {
+            "name": "Round Table Pizza",
+            "kind": "restaurant",
+            "mi": 0.22
+          },
+          {
+            "name": "Common Grounds Coffee",
+            "kind": "cafe",
+            "mi": 0.28
+          },
+          {
+            "name": "Starbucks",
+            "kind": "cafe",
+            "mi": 0.29
+          },
+          {
+            "name": "Dos Coyotes Border Cafe",
+            "kind": "restaurant",
+            "mi": 0.3
+          },
+          {
+            "name": "Mr Pickle's Sandwich Shop",
+            "kind": "restaurant",
+            "mi": 0.31
+          },
+          {
+            "name": "Teabo Caf\u00e9",
+            "kind": "cafe",
+            "mi": 0.31
+          }
+        ],
+        "bike_escooter_index": 55.47,
+        "traffic_calm_index": 41.44,
+        "parking_summary": "Parking ~0.05 mi (OSM has no fee/charge tag); Parking ~0.15 mi (OSM has no fee/charge tag); Parking ~0.18 mi (OSM has no fee/charge tag); Parking ~0.23 mi (OSM has no fee/charge tag)",
+        "unitrans_stops": [
+          {
+            "name": "5th St & Post Office / Pole Line (EB)",
+            "mi": 0.27
+          },
+          {
+            "name": "5th St & Post Office / Pole Line Rd (WB)",
+            "mi": 0.29
+          },
+          {
+            "name": "5th St & Pole Line Rd/D.M.V (EB)",
+            "mi": 0.3
+          },
+          {
+            "name": "5th St & Pole Line Rd/D.M.V (WB)",
+            "mi": 0.32
+          },
+          {
+            "name": "5th St & Cantrill/Greystone (WB)",
+            "mi": 0.45
+          },
+          {
+            "name": "5th St & Davis Public Works Corp Yard (WB)",
+            "mi": 0.46
+          },
+          {
+            "name": "5th St & Cantrill/Police Station (EB)",
+            "mi": 0.51
+          },
+          {
+            "name": "L St & 4th St (NB)",
+            "mi": 0.57
+          },
+          {
+            "name": "3rd St & K St (EB)",
+            "mi": 0.58
+          },
+          {
+            "name": "3rd St & K St (WB)",
+            "mi": 0.6
+          },
+          {
+            "name": "L St & 425 (SB)",
+            "mi": 0.6
+          },
+          {
+            "name": "5th St & San Rafael St (WB)",
+            "mi": 0.64
+          },
+          {
+            "name": "Davis",
+            "mi": 0.67
+          },
+          {
+            "name": "5th St & Pena Drive (EB)",
+            "mi": 0.68
+          }
+        ],
+        "listing_rent_trend": [
+          {
+            "year": 2015,
+            "rent_est": 846.0
+          },
+          {
+            "year": 2016,
+            "rent_est": 880.0
+          },
+          {
+            "year": 2017,
+            "rent_est": 924.0
+          },
+          {
+            "year": 2018,
+            "rent_est": 971.0
+          },
+          {
+            "year": 2019,
+            "rent_est": 1016.0
+          },
+          {
+            "year": 2020,
+            "rent_est": 1051.0
+          },
+          {
+            "year": 2021,
+            "rent_est": 1132.0
+          },
+          {
+            "year": 2022,
+            "rent_est": 1270.0
+          },
+          {
+            "year": 2023,
+            "rent_est": 1348.0
+          },
+          {
+            "year": 2024,
+            "rent_est": 1425.0
+          }
+        ],
+        "offcampus_match": true,
+        "offcampus_brand_url": "https://www.offcampusreview.com/",
+        "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
+        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/axis-at-davis",
+        "offcampus_landlord_name": "Axis at Davis",
+        "offcampus_landlord_slug": "axis-at-davis",
+        "offcampus_avg_rating": 4.0,
+        "offcampus_review_count": 1,
+        "offcampus_reviews": [
+          {
+            "rating": 4,
+            "date": "Apr 20, 2026",
+            "text": "Its Aight",
+            "propertyAddress": "2555 Research Park Dr"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.765185,
           38.562841
         ]
       },
       "properties": {
         "address": "2340 Sycamore Ln, Davis, CA 95616",
-        "listing_name": "Identity Davis",
+        "listing_name": "Sycamore North",
         "rent": 2140.0,
         "beds": 2,
         "baths": 2.0,
@@ -2976,370 +3066,15 @@
             "rent_est": 2140.0
           }
         ],
-        "offcampus_match": true,
+        "offcampus_match": false,
         "offcampus_brand_url": "https://www.offcampusreview.com/",
         "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
-        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/identity-davis",
-        "offcampus_landlord_name": "Identity Davis",
-        "offcampus_landlord_slug": "identity-davis",
-        "offcampus_avg_rating": 3.0,
-        "offcampus_review_count": 21,
-        "offcampus_reviews": [
-          {
-            "rating": 1,
-            "date": "May 2, 2026",
-            "text": "its pretty alright",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 2,
-            "date": "Apr 27, 2026",
-            "text": "alright ig",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 23, 2026",
-            "text": "Very mid",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 20, 2026",
-            "text": "Very thin walls and the trash cute are never working even after contacting maintenance",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 20, 2026",
-            "text": "Predator chased me inside my apartment and Identity did nothing!!!!!",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Apr 19, 2026",
-            "text": "I like the events, and everyone at the office is super nice",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 5,
-            "date": "Apr 13, 2026",
-            "text": "Overall was an amazing, safe, and comfortable space.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 13, 2026",
-            "text": "they killed my second cat",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 13, 2026",
-            "text": "they killed my cat",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Apr 7, 2026",
-            "text": "Very pretty good living situation",
-            "propertyAddress": "515 Sycamore Ln"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 6, 2026",
-            "text": "My apartment got egged and identity did not do anything to help. Four eggs stained my carpet, and Identity just watched. I feel unsafe entering my own apartment. Do not rent here if you care about your safety.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Apr 5, 2026",
-            "text": "mid place",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 5,
-            "date": "Apr 2, 2026",
-            "text": "Really good living space i am living with 7 other guys and we renewed all our leases and most probably gonna be living here till senior year",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Mar 30, 2026",
-            "text": "Pretty good, close to campus",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Mar 28, 2026",
-            "text": "Make sure to get roommates who are properly clean. Make great use of the roommate search as early as possible.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 5,
-            "date": "Mar 28, 2026",
-            "text": "Best housing in Davis! It\u2019s close to campus, is very secure despite being next to the freeway, and repairs are quick.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Mar 28, 2026",
-            "text": "The property is clean with safe neighborhood.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Mar 27, 2026",
-            "text": "Too many homeless people",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Mar 14, 2026",
-            "text": "when we moved in, everything was messy and dirty. we had to clean everything up.",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Mar 12, 2026",
-            "text": "Too many people take hard drugs here",
-            "propertyAddress": "525 Oxford Cir"
-          },
-          {
-            "rating": 5,
-            "date": "Mar 11, 2026",
-            "text": "Great area. close to campus. next to park but facilities are amazing. check out the billiards table. Game room is lit \ud83d\udd25\ud83d\udd25\ud83d\udd25",
-            "propertyAddress": "525 Oxford Cir"
-          }
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.7619,
-          38.54765
-        ]
-      },
-      "properties": {
-        "address": "1800 Shasta Dr, Davis, CA 95616",
-        "listing_name": "THE GREEN",
-        "rent": 1980.0,
-        "beds": 2,
-        "baths": 1.0,
-        "sqft": 820.0,
-        "opportunity_score": 52.51,
-        "score_explanation": "Rent is reasonable on a per-bedroom basis; about 0.7 mi straight-line from campus core; Memorial Union 0.80 mi \u00b7 Silo 0.71 mi \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u2264~0.9 mi; 12 walkable amenities in the corridor; several transit stops within a short walk; limited peer comps nearby",
-        "property_type": "Duplex",
-        "source": "sample_davis_ca",
-        "listing_url": "https://www.rent.com/california/davis-apartments",
-        "room_type": "shared",
-        "dist_km_memorial_union": 1.282,
-        "dist_km_silo": 1.1463,
-        "dist_mi_memorial_union": 0.7966,
-        "dist_mi_silo": 0.7123,
-        "dist_mi_campus": 0.6514,
-        "dist_mi_downtown": 1.1704,
-        "convenience_800m_count": 0,
-        "convenience_nearest_km": 1.1112,
-        "convenience_nearest_mi": 0.6905,
-        "nearby_grocery": [
-          {
-            "name": "Trader Joe's",
-            "kind": "grocery",
-            "mi": 0.07
-          },
-          {
-            "name": "Sage Street Market",
-            "kind": "convenience",
-            "mi": 0.69
-          },
-          {
-            "name": "Silo Market",
-            "kind": "convenience",
-            "mi": 0.82
-          },
-          {
-            "name": "Savemart",
-            "kind": "grocery",
-            "mi": 0.86
-          },
-          {
-            "name": "ExtraMile",
-            "kind": "convenience",
-            "mi": 0.89
-          },
-          {
-            "name": "(unnamed on OSM)",
-            "kind": "convenience",
-            "mi": 0.9
-          }
-        ],
-        "nearby_food": [
-          {
-            "name": "Cuarto Dining Commons",
-            "kind": "restaurant",
-            "mi": 0.08
-          },
-          {
-            "name": "Shah's Halal Food",
-            "kind": "restaurant",
-            "mi": 0.11
-          },
-          {
-            "name": "The Melt",
-            "kind": "restaurant",
-            "mi": 0.12
-          },
-          {
-            "name": "Fluffy Donuts",
-            "kind": "cafe",
-            "mi": 0.13
-          },
-          {
-            "name": "Subway",
-            "kind": "restaurant",
-            "mi": 0.14
-          },
-          {
-            "name": "Segundo Dining Commons",
-            "kind": "restaurant",
-            "mi": 0.33
-          }
-        ],
-        "bike_escooter_index": 83.27,
-        "traffic_calm_index": 77.89,
-        "parking_summary": "Parking ~0.03 mi (tagged no fee); Parking ~0.1 mi (tagged no fee); Parking ~0.12 mi (OSM has no fee/charge tag); Parking ~0.12 mi (OSM has no fee/charge tag)",
-        "unitrans_stops": [
-          {
-            "name": "Sycamore Ln & Russell/Trader Joe's (NB)",
-            "mi": 0.01
-          },
-          {
-            "name": "Sycamore Ln & Russell/Trader Joe's (SB)",
-            "mi": 0.02
-          },
-          {
-            "name": "Unitrans stop",
-            "mi": 0.11
-          },
-          {
-            "name": "Davis (University Mall)",
-            "mi": 0.19
-          },
-          {
-            "name": "Sycamore & 8th (SB)",
-            "mi": 0.24
-          },
-          {
-            "name": "Sycamore Ln & 8th St (NB)",
-            "mi": 0.26
-          },
-          {
-            "name": "Sycamore Ln & Cornell Drive (SB)",
-            "mi": 0.42
-          },
-          {
-            "name": "Sycamore Ln & Cornell Drive (NB)",
-            "mi": 0.43
-          },
-          {
-            "name": "Russell & Arthur St. (Westbound)",
-            "mi": 0.5
-          },
-          {
-            "name": "Sycamore Ln & Bucknell Drive (NB)",
-            "mi": 0.53
-          },
-          {
-            "name": "Sycamore Ln & Colby Drive (SB)",
-            "mi": 0.55
-          },
-          {
-            "name": "Hutchison & Extension Center Drive",
-            "mi": 0.6
-          },
-          {
-            "name": "Sycamore Ln & Villanova Drive (NB)",
-            "mi": 0.63
-          },
-          {
-            "name": "Unitrans stop",
-            "mi": 0.68
-          }
-        ],
-        "listing_rent_trend": [
-          {
-            "year": 2015,
-            "rent_est": 1175.0
-          },
-          {
-            "year": 2016,
-            "rent_est": 1223.0
-          },
-          {
-            "year": 2017,
-            "rent_est": 1284.0
-          },
-          {
-            "year": 2018,
-            "rent_est": 1350.0
-          },
-          {
-            "year": 2019,
-            "rent_est": 1412.0
-          },
-          {
-            "year": 2020,
-            "rent_est": 1460.0
-          },
-          {
-            "year": 2021,
-            "rent_est": 1573.0
-          },
-          {
-            "year": 2022,
-            "rent_est": 1765.0
-          },
-          {
-            "year": 2023,
-            "rent_est": 1873.0
-          },
-          {
-            "year": 2024,
-            "rent_est": 1980.0
-          }
-        ],
-        "offcampus_match": true,
-        "offcampus_brand_url": "https://www.offcampusreview.com/",
-        "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
-        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/the-green",
-        "offcampus_landlord_name": "THE GREEN",
-        "offcampus_landlord_slug": "the-green",
-        "offcampus_avg_rating": 3.0,
-        "offcampus_review_count": 3,
-        "offcampus_reviews": [
-          {
-            "rating": 1,
-            "date": "Apr 13, 2026",
-            "text": "Chill",
-            "propertyAddress": "2228 Tilia St"
-          },
-          {
-            "rating": 3,
-            "date": "Apr 13, 2026",
-            "text": "Not bad",
-            "propertyAddress": "301 Citron St"
-          },
-          {
-            "rating": 5,
-            "date": "Apr 13, 2026",
-            "text": "They are pretty cool landlords",
-            "propertyAddress": "184 Horizon St"
-          }
-        ]
+        "offcampus_landlord_url": "nan",
+        "offcampus_landlord_name": "nan",
+        "offcampus_landlord_slug": "nan",
+        "offcampus_avg_rating": null,
+        "offcampus_review_count": 0,
+        "offcampus_reviews": []
       }
     },
     {
@@ -3358,8 +3093,8 @@
         "beds": 1,
         "baths": 1.0,
         "sqft": 560.0,
-        "opportunity_score": 51.24,
-        "score_explanation": "Rent efficiency looks strong for the layout; about 2.6 mi straight-line from campus core; Memorial Union 1.91 mi \u00b7 Silo 2.07 mi \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u2264~0.9 mi; 12 walkable amenities in the corridor; several transit stops within a short walk; limited peer comps nearby",
+        "opportunity_score": 51.54,
+        "score_explanation": "Rent efficiency looks strong for the layout; about 2.6 mi straight-line from campus core; Memorial Union 1.91 mi \u00b7 Silo 2.07 mi \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u2264~0.9 mi; 12 walkable amenities in the corridor; several transit stops within a short walk; versus median $1425 for 1br nearby",
         "property_type": "Apartment",
         "source": "sample_davis_ca",
         "listing_url": "https://www.rent.com/california/davis-apartments",
@@ -3760,447 +3495,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.731,
-          38.5695
-        ]
-      },
-      "properties": {
-        "address": "250 Cowell Blvd, Davis, CA 95618",
-        "listing_name": "Greens at West village",
-        "rent": 1495.0,
-        "beds": 1,
-        "baths": 1.0,
-        "sqft": 580.0,
-        "opportunity_score": 45.87,
-        "score_explanation": "Rent efficiency looks strong for the layout; about 2.7 mi straight-line from campus core; Memorial Union 2.18 mi \u00b7 Silo 2.30 mi \u00b7 0 convenience stores \u2264800 m \u00b7 8 Unitrans stops \u2264~0.9 mi; 10 walkable amenities in the corridor; some nearby transit access; versus median $1595 for 1br nearby",
-        "property_type": "Apartment",
-        "source": "sample_davis_ca",
-        "listing_url": "https://www.rent.com/california/davis-apartments",
-        "room_type": "private",
-        "dist_km_memorial_union": 3.5114,
-        "dist_km_silo": 3.7028,
-        "dist_mi_memorial_union": 2.1819,
-        "dist_mi_silo": 2.3008,
-        "dist_mi_campus": 2.7247,
-        "dist_mi_downtown": 1.7755,
-        "convenience_800m_count": 0,
-        "convenience_nearest_km": 2.5612,
-        "convenience_nearest_mi": 1.5914,
-        "nearby_grocery": [
-          {
-            "name": "Nugget Markets",
-            "kind": "grocery",
-            "mi": 0.6
-          },
-          {
-            "name": "Grocery Outlet",
-            "kind": "grocery",
-            "mi": 1.16
-          },
-          {
-            "name": "Davis Food Cooperative",
-            "kind": "grocery",
-            "mi": 1.46
-          }
-        ],
-        "nearby_food": [
-          {
-            "name": "Carl's Jr.",
-            "kind": "restaurant",
-            "mi": 0.51
-          },
-          {
-            "name": "Snack Shack",
-            "kind": "restaurant",
-            "mi": 0.93
-          },
-          {
-            "name": "Symposium Restaurant & Pizza House",
-            "kind": "restaurant",
-            "mi": 1.16
-          },
-          {
-            "name": "Konditorei",
-            "kind": "cafe",
-            "mi": 1.4
-          },
-          {
-            "name": "Domino's",
-            "kind": "restaurant",
-            "mi": 1.4
-          },
-          {
-            "name": "Hunan Style",
-            "kind": "restaurant",
-            "mi": 1.44
-          }
-        ],
-        "bike_escooter_index": 65.08,
-        "traffic_calm_index": 87.73,
-        "parking_summary": "Parking ~0.09 mi (OSM has no fee/charge tag); Parking ~0.18 mi (OSM has no fee/charge tag); Parking ~0.28 mi (OSM has no fee/charge tag); Parking ~0.35 mi (OSM has no fee/charge tag)",
-        "unitrans_stops": [
-          {
-            "name": "Unitrans stop",
-            "mi": 0.21
-          },
-          {
-            "name": "Unitrans stop",
-            "mi": 0.25
-          },
-          {
-            "name": "Unitrans stop",
-            "mi": 0.35
-          },
-          {
-            "name": "Unitrans stop",
-            "mi": 0.51
-          },
-          {
-            "name": "Unitrans stop",
-            "mi": 0.73
-          },
-          {
-            "name": "J St & Cranbrook Ct (SB)",
-            "mi": 0.79
-          },
-          {
-            "name": "J St & Menlo Dr (NB)",
-            "mi": 0.85
-          },
-          {
-            "name": "Unitrans stop",
-            "mi": 0.91
-          }
-        ],
-        "listing_rent_trend": [
-          {
-            "year": 2015,
-            "rent_est": 887.0
-          },
-          {
-            "year": 2016,
-            "rent_est": 923.0
-          },
-          {
-            "year": 2017,
-            "rent_est": 969.0
-          },
-          {
-            "year": 2018,
-            "rent_est": 1019.0
-          },
-          {
-            "year": 2019,
-            "rent_est": 1066.0
-          },
-          {
-            "year": 2020,
-            "rent_est": 1102.0
-          },
-          {
-            "year": 2021,
-            "rent_est": 1187.0
-          },
-          {
-            "year": 2022,
-            "rent_est": 1332.0
-          },
-          {
-            "year": 2023,
-            "rent_est": 1414.0
-          },
-          {
-            "year": 2024,
-            "rent_est": 1495.0
-          }
-        ],
-        "offcampus_match": true,
-        "offcampus_brand_url": "https://www.offcampusreview.com/",
-        "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
-        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/greens-at-west-village",
-        "offcampus_landlord_name": "Greens at West village",
-        "offcampus_landlord_slug": "greens-at-west-village",
-        "offcampus_avg_rating": 3.8,
-        "offcampus_review_count": 9,
-        "offcampus_reviews": [
-          {
-            "rating": 3,
-            "date": "May 1, 2026",
-            "text": "Too far off campus, but busses are good and sometimes on time. Don't recommend",
-            "propertyAddress": "1512 Beach Rd"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 23, 2026",
-            "text": "Alright",
-            "propertyAddress": "511 S Main St"
-          },
-          {
-            "rating": 5,
-            "date": "Apr 13, 2026",
-            "text": "Overall it was a safe and comfortable space.",
-            "propertyAddress": "2228 Tilia St"
-          },
-          {
-            "rating": 3,
-            "date": "Apr 13, 2026",
-            "text": "free 2 years but only finna stay for 1 cuz it's nothing too too special",
-            "propertyAddress": "298 Celadon St"
-          },
-          {
-            "rating": 5,
-            "date": "Apr 13, 2026",
-            "text": "It was good would live again",
-            "propertyAddress": "298 Horizon St"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 9, 2026",
-            "text": "Good place to live for campus.",
-            "propertyAddress": "2228 Tilia St"
-          },
-          {
-            "rating": 5,
-            "date": "Apr 9, 2026",
-            "text": "This was a great place to live and made friends really quickly. Very friendly and safe enviornment bus transportation was great",
-            "propertyAddress": "298 Citron St"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 7, 2026",
-            "text": "Pretty ok place that\u2019s not too far from campus.",
-            "propertyAddress": "301 Citron St"
-          },
-          {
-            "rating": 4,
-            "date": "Mar 10, 2026",
-            "text": "Not bad.",
-            "propertyAddress": "301 Citron St"
-          }
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.7321,
-          38.5634
-        ]
-      },
-      "properties": {
-        "address": "500 Pole Line Rd, Davis, CA 95618",
-        "listing_name": "Axis at Davis",
-        "rent": 1425.0,
-        "beds": 1,
-        "baths": 1.0,
-        "sqft": 590.0,
-        "opportunity_score": 45.66,
-        "score_explanation": "Rent is reasonable on a per-bedroom basis; about 2.4 mi straight-line from campus core; Memorial Union 1.79 mi \u00b7 Silo 1.91 mi \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u2264~0.9 mi; 12 walkable amenities in the corridor; some nearby transit access; versus median $1495 for 1br nearby",
-        "property_type": "Apartment",
-        "source": "sample_davis_ca",
-        "listing_url": "https://www.zillow.com/davis-ca/rentals/",
-        "room_type": "private",
-        "dist_km_memorial_union": 2.8735,
-        "dist_km_silo": 3.0778,
-        "dist_mi_memorial_union": 1.7855,
-        "dist_mi_silo": 1.9125,
-        "dist_mi_campus": 2.3635,
-        "dist_mi_downtown": 1.3565,
-        "convenience_800m_count": 0,
-        "convenience_nearest_km": 2.2791,
-        "convenience_nearest_mi": 1.4161,
-        "nearby_grocery": [
-          {
-            "name": "Nugget Markets",
-            "kind": "grocery",
-            "mi": 0.18
-          },
-          {
-            "name": "Grocery Outlet",
-            "kind": "grocery",
-            "mi": 0.75
-          },
-          {
-            "name": "Davis Food Cooperative",
-            "kind": "grocery",
-            "mi": 1.04
-          },
-          {
-            "name": "Savemart",
-            "kind": "grocery",
-            "mi": 1.41
-          },
-          {
-            "name": "(unnamed on OSM)",
-            "kind": "convenience",
-            "mi": 1.42
-          },
-          {
-            "name": "Myu Myu",
-            "kind": "convenience",
-            "mi": 1.45
-          }
-        ],
-        "nearby_food": [
-          {
-            "name": "Carl's Jr.",
-            "kind": "restaurant",
-            "mi": 0.1
-          },
-          {
-            "name": "Snack Shack",
-            "kind": "restaurant",
-            "mi": 0.65
-          },
-          {
-            "name": "Symposium Restaurant & Pizza House",
-            "kind": "restaurant",
-            "mi": 0.74
-          },
-          {
-            "name": "Domino's",
-            "kind": "restaurant",
-            "mi": 0.99
-          },
-          {
-            "name": "Taqueria Davis",
-            "kind": "restaurant",
-            "mi": 1.02
-          },
-          {
-            "name": "Hunan Style",
-            "kind": "restaurant",
-            "mi": 1.02
-          }
-        ],
-        "bike_escooter_index": 59.84,
-        "traffic_calm_index": 41.82,
-        "parking_summary": "Parking ~0.12 mi (OSM has no fee/charge tag); Parking ~0.15 mi (tagged no fee); Parking ~0.15 mi (OSM has no fee/charge tag); Parking ~0.19 mi (OSM has no fee/charge tag)",
-        "unitrans_stops": [
-          {
-            "name": "Unitrans stop",
-            "mi": 0.1
-          },
-          {
-            "name": "Unitrans stop",
-            "mi": 0.22
-          },
-          {
-            "name": "J St & Cranbrook Ct (SB)",
-            "mi": 0.44
-          },
-          {
-            "name": "Unitrans stop",
-            "mi": 0.46
-          },
-          {
-            "name": "Unitrans stop",
-            "mi": 0.48
-          },
-          {
-            "name": "J St & Menlo Dr (NB)",
-            "mi": 0.49
-          },
-          {
-            "name": "J St & Drexel Dr (NB)",
-            "mi": 0.61
-          },
-          {
-            "name": "J St & Drexel Dr (SB)",
-            "mi": 0.66
-          },
-          {
-            "name": "Unitrans stop",
-            "mi": 0.7
-          },
-          {
-            "name": "F St & Covell Blvd (NB)",
-            "mi": 0.73
-          },
-          {
-            "name": "F St & Covell Blvd (SB)",
-            "mi": 0.73
-          },
-          {
-            "name": "F St & 14th St (NB)",
-            "mi": 0.74
-          },
-          {
-            "name": "F St & 12th St (NB)",
-            "mi": 0.8
-          },
-          {
-            "name": "Unitrans stop",
-            "mi": 0.81
-          }
-        ],
-        "listing_rent_trend": [
-          {
-            "year": 2015,
-            "rent_est": 846.0
-          },
-          {
-            "year": 2016,
-            "rent_est": 880.0
-          },
-          {
-            "year": 2017,
-            "rent_est": 924.0
-          },
-          {
-            "year": 2018,
-            "rent_est": 971.0
-          },
-          {
-            "year": 2019,
-            "rent_est": 1016.0
-          },
-          {
-            "year": 2020,
-            "rent_est": 1051.0
-          },
-          {
-            "year": 2021,
-            "rent_est": 1132.0
-          },
-          {
-            "year": 2022,
-            "rent_est": 1270.0
-          },
-          {
-            "year": 2023,
-            "rent_est": 1348.0
-          },
-          {
-            "year": 2024,
-            "rent_est": 1425.0
-          }
-        ],
-        "offcampus_match": true,
-        "offcampus_brand_url": "https://www.offcampusreview.com/",
-        "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
-        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/axis-at-davis",
-        "offcampus_landlord_name": "Axis at Davis",
-        "offcampus_landlord_slug": "axis-at-davis",
-        "offcampus_avg_rating": 4.0,
-        "offcampus_review_count": 1,
-        "offcampus_reviews": [
-          {
-            "rating": 4,
-            "date": "Apr 20, 2026",
-            "text": "Its Aight",
-            "propertyAddress": "2555 Research Park Dr"
-          }
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -121.708902,
           38.560022
         ]
@@ -4385,7 +3679,7 @@
       },
       "properties": {
         "address": "720 Alvarado Ave, Davis, CA 95616",
-        "listing_name": "Tandem",
+        "listing_name": "720 Alvarado Ave (sample)",
         "rent": 1850.0,
         "beds": 2,
         "baths": 1.0,
@@ -4572,46 +3866,15 @@
             "rent_est": 1850.0
           }
         ],
-        "offcampus_match": true,
+        "offcampus_match": false,
         "offcampus_brand_url": "https://www.offcampusreview.com/",
         "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
-        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/tandem",
-        "offcampus_landlord_name": "Tandem",
-        "offcampus_landlord_slug": "tandem",
-        "offcampus_avg_rating": 3.6,
-        "offcampus_review_count": 5,
-        "offcampus_reviews": [
-          {
-            "rating": 3,
-            "date": "Apr 13, 2026",
-            "text": "Alright but don't care about concerns",
-            "propertyAddress": "310 Parkway Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 6, 2026",
-            "text": "chill landlord. chill roomies. chill year.",
-            "propertyAddress": "400 Parkway Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 6, 2026",
-            "text": "He is amazing",
-            "propertyAddress": "310 Pkwy"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 6, 2026",
-            "text": "kinda dirty tbh but it's what it's",
-            "propertyAddress": "320 Parkway Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Apr 6, 2026",
-            "text": "solid",
-            "propertyAddress": "310 Parkway Cir"
-          }
-        ]
+        "offcampus_landlord_url": "nan",
+        "offcampus_landlord_name": "nan",
+        "offcampus_landlord_slug": "nan",
+        "offcampus_avg_rating": null,
+        "offcampus_review_count": 0,
+        "offcampus_reviews": []
       }
     },
     {
@@ -4619,169 +3882,255 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.7238,
-          38.5712
+          -121.771163,
+          38.5408288
         ]
       },
       "properties": {
-        "address": "2000 Moore Blvd, Davis, CA 95618",
-        "listing_name": "Ryder on Olive",
-        "rent": 1595.0,
-        "beds": 1,
-        "baths": 1.0,
-        "sqft": 610.0,
-        "opportunity_score": 45.15,
-        "score_explanation": "Rent efficiency looks strong for the layout; about 3.1 mi straight-line from campus core; Memorial Union 2.48 mi \u00b7 Silo 2.61 mi \u00b7 0 convenience stores \u2264800 m \u00b7 6 Unitrans stops \u2264~0.9 mi; walkable cluster with 18 food and daily-life spots nearby; some nearby transit access; versus median $1495 for 1br nearby",
-        "property_type": "Apartment",
+        "address": "1580 Jade St, Davis, CA 95618",
+        "listing_name": "Sol at West Village",
+        "rent": 2100.0,
+        "beds": 2,
+        "baths": 2.0,
+        "sqft": 980.0,
+        "opportunity_score": 44.82,
+        "score_explanation": "Rent is on the high side versus interior space; about 0.5 mi straight-line from campus core; Memorial Union 1.17 mi \u00b7 Silo 1.02 mi \u00b7 1 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u2264~0.9 mi; lighter immediate amenity density; several transit stops within a short walk; limited peer comps nearby",
+        "property_type": "Townhome",
         "source": "sample_davis_ca",
-        "listing_url": "https://www.apartments.com/davis-ca/",
+        "listing_url": "https://www.trulia.com/for_rent/Davis_CA/",
         "room_type": "private",
-        "dist_km_memorial_union": 3.9939,
-        "dist_km_silo": 4.2028,
-        "dist_mi_memorial_union": 2.4817,
-        "dist_mi_silo": 2.6115,
-        "dist_mi_campus": 3.0639,
-        "dist_mi_downtown": 2.0291,
-        "convenience_800m_count": 0,
-        "convenience_nearest_km": 2.9649,
-        "convenience_nearest_mi": 1.8423,
+        "dist_km_memorial_union": 1.886,
+        "dist_km_silo": 1.6461,
+        "dist_mi_memorial_union": 1.1719,
+        "dist_mi_silo": 1.0228,
+        "dist_mi_campus": 0.5416,
+        "dist_mi_downtown": 1.6794,
+        "convenience_800m_count": 1,
+        "convenience_nearest_km": 0.0721,
+        "convenience_nearest_mi": 0.0448,
         "nearby_grocery": [
           {
-            "name": "Nugget Markets",
-            "kind": "grocery",
-            "mi": 0.87
+            "name": "Sage Street Market",
+            "kind": "convenience",
+            "mi": 0.04
           },
           {
-            "name": "Grocery Outlet",
+            "name": "Trader Joe's",
             "kind": "grocery",
-            "mi": 1.32
+            "mi": 0.66
+          },
+          {
+            "name": "Silo Market",
+            "kind": "convenience",
+            "mi": 1.01
+          },
+          {
+            "name": "Westlake IGA Market",
+            "kind": "grocery",
+            "mi": 1.28
+          },
+          {
+            "name": "(unnamed on OSM)",
+            "kind": "convenience",
+            "mi": 1.43
+          },
+          {
+            "name": "Savemart",
+            "kind": "grocery",
+            "mi": 1.49
           }
         ],
         "nearby_food": [
           {
-            "name": "Carl's Jr.",
-            "kind": "restaurant",
-            "mi": 0.76
-          },
-          {
-            "name": "Snack Shack",
-            "kind": "restaurant",
-            "mi": 1.31
-          },
-          {
-            "name": "Symposium Restaurant & Pizza House",
-            "kind": "restaurant",
-            "mi": 1.34
-          },
-          {
-            "name": "Konditorei",
+            "name": "Sage Street Cafe",
             "kind": "cafe",
-            "mi": 1.37
+            "mi": 0.04
+          },
+          {
+            "name": "Sage Street Restaurant",
+            "kind": "restaurant",
+            "mi": 0.04
+          },
+          {
+            "name": "Cuarto Dining Commons",
+            "kind": "restaurant",
+            "mi": 0.61
+          },
+          {
+            "name": "Peet's Coffee",
+            "kind": "cafe",
+            "mi": 0.65
+          },
+          {
+            "name": "Shah's Halal Food",
+            "kind": "restaurant",
+            "mi": 0.71
+          },
+          {
+            "name": "Segundo Dining Commons",
+            "kind": "restaurant",
+            "mi": 0.73
           }
         ],
-        "bike_escooter_index": 46.8,
-        "traffic_calm_index": 91.13,
-        "parking_summary": "Parking ~0.21 mi (OSM has no fee/charge tag); Parking ~0.24 mi (OSM has no fee/charge tag); Parking ~0.32 mi (OSM has no fee/charge tag); Parking ~0.32 mi (OSM has no fee/charge tag)",
+        "bike_escooter_index": 85.52,
+        "traffic_calm_index": 58.92,
+        "parking_summary": "Parking ~0.02 mi (OSM has no fee/charge tag); Parking ~0.06 mi (fee likely); Parking ~0.08 mi (fee likely); Parking ~0.09 mi (OSM has no fee/charge tag)",
         "unitrans_stops": [
           {
             "name": "Unitrans stop",
-            "mi": 0.24
+            "mi": 0.03
           },
           {
             "name": "Unitrans stop",
-            "mi": 0.43
+            "mi": 0.04
+          },
+          {
+            "name": "Jade St at Sage St - Drop Off Only (WB)",
+            "mi": 0.04
           },
           {
             "name": "Unitrans stop",
+            "mi": 0.14
+          },
+          {
+            "name": "Unitrans stop",
+            "mi": 0.16
+          },
+          {
+            "name": "Unitrans stop",
+            "mi": 0.17
+          },
+          {
+            "name": "Tilia Loop",
+            "mi": 0.28
+          },
+          {
+            "name": "Russell & Arthur St. (Westbound)",
+            "mi": 0.4
+          },
+          {
+            "name": "Unitrans stop",
+            "mi": 0.41
+          },
+          {
+            "name": "Unitrans stop",
+            "mi": 0.45
+          },
+          {
+            "name": "Hutchison & Extension Center Drive",
             "mi": 0.5
           },
           {
-            "name": "Unitrans stop",
-            "mi": 0.53
+            "name": "Health Science Dr & Lot 56",
+            "mi": 0.54
           },
           {
             "name": "Unitrans stop",
-            "mi": 0.6
+            "mi": 0.57
           },
           {
-            "name": "Unitrans stop",
-            "mi": 0.73
+            "name": "Sycamore Ln & Russell/Trader Joe's (SB)",
+            "mi": 0.67
           }
         ],
         "listing_rent_trend": [
           {
             "year": 2015,
-            "rent_est": 947.0
+            "rent_est": 1246.0
           },
           {
             "year": 2016,
-            "rent_est": 985.0
+            "rent_est": 1297.0
           },
           {
             "year": 2017,
-            "rent_est": 1034.0
+            "rent_est": 1362.0
           },
           {
             "year": 2018,
-            "rent_est": 1087.0
+            "rent_est": 1432.0
           },
           {
             "year": 2019,
-            "rent_est": 1137.0
+            "rent_est": 1497.0
           },
           {
             "year": 2020,
-            "rent_est": 1176.0
+            "rent_est": 1548.0
           },
           {
             "year": 2021,
-            "rent_est": 1267.0
+            "rent_est": 1668.0
           },
           {
             "year": 2022,
-            "rent_est": 1421.0
+            "rent_est": 1872.0
           },
           {
             "year": 2023,
-            "rent_est": 1509.0
+            "rent_est": 1987.0
           },
           {
             "year": 2024,
-            "rent_est": 1595.0
+            "rent_est": 2100.0
           }
         ],
         "offcampus_match": true,
         "offcampus_brand_url": "https://www.offcampusreview.com/",
         "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
-        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/ryder-on-olive",
-        "offcampus_landlord_name": "Ryder on Olive",
-        "offcampus_landlord_slug": "ryder-on-olive",
-        "offcampus_avg_rating": 3.3,
-        "offcampus_review_count": 4,
+        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/sol-at-west-village",
+        "offcampus_landlord_name": "Sol at West village",
+        "offcampus_landlord_slug": "sol-at-west-village",
+        "offcampus_avg_rating": 4.1,
+        "offcampus_review_count": 8,
         "offcampus_reviews": [
           {
-            "rating": 3,
-            "date": "Apr 20, 2026",
-            "text": "Lot of people who steal",
-            "propertyAddress": "1133 Olive Ryder"
-          },
-          {
             "rating": 2,
+            "date": "Apr 20, 2026",
+            "text": "Lot of people smoking and stuff",
+            "propertyAddress": "Jade"
+          },
+          {
+            "rating": 5,
             "date": "Apr 13, 2026",
-            "text": "Homeless guy came into pool once",
-            "propertyAddress": "1133 Olive Dr"
+            "text": "its soliod",
+            "propertyAddress": "1580 Jade St"
           },
           {
             "rating": 4,
+            "date": "Apr 9, 2026",
+            "text": "Very nice place to live.",
+            "propertyAddress": "1580 Jade St"
+          },
+          {
+            "rating": 4,
+            "date": "Apr 7, 2026",
+            "text": "Its a good place to live",
+            "propertyAddress": "1580 Jade St"
+          },
+          {
+            "rating": 5,
             "date": "Apr 6, 2026",
-            "text": "Place is good not the safest but it's ok over tall overpriced though",
-            "propertyAddress": "Olive Dr"
+            "text": "Solid.",
+            "propertyAddress": "1580 Jade St"
+          },
+          {
+            "rating": 5,
+            "date": "Apr 6, 2026",
+            "text": "Its supa keewl",
+            "propertyAddress": "1580 Jade St"
           },
           {
             "rating": 4,
-            "date": "Mar 14, 2026",
-            "text": "Great but expensive place of living! Gym and outdoor space is very nice.",
-            "propertyAddress": "1133 Olive Dr"
+            "date": "Apr 5, 2026",
+            "text": "good place to live at the only issue is that it\u2019s a little old so the apartment amenities are old",
+            "propertyAddress": "1545 Jade St"
+          },
+          {
+            "rating": 4,
+            "date": "Mar 10, 2026",
+            "text": "Alright to live here, not that far off school and decent facilities, but maintenance requests, internet issues, and bill transactions are a pain",
+            "propertyAddress": "1580 Jade St"
           }
         ]
       }
@@ -5000,13 +4349,229 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.7640555,
+          38.5462685
+        ]
+      },
+      "properties": {
+        "address": "152 Orchard Park Dr, Davis, CA 95616",
+        "listing_name": "Colleges at La Rue",
+        "rent": 2200.0,
+        "beds": 3,
+        "baths": 2.0,
+        "sqft": 1040.0,
+        "opportunity_score": 43.37,
+        "score_explanation": "Rent is on the high side versus interior space; about 0.6 mi straight-line from campus core; Memorial Union 0.86 mi \u00b7 Silo 0.75 mi \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u2264~0.9 mi; 12 walkable amenities in the corridor; several transit stops within a short walk; limited peer comps nearby",
+        "property_type": "Townhome",
+        "source": "sample_davis_ca",
+        "listing_url": "https://www.trulia.com/for_rent/Davis_CA/",
+        "room_type": "private",
+        "dist_km_memorial_union": 1.3763,
+        "dist_km_silo": 1.2034,
+        "dist_mi_memorial_union": 0.8552,
+        "dist_mi_silo": 0.7478,
+        "dist_mi_campus": 0.5701,
+        "dist_mi_downtown": 1.2749,
+        "convenience_800m_count": 0,
+        "convenience_nearest_km": 0.8689,
+        "convenience_nearest_mi": 0.5399,
+        "nearby_grocery": [
+          {
+            "name": "Trader Joe's",
+            "kind": "grocery",
+            "mi": 0.14
+          },
+          {
+            "name": "Sage Street Market",
+            "kind": "convenience",
+            "mi": 0.54
+          },
+          {
+            "name": "Silo Market",
+            "kind": "convenience",
+            "mi": 0.83
+          },
+          {
+            "name": "Savemart",
+            "kind": "grocery",
+            "mi": 0.98
+          },
+          {
+            "name": "ExtraMile",
+            "kind": "convenience",
+            "mi": 1.01
+          },
+          {
+            "name": "(unnamed on OSM)",
+            "kind": "convenience",
+            "mi": 1.02
+          }
+        ],
+        "nearby_food": [
+          {
+            "name": "Cuarto Dining Commons",
+            "kind": "restaurant",
+            "mi": 0.08
+          },
+          {
+            "name": "Shah's Halal Food",
+            "kind": "restaurant",
+            "mi": 0.2
+          },
+          {
+            "name": "The Melt",
+            "kind": "restaurant",
+            "mi": 0.23
+          },
+          {
+            "name": "Fluffy Donuts",
+            "kind": "cafe",
+            "mi": 0.26
+          },
+          {
+            "name": "Subway",
+            "kind": "restaurant",
+            "mi": 0.27
+          },
+          {
+            "name": "Peet's Coffee",
+            "kind": "cafe",
+            "mi": 0.36
+          }
+        ],
+        "bike_escooter_index": 95.82,
+        "traffic_calm_index": 65.56,
+        "parking_summary": "Parking ~0.02 mi (OSM has no fee/charge tag); Parking ~0.04 mi (OSM has no fee/charge tag); Parking ~0.07 mi (OSM has no fee/charge tag); Parking ~0.07 mi (OSM has no fee/charge tag)",
+        "unitrans_stops": [
+          {
+            "name": "Unitrans stop",
+            "mi": 0.04
+          },
+          {
+            "name": "Sycamore Ln & Russell/Trader Joe's (SB)",
+            "mi": 0.13
+          },
+          {
+            "name": "Sycamore Ln & Russell/Trader Joe's (NB)",
+            "mi": 0.16
+          },
+          {
+            "name": "Davis (University Mall)",
+            "mi": 0.3
+          },
+          {
+            "name": "Sycamore & 8th (SB)",
+            "mi": 0.3
+          },
+          {
+            "name": "Sycamore Ln & 8th St (NB)",
+            "mi": 0.32
+          },
+          {
+            "name": "Russell & Arthur St. (Westbound)",
+            "mi": 0.38
+          },
+          {
+            "name": "Sycamore Ln & Cornell Drive (SB)",
+            "mi": 0.48
+          },
+          {
+            "name": "Sycamore Ln & Cornell Drive (NB)",
+            "mi": 0.5
+          },
+          {
+            "name": "Hutchison & Extension Center Drive",
+            "mi": 0.52
+          },
+          {
+            "name": "Unitrans stop",
+            "mi": 0.53
+          },
+          {
+            "name": "Jade St at Sage St - Drop Off Only (WB)",
+            "mi": 0.55
+          },
+          {
+            "name": "Unitrans stop",
+            "mi": 0.56
+          },
+          {
+            "name": "Unitrans stop",
+            "mi": 0.58
+          }
+        ],
+        "listing_rent_trend": [
+          {
+            "year": 2015,
+            "rent_est": 1306.0
+          },
+          {
+            "year": 2016,
+            "rent_est": 1359.0
+          },
+          {
+            "year": 2017,
+            "rent_est": 1426.0
+          },
+          {
+            "year": 2018,
+            "rent_est": 1500.0
+          },
+          {
+            "year": 2019,
+            "rent_est": 1569.0
+          },
+          {
+            "year": 2020,
+            "rent_est": 1622.0
+          },
+          {
+            "year": 2021,
+            "rent_est": 1747.0
+          },
+          {
+            "year": 2022,
+            "rent_est": 1961.0
+          },
+          {
+            "year": 2023,
+            "rent_est": 2082.0
+          },
+          {
+            "year": 2024,
+            "rent_est": 2200.0
+          }
+        ],
+        "offcampus_match": true,
+        "offcampus_brand_url": "https://www.offcampusreview.com/",
+        "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
+        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/colleges-at-la-rue",
+        "offcampus_landlord_name": "Colleges at La Rue",
+        "offcampus_landlord_slug": "colleges-at-la-rue",
+        "offcampus_avg_rating": 3.0,
+        "offcampus_review_count": 1,
+        "offcampus_reviews": [
+          {
+            "rating": 3,
+            "date": "Apr 8, 2026",
+            "text": "Very good clean and responsive",
+            "propertyAddress": "152 Orchard Park Dr"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.72105,
           38.55971
         ]
       },
       "properties": {
         "address": "1321 Alhambra Dr, Davis, CA 95616",
-        "listing_name": "Tandem",
+        "listing_name": "1321 Alhambra Dr (sample)",
         "rent": 2750.0,
         "beds": 4,
         "baths": 2.5,
@@ -5188,46 +4753,15 @@
             "rent_est": 2750.0
           }
         ],
-        "offcampus_match": true,
+        "offcampus_match": false,
         "offcampus_brand_url": "https://www.offcampusreview.com/",
         "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
-        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/tandem",
-        "offcampus_landlord_name": "Tandem",
-        "offcampus_landlord_slug": "tandem",
-        "offcampus_avg_rating": 3.6,
-        "offcampus_review_count": 5,
-        "offcampus_reviews": [
-          {
-            "rating": 3,
-            "date": "Apr 13, 2026",
-            "text": "Alright but don't care about concerns",
-            "propertyAddress": "310 Parkway Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 6, 2026",
-            "text": "chill landlord. chill roomies. chill year.",
-            "propertyAddress": "400 Parkway Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 6, 2026",
-            "text": "He is amazing",
-            "propertyAddress": "310 Pkwy"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 6, 2026",
-            "text": "kinda dirty tbh but it's what it's",
-            "propertyAddress": "320 Parkway Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Apr 6, 2026",
-            "text": "solid",
-            "propertyAddress": "310 Parkway Cir"
-          }
-        ]
+        "offcampus_landlord_url": "nan",
+        "offcampus_landlord_name": "nan",
+        "offcampus_landlord_slug": "nan",
+        "offcampus_avg_rating": null,
+        "offcampus_review_count": 0,
+        "offcampus_reviews": []
       }
     },
     {
@@ -5235,426 +4769,169 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.75123,
-          38.55089
+          -121.731,
+          38.5695
         ]
       },
       "properties": {
-        "address": "425 Russell Blvd, Davis, CA 95616",
-        "listing_name": "Octave Apartments",
-        "rent": 2400.0,
-        "beds": 3,
-        "baths": 2.0,
-        "sqft": 1150.0,
-        "opportunity_score": 37.74,
-        "score_explanation": "Rent is on the high side versus interior space; about 1.0 mi straight-line from campus core; Memorial Union 0.66 mi \u00b7 Silo 0.71 mi \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u2264~0.9 mi; 8 walkable amenities in the corridor; some nearby transit access; versus median $2450 for 3br nearby",
-        "property_type": "Single Family",
-        "source": "sample_davis_ca",
-        "listing_url": "https://www.apartments.com/davis-ca/",
-        "room_type": "private",
-        "dist_km_memorial_union": 1.0631,
-        "dist_km_silo": 1.1434,
-        "dist_mi_memorial_union": 0.6606,
-        "dist_mi_silo": 0.7104,
-        "dist_mi_campus": 1.0425,
-        "dist_mi_downtown": 0.7109,
-        "convenience_800m_count": 0,
-        "convenience_nearest_km": 1.2023,
-        "convenience_nearest_mi": 0.7471,
-        "nearby_grocery": [
-          {
-            "name": "Trader Joe's",
-            "kind": "grocery",
-            "mi": 0.62
-          },
-          {
-            "name": "Davis Food Cooperative",
-            "kind": "grocery",
-            "mi": 0.62
-          },
-          {
-            "name": "Savemart",
-            "kind": "grocery",
-            "mi": 0.7
-          },
-          {
-            "name": "Myu Myu",
-            "kind": "convenience",
-            "mi": 0.75
-          },
-          {
-            "name": "(unnamed on OSM)",
-            "kind": "convenience",
-            "mi": 0.75
-          },
-          {
-            "name": "ExtraMile",
-            "kind": "convenience",
-            "mi": 0.78
-          }
-        ],
-        "nearby_food": [
-          {
-            "name": "Subway",
-            "kind": "restaurant",
-            "mi": 0.49
-          },
-          {
-            "name": "Fluffy Donuts",
-            "kind": "cafe",
-            "mi": 0.5
-          },
-          {
-            "name": "The Melt",
-            "kind": "restaurant",
-            "mi": 0.54
-          },
-          {
-            "name": "3rd and U Cafe",
-            "kind": "restaurant",
-            "mi": 0.55
-          },
-          {
-            "name": "Oshio Cafe",
-            "kind": "restaurant",
-            "mi": 0.55
-          },
-          {
-            "name": "Raja's Tandoor",
-            "kind": "restaurant",
-            "mi": 0.55
-          }
-        ],
-        "bike_escooter_index": 58.62,
-        "traffic_calm_index": 94.25,
-        "parking_summary": "Parking ~0.25 mi (OSM has no fee/charge tag); Parking ~0.27 mi (OSM has no fee/charge tag); Parking ~0.27 mi (OSM has no fee/charge tag); International House / Chancellor parking ~0.28 mi (OSM has no fee/charge tag)",
-        "unitrans_stops": [
-          {
-            "name": "Unitrans stop",
-            "mi": 0.35
-          },
-          {
-            "name": "Russell Blvd & A Street/City Hall (WB)",
-            "mi": 0.39
-          },
-          {
-            "name": "Russell & A St (EB)",
-            "mi": 0.4
-          },
-          {
-            "name": "Davis (University Mall)",
-            "mi": 0.49
-          },
-          {
-            "name": "Memorial Union Terminal",
-            "mi": 0.49
-          },
-          {
-            "name": "Memorial Union Terminal",
-            "mi": 0.49
-          },
-          {
-            "name": "F St & 8th St (SB)",
-            "mi": 0.49
-          },
-          {
-            "name": "Memorial Union Terminal",
-            "mi": 0.5
-          },
-          {
-            "name": "5th Street & D Street / Downtown (WB)",
-            "mi": 0.5
-          },
-          {
-            "name": "F St & 8th St (NB)",
-            "mi": 0.5
-          },
-          {
-            "name": "Memorial Union Terminal",
-            "mi": 0.52
-          },
-          {
-            "name": "Memorial Union Terminal",
-            "mi": 0.52
-          },
-          {
-            "name": "Memorial Union Terminal",
-            "mi": 0.52
-          },
-          {
-            "name": "B St & 4th St / Central Park (SB)",
-            "mi": 0.52
-          }
-        ],
-        "listing_rent_trend": [
-          {
-            "year": 2015,
-            "rent_est": 1424.0
-          },
-          {
-            "year": 2016,
-            "rent_est": 1482.0
-          },
-          {
-            "year": 2017,
-            "rent_est": 1556.0
-          },
-          {
-            "year": 2018,
-            "rent_est": 1636.0
-          },
-          {
-            "year": 2019,
-            "rent_est": 1711.0
-          },
-          {
-            "year": 2020,
-            "rent_est": 1769.0
-          },
-          {
-            "year": 2021,
-            "rent_est": 1906.0
-          },
-          {
-            "year": 2022,
-            "rent_est": 2139.0
-          },
-          {
-            "year": 2023,
-            "rent_est": 2271.0
-          },
-          {
-            "year": 2024,
-            "rent_est": 2400.0
-          }
-        ],
-        "offcampus_match": true,
-        "offcampus_brand_url": "https://www.offcampusreview.com/",
-        "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
-        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/octave-apartments",
-        "offcampus_landlord_name": "Octave Apartments",
-        "offcampus_landlord_slug": "octave-apartments",
-        "offcampus_avg_rating": 2.0,
-        "offcampus_review_count": 1,
-        "offcampus_reviews": [
-          {
-            "rating": 2,
-            "date": "Apr 6, 2026",
-            "text": "Mold and everything breaks",
-            "propertyAddress": "1659 Drew Cir"
-          }
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.7086,
-          38.5658
-        ]
-      },
-      "properties": {
-        "address": "812 Sycamore Ln, Davis, CA 95616",
-        "listing_name": "Sol at West village",
-        "rent": 1725.0,
-        "beds": 2,
+        "address": "250 Cowell Blvd, Davis, CA 95618",
+        "listing_name": "250 Cowell Blvd (sample)",
+        "rent": 1495.0,
+        "beds": 1,
         "baths": 1.0,
-        "sqft": 745.0,
-        "opportunity_score": 37.53,
-        "score_explanation": "Rent is on the high side versus interior space; about 3.4 mi straight-line from campus core; Memorial Union 2.78 mi \u00b7 Silo 2.93 mi \u00b7 0 convenience stores \u2264800 m \u00b7 6 Unitrans stops \u2264~0.9 mi; 16 walkable amenities in the corridor; limited nearby transit in OSM for this block; versus median $2100 for 2br nearby",
-        "property_type": "Duplex",
+        "sqft": 580.0,
+        "opportunity_score": 42.37,
+        "score_explanation": "Rent efficiency looks strong for the layout; about 2.7 mi straight-line from campus core; Memorial Union 2.18 mi \u00b7 Silo 2.30 mi \u00b7 0 convenience stores \u2264800 m \u00b7 8 Unitrans stops \u2264~0.9 mi; 10 walkable amenities in the corridor; some nearby transit access; limited peer comps nearby",
+        "property_type": "Apartment",
         "source": "sample_davis_ca",
         "listing_url": "https://www.rent.com/california/davis-apartments",
-        "room_type": "unknown",
-        "dist_km_memorial_union": 4.4709,
-        "dist_km_silo": 4.7147,
-        "dist_mi_memorial_union": 2.7781,
-        "dist_mi_silo": 2.9295,
-        "dist_mi_campus": 3.4448,
-        "dist_mi_downtown": 2.2494,
+        "room_type": "private",
+        "dist_km_memorial_union": 3.5114,
+        "dist_km_silo": 3.7028,
+        "dist_mi_memorial_union": 2.1819,
+        "dist_mi_silo": 2.3008,
+        "dist_mi_campus": 2.7247,
+        "dist_mi_downtown": 1.7755,
         "convenience_800m_count": 0,
-        "convenience_nearest_km": 1.5391,
-        "convenience_nearest_mi": 0.9564,
+        "convenience_nearest_km": 2.5612,
+        "convenience_nearest_mi": 1.5914,
         "nearby_grocery": [
-          {
-            "name": "Extra Mile",
-            "kind": "convenience",
-            "mi": 0.96
-          },
           {
             "name": "Nugget Markets",
             "kind": "grocery",
-            "mi": 1.28
+            "mi": 0.6
           },
           {
             "name": "Grocery Outlet",
+            "kind": "grocery",
+            "mi": 1.16
+          },
+          {
+            "name": "Davis Food Cooperative",
             "kind": "grocery",
             "mi": 1.46
           }
         ],
         "nearby_food": [
           {
+            "name": "Carl's Jr.",
+            "kind": "restaurant",
+            "mi": 0.51
+          },
+          {
+            "name": "Snack Shack",
+            "kind": "restaurant",
+            "mi": 0.93
+          },
+          {
+            "name": "Symposium Restaurant & Pizza House",
+            "kind": "restaurant",
+            "mi": 1.16
+          },
+          {
             "name": "Konditorei",
             "kind": "cafe",
-            "mi": 1.1
+            "mi": 1.4
           },
           {
             "name": "Domino's",
             "kind": "restaurant",
-            "mi": 1.13
+            "mi": 1.4
           },
           {
-            "name": "McDonald's",
+            "name": "Hunan Style",
             "kind": "restaurant",
-            "mi": 1.22
-          },
-          {
-            "name": "Carl's Jr.",
-            "kind": "restaurant",
-            "mi": 1.27
-          },
-          {
-            "name": "Taqueria Guadalajara",
-            "kind": "restaurant",
-            "mi": 1.3
-          },
-          {
-            "name": "Taco Bell",
-            "kind": "restaurant",
-            "mi": 1.3
+            "mi": 1.44
           }
         ],
-        "bike_escooter_index": 49.62,
-        "traffic_calm_index": 51.23,
-        "parking_summary": "Parking ~0.34 mi (OSM has no fee/charge tag); Parking ~0.38 mi (OSM has no fee/charge tag); Parking ~0.44 mi (OSM has no fee/charge tag); Parking ~0.45 mi (OSM has no fee/charge tag)",
+        "bike_escooter_index": 65.08,
+        "traffic_calm_index": 87.73,
+        "parking_summary": "Parking ~0.09 mi (OSM has no fee/charge tag); Parking ~0.18 mi (OSM has no fee/charge tag); Parking ~0.28 mi (OSM has no fee/charge tag); Parking ~0.35 mi (OSM has no fee/charge tag)",
         "unitrans_stops": [
           {
             "name": "Unitrans stop",
-            "mi": 0.54
+            "mi": 0.21
           },
           {
             "name": "Unitrans stop",
-            "mi": 0.58
+            "mi": 0.25
           },
           {
             "name": "Unitrans stop",
-            "mi": 0.71
+            "mi": 0.35
           },
           {
             "name": "Unitrans stop",
-            "mi": 0.81
+            "mi": 0.51
           },
           {
-            "name": "5th St & Spafford (WB)",
-            "mi": 0.88
+            "name": "Unitrans stop",
+            "mi": 0.73
           },
           {
-            "name": "5th St & Spafford (WB)",
-            "mi": 0.9
+            "name": "J St & Cranbrook Ct (SB)",
+            "mi": 0.79
+          },
+          {
+            "name": "J St & Menlo Dr (NB)",
+            "mi": 0.85
+          },
+          {
+            "name": "Unitrans stop",
+            "mi": 0.91
           }
         ],
         "listing_rent_trend": [
           {
             "year": 2015,
-            "rent_est": 1024.0
+            "rent_est": 887.0
           },
           {
             "year": 2016,
-            "rent_est": 1065.0
+            "rent_est": 923.0
           },
           {
             "year": 2017,
-            "rent_est": 1118.0
+            "rent_est": 969.0
           },
           {
             "year": 2018,
-            "rent_est": 1176.0
+            "rent_est": 1019.0
           },
           {
             "year": 2019,
-            "rent_est": 1230.0
+            "rent_est": 1066.0
           },
           {
             "year": 2020,
-            "rent_est": 1272.0
+            "rent_est": 1102.0
           },
           {
             "year": 2021,
-            "rent_est": 1370.0
+            "rent_est": 1187.0
           },
           {
             "year": 2022,
-            "rent_est": 1537.0
+            "rent_est": 1332.0
           },
           {
             "year": 2023,
-            "rent_est": 1632.0
+            "rent_est": 1414.0
           },
           {
             "year": 2024,
-            "rent_est": 1725.0
+            "rent_est": 1495.0
           }
         ],
-        "offcampus_match": true,
+        "offcampus_match": false,
         "offcampus_brand_url": "https://www.offcampusreview.com/",
         "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
-        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/sol-at-west-village",
-        "offcampus_landlord_name": "Sol at West village",
-        "offcampus_landlord_slug": "sol-at-west-village",
-        "offcampus_avg_rating": 4.1,
-        "offcampus_review_count": 8,
-        "offcampus_reviews": [
-          {
-            "rating": 2,
-            "date": "Apr 20, 2026",
-            "text": "Lot of people smoking and stuff",
-            "propertyAddress": "Jade"
-          },
-          {
-            "rating": 5,
-            "date": "Apr 13, 2026",
-            "text": "its soliod",
-            "propertyAddress": "1580 Jade St"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 9, 2026",
-            "text": "Very nice place to live.",
-            "propertyAddress": "1580 Jade St"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 7, 2026",
-            "text": "Its a good place to live",
-            "propertyAddress": "1580 Jade St"
-          },
-          {
-            "rating": 5,
-            "date": "Apr 6, 2026",
-            "text": "Solid.",
-            "propertyAddress": "1580 Jade St"
-          },
-          {
-            "rating": 5,
-            "date": "Apr 6, 2026",
-            "text": "Its supa keewl",
-            "propertyAddress": "1580 Jade St"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 5, 2026",
-            "text": "good place to live at the only issue is that it\u2019s a little old so the apartment amenities are old",
-            "propertyAddress": "1545 Jade St"
-          },
-          {
-            "rating": 4,
-            "date": "Mar 10, 2026",
-            "text": "Alright to live here, not that far off school and decent facilities, but maintenance requests, internet issues, and bill transactions are a pain",
-            "propertyAddress": "1580 Jade St"
-          }
-        ]
+        "offcampus_landlord_url": "nan",
+        "offcampus_landlord_name": "nan",
+        "offcampus_landlord_slug": "nan",
+        "offcampus_avg_rating": null,
+        "offcampus_review_count": 0,
+        "offcampus_reviews": []
       }
     },
     {
@@ -5668,13 +4945,13 @@
       },
       "properties": {
         "address": "815 Cranbrook Ct, Davis, CA 95616",
-        "listing_name": "Greens at West village",
+        "listing_name": "815 Cranbrook Ct (sample)",
         "rent": 2280.0,
         "beds": 3,
         "baths": 2.0,
         "sqft": 1080.0,
-        "opportunity_score": 37.0,
-        "score_explanation": "Rent is on the high side versus interior space; about 2.5 mi straight-line from campus core; Memorial Union 1.85 mi \u00b7 Silo 2.00 mi \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u2264~0.9 mi; 11 walkable amenities in the corridor; several transit stops within a short walk; versus median $2350 for 3br nearby",
+        "opportunity_score": 34.27,
+        "score_explanation": "Rent is on the high side versus interior space; about 2.5 mi straight-line from campus core; Memorial Union 1.85 mi \u00b7 Silo 2.00 mi \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u2264~0.9 mi; 11 walkable amenities in the corridor; several transit stops within a short walk; limited peer comps nearby",
         "property_type": "Townhome",
         "source": "sample_davis_ca",
         "listing_url": "https://www.trulia.com/for_rent/Davis_CA/",
@@ -5855,70 +5132,15 @@
             "rent_est": 2280.0
           }
         ],
-        "offcampus_match": true,
+        "offcampus_match": false,
         "offcampus_brand_url": "https://www.offcampusreview.com/",
         "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
-        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/greens-at-west-village",
-        "offcampus_landlord_name": "Greens at West village",
-        "offcampus_landlord_slug": "greens-at-west-village",
-        "offcampus_avg_rating": 3.8,
-        "offcampus_review_count": 9,
-        "offcampus_reviews": [
-          {
-            "rating": 3,
-            "date": "May 1, 2026",
-            "text": "Too far off campus, but busses are good and sometimes on time. Don't recommend",
-            "propertyAddress": "1512 Beach Rd"
-          },
-          {
-            "rating": 1,
-            "date": "Apr 23, 2026",
-            "text": "Alright",
-            "propertyAddress": "511 S Main St"
-          },
-          {
-            "rating": 5,
-            "date": "Apr 13, 2026",
-            "text": "Overall it was a safe and comfortable space.",
-            "propertyAddress": "2228 Tilia St"
-          },
-          {
-            "rating": 3,
-            "date": "Apr 13, 2026",
-            "text": "free 2 years but only finna stay for 1 cuz it's nothing too too special",
-            "propertyAddress": "298 Celadon St"
-          },
-          {
-            "rating": 5,
-            "date": "Apr 13, 2026",
-            "text": "It was good would live again",
-            "propertyAddress": "298 Horizon St"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 9, 2026",
-            "text": "Good place to live for campus.",
-            "propertyAddress": "2228 Tilia St"
-          },
-          {
-            "rating": 5,
-            "date": "Apr 9, 2026",
-            "text": "This was a great place to live and made friends really quickly. Very friendly and safe enviornment bus transportation was great",
-            "propertyAddress": "298 Citron St"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 7, 2026",
-            "text": "Pretty ok place that\u2019s not too far from campus.",
-            "propertyAddress": "301 Citron St"
-          },
-          {
-            "rating": 4,
-            "date": "Mar 10, 2026",
-            "text": "Not bad.",
-            "propertyAddress": "301 Citron St"
-          }
-        ]
+        "offcampus_landlord_url": "nan",
+        "offcampus_landlord_name": "nan",
+        "offcampus_landlord_slug": "nan",
+        "offcampus_avg_rating": null,
+        "offcampus_review_count": 0,
+        "offcampus_reviews": []
       }
     },
     {
@@ -5926,389 +5148,208 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.7256,
-          38.5489
+          -121.7269721,
+          38.53789
         ]
       },
       "properties": {
-        "address": "600 Drake Dr, Davis, CA 95616",
-        "listing_name": "Colleges at La Rue",
-        "rent": 2200.0,
+        "address": "1659 Drew Cir, Davis, CA 95618",
+        "listing_name": "Octave Apartments",
+        "rent": 2400.0,
         "beds": 3,
         "baths": 2.0,
-        "sqft": 1040.0,
-        "opportunity_score": 35.78,
-        "score_explanation": "Rent is on the high side versus interior space; about 2.1 mi straight-line from campus core; Memorial Union 1.39 mi \u00b7 Silo 1.55 mi \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u2264~0.9 mi; 10 walkable amenities in the corridor; several transit stops within a short walk; limited peer comps nearby",
-        "property_type": "Townhome",
+        "sqft": 1150.0,
+        "opportunity_score": 33.27,
+        "score_explanation": "Rent is on the high side versus interior space; about 1.9 mi straight-line from campus core; Memorial Union 1.24 mi \u00b7 Silo 1.38 mi \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u2264~0.9 mi; 17 walkable amenities in the corridor; some nearby transit access; limited peer comps nearby",
+        "property_type": "Single Family",
         "source": "sample_davis_ca",
-        "listing_url": "https://www.trulia.com/for_rent/Davis_CA/",
+        "listing_url": "https://www.apartments.com/davis-ca/",
         "room_type": "private",
-        "dist_km_memorial_union": 2.2378,
-        "dist_km_silo": 2.4922,
-        "dist_mi_memorial_union": 1.3905,
-        "dist_mi_silo": 1.5486,
-        "dist_mi_campus": 2.0863,
-        "dist_mi_downtown": 0.8526,
+        "dist_km_memorial_union": 1.9977,
+        "dist_km_silo": 2.2187,
+        "dist_mi_memorial_union": 1.2413,
+        "dist_mi_silo": 1.3786,
+        "dist_mi_campus": 1.8776,
+        "dist_mi_downtown": 0.8785,
         "convenience_800m_count": 0,
-        "convenience_nearest_km": 1.4685,
-        "convenience_nearest_mi": 0.9125,
+        "convenience_nearest_km": 1.3744,
+        "convenience_nearest_mi": 0.854,
         "nearby_grocery": [
-          {
-            "name": "Grocery Outlet",
-            "kind": "grocery",
-            "mi": 0.34
-          },
           {
             "name": "Safeway",
             "kind": "grocery",
-            "mi": 0.53
-          },
-          {
-            "name": "Davis Food Cooperative",
-            "kind": "grocery",
-            "mi": 0.77
+            "mi": 0.25
           },
           {
             "name": "Myu Myu",
             "kind": "convenience",
-            "mi": 0.91
+            "mi": 0.85
           },
           {
-            "name": "Nugget Markets",
+            "name": "Grocery Outlet",
             "kind": "grocery",
-            "mi": 0.93
+            "mi": 1.03
+          },
+          {
+            "name": "Davis Food Cooperative",
+            "kind": "grocery",
+            "mi": 1.07
+          },
+          {
+            "name": "Silo Market",
+            "kind": "convenience",
+            "mi": 1.39
           }
         ],
         "nearby_food": [
           {
-            "name": "Symposium Restaurant & Pizza House",
+            "name": "IHOP",
             "kind": "restaurant",
-            "mi": 0.4
-          },
-          {
-            "name": "Konditorei",
-            "kind": "cafe",
-            "mi": 0.44
-          },
-          {
-            "name": "Round Table Pizza",
-            "kind": "restaurant",
-            "mi": 0.45
-          },
-          {
-            "name": "Taqueria Davis",
-            "kind": "restaurant",
-            "mi": 0.5
+            "mi": 0.24
           },
           {
             "name": "Starbucks",
             "kind": "cafe",
-            "mi": 0.52
+            "mi": 0.26
           },
           {
-            "name": "Common Grounds Coffee",
+            "name": "Mr Pickle's Sandwich Shop",
+            "kind": "restaurant",
+            "mi": 0.27
+          },
+          {
+            "name": "Teabo Caf\u00e9",
             "kind": "cafe",
-            "mi": 0.54
+            "mi": 0.27
+          },
+          {
+            "name": "Carl's Jr.",
+            "kind": "restaurant",
+            "mi": 0.27
+          },
+          {
+            "name": "Dos Coyotes Border Cafe",
+            "kind": "restaurant",
+            "mi": 0.28
           }
         ],
-        "bike_escooter_index": 73.27,
-        "traffic_calm_index": 62.46,
-        "parking_summary": "Parking ~0.02 mi (OSM has no fee/charge tag); Parking ~0.08 mi (OSM has no fee/charge tag); Parking ~0.09 mi (OSM has no fee/charge tag); Parking ~0.11 mi (OSM has no fee/charge tag)",
+        "bike_escooter_index": 76.37,
+        "traffic_calm_index": 86.07,
+        "parking_summary": "Parking ~0.17 mi (OSM has no fee/charge tag); Parking ~0.19 mi (OSM has no fee/charge tag); Parking ~0.19 mi (tagged no fee); Parking ~0.19 mi (OSM has no fee/charge tag)",
         "unitrans_stops": [
           {
-            "name": "5th St & Post Office / Pole Line (EB)",
-            "mi": 0.07
+            "name": "Davis",
+            "mi": 0.64
           },
           {
-            "name": "5th St & Post Office / Pole Line Rd (WB)",
-            "mi": 0.07
+            "name": "Amtrak",
+            "mi": 0.67
           },
           {
-            "name": "5th St & Pole Line Rd/D.M.V (EB)",
-            "mi": 0.1
-          },
-          {
-            "name": "5th St & Pole Line Rd/D.M.V (WB)",
-            "mi": 0.12
-          },
-          {
-            "name": "5th St & Davis Public Works Corp Yard (WB)",
-            "mi": 0.29
-          },
-          {
-            "name": "5th St & Cantrill/Greystone (WB)",
-            "mi": 0.29
-          },
-          {
-            "name": "5th St & Cantrill/Police Station (EB)",
-            "mi": 0.41
-          },
-          {
-            "name": "L St & 4th St (NB)",
-            "mi": 0.47
-          },
-          {
-            "name": "L St & 425 (SB)",
-            "mi": 0.48
+            "name": "Amtrak",
+            "mi": 0.67
           },
           {
             "name": "3rd St & K St (EB)",
-            "mi": 0.54
+            "mi": 0.68
           },
           {
             "name": "3rd St & K St (WB)",
-            "mi": 0.55
-          },
-          {
-            "name": "5th St & San Rafael St (WB)",
-            "mi": 0.55
-          },
-          {
-            "name": "5th St & Pena Drive (EB)",
-            "mi": 0.61
+            "mi": 0.69
           },
           {
             "name": "Davis",
-            "mi": 0.66
-          }
-        ],
-        "listing_rent_trend": [
-          {
-            "year": 2015,
-            "rent_est": 1306.0
+            "mi": 0.7
           },
           {
-            "year": 2016,
-            "rent_est": 1359.0
+            "name": "Davis",
+            "mi": 0.71
           },
           {
-            "year": 2017,
-            "rent_est": 1426.0
+            "name": "Davis, Ca (DAV)",
+            "mi": 0.72
           },
           {
-            "year": 2018,
-            "rent_est": 1500.0
+            "name": "H St & 2nd St / Amtrak (NB)",
+            "mi": 0.73
           },
           {
-            "year": 2019,
-            "rent_est": 1569.0
+            "name": "H St & 2nd St / Amtrak (SB)",
+            "mi": 0.74
           },
           {
-            "year": 2020,
-            "rent_est": 1622.0
+            "name": "5th St & Pole Line Rd/D.M.V (EB)",
+            "mi": 0.74
           },
           {
-            "year": 2021,
-            "rent_est": 1747.0
-          },
-          {
-            "year": 2022,
-            "rent_est": 1961.0
-          },
-          {
-            "year": 2023,
-            "rent_est": 2082.0
-          },
-          {
-            "year": 2024,
-            "rent_est": 2200.0
-          }
-        ],
-        "offcampus_match": true,
-        "offcampus_brand_url": "https://www.offcampusreview.com/",
-        "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
-        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/colleges-at-la-rue",
-        "offcampus_landlord_name": "Colleges at La Rue",
-        "offcampus_landlord_slug": "colleges-at-la-rue",
-        "offcampus_avg_rating": 3.0,
-        "offcampus_review_count": 1,
-        "offcampus_reviews": [
-          {
-            "rating": 3,
-            "date": "Apr 8, 2026",
-            "text": "Very good clean and responsive",
-            "propertyAddress": "152 Orchard Park Dr"
-          }
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.69452,
-          38.56201
-        ]
-      },
-      "properties": {
-        "address": "2500 Da Vinci Ct, Davis, CA 95618",
-        "listing_name": "Sol at West village",
-        "rent": 2100.0,
-        "beds": 2,
-        "baths": 2.0,
-        "sqft": 980.0,
-        "opportunity_score": 34.95,
-        "score_explanation": "Rent is on the high side versus interior space; about 4.0 mi straight-line from campus core; Memorial Union 3.29 mi \u00b7 Silo 3.45 mi \u00b7 1 convenience stores \u2264800 m \u00b7 0 Unitrans stops \u2264~0.9 mi; lighter immediate amenity density; several transit stops within a short walk; limited peer comps nearby",
-        "property_type": "Townhome",
-        "source": "sample_davis_ca",
-        "listing_url": "https://www.trulia.com/for_rent/Davis_CA/",
-        "room_type": "private",
-        "dist_km_memorial_union": 5.3,
-        "dist_km_silo": 5.5534,
-        "dist_mi_memorial_union": 3.2932,
-        "dist_mi_silo": 3.4507,
-        "dist_mi_campus": 3.9854,
-        "dist_mi_downtown": 2.7525,
-        "convenience_800m_count": 1,
-        "convenience_nearest_km": 0.5585,
-        "convenience_nearest_mi": 0.347,
-        "nearby_grocery": [
-          {
-            "name": "Extra Mile",
-            "kind": "convenience",
-            "mi": 0.35
-          },
-          {
-            "name": "Nugget Markets",
-            "kind": "grocery",
-            "mi": 0.82
-          }
-        ],
-        "nearby_food": [
-          {
-            "name": "(unnamed on OSM)",
-            "kind": "restaurant",
-            "mi": 0.75
-          },
-          {
-            "name": "Taco Bell",
-            "kind": "restaurant",
+            "name": "L St & 4th St (NB)",
             "mi": 0.76
           },
           {
-            "name": "Subway",
-            "kind": "restaurant",
-            "mi": 0.81
+            "name": "5th St & Pole Line Rd/D.M.V (WB)",
+            "mi": 0.76
           },
           {
-            "name": "McDonald's",
-            "kind": "restaurant",
-            "mi": 0.81
-          },
-          {
-            "name": "Starbucks",
-            "kind": "cafe",
-            "mi": 0.82
-          },
-          {
-            "name": "Taqueria Guadalajara",
-            "kind": "restaurant",
-            "mi": 0.84
+            "name": "5th St & Davis Public Works Corp Yard (WB)",
+            "mi": 0.79
           }
         ],
-        "bike_escooter_index": 45.8,
-        "traffic_calm_index": 30.14,
-        "parking_summary": "Parking ~0.28 mi (OSM has no fee/charge tag); Parking ~0.36 mi (OSM has no fee/charge tag); Parking ~0.42 mi (OSM has no fee/charge tag); Parking ~0.43 mi (OSM has no fee/charge tag)",
-        "unitrans_stops": [],
         "listing_rent_trend": [
           {
             "year": 2015,
-            "rent_est": 1246.0
+            "rent_est": 1424.0
           },
           {
             "year": 2016,
-            "rent_est": 1297.0
+            "rent_est": 1482.0
           },
           {
             "year": 2017,
-            "rent_est": 1362.0
+            "rent_est": 1556.0
           },
           {
             "year": 2018,
-            "rent_est": 1432.0
+            "rent_est": 1636.0
           },
           {
             "year": 2019,
-            "rent_est": 1497.0
+            "rent_est": 1711.0
           },
           {
             "year": 2020,
-            "rent_est": 1548.0
+            "rent_est": 1769.0
           },
           {
             "year": 2021,
-            "rent_est": 1668.0
+            "rent_est": 1906.0
           },
           {
             "year": 2022,
-            "rent_est": 1872.0
+            "rent_est": 2139.0
           },
           {
             "year": 2023,
-            "rent_est": 1987.0
+            "rent_est": 2271.0
           },
           {
             "year": 2024,
-            "rent_est": 2100.0
+            "rent_est": 2400.0
           }
         ],
         "offcampus_match": true,
         "offcampus_brand_url": "https://www.offcampusreview.com/",
         "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
-        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/sol-at-west-village",
-        "offcampus_landlord_name": "Sol at West village",
-        "offcampus_landlord_slug": "sol-at-west-village",
-        "offcampus_avg_rating": 4.1,
-        "offcampus_review_count": 8,
+        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/octave-apartments",
+        "offcampus_landlord_name": "Octave Apartments",
+        "offcampus_landlord_slug": "octave-apartments",
+        "offcampus_avg_rating": 2.0,
+        "offcampus_review_count": 1,
         "offcampus_reviews": [
           {
             "rating": 2,
-            "date": "Apr 20, 2026",
-            "text": "Lot of people smoking and stuff",
-            "propertyAddress": "Jade"
-          },
-          {
-            "rating": 5,
-            "date": "Apr 13, 2026",
-            "text": "its soliod",
-            "propertyAddress": "1580 Jade St"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 9, 2026",
-            "text": "Very nice place to live.",
-            "propertyAddress": "1580 Jade St"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 7, 2026",
-            "text": "Its a good place to live",
-            "propertyAddress": "1580 Jade St"
-          },
-          {
-            "rating": 5,
             "date": "Apr 6, 2026",
-            "text": "Solid.",
-            "propertyAddress": "1580 Jade St"
-          },
-          {
-            "rating": 5,
-            "date": "Apr 6, 2026",
-            "text": "Its supa keewl",
-            "propertyAddress": "1580 Jade St"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 5, 2026",
-            "text": "good place to live at the only issue is that it\u2019s a little old so the apartment amenities are old",
-            "propertyAddress": "1545 Jade St"
-          },
-          {
-            "rating": 4,
-            "date": "Mar 10, 2026",
-            "text": "Alright to live here, not that far off school and decent facilities, but maintenance requests, internet issues, and bill transactions are a pain",
-            "propertyAddress": "1580 Jade St"
+            "text": "Mold and everything breaks",
+            "propertyAddress": "1659 Drew Cir"
           }
         ]
       }
@@ -6527,13 +5568,175 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -121.7086,
+          38.5658
+        ]
+      },
+      "properties": {
+        "address": "812 Sycamore Ln, Davis, CA 95616",
+        "listing_name": "812 Sycamore Ln (sample)",
+        "rent": 1725.0,
+        "beds": 2,
+        "baths": 1.0,
+        "sqft": 745.0,
+        "opportunity_score": 32.18,
+        "score_explanation": "Rent is on the high side versus interior space; about 3.4 mi straight-line from campus core; Memorial Union 2.78 mi \u00b7 Silo 2.93 mi \u00b7 0 convenience stores \u2264800 m \u00b7 6 Unitrans stops \u2264~0.9 mi; 16 walkable amenities in the corridor; limited nearby transit in OSM for this block; limited peer comps nearby",
+        "property_type": "Duplex",
+        "source": "sample_davis_ca",
+        "listing_url": "https://www.rent.com/california/davis-apartments",
+        "room_type": "unknown",
+        "dist_km_memorial_union": 4.4709,
+        "dist_km_silo": 4.7147,
+        "dist_mi_memorial_union": 2.7781,
+        "dist_mi_silo": 2.9295,
+        "dist_mi_campus": 3.4448,
+        "dist_mi_downtown": 2.2494,
+        "convenience_800m_count": 0,
+        "convenience_nearest_km": 1.5391,
+        "convenience_nearest_mi": 0.9564,
+        "nearby_grocery": [
+          {
+            "name": "Extra Mile",
+            "kind": "convenience",
+            "mi": 0.96
+          },
+          {
+            "name": "Nugget Markets",
+            "kind": "grocery",
+            "mi": 1.28
+          },
+          {
+            "name": "Grocery Outlet",
+            "kind": "grocery",
+            "mi": 1.46
+          }
+        ],
+        "nearby_food": [
+          {
+            "name": "Konditorei",
+            "kind": "cafe",
+            "mi": 1.1
+          },
+          {
+            "name": "Domino's",
+            "kind": "restaurant",
+            "mi": 1.13
+          },
+          {
+            "name": "McDonald's",
+            "kind": "restaurant",
+            "mi": 1.22
+          },
+          {
+            "name": "Carl's Jr.",
+            "kind": "restaurant",
+            "mi": 1.27
+          },
+          {
+            "name": "Taqueria Guadalajara",
+            "kind": "restaurant",
+            "mi": 1.3
+          },
+          {
+            "name": "Taco Bell",
+            "kind": "restaurant",
+            "mi": 1.3
+          }
+        ],
+        "bike_escooter_index": 49.62,
+        "traffic_calm_index": 51.23,
+        "parking_summary": "Parking ~0.34 mi (OSM has no fee/charge tag); Parking ~0.38 mi (OSM has no fee/charge tag); Parking ~0.44 mi (OSM has no fee/charge tag); Parking ~0.45 mi (OSM has no fee/charge tag)",
+        "unitrans_stops": [
+          {
+            "name": "Unitrans stop",
+            "mi": 0.54
+          },
+          {
+            "name": "Unitrans stop",
+            "mi": 0.58
+          },
+          {
+            "name": "Unitrans stop",
+            "mi": 0.71
+          },
+          {
+            "name": "Unitrans stop",
+            "mi": 0.81
+          },
+          {
+            "name": "5th St & Spafford (WB)",
+            "mi": 0.88
+          },
+          {
+            "name": "5th St & Spafford (WB)",
+            "mi": 0.9
+          }
+        ],
+        "listing_rent_trend": [
+          {
+            "year": 2015,
+            "rent_est": 1024.0
+          },
+          {
+            "year": 2016,
+            "rent_est": 1065.0
+          },
+          {
+            "year": 2017,
+            "rent_est": 1118.0
+          },
+          {
+            "year": 2018,
+            "rent_est": 1176.0
+          },
+          {
+            "year": 2019,
+            "rent_est": 1230.0
+          },
+          {
+            "year": 2020,
+            "rent_est": 1272.0
+          },
+          {
+            "year": 2021,
+            "rent_est": 1370.0
+          },
+          {
+            "year": 2022,
+            "rent_est": 1537.0
+          },
+          {
+            "year": 2023,
+            "rent_est": 1632.0
+          },
+          {
+            "year": 2024,
+            "rent_est": 1725.0
+          }
+        ],
+        "offcampus_match": false,
+        "offcampus_brand_url": "https://www.offcampusreview.com/",
+        "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
+        "offcampus_landlord_url": "nan",
+        "offcampus_landlord_name": "nan",
+        "offcampus_landlord_slug": "nan",
+        "offcampus_avg_rating": null,
+        "offcampus_review_count": 0,
+        "offcampus_reviews": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.7295,
           38.558
         ]
       },
       "properties": {
         "address": "3333 Alvarado Ave, Davis, CA 95616",
-        "listing_name": "Tandem",
+        "listing_name": "3333 Alvarado Ave (sample)",
         "rent": 3100.0,
         "beds": 4,
         "baths": 3.0,
@@ -6720,46 +5923,15 @@
             "rent_est": 3100.0
           }
         ],
-        "offcampus_match": true,
+        "offcampus_match": false,
         "offcampus_brand_url": "https://www.offcampusreview.com/",
         "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
-        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/tandem",
-        "offcampus_landlord_name": "Tandem",
-        "offcampus_landlord_slug": "tandem",
-        "offcampus_avg_rating": 3.6,
-        "offcampus_review_count": 5,
-        "offcampus_reviews": [
-          {
-            "rating": 3,
-            "date": "Apr 13, 2026",
-            "text": "Alright but don't care about concerns",
-            "propertyAddress": "310 Parkway Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 6, 2026",
-            "text": "chill landlord. chill roomies. chill year.",
-            "propertyAddress": "400 Parkway Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 6, 2026",
-            "text": "He is amazing",
-            "propertyAddress": "310 Pkwy"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 6, 2026",
-            "text": "kinda dirty tbh but it's what it's",
-            "propertyAddress": "320 Parkway Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Apr 6, 2026",
-            "text": "solid",
-            "propertyAddress": "310 Parkway Cir"
-          }
-        ]
+        "offcampus_landlord_url": "nan",
+        "offcampus_landlord_name": "nan",
+        "offcampus_landlord_slug": "nan",
+        "offcampus_avg_rating": null,
+        "offcampus_review_count": 0,
+        "offcampus_reviews": []
       }
     },
     {
@@ -6955,28 +6127,15 @@
             "rent_est": 3200.0
           }
         ],
-        "offcampus_match": true,
+        "offcampus_match": false,
         "offcampus_brand_url": "https://www.offcampusreview.com/",
         "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
-        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/orchard-park",
-        "offcampus_landlord_name": "Orchard Park",
-        "offcampus_landlord_slug": "orchard-park",
-        "offcampus_avg_rating": 4.5,
-        "offcampus_review_count": 2,
-        "offcampus_reviews": [
-          {
-            "rating": 5,
-            "date": "May 1, 2026",
-            "text": "Nice place, close to campus, I don't pay for utilities. The campus increased the price for rent, that sucks.",
-            "propertyAddress": "Orchard Park"
-          },
-          {
-            "rating": 4,
-            "date": "Mar 11, 2026",
-            "text": "love it here,renting again for sure!!",
-            "propertyAddress": "5019 Orchard Park Cir"
-          }
-        ]
+        "offcampus_landlord_url": "nan",
+        "offcampus_landlord_name": "nan",
+        "offcampus_landlord_slug": "nan",
+        "offcampus_avg_rating": null,
+        "offcampus_review_count": 0,
+        "offcampus_reviews": []
       }
     },
     {
@@ -6990,7 +6149,7 @@
       },
       "properties": {
         "address": "3500 Sycamore Ln, Davis, CA 95616",
-        "listing_name": "Sol at West village",
+        "listing_name": "3500 Sycamore Ln (sample)",
         "rent": 2650.0,
         "beds": 3,
         "baths": 2.5,
@@ -7113,64 +6272,15 @@
             "rent_est": 2650.0
           }
         ],
-        "offcampus_match": true,
+        "offcampus_match": false,
         "offcampus_brand_url": "https://www.offcampusreview.com/",
         "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
-        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/sol-at-west-village",
-        "offcampus_landlord_name": "Sol at West village",
-        "offcampus_landlord_slug": "sol-at-west-village",
-        "offcampus_avg_rating": 4.1,
-        "offcampus_review_count": 8,
-        "offcampus_reviews": [
-          {
-            "rating": 2,
-            "date": "Apr 20, 2026",
-            "text": "Lot of people smoking and stuff",
-            "propertyAddress": "Jade"
-          },
-          {
-            "rating": 5,
-            "date": "Apr 13, 2026",
-            "text": "its soliod",
-            "propertyAddress": "1580 Jade St"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 9, 2026",
-            "text": "Very nice place to live.",
-            "propertyAddress": "1580 Jade St"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 7, 2026",
-            "text": "Its a good place to live",
-            "propertyAddress": "1580 Jade St"
-          },
-          {
-            "rating": 5,
-            "date": "Apr 6, 2026",
-            "text": "Solid.",
-            "propertyAddress": "1580 Jade St"
-          },
-          {
-            "rating": 5,
-            "date": "Apr 6, 2026",
-            "text": "Its supa keewl",
-            "propertyAddress": "1580 Jade St"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 5, 2026",
-            "text": "good place to live at the only issue is that it\u2019s a little old so the apartment amenities are old",
-            "propertyAddress": "1545 Jade St"
-          },
-          {
-            "rating": 4,
-            "date": "Mar 10, 2026",
-            "text": "Alright to live here, not that far off school and decent facilities, but maintenance requests, internet issues, and bill transactions are a pain",
-            "propertyAddress": "1580 Jade St"
-          }
-        ]
+        "offcampus_landlord_url": "nan",
+        "offcampus_landlord_name": "nan",
+        "offcampus_landlord_slug": "nan",
+        "offcampus_avg_rating": null,
+        "offcampus_review_count": 0,
+        "offcampus_reviews": []
       }
     }
   ]

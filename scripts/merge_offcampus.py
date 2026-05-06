@@ -24,6 +24,74 @@ MIN_AUTO_SCORE = 5.5
 PREVIEW_N = 45
 TEXT_MAX = 420
 
+_SYNONYMS = {
+    "st": "street",
+    "ave": "avenue",
+    "av": "avenue",
+    "blvd": "boulevard",
+    "dr": "drive",
+    "cir": "circle",
+    "ct": "court",
+    "ln": "lane",
+    "pkwy": "parkway",
+    "pky": "parkway",
+    "rd": "road",
+    "wy": "way",
+}
+
+_STOP = frozenset(
+    {
+        "davis",
+        "ca",
+        "california",
+        "usa",
+        "unit",
+        "apt",
+        "apartment",
+        "ste",
+        "suite",
+    }
+)
+
+_STREET_SUFFIXES = frozenset(_SYNONYMS.keys()) | frozenset(_SYNONYMS.values())
+
+# Single-word review addresses without a house number are only used when the
+# word is distinctive (not a generic street name that would match many pins).
+_BLOCKLIST_SINGLE_STREET_TOKEN = frozenset(
+    {
+        "olive",
+        "main",
+        "park",
+        "elm",
+        "oak",
+        "maple",
+        "pine",
+        "cedar",
+        "walnut",
+        "first",
+        "second",
+        "third",
+        "fourth",
+        "fifth",
+        "university",
+        "memorial",
+        "research",
+        "state",
+        "washington",
+        "jefferson",
+        "lincoln",
+        "adams",
+        "franklin",
+        "madison",
+        "monroe",
+        "jackson",
+        "grant",
+        "webster",
+        "college",
+        "campus",
+    }
+)
+
 
 def _tok(s: str) -> set[str]:
     return set(re.findall(r"[a-z0-9]+", (s or "").lower()))
@@ -32,8 +100,108 @@ def _tok(s: str) -> set[str]:
 def _norm_hint(x) -> str:
     if x is None or (isinstance(x, float) and pd.isna(x)):
         return ""
-    s = str(x).strip().lower()
-    return s
+    return str(x).strip().lower()
+
+
+def _expand_token(t: str) -> str:
+    t = t.lower().strip(".,#")
+    return _SYNONYMS.get(t, t)
+
+
+def _tokenize_address_line(line: str) -> list[str]:
+    parts = re.findall(r"[a-z0-9]+", (line or "").lower())
+    return [_expand_token(p) for p in parts]
+
+
+def _leading_house_number(tokens: list[str]) -> tuple[str | None, list[str]]:
+    if not tokens:
+        return None, []
+    t0 = tokens[0]
+    if re.match(r"^\d+[a-z]?$", t0, re.I):
+        return t0, tokens[1:]
+    if re.match(r"^\d+(st|nd|rd|th)$", t0, re.I):
+        return t0, tokens[1:]
+    return None, tokens
+
+
+def _content_tokens(tokens: list[str]) -> list[str]:
+    out = []
+    for t in tokens:
+        if t in _STOP:
+            continue
+        if t in _STREET_SUFFIXES and len(tokens) > 1:
+            continue
+        out.append(t)
+    return out
+
+
+def _pair_compatible(listing_line: str, review_addr: str) -> bool:
+    """
+    True if a rental's street line (before city) could be the same place as an
+    OffCampusReview review propertyAddress.
+    """
+    a = _tokenize_address_line(listing_line)
+    b = _tokenize_address_line(review_addr)
+    if not a or not b:
+        return False
+
+    na, ra = _leading_house_number(a)
+    nb, rb = _leading_house_number(b)
+
+    if na is not None and nb is not None:
+        if na != nb:
+            return False
+        ca = [t for t in _content_tokens(ra) if len(t) > 1]
+        cb = [t for t in _content_tokens(rb) if len(t) > 1]
+        sa, sb = set(ca), set(cb)
+        if sa & sb:
+            return True
+        if sa <= sb or sb <= sa:
+            return True
+        return False
+
+    if na is not None and nb is None:
+        rb_rest = _content_tokens(rb)
+        meaningful = [t for t in rb_rest if len(t) >= 3]
+        listing_set = set(a)
+        if len(meaningful) >= 2:
+            return all(t in listing_set for t in meaningful)
+        if len(meaningful) == 1:
+            t = meaningful[0]
+            if t in _BLOCKLIST_SINGLE_STREET_TOKEN or len(t) < 4:
+                return False
+            return t in listing_set
+        return False
+
+    if na is None and nb is not None:
+        return False
+
+    ca = [t for t in _content_tokens(a) if len(t) >= 3]
+    cb = [t for t in _content_tokens(b) if len(t) >= 3]
+    if len(cb) >= 2:
+        return all(t in set(ca) for t in cb)
+    if len(cb) == 1 and len(cb[0]) >= 4:
+        return cb[0] in set(ca)
+    return False
+
+
+def _review_property_addresses(L: dict) -> list[str]:
+    out: list[str] = []
+    for r in L.get("reviews") or []:
+        pa = str(r.get("propertyAddress") or "").strip()
+        if pa:
+            out.append(pa)
+    return out
+
+
+def address_aligns_with_landlord(street_line: str, L: dict) -> bool:
+    line = (street_line or "").strip()
+    if not line:
+        return False
+    for pa in _review_property_addresses(L):
+        if _pair_compatible(line, pa):
+            return True
+    return False
 
 
 def _score_row(address: str, L: dict) -> float:
@@ -44,9 +212,11 @@ def _score_row(address: str, L: dict) -> float:
     name = (L.get("name") or "").lower()
     sc += len(ad_t & _tok(slug_phrase)) * 3.2
     sc += len(ad_t & _tok(name)) * 2.4
-    if name and name in line:
+    name_words = [w for w in name.split() if len(w) > 3 and w != "davis"]
+    if name_words and any(w in line for w in name_words):
         sc += 9.0
-    if slug_phrase and slug_phrase in line:
+    slug_words = [w for w in slug_phrase.split() if len(w) > 3 and w != "davis"]
+    if slug_words and any(w in line for w in slug_words):
         sc += 11.0
     for rev in L.get("reviews") or []:
         pa = str(rev.get("propertyAddress") or "")
@@ -107,14 +277,20 @@ def main() -> None:
 
     for _, row in df.iterrows():
         addr = str(row.get("address") or "")
+        street_line = addr.split(",")[0].strip()
         hint = _norm_hint(row.get("offcampus_slug"))
         chosen = None
         if hint and hint in by_slug:
-            chosen = by_slug[hint]
-        else:
+            cand = by_slug[hint]
+            if address_aligns_with_landlord(street_line, cand):
+                chosen = cand
+        if chosen is None:
+            aligned = [
+                L for L in landlords if address_aligns_with_landlord(street_line, L)
+            ]
             best = None
             best_s = 0.0
-            for L in landlords:
+            for L in aligned:
                 s = _score_row(addr, L)
                 if s > best_s:
                     best_s = s
@@ -156,18 +332,11 @@ def main() -> None:
     df["offcampus_reviews_json"] = previews
     df["offcampus_match"] = matched
 
-    listing_names = df["listing_name"].fillna("").astype(str).tolist()
-    for i, is_match in enumerate(matched):
-        if not is_match or i >= len(names):
-            continue
-        ocr_name = str(names[i] or "").strip()
-        if ocr_name:
-            listing_names[i] = ocr_name
-    df["listing_name"] = listing_names
-
     df.to_csv(SCORED, index=False)
     n = sum(matched)
-    print(f"OffCampusReview: matched {n}/{len(df)} rows; raw API saved to {RAW_JSON.relative_to(ROOT)}")
+    print(
+        f"OffCampusReview: matched {n}/{len(df)} rows (address-aligned); raw API saved to {RAW_JSON.relative_to(ROOT)}"
+    )
 
 
 if __name__ == "__main__":
