@@ -156,6 +156,15 @@ def main() -> None:
     df["offcampus_reviews_json"] = previews
     df["offcampus_match"] = matched
 
+    listing_names = df["listing_name"].fillna("").astype(str).tolist()
+    for i, is_match in enumerate(matched):
+        if not is_match or i >= len(names):
+            continue
+        ocr_name = str(names[i] or "").strip()
+        if ocr_name:
+            listing_names[i] = ocr_name
+    df["listing_name"] = listing_names
+
     df.to_csv(SCORED, index=False)
     n = sum(matched)
     print(f"OffCampusReview: matched {n}/{len(df)} rows; raw API saved to {RAW_JSON.relative_to(ROOT)}")

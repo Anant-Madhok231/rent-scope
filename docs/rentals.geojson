@@ -1774,7 +1774,7 @@
       },
       "properties": {
         "address": "1520 Olive Dr, Davis, CA 95616",
-        "listing_name": "Olive Row Townhomes",
+        "listing_name": "Ryder on Olive",
         "rent": 1980.0,
         "beds": 2,
         "baths": 1.5,
@@ -2793,7 +2793,7 @@
       },
       "properties": {
         "address": "2340 Sycamore Ln, Davis, CA 95616",
-        "listing_name": "Sycamore North",
+        "listing_name": "Identity Davis",
         "rent": 2140.0,
         "beds": 2,
         "baths": 2.0,
@@ -3125,7 +3125,7 @@
       },
       "properties": {
         "address": "1800 Shasta Dr, Davis, CA 95616",
-        "listing_name": "The Green",
+        "listing_name": "THE GREEN",
         "rent": 1980.0,
         "beds": 2,
         "baths": 1.0,
@@ -3766,7 +3766,7 @@
       },
       "properties": {
         "address": "250 Cowell Blvd, Davis, CA 95618",
-        "listing_name": "The Greens at West Village",
+        "listing_name": "Greens at West village",
         "rent": 1495.0,
         "beds": 1,
         "baths": 1.0,
@@ -5457,7 +5457,7 @@
       },
       "properties": {
         "address": "812 Sycamore Ln, Davis, CA 95616",
-        "listing_name": "Sol at West Village",
+        "listing_name": "Sol at West village",
         "rent": 1725.0,
         "beds": 2,
         "baths": 1.0,
@@ -5668,7 +5668,7 @@
       },
       "properties": {
         "address": "815 Cranbrook Ct, Davis, CA 95616",
-        "listing_name": "The Greens at West Village",
+        "listing_name": "Greens at West village",
         "rent": 2280.0,
         "beds": 3,
         "baths": 2.0,
@@ -6143,7 +6143,7 @@
       },
       "properties": {
         "address": "2500 Da Vinci Ct, Davis, CA 95618",
-        "listing_name": "Sol at West Village",
+        "listing_name": "Sol at West village",
         "rent": 2100.0,
         "beds": 2,
         "baths": 2.0,
@@ -6990,7 +6990,7 @@
       },
       "properties": {
         "address": "3500 Sycamore Ln, Davis, CA 95616",
-        "listing_name": "Sol at West Village",
+        "listing_name": "Sol at West village",
         "rent": 2650.0,
         "beds": 3,
         "baths": 2.5,
