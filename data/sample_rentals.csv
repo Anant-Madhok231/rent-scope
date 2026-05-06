@@ -19,3 +19,13 @@ address,listing_name,rent,beds,baths,sqft,latitude,longitude,source,listing_url,
 "3333 Alvarado Ave, Davis, CA 95616",Tandem,3100,4,3,1750,38.55800,-121.72950,sample,https://www.apartments.com/davis-ca/,Single Family,private,tandem
 "250 Cowell Blvd, Davis, CA 95618",The Greens at West Village,1495,1,1,580,38.56950,-121.73100,sample,https://www.rent.com/california/davis-apartments,Apartment,private,greens-at-west-village
 "600 Drake Dr, Davis, CA 95616",Colleges at La Rue,2200,3,2,1040,38.54890,-121.72560,sample,https://www.trulia.com/for_rent/Davis_CA/,Townhome,private,colleges-at-la-rue
+"1001 Richards Blvd, Davis, CA 95616",Richards Court,1695,2,1,720,38.541731,-121.740334,sample,https://www.zillow.com/davis-ca/rentals/,Apartment,private,
+"1520 Olive Dr, Davis, CA 95616",Olive Row Townhomes,1980,2,1.5,880,38.544323,-121.733260,sample,https://www.apartments.com/davis-ca/,Townhome,private,
+"2750 5th St, Davis, CA 95616",East Fifth Flats,1525,1,1,560,38.552303,-121.717042,sample,https://www.rent.com/california/davis-apartments,Apartment,private,
+"901 Alhambra Dr, Davis, CA 95616",Alhambra Walk,2350,3,2,1100,38.560022,-121.708902,sample,https://www.trulia.com/for_rent/Davis_CA/,Single Family,private,
+"1400 Glacier Dr, Davis, CA 95616",Glacier Court,1780,2,1,790,38.559565,-121.777861,sample,https://www.zillow.com/davis-ca/rentals/,Condo,shared,
+"805 Miller Dr, Davis, CA 95616",Miller Park Apts,1620,1,1,600,38.550857,-121.749000,sample,https://www.apartments.com/davis-ca/,Apartment,private,
+"1632 Tulip Ln, Davis, CA 95616",Tulip Lane Duplex,1890,2,1,750,38.561385,-121.717437,sample,https://www.rent.com/california/davis-apartments,Duplex,unknown,
+"2340 Sycamore Ln, Davis, CA 95616",Sycamore North,2140,2,2,950,38.562841,-121.765185,sample,https://www.trulia.com/for_rent/Davis_CA/,Townhome,private,
+"1800 Cowell Blvd, Davis, CA 95618",Cowell Commons,1455,1,1,575,38.539841,-121.731206,sample,https://www.zillow.com/davis-ca/rentals/,Apartment,private,
+"704 Anderson Rd, Davis, CA 95616",Anderson Place,2280,3,2,1050,38.549093,-121.758607,sample,https://www.apartments.com/davis-ca/,Single Family,private,
