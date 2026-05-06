@@ -17,10 +17,115 @@
         "baths": 1.0,
         "sqft": 540.0,
         "opportunity_score": 80.42,
-        "score_explanation": "Rent efficiency looks strong for the layout; about 2.0 km from campus; steps from downtown dining and errands; walkable cluster with 96 food and daily-life spots nearby; several transit stops within a short walk; versus median $1650 for 1br nearby",
+        "score_explanation": "Rent efficiency looks strong for the layout; about 2.0 km from campus; Memorial Union 0.91 km \u00b7 Silo 1.16 km \u00b7 1 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u22641.5 km; steps from downtown dining and errands; walkable cluster with 96 food and daily-life spots nearby; several transit stops within a short walk; versus median $1650 for 1br nearby",
         "property_type": "Apartment",
         "source": "sample_davis_ca",
-        "listing_url": "https://example.com/listings/303-3rd"
+        "listing_url": "https://www.zillow.com/davis-ca/rentals/",
+        "room_type": "private",
+        "dist_km_memorial_union": 0.9072,
+        "dist_km_silo": 1.1607,
+        "convenience_800m_count": 1,
+        "convenience_nearest_km": 0.1821,
+        "unitrans_stops": [
+          {
+            "name": "2nd St & E St / Downtown (WB)",
+            "km": 0.2
+          },
+          {
+            "name": "H St & 2nd St / Amtrak (SB)",
+            "km": 0.201
+          },
+          {
+            "name": "H St & 2nd St / Amtrak (NB)",
+            "km": 0.215
+          },
+          {
+            "name": "2nd St & E St / Downtown (EB)",
+            "km": 0.224
+          },
+          {
+            "name": "5th Street & D Street / Downtown (EB)",
+            "km": 0.326
+          },
+          {
+            "name": "5th Street & D Street / Downtown (WB)",
+            "km": 0.369
+          },
+          {
+            "name": "F St & 6th St/Davis Food Co-op (SB)",
+            "km": 0.389
+          },
+          {
+            "name": "B St & 4th St / Central Park (NB)",
+            "km": 0.416
+          },
+          {
+            "name": "2nd St & B St (EB)",
+            "km": 0.43
+          },
+          {
+            "name": "B St & 4th St / Central Park (SB)",
+            "km": 0.436
+          },
+          {
+            "name": "F St & 6th Street/Davis Food Co-op (NB)",
+            "km": 0.441
+          },
+          {
+            "name": "3rd St & K St (WB)",
+            "km": 0.453
+          },
+          {
+            "name": "3rd St & K St (EB)",
+            "km": 0.483
+          },
+          {
+            "name": "L St & 425 (SB)",
+            "km": 0.588
+          }
+        ],
+        "listing_rent_trend": [
+          {
+            "year": 2015,
+            "rent_est": 920.0
+          },
+          {
+            "year": 2016,
+            "rent_est": 957.0
+          },
+          {
+            "year": 2017,
+            "rent_est": 1005.0
+          },
+          {
+            "year": 2018,
+            "rent_est": 1057.0
+          },
+          {
+            "year": 2019,
+            "rent_est": 1105.0
+          },
+          {
+            "year": 2020,
+            "rent_est": 1143.0
+          },
+          {
+            "year": 2021,
+            "rent_est": 1231.0
+          },
+          {
+            "year": 2022,
+            "rent_est": 1381.0
+          },
+          {
+            "year": 2023,
+            "rent_est": 1467.0
+          },
+          {
+            "year": 2024,
+            "rent_est": 1550.0
+          }
+        ]
       }
     },
     {
@@ -39,10 +144,115 @@
         "baths": 1.0,
         "sqft": 625.0,
         "opportunity_score": 70.28,
-        "score_explanation": "Rent efficiency looks strong for the layout; about 2.4 km from campus; reachable to downtown without a long drive; walkable cluster with 32 food and daily-life spots nearby; several transit stops within a short walk; versus median $1550 for 1br nearby",
+        "score_explanation": "Rent efficiency looks strong for the layout; about 2.4 km from campus; Memorial Union 1.38 km \u00b7 Silo 1.60 km \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u22641.5 km; reachable to downtown without a long drive; walkable cluster with 32 food and daily-life spots nearby; several transit stops within a short walk; versus median $1550 for 1br nearby",
         "property_type": "Condo",
         "source": "sample_davis_ca",
-        "listing_url": "https://example.com/listings/801-l-st"
+        "listing_url": "https://www.rent.com/california/davis-apartments",
+        "room_type": "private",
+        "dist_km_memorial_union": 1.3834,
+        "dist_km_silo": 1.6035,
+        "convenience_800m_count": 0,
+        "convenience_nearest_km": 0.8736,
+        "unitrans_stops": [
+          {
+            "name": "Unitrans stop",
+            "km": 0.097
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 0.109
+          },
+          {
+            "name": "F St & 8th St (NB)",
+            "km": 0.195
+          },
+          {
+            "name": "F St & 8th St (SB)",
+            "km": 0.202
+          },
+          {
+            "name": "F St & 6th Street/Davis Food Co-op (NB)",
+            "km": 0.309
+          },
+          {
+            "name": "F St & 6th St/Davis Food Co-op (SB)",
+            "km": 0.362
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 0.423
+          },
+          {
+            "name": "F St & 12th St (NB)",
+            "km": 0.502
+          },
+          {
+            "name": "5th Street & D Street / Downtown (EB)",
+            "km": 0.563
+          },
+          {
+            "name": "5th Street & D Street / Downtown (WB)",
+            "km": 0.584
+          },
+          {
+            "name": "J St & Drexel Dr (SB)",
+            "km": 0.604
+          },
+          {
+            "name": "L St & 425 (SB)",
+            "km": 0.615
+          },
+          {
+            "name": "L St & 4th St (NB)",
+            "km": 0.666
+          },
+          {
+            "name": "J St & Drexel Dr (NB)",
+            "km": 0.688
+          }
+        ],
+        "listing_rent_trend": [
+          {
+            "year": 2015,
+            "rent_est": 979.0
+          },
+          {
+            "year": 2016,
+            "rent_est": 1019.0
+          },
+          {
+            "year": 2017,
+            "rent_est": 1070.0
+          },
+          {
+            "year": 2018,
+            "rent_est": 1125.0
+          },
+          {
+            "year": 2019,
+            "rent_est": 1176.0
+          },
+          {
+            "year": 2020,
+            "rent_est": 1216.0
+          },
+          {
+            "year": 2021,
+            "rent_est": 1311.0
+          },
+          {
+            "year": 2022,
+            "rent_est": 1471.0
+          },
+          {
+            "year": 2023,
+            "rent_est": 1561.0
+          },
+          {
+            "year": 2024,
+            "rent_est": 1650.0
+          }
+        ]
       }
     },
     {
@@ -61,10 +271,115 @@
         "baths": 1.0,
         "sqft": 780.0,
         "opportunity_score": 70.12,
-        "score_explanation": "Rent is reasonable on a per-bedroom basis; about 2.1 km from campus; steps from downtown dining and errands; walkable cluster with 99 food and daily-life spots nearby; several transit stops within a short walk; versus median $1850 for 2br nearby",
+        "score_explanation": "Rent is reasonable on a per-bedroom basis; about 2.1 km from campus; Memorial Union 0.99 km \u00b7 Silo 1.25 km \u00b7 1 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u22641.5 km; steps from downtown dining and errands; walkable cluster with 99 food and daily-life spots nearby; several transit stops within a short walk; versus median $1850 for 2br nearby",
         "property_type": "Condo",
         "source": "sample_davis_ca",
-        "listing_url": "https://example.com/listings/408-f-st"
+        "listing_url": "https://www.zillow.com/davis-ca/rentals/",
+        "room_type": "private",
+        "dist_km_memorial_union": 0.9947,
+        "dist_km_silo": 1.2487,
+        "convenience_800m_count": 1,
+        "convenience_nearest_km": 0.2238,
+        "unitrans_stops": [
+          {
+            "name": "H St & 2nd St / Amtrak (SB)",
+            "km": 0.026
+          },
+          {
+            "name": "H St & 2nd St / Amtrak (NB)",
+            "km": 0.038
+          },
+          {
+            "name": "2nd St & E St / Downtown (WB)",
+            "km": 0.223
+          },
+          {
+            "name": "2nd St & E St / Downtown (EB)",
+            "km": 0.249
+          },
+          {
+            "name": "3rd St & K St (WB)",
+            "km": 0.368
+          },
+          {
+            "name": "3rd St & K St (EB)",
+            "km": 0.39
+          },
+          {
+            "name": "2nd St & B St (EB)",
+            "km": 0.501
+          },
+          {
+            "name": "5th Street & D Street / Downtown (EB)",
+            "km": 0.513
+          },
+          {
+            "name": "L St & 4th St (NB)",
+            "km": 0.552
+          },
+          {
+            "name": "5th Street & D Street / Downtown (WB)",
+            "km": 0.556
+          },
+          {
+            "name": "F St & 6th St/Davis Food Co-op (SB)",
+            "km": 0.557
+          },
+          {
+            "name": "L St & 425 (SB)",
+            "km": 0.564
+          },
+          {
+            "name": "B St & 4th St / Central Park (NB)",
+            "km": 0.568
+          },
+          {
+            "name": "B St & 4th St / Central Park (SB)",
+            "km": 0.589
+          }
+        ],
+        "listing_rent_trend": [
+          {
+            "year": 2015,
+            "rent_est": 1125.0
+          },
+          {
+            "year": 2016,
+            "rent_est": 1170.0
+          },
+          {
+            "year": 2017,
+            "rent_est": 1229.0
+          },
+          {
+            "year": 2018,
+            "rent_est": 1292.0
+          },
+          {
+            "year": 2019,
+            "rent_est": 1351.0
+          },
+          {
+            "year": 2020,
+            "rent_est": 1397.0
+          },
+          {
+            "year": 2021,
+            "rent_est": 1505.0
+          },
+          {
+            "year": 2022,
+            "rent_est": 1689.0
+          },
+          {
+            "year": 2023,
+            "rent_est": 1793.0
+          },
+          {
+            "year": 2024,
+            "rent_est": 1895.0
+          }
+        ]
       }
     },
     {
@@ -83,10 +398,115 @@
         "baths": 1.0,
         "sqft": 760.0,
         "opportunity_score": 68.65,
-        "score_explanation": "Rent is on the high side versus interior space; about 1.0 km from campus; walkable cluster with 34 food and daily-life spots nearby; several transit stops within a short walk; versus median $1980 for 2br nearby",
+        "score_explanation": "Rent is on the high side versus interior space; about 1.0 km from campus; Memorial Union 0.19 km \u00b7 Silo 0.20 km \u00b7 1 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u22641.5 km; walkable cluster with 34 food and daily-life spots nearby; several transit stops within a short walk; versus median $1980 for 2br nearby",
         "property_type": "Apartment",
         "source": "sample_davis_ca",
-        "listing_url": "https://example.com/listings/shields-ave"
+        "listing_url": "https://www.apartments.com/davis-ca/",
+        "room_type": "shared",
+        "dist_km_memorial_union": 0.1911,
+        "dist_km_silo": 0.2003,
+        "convenience_800m_count": 1,
+        "convenience_nearest_km": 0.2809,
+        "unitrans_stops": [
+          {
+            "name": "2nd St & B St (EB)",
+            "km": 0.623
+          },
+          {
+            "name": "B St & 4th St / Central Park (SB)",
+            "km": 0.728
+          },
+          {
+            "name": "B St & 4th St / Central Park (NB)",
+            "km": 0.732
+          },
+          {
+            "name": "Russell & A St (EB)",
+            "km": 0.753
+          },
+          {
+            "name": "Russell Blvd & A Street/City Hall (WB)",
+            "km": 0.783
+          },
+          {
+            "name": "2nd St & E St / Downtown (EB)",
+            "km": 0.867
+          },
+          {
+            "name": "2nd St & E St / Downtown (WB)",
+            "km": 0.894
+          },
+          {
+            "name": "5th Street & D Street / Downtown (WB)",
+            "km": 0.982
+          },
+          {
+            "name": "5th Street & D Street / Downtown (EB)",
+            "km": 1.008
+          },
+          {
+            "name": "Hutchison & Extension Center Drive",
+            "km": 1.053
+          },
+          {
+            "name": "H St & 2nd St / Amtrak (SB)",
+            "km": 1.14
+          },
+          {
+            "name": "H St & 2nd St / Amtrak (NB)",
+            "km": 1.151
+          },
+          {
+            "name": "F St & 6th St/Davis Food Co-op (SB)",
+            "km": 1.215
+          },
+          {
+            "name": "F St & 6th Street/Davis Food Co-op (NB)",
+            "km": 1.262
+          }
+        ],
+        "listing_rent_trend": [
+          {
+            "year": 2015,
+            "rent_est": 1039.0
+          },
+          {
+            "year": 2016,
+            "rent_est": 1081.0
+          },
+          {
+            "year": 2017,
+            "rent_est": 1135.0
+          },
+          {
+            "year": 2018,
+            "rent_est": 1193.0
+          },
+          {
+            "year": 2019,
+            "rent_est": 1248.0
+          },
+          {
+            "year": 2020,
+            "rent_est": 1290.0
+          },
+          {
+            "year": 2021,
+            "rent_est": 1390.0
+          },
+          {
+            "year": 2022,
+            "rent_est": 1560.0
+          },
+          {
+            "year": 2023,
+            "rent_est": 1656.0
+          },
+          {
+            "year": 2024,
+            "rent_est": 1750.0
+          }
+        ]
       }
     },
     {
@@ -105,10 +525,115 @@
         "baths": 2.0,
         "sqft": 1180.0,
         "opportunity_score": 61.54,
-        "score_explanation": "Rent is on the high side versus interior space; about 1.8 km from campus; steps from downtown dining and errands; walkable cluster with 97 food and daily-life spots nearby; several transit stops within a short walk; limited peer comps nearby",
+        "score_explanation": "Rent is on the high side versus interior space; about 1.8 km from campus; Memorial Union 0.69 km \u00b7 Silo 0.95 km \u00b7 1 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u22641.5 km; steps from downtown dining and errands; walkable cluster with 97 food and daily-life spots nearby; several transit stops within a short walk; limited peer comps nearby",
         "property_type": "Single Family",
         "source": "sample_davis_ca",
-        "listing_url": "https://example.com/listings/450-j-st"
+        "listing_url": "https://www.trulia.com/for_rent/Davis_CA/",
+        "room_type": "private",
+        "dist_km_memorial_union": 0.6925,
+        "dist_km_silo": 0.9462,
+        "convenience_800m_count": 1,
+        "convenience_nearest_km": 0.127,
+        "unitrans_stops": [
+          {
+            "name": "2nd St & E St / Downtown (EB)",
+            "km": 0.138
+          },
+          {
+            "name": "2nd St & E St / Downtown (WB)",
+            "km": 0.144
+          },
+          {
+            "name": "2nd St & B St (EB)",
+            "km": 0.221
+          },
+          {
+            "name": "B St & 4th St / Central Park (NB)",
+            "km": 0.244
+          },
+          {
+            "name": "B St & 4th St / Central Park (SB)",
+            "km": 0.266
+          },
+          {
+            "name": "5th Street & D Street / Downtown (EB)",
+            "km": 0.317
+          },
+          {
+            "name": "5th Street & D Street / Downtown (WB)",
+            "km": 0.335
+          },
+          {
+            "name": "H St & 2nd St / Amtrak (SB)",
+            "km": 0.355
+          },
+          {
+            "name": "H St & 2nd St / Amtrak (NB)",
+            "km": 0.369
+          },
+          {
+            "name": "F St & 6th St/Davis Food Co-op (SB)",
+            "km": 0.477
+          },
+          {
+            "name": "Russell & A St (EB)",
+            "km": 0.478
+          },
+          {
+            "name": "Russell Blvd & A Street/City Hall (WB)",
+            "km": 0.48
+          },
+          {
+            "name": "F St & 6th Street/Davis Food Co-op (NB)",
+            "km": 0.533
+          },
+          {
+            "name": "3rd St & K St (WB)",
+            "km": 0.661
+          }
+        ],
+        "listing_rent_trend": [
+          {
+            "year": 2015,
+            "rent_est": 1454.0
+          },
+          {
+            "year": 2016,
+            "rent_est": 1513.0
+          },
+          {
+            "year": 2017,
+            "rent_est": 1588.0
+          },
+          {
+            "year": 2018,
+            "rent_est": 1670.0
+          },
+          {
+            "year": 2019,
+            "rent_est": 1747.0
+          },
+          {
+            "year": 2020,
+            "rent_est": 1806.0
+          },
+          {
+            "year": 2021,
+            "rent_est": 1946.0
+          },
+          {
+            "year": 2022,
+            "rent_est": 2183.0
+          },
+          {
+            "year": 2023,
+            "rent_est": 2318.0
+          },
+          {
+            "year": 2024,
+            "rent_est": 2450.0
+          }
+        ]
       }
     },
     {
@@ -127,10 +652,115 @@
         "baths": 1.0,
         "sqft": 520.0,
         "opportunity_score": 57.98,
-        "score_explanation": "Rent efficiency looks strong for the layout; about 2.9 km from campus; 12 walkable amenities in the corridor; several transit stops within a short walk; versus median $1550 for 1br nearby",
+        "score_explanation": "Rent efficiency looks strong for the layout; about 2.9 km from campus; Memorial Union 1.81 km \u00b7 Silo 2.05 km \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u22641.5 km; 12 walkable amenities in the corridor; several transit stops within a short walk; versus median $1550 for 1br nearby",
         "property_type": "Apartment",
         "source": "sample_davis_ca",
-        "listing_url": "https://example.com/listings/1100-alvarado"
+        "listing_url": "https://www.zillow.com/davis-ca/rentals/",
+        "room_type": "shared",
+        "dist_km_memorial_union": 1.8123,
+        "dist_km_silo": 2.0495,
+        "convenience_800m_count": 0,
+        "convenience_nearest_km": 1.1604,
+        "unitrans_stops": [
+          {
+            "name": "Unitrans stop",
+            "km": 0.424
+          },
+          {
+            "name": "5th St & Davis Public Works Corp Yard (WB)",
+            "km": 0.492
+          },
+          {
+            "name": "L St & 425 (SB)",
+            "km": 0.519
+          },
+          {
+            "name": "L St & 4th St (NB)",
+            "km": 0.562
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 0.605
+          },
+          {
+            "name": "F St & 8th St (NB)",
+            "km": 0.686
+          },
+          {
+            "name": "5th St & Pole Line Rd/D.M.V (WB)",
+            "km": 0.69
+          },
+          {
+            "name": "F St & 8th St (SB)",
+            "km": 0.713
+          },
+          {
+            "name": "5th St & Pole Line Rd/D.M.V (EB)",
+            "km": 0.728
+          },
+          {
+            "name": "J St & Drexel Dr (SB)",
+            "km": 0.737
+          },
+          {
+            "name": "F St & 6th Street/Davis Food Co-op (NB)",
+            "km": 0.749
+          },
+          {
+            "name": "3rd St & K St (WB)",
+            "km": 0.754
+          },
+          {
+            "name": "3rd St & K St (EB)",
+            "km": 0.762
+          },
+          {
+            "name": "F St & 6th St/Davis Food Co-op (SB)",
+            "km": 0.784
+          }
+        ],
+        "listing_rent_trend": [
+          {
+            "year": 2015,
+            "rent_est": 819.0
+          },
+          {
+            "year": 2016,
+            "rent_est": 852.0
+          },
+          {
+            "year": 2017,
+            "rent_est": 895.0
+          },
+          {
+            "year": 2018,
+            "rent_est": 941.0
+          },
+          {
+            "year": 2019,
+            "rent_est": 984.0
+          },
+          {
+            "year": 2020,
+            "rent_est": 1017.0
+          },
+          {
+            "year": 2021,
+            "rent_est": 1096.0
+          },
+          {
+            "year": 2022,
+            "rent_est": 1230.0
+          },
+          {
+            "year": 2023,
+            "rent_est": 1306.0
+          },
+          {
+            "year": 2024,
+            "rent_est": 1380.0
+          }
+        ]
       }
     },
     {
@@ -149,10 +779,115 @@
         "baths": 1.0,
         "sqft": 820.0,
         "opportunity_score": 52.84,
-        "score_explanation": "Rent is reasonable on a per-bedroom basis; about 1.0 km from campus; 12 walkable amenities in the corridor; several transit stops within a short walk; limited peer comps nearby",
+        "score_explanation": "Rent is reasonable on a per-bedroom basis; about 1.0 km from campus; Memorial Union 1.28 km \u00b7 Silo 1.15 km \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u22641.5 km; 12 walkable amenities in the corridor; several transit stops within a short walk; limited peer comps nearby",
         "property_type": "Duplex",
         "source": "sample_davis_ca",
-        "listing_url": "https://example.com/listings/shasta-dr"
+        "listing_url": "https://www.rent.com/california/davis-apartments",
+        "room_type": "shared",
+        "dist_km_memorial_union": 1.282,
+        "dist_km_silo": 1.1463,
+        "convenience_800m_count": 0,
+        "convenience_nearest_km": 1.1112,
+        "unitrans_stops": [
+          {
+            "name": "Sycamore Ln & Russell/Trader Joe's (NB)",
+            "km": 0.01
+          },
+          {
+            "name": "Sycamore Ln & Russell/Trader Joe's (SB)",
+            "km": 0.032
+          },
+          {
+            "name": "Sycamore & 8th (SB)",
+            "km": 0.388
+          },
+          {
+            "name": "Sycamore Ln & 8th St (NB)",
+            "km": 0.424
+          },
+          {
+            "name": "Sycamore Ln & Cornell Drive (SB)",
+            "km": 0.675
+          },
+          {
+            "name": "Sycamore Ln & Cornell Drive (NB)",
+            "km": 0.696
+          },
+          {
+            "name": "Sycamore Ln & Bucknell Drive (NB)",
+            "km": 0.849
+          },
+          {
+            "name": "Sycamore Ln & Colby Drive (SB)",
+            "km": 0.891
+          },
+          {
+            "name": "Hutchison & Extension Center Drive",
+            "km": 0.973
+          },
+          {
+            "name": "Sycamore Ln & Villanova Drive (NB)",
+            "km": 1.009
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 1.095
+          },
+          {
+            "name": "Jade St at Sage St - Drop Off Only (WB)",
+            "km": 1.123
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 1.142
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 1.175
+          }
+        ],
+        "listing_rent_trend": [
+          {
+            "year": 2015,
+            "rent_est": 1175.0
+          },
+          {
+            "year": 2016,
+            "rent_est": 1223.0
+          },
+          {
+            "year": 2017,
+            "rent_est": 1284.0
+          },
+          {
+            "year": 2018,
+            "rent_est": 1350.0
+          },
+          {
+            "year": 2019,
+            "rent_est": 1412.0
+          },
+          {
+            "year": 2020,
+            "rent_est": 1460.0
+          },
+          {
+            "year": 2021,
+            "rent_est": 1573.0
+          },
+          {
+            "year": 2022,
+            "rent_est": 1765.0
+          },
+          {
+            "year": 2023,
+            "rent_est": 1873.0
+          },
+          {
+            "year": 2024,
+            "rent_est": 1980.0
+          }
+        ]
       }
     },
     {
@@ -171,10 +906,115 @@
         "baths": 1.0,
         "sqft": 590.0,
         "opportunity_score": 46.03,
-        "score_explanation": "Rent is reasonable on a per-bedroom basis; about 3.8 km from campus; 12 walkable amenities in the corridor; some nearby transit access; versus median $1495 for 1br nearby",
+        "score_explanation": "Rent is reasonable on a per-bedroom basis; about 3.8 km from campus; Memorial Union 2.87 km \u00b7 Silo 3.08 km \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u22641.5 km; 12 walkable amenities in the corridor; some nearby transit access; versus median $1495 for 1br nearby",
         "property_type": "Apartment",
         "source": "sample_davis_ca",
-        "listing_url": "https://example.com/listings/pole-line"
+        "listing_url": "https://www.zillow.com/davis-ca/rentals/",
+        "room_type": "private",
+        "dist_km_memorial_union": 2.8735,
+        "dist_km_silo": 3.0778,
+        "convenience_800m_count": 0,
+        "convenience_nearest_km": 2.2791,
+        "unitrans_stops": [
+          {
+            "name": "Unitrans stop",
+            "km": 0.156
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 0.361
+          },
+          {
+            "name": "J St & Cranbrook Ct (SB)",
+            "km": 0.701
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 0.736
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 0.771
+          },
+          {
+            "name": "J St & Menlo Dr (NB)",
+            "km": 0.781
+          },
+          {
+            "name": "J St & Drexel Dr (NB)",
+            "km": 0.987
+          },
+          {
+            "name": "J St & Drexel Dr (SB)",
+            "km": 1.055
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 1.126
+          },
+          {
+            "name": "F St & Covell Blvd (NB)",
+            "km": 1.17
+          },
+          {
+            "name": "F St & Covell Blvd (SB)",
+            "km": 1.183
+          },
+          {
+            "name": "F St & 14th St (NB)",
+            "km": 1.193
+          },
+          {
+            "name": "F St & 12th St (NB)",
+            "km": 1.289
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 1.298
+          }
+        ],
+        "listing_rent_trend": [
+          {
+            "year": 2015,
+            "rent_est": 846.0
+          },
+          {
+            "year": 2016,
+            "rent_est": 880.0
+          },
+          {
+            "year": 2017,
+            "rent_est": 924.0
+          },
+          {
+            "year": 2018,
+            "rent_est": 971.0
+          },
+          {
+            "year": 2019,
+            "rent_est": 1016.0
+          },
+          {
+            "year": 2020,
+            "rent_est": 1051.0
+          },
+          {
+            "year": 2021,
+            "rent_est": 1132.0
+          },
+          {
+            "year": 2022,
+            "rent_est": 1270.0
+          },
+          {
+            "year": 2023,
+            "rent_est": 1348.0
+          },
+          {
+            "year": 2024,
+            "rent_est": 1425.0
+          }
+        ]
       }
     },
     {
@@ -193,10 +1033,91 @@
         "baths": 1.0,
         "sqft": 580.0,
         "opportunity_score": 45.66,
-        "score_explanation": "Rent efficiency looks strong for the layout; about 4.4 km from campus; 10 walkable amenities in the corridor; some nearby transit access; versus median $1595 for 1br nearby",
+        "score_explanation": "Rent efficiency looks strong for the layout; about 4.4 km from campus; Memorial Union 3.51 km \u00b7 Silo 3.70 km \u00b7 0 convenience stores \u2264800 m \u00b7 8 Unitrans stops \u22641.5 km; 10 walkable amenities in the corridor; some nearby transit access; versus median $1595 for 1br nearby",
         "property_type": "Apartment",
         "source": "sample_davis_ca",
-        "listing_url": "https://example.com/listings/cowell-blvd"
+        "listing_url": "https://www.rent.com/california/davis-apartments",
+        "room_type": "private",
+        "dist_km_memorial_union": 3.5114,
+        "dist_km_silo": 3.7028,
+        "convenience_800m_count": 0,
+        "convenience_nearest_km": 2.5612,
+        "unitrans_stops": [
+          {
+            "name": "Unitrans stop",
+            "km": 0.339
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 0.396
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 0.567
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 0.823
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 1.171
+          },
+          {
+            "name": "J St & Cranbrook Ct (SB)",
+            "km": 1.267
+          },
+          {
+            "name": "J St & Menlo Dr (NB)",
+            "km": 1.364
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 1.458
+          }
+        ],
+        "listing_rent_trend": [
+          {
+            "year": 2015,
+            "rent_est": 887.0
+          },
+          {
+            "year": 2016,
+            "rent_est": 923.0
+          },
+          {
+            "year": 2017,
+            "rent_est": 969.0
+          },
+          {
+            "year": 2018,
+            "rent_est": 1019.0
+          },
+          {
+            "year": 2019,
+            "rent_est": 1066.0
+          },
+          {
+            "year": 2020,
+            "rent_est": 1102.0
+          },
+          {
+            "year": 2021,
+            "rent_est": 1187.0
+          },
+          {
+            "year": 2022,
+            "rent_est": 1332.0
+          },
+          {
+            "year": 2023,
+            "rent_est": 1414.0
+          },
+          {
+            "year": 2024,
+            "rent_est": 1495.0
+          }
+        ]
       }
     },
     {
@@ -215,10 +1136,83 @@
         "baths": 1.0,
         "sqft": 610.0,
         "opportunity_score": 45.15,
-        "score_explanation": "Rent efficiency looks strong for the layout; about 4.9 km from campus; walkable cluster with 18 food and daily-life spots nearby; some nearby transit access; versus median $1495 for 1br nearby",
+        "score_explanation": "Rent efficiency looks strong for the layout; about 4.9 km from campus; Memorial Union 3.99 km \u00b7 Silo 4.20 km \u00b7 0 convenience stores \u2264800 m \u00b7 6 Unitrans stops \u22641.5 km; walkable cluster with 18 food and daily-life spots nearby; some nearby transit access; versus median $1495 for 1br nearby",
         "property_type": "Apartment",
         "source": "sample_davis_ca",
-        "listing_url": "https://example.com/listings/moore-blvd"
+        "listing_url": "https://www.apartments.com/davis-ca/",
+        "room_type": "private",
+        "dist_km_memorial_union": 3.9939,
+        "dist_km_silo": 4.2028,
+        "convenience_800m_count": 0,
+        "convenience_nearest_km": 2.9649,
+        "unitrans_stops": [
+          {
+            "name": "Unitrans stop",
+            "km": 0.392
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 0.688
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 0.8
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 0.855
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 0.973
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 1.174
+          }
+        ],
+        "listing_rent_trend": [
+          {
+            "year": 2015,
+            "rent_est": 947.0
+          },
+          {
+            "year": 2016,
+            "rent_est": 985.0
+          },
+          {
+            "year": 2017,
+            "rent_est": 1034.0
+          },
+          {
+            "year": 2018,
+            "rent_est": 1087.0
+          },
+          {
+            "year": 2019,
+            "rent_est": 1137.0
+          },
+          {
+            "year": 2020,
+            "rent_est": 1176.0
+          },
+          {
+            "year": 2021,
+            "rent_est": 1267.0
+          },
+          {
+            "year": 2022,
+            "rent_est": 1421.0
+          },
+          {
+            "year": 2023,
+            "rent_est": 1509.0
+          },
+          {
+            "year": 2024,
+            "rent_est": 1595.0
+          }
+        ]
       }
     },
     {
@@ -237,10 +1231,115 @@
         "baths": 1.0,
         "sqft": 850.0,
         "opportunity_score": 44.14,
-        "score_explanation": "Rent is on the high side versus interior space; about 2.8 km from campus; 9 walkable amenities in the corridor; several transit stops within a short walk; limited peer comps nearby",
+        "score_explanation": "Rent is on the high side versus interior space; about 2.8 km from campus; Memorial Union 1.79 km \u00b7 Silo 2.01 km \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u22641.5 km; 9 walkable amenities in the corridor; several transit stops within a short walk; limited peer comps nearby",
         "property_type": "Apartment",
         "source": "sample_davis_ca",
-        "listing_url": "https://example.com/listings/720-alvarado"
+        "listing_url": "https://www.zillow.com/davis-ca/rentals/",
+        "room_type": "private",
+        "dist_km_memorial_union": 1.7907,
+        "dist_km_silo": 2.0113,
+        "convenience_800m_count": 0,
+        "convenience_nearest_km": 1.2326,
+        "unitrans_stops": [
+          {
+            "name": "Unitrans stop",
+            "km": 0.313
+          },
+          {
+            "name": "J St & Drexel Dr (SB)",
+            "km": 0.447
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 0.461
+          },
+          {
+            "name": "J St & Drexel Dr (NB)",
+            "km": 0.499
+          },
+          {
+            "name": "F St & 8th St (NB)",
+            "km": 0.522
+          },
+          {
+            "name": "F St & 12th St (NB)",
+            "km": 0.527
+          },
+          {
+            "name": "J St & Menlo Dr (NB)",
+            "km": 0.578
+          },
+          {
+            "name": "F St & 8th St (SB)",
+            "km": 0.583
+          },
+          {
+            "name": "J St & Cranbrook Ct (SB)",
+            "km": 0.66
+          },
+          {
+            "name": "F St & 14th St (NB)",
+            "km": 0.668
+          },
+          {
+            "name": "F St & 6th Street/Davis Food Co-op (NB)",
+            "km": 0.711
+          },
+          {
+            "name": "L St & 425 (SB)",
+            "km": 0.73
+          },
+          {
+            "name": "F St & 6th St/Davis Food Co-op (SB)",
+            "km": 0.76
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 0.77
+          }
+        ],
+        "listing_rent_trend": [
+          {
+            "year": 2015,
+            "rent_est": 1098.0
+          },
+          {
+            "year": 2016,
+            "rent_est": 1143.0
+          },
+          {
+            "year": 2017,
+            "rent_est": 1199.0
+          },
+          {
+            "year": 2018,
+            "rent_est": 1261.0
+          },
+          {
+            "year": 2019,
+            "rent_est": 1319.0
+          },
+          {
+            "year": 2020,
+            "rent_est": 1364.0
+          },
+          {
+            "year": 2021,
+            "rent_est": 1469.0
+          },
+          {
+            "year": 2022,
+            "rent_est": 1649.0
+          },
+          {
+            "year": 2023,
+            "rent_est": 1750.0
+          },
+          {
+            "year": 2024,
+            "rent_est": 1850.0
+          }
+        ]
       }
     },
     {
@@ -259,10 +1358,115 @@
         "baths": 2.5,
         "sqft": 1450.0,
         "opportunity_score": 42.72,
-        "score_explanation": "Rent is on the high side versus interior space; about 4.3 km from campus; walkable cluster with 20 food and daily-life spots nearby; several transit stops within a short walk; versus median $3200 for 4br nearby",
+        "score_explanation": "Rent is on the high side versus interior space; about 4.3 km from campus; Memorial Union 3.20 km \u00b7 Silo 3.44 km \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u22641.5 km; walkable cluster with 20 food and daily-life spots nearby; several transit stops within a short walk; versus median $3200 for 4br nearby",
         "property_type": "Single Family",
         "source": "sample_davis_ca",
-        "listing_url": "https://example.com/listings/alhambra-dr"
+        "listing_url": "https://www.apartments.com/davis-ca/",
+        "room_type": "private",
+        "dist_km_memorial_union": 3.2016,
+        "dist_km_silo": 3.4429,
+        "convenience_800m_count": 0,
+        "convenience_nearest_km": 2.2904,
+        "unitrans_stops": [
+          {
+            "name": "Unitrans stop",
+            "km": 0.362
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 0.412
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 0.545
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 0.626
+          },
+          {
+            "name": "5th St & San Rafael St (WB)",
+            "km": 0.876
+          },
+          {
+            "name": "5th St & Cantrill/Police Station (EB)",
+            "km": 0.898
+          },
+          {
+            "name": "5th St & Cantrill/Greystone (WB)",
+            "km": 0.908
+          },
+          {
+            "name": "5th St & Pena Drive (EB)",
+            "km": 0.922
+          },
+          {
+            "name": "5th St & Spafford (WB)",
+            "km": 0.962
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 0.999
+          },
+          {
+            "name": "5th St & Spafford (WB)",
+            "km": 1.024
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 1.088
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 1.127
+          },
+          {
+            "name": "5th St & Post Office / Pole Line Rd (WB)",
+            "km": 1.183
+          }
+        ],
+        "listing_rent_trend": [
+          {
+            "year": 2015,
+            "rent_est": 1632.0
+          },
+          {
+            "year": 2016,
+            "rent_est": 1699.0
+          },
+          {
+            "year": 2017,
+            "rent_est": 1783.0
+          },
+          {
+            "year": 2018,
+            "rent_est": 1875.0
+          },
+          {
+            "year": 2019,
+            "rent_est": 1961.0
+          },
+          {
+            "year": 2020,
+            "rent_est": 2027.0
+          },
+          {
+            "year": 2021,
+            "rent_est": 2184.0
+          },
+          {
+            "year": 2022,
+            "rent_est": 2451.0
+          },
+          {
+            "year": 2023,
+            "rent_est": 2602.0
+          },
+          {
+            "year": 2024,
+            "rent_est": 2750.0
+          }
+        ]
       }
     },
     {
@@ -281,10 +1485,115 @@
         "baths": 2.0,
         "sqft": 1040.0,
         "opportunity_score": 37.36,
-        "score_explanation": "Rent is on the high side versus interior space; about 3.4 km from campus; 10 walkable amenities in the corridor; several transit stops within a short walk; limited peer comps nearby",
+        "score_explanation": "Rent is on the high side versus interior space; about 3.4 km from campus; Memorial Union 2.24 km \u00b7 Silo 2.49 km \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u22641.5 km; 10 walkable amenities in the corridor; several transit stops within a short walk; limited peer comps nearby",
         "property_type": "Townhome",
         "source": "sample_davis_ca",
-        "listing_url": "https://example.com/listings/drake-dr"
+        "listing_url": "https://www.trulia.com/for_rent/Davis_CA/",
+        "room_type": "private",
+        "dist_km_memorial_union": 2.2378,
+        "dist_km_silo": 2.4922,
+        "convenience_800m_count": 0,
+        "convenience_nearest_km": 1.4685,
+        "unitrans_stops": [
+          {
+            "name": "5th St & Post Office / Pole Line Rd (WB)",
+            "km": 0.105
+          },
+          {
+            "name": "5th St & Post Office / Pole Line (EB)",
+            "km": 0.107
+          },
+          {
+            "name": "5th St & Pole Line Rd/D.M.V (EB)",
+            "km": 0.164
+          },
+          {
+            "name": "5th St & Pole Line Rd/D.M.V (WB)",
+            "km": 0.193
+          },
+          {
+            "name": "5th St & Davis Public Works Corp Yard (WB)",
+            "km": 0.467
+          },
+          {
+            "name": "5th St & Cantrill/Greystone (WB)",
+            "km": 0.467
+          },
+          {
+            "name": "5th St & Cantrill/Police Station (EB)",
+            "km": 0.652
+          },
+          {
+            "name": "L St & 4th St (NB)",
+            "km": 0.753
+          },
+          {
+            "name": "L St & 425 (SB)",
+            "km": 0.775
+          },
+          {
+            "name": "3rd St & K St (EB)",
+            "km": 0.864
+          },
+          {
+            "name": "5th St & San Rafael St (WB)",
+            "km": 0.887
+          },
+          {
+            "name": "3rd St & K St (WB)",
+            "km": 0.889
+          },
+          {
+            "name": "5th St & Pena Drive (EB)",
+            "km": 0.983
+          },
+          {
+            "name": "5th St & Spafford (WB)",
+            "km": 1.156
+          }
+        ],
+        "listing_rent_trend": [
+          {
+            "year": 2015,
+            "rent_est": 1306.0
+          },
+          {
+            "year": 2016,
+            "rent_est": 1359.0
+          },
+          {
+            "year": 2017,
+            "rent_est": 1426.0
+          },
+          {
+            "year": 2018,
+            "rent_est": 1500.0
+          },
+          {
+            "year": 2019,
+            "rent_est": 1569.0
+          },
+          {
+            "year": 2020,
+            "rent_est": 1622.0
+          },
+          {
+            "year": 2021,
+            "rent_est": 1747.0
+          },
+          {
+            "year": 2022,
+            "rent_est": 1961.0
+          },
+          {
+            "year": 2023,
+            "rent_est": 2082.0
+          },
+          {
+            "year": 2024,
+            "rent_est": 2200.0
+          }
+        ]
       }
     },
     {
@@ -303,10 +1612,58 @@
         "baths": 2.0,
         "sqft": 980.0,
         "opportunity_score": 36.32,
-        "score_explanation": "Rent is on the high side versus interior space; about 6.4 km from campus; lighter immediate amenity density; several transit stops within a short walk; limited peer comps nearby",
+        "score_explanation": "Rent is on the high side versus interior space; about 6.4 km from campus; Memorial Union 5.30 km \u00b7 Silo 5.55 km \u00b7 1 convenience stores \u2264800 m \u00b7 0 Unitrans stops \u22641.5 km; lighter immediate amenity density; several transit stops within a short walk; limited peer comps nearby",
         "property_type": "Townhome",
         "source": "sample_davis_ca",
-        "listing_url": "https://example.com/listings/da-vinci-ct"
+        "listing_url": "https://www.trulia.com/for_rent/Davis_CA/",
+        "room_type": "private",
+        "dist_km_memorial_union": 5.3,
+        "dist_km_silo": 5.5534,
+        "convenience_800m_count": 1,
+        "convenience_nearest_km": 0.5585,
+        "unitrans_stops": [],
+        "listing_rent_trend": [
+          {
+            "year": 2015,
+            "rent_est": 1246.0
+          },
+          {
+            "year": 2016,
+            "rent_est": 1297.0
+          },
+          {
+            "year": 2017,
+            "rent_est": 1362.0
+          },
+          {
+            "year": 2018,
+            "rent_est": 1432.0
+          },
+          {
+            "year": 2019,
+            "rent_est": 1497.0
+          },
+          {
+            "year": 2020,
+            "rent_est": 1548.0
+          },
+          {
+            "year": 2021,
+            "rent_est": 1668.0
+          },
+          {
+            "year": 2022,
+            "rent_est": 1872.0
+          },
+          {
+            "year": 2023,
+            "rent_est": 1987.0
+          },
+          {
+            "year": 2024,
+            "rent_est": 2100.0
+          }
+        ]
       }
     },
     {
@@ -325,10 +1682,115 @@
         "baths": 2.0,
         "sqft": 1150.0,
         "opportunity_score": 36.27,
-        "score_explanation": "Rent is on the high side versus interior space; about 1.7 km from campus; 8 walkable amenities in the corridor; some nearby transit access; limited peer comps nearby",
+        "score_explanation": "Rent is on the high side versus interior space; about 1.7 km from campus; Memorial Union 1.06 km \u00b7 Silo 1.14 km \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u22641.5 km; 8 walkable amenities in the corridor; some nearby transit access; limited peer comps nearby",
         "property_type": "Single Family",
         "source": "sample_davis_ca",
-        "listing_url": "https://example.com/listings/425-russell"
+        "listing_url": "https://www.apartments.com/davis-ca/",
+        "room_type": "private",
+        "dist_km_memorial_union": 1.0631,
+        "dist_km_silo": 1.1434,
+        "convenience_800m_count": 0,
+        "convenience_nearest_km": 1.2023,
+        "unitrans_stops": [
+          {
+            "name": "Unitrans stop",
+            "km": 0.566
+          },
+          {
+            "name": "Russell Blvd & A Street/City Hall (WB)",
+            "km": 0.623
+          },
+          {
+            "name": "Russell & A St (EB)",
+            "km": 0.637
+          },
+          {
+            "name": "F St & 8th St (SB)",
+            "km": 0.79
+          },
+          {
+            "name": "5th Street & D Street / Downtown (WB)",
+            "km": 0.798
+          },
+          {
+            "name": "F St & 8th St (NB)",
+            "km": 0.805
+          },
+          {
+            "name": "B St & 4th St / Central Park (SB)",
+            "km": 0.842
+          },
+          {
+            "name": "5th Street & D Street / Downtown (EB)",
+            "km": 0.843
+          },
+          {
+            "name": "B St & 4th St / Central Park (NB)",
+            "km": 0.862
+          },
+          {
+            "name": "F St & 6th Street/Davis Food Co-op (NB)",
+            "km": 0.882
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 0.888
+          },
+          {
+            "name": "F St & 12th St (NB)",
+            "km": 0.889
+          },
+          {
+            "name": "F St & 6th St/Davis Food Co-op (SB)",
+            "km": 0.894
+          },
+          {
+            "name": "F St & 14th St (NB)",
+            "km": 0.985
+          }
+        ],
+        "listing_rent_trend": [
+          {
+            "year": 2015,
+            "rent_est": 1424.0
+          },
+          {
+            "year": 2016,
+            "rent_est": 1482.0
+          },
+          {
+            "year": 2017,
+            "rent_est": 1556.0
+          },
+          {
+            "year": 2018,
+            "rent_est": 1636.0
+          },
+          {
+            "year": 2019,
+            "rent_est": 1711.0
+          },
+          {
+            "year": 2020,
+            "rent_est": 1769.0
+          },
+          {
+            "year": 2021,
+            "rent_est": 1906.0
+          },
+          {
+            "year": 2022,
+            "rent_est": 2139.0
+          },
+          {
+            "year": 2023,
+            "rent_est": 2271.0
+          },
+          {
+            "year": 2024,
+            "rent_est": 2400.0
+          }
+        ]
       }
     },
     {
@@ -347,10 +1809,115 @@
         "baths": 2.0,
         "sqft": 1080.0,
         "opportunity_score": 35.81,
-        "score_explanation": "Rent is on the high side versus interior space; about 4.1 km from campus; 11 walkable amenities in the corridor; several transit stops within a short walk; limited peer comps nearby",
+        "score_explanation": "Rent is on the high side versus interior space; about 4.1 km from campus; Memorial Union 2.97 km \u00b7 Silo 3.22 km \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u22641.5 km; 11 walkable amenities in the corridor; several transit stops within a short walk; limited peer comps nearby",
         "property_type": "Townhome",
         "source": "sample_davis_ca",
-        "listing_url": "https://example.com/listings/cranbrook"
+        "listing_url": "https://www.trulia.com/for_rent/Davis_CA/",
+        "room_type": "private",
+        "dist_km_memorial_union": 2.97,
+        "dist_km_silo": 3.2231,
+        "convenience_800m_count": 0,
+        "convenience_nearest_km": 2.1238,
+        "unitrans_stops": [
+          {
+            "name": "5th St & Cantrill/Police Station (EB)",
+            "km": 0.169
+          },
+          {
+            "name": "5th St & San Rafael St (WB)",
+            "km": 0.213
+          },
+          {
+            "name": "5th St & Cantrill/Greystone (WB)",
+            "km": 0.294
+          },
+          {
+            "name": "5th St & Pena Drive (EB)",
+            "km": 0.312
+          },
+          {
+            "name": "5th St & Spafford (WB)",
+            "km": 0.463
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 0.554
+          },
+          {
+            "name": "5th St & Spafford (WB)",
+            "km": 0.567
+          },
+          {
+            "name": "5th St & Post Office / Pole Line Rd (WB)",
+            "km": 0.656
+          },
+          {
+            "name": "5th St & Post Office / Pole Line (EB)",
+            "km": 0.664
+          },
+          {
+            "name": "5th St & Pole Line Rd/D.M.V (EB)",
+            "km": 0.907
+          },
+          {
+            "name": "5th St & Pole Line Rd/D.M.V (WB)",
+            "km": 0.921
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 0.972
+          },
+          {
+            "name": "5th St & Davis Public Works Corp Yard (WB)",
+            "km": 1.16
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 1.235
+          }
+        ],
+        "listing_rent_trend": [
+          {
+            "year": 2015,
+            "rent_est": 1353.0
+          },
+          {
+            "year": 2016,
+            "rent_est": 1408.0
+          },
+          {
+            "year": 2017,
+            "rent_est": 1478.0
+          },
+          {
+            "year": 2018,
+            "rent_est": 1554.0
+          },
+          {
+            "year": 2019,
+            "rent_est": 1626.0
+          },
+          {
+            "year": 2020,
+            "rent_est": 1681.0
+          },
+          {
+            "year": 2021,
+            "rent_est": 1811.0
+          },
+          {
+            "year": 2022,
+            "rent_est": 2032.0
+          },
+          {
+            "year": 2023,
+            "rent_est": 2157.0
+          },
+          {
+            "year": 2024,
+            "rent_est": 2280.0
+          }
+        ]
       }
     },
     {
@@ -369,10 +1936,83 @@
         "baths": 1.0,
         "sqft": 745.0,
         "opportunity_score": 32.55,
-        "score_explanation": "Rent is on the high side versus interior space; about 5.5 km from campus; 16 walkable amenities in the corridor; limited nearby transit in OSM for this block; limited peer comps nearby",
+        "score_explanation": "Rent is on the high side versus interior space; about 5.5 km from campus; Memorial Union 4.47 km \u00b7 Silo 4.71 km \u00b7 0 convenience stores \u2264800 m \u00b7 6 Unitrans stops \u22641.5 km; 16 walkable amenities in the corridor; limited nearby transit in OSM for this block; limited peer comps nearby",
         "property_type": "Duplex",
         "source": "sample_davis_ca",
-        "listing_url": "https://example.com/listings/812-sycamore"
+        "listing_url": "https://www.rent.com/california/davis-apartments",
+        "room_type": "unknown",
+        "dist_km_memorial_union": 4.4709,
+        "dist_km_silo": 4.7147,
+        "convenience_800m_count": 0,
+        "convenience_nearest_km": 1.5391,
+        "unitrans_stops": [
+          {
+            "name": "Unitrans stop",
+            "km": 0.868
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 0.936
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 1.145
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 1.296
+          },
+          {
+            "name": "5th St & Spafford (WB)",
+            "km": 1.409
+          },
+          {
+            "name": "5th St & Spafford (WB)",
+            "km": 1.452
+          }
+        ],
+        "listing_rent_trend": [
+          {
+            "year": 2015,
+            "rent_est": 1024.0
+          },
+          {
+            "year": 2016,
+            "rent_est": 1065.0
+          },
+          {
+            "year": 2017,
+            "rent_est": 1118.0
+          },
+          {
+            "year": 2018,
+            "rent_est": 1176.0
+          },
+          {
+            "year": 2019,
+            "rent_est": 1230.0
+          },
+          {
+            "year": 2020,
+            "rent_est": 1272.0
+          },
+          {
+            "year": 2021,
+            "rent_est": 1370.0
+          },
+          {
+            "year": 2022,
+            "rent_est": 1537.0
+          },
+          {
+            "year": 2023,
+            "rent_est": 1632.0
+          },
+          {
+            "year": 2024,
+            "rent_est": 1725.0
+          }
+        ]
       }
     },
     {
@@ -391,10 +2031,115 @@
         "baths": 3.0,
         "sqft": 1750.0,
         "opportunity_score": 29.22,
-        "score_explanation": "Rent is on the high side versus interior space; about 3.6 km from campus; lighter immediate amenity density; some nearby transit access; versus median $3200 for 4br nearby",
+        "score_explanation": "Rent is on the high side versus interior space; about 3.6 km from campus; Memorial Union 2.53 km \u00b7 Silo 2.76 km \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u22641.5 km; lighter immediate amenity density; some nearby transit access; versus median $3200 for 4br nearby",
         "property_type": "Single Family",
         "source": "sample_davis_ca",
-        "listing_url": "https://example.com/listings/3333-alvarado"
+        "listing_url": "https://www.apartments.com/davis-ca/",
+        "room_type": "private",
+        "dist_km_memorial_union": 2.5335,
+        "dist_km_silo": 2.7635,
+        "convenience_800m_count": 0,
+        "convenience_nearest_km": 1.8954,
+        "unitrans_stops": [
+          {
+            "name": "Unitrans stop",
+            "km": 0.721
+          },
+          {
+            "name": "J St & Cranbrook Ct (SB)",
+            "km": 0.832
+          },
+          {
+            "name": "J St & Menlo Dr (NB)",
+            "km": 0.842
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 0.94
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 0.947
+          },
+          {
+            "name": "J St & Drexel Dr (NB)",
+            "km": 0.965
+          },
+          {
+            "name": "J St & Drexel Dr (SB)",
+            "km": 0.987
+          },
+          {
+            "name": "5th St & Cantrill/Greystone (WB)",
+            "km": 1.003
+          },
+          {
+            "name": "5th St & Davis Public Works Corp Yard (WB)",
+            "km": 1.024
+          },
+          {
+            "name": "5th St & Pole Line Rd/D.M.V (WB)",
+            "km": 1.031
+          },
+          {
+            "name": "5th St & Post Office / Pole Line Rd (WB)",
+            "km": 1.043
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 1.052
+          },
+          {
+            "name": "5th St & Pole Line Rd/D.M.V (EB)",
+            "km": 1.058
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 1.071
+          }
+        ],
+        "listing_rent_trend": [
+          {
+            "year": 2015,
+            "rent_est": 1840.0
+          },
+          {
+            "year": 2016,
+            "rent_est": 1915.0
+          },
+          {
+            "year": 2017,
+            "rent_est": 2010.0
+          },
+          {
+            "year": 2018,
+            "rent_est": 2113.0
+          },
+          {
+            "year": 2019,
+            "rent_est": 2210.0
+          },
+          {
+            "year": 2020,
+            "rent_est": 2285.0
+          },
+          {
+            "year": 2021,
+            "rent_est": 2462.0
+          },
+          {
+            "year": 2022,
+            "rent_est": 2763.0
+          },
+          {
+            "year": 2023,
+            "rent_est": 2933.0
+          },
+          {
+            "year": 2024,
+            "rent_est": 3100.0
+          }
+        ]
       }
     },
     {
@@ -413,10 +2158,115 @@
         "baths": 3.0,
         "sqft": 1680.0,
         "opportunity_score": 28.74,
-        "score_explanation": "Rent is on the high side versus interior space; about 3.6 km from campus; 9 walkable amenities in the corridor; some nearby transit access; versus median $3100 for 4br nearby",
+        "score_explanation": "Rent is on the high side versus interior space; about 3.6 km from campus; Memorial Union 2.50 km \u00b7 Silo 2.74 km \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u22641.5 km; 9 walkable amenities in the corridor; some nearby transit access; versus median $3100 for 4br nearby",
         "property_type": "Single Family",
         "source": "sample_davis_ca",
-        "listing_url": "https://example.com/listings/cantrill"
+        "listing_url": "https://www.apartments.com/davis-ca/",
+        "room_type": "private",
+        "dist_km_memorial_union": 2.5014,
+        "dist_km_silo": 2.7406,
+        "convenience_800m_count": 0,
+        "convenience_nearest_km": 1.8185,
+        "unitrans_stops": [
+          {
+            "name": "5th St & Cantrill/Greystone (WB)",
+            "km": 0.758
+          },
+          {
+            "name": "5th St & Post Office / Pole Line Rd (WB)",
+            "km": 0.802
+          },
+          {
+            "name": "5th St & Pole Line Rd/D.M.V (WB)",
+            "km": 0.82
+          },
+          {
+            "name": "5th St & Post Office / Pole Line (EB)",
+            "km": 0.833
+          },
+          {
+            "name": "5th St & Pole Line Rd/D.M.V (EB)",
+            "km": 0.843
+          },
+          {
+            "name": "5th St & Davis Public Works Corp Yard (WB)",
+            "km": 0.861
+          },
+          {
+            "name": "5th St & Cantrill/Police Station (EB)",
+            "km": 0.905
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 0.929
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 0.95
+          },
+          {
+            "name": "J St & Menlo Dr (NB)",
+            "km": 1.031
+          },
+          {
+            "name": "J St & Cranbrook Ct (SB)",
+            "km": 1.037
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 1.05
+          },
+          {
+            "name": "5th St & San Rafael St (WB)",
+            "km": 1.051
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 1.087
+          }
+        ],
+        "listing_rent_trend": [
+          {
+            "year": 2015,
+            "rent_est": 1899.0
+          },
+          {
+            "year": 2016,
+            "rent_est": 1977.0
+          },
+          {
+            "year": 2017,
+            "rent_est": 2075.0
+          },
+          {
+            "year": 2018,
+            "rent_est": 2182.0
+          },
+          {
+            "year": 2019,
+            "rent_est": 2282.0
+          },
+          {
+            "year": 2020,
+            "rent_est": 2359.0
+          },
+          {
+            "year": 2021,
+            "rent_est": 2542.0
+          },
+          {
+            "year": 2022,
+            "rent_est": 2852.0
+          },
+          {
+            "year": 2023,
+            "rent_est": 3028.0
+          },
+          {
+            "year": 2024,
+            "rent_est": 3200.0
+          }
+        ]
       }
     },
     {
@@ -435,10 +2285,71 @@
         "baths": 2.5,
         "sqft": 1320.0,
         "opportunity_score": 22.23,
-        "score_explanation": "Rent is on the high side versus interior space; about 5.9 km from campus; lighter immediate amenity density; limited nearby transit in OSM for this block; limited peer comps nearby",
+        "score_explanation": "Rent is on the high side versus interior space; about 5.9 km from campus; Memorial Union 4.78 km \u00b7 Silo 5.02 km \u00b7 0 convenience stores \u2264800 m \u00b7 3 Unitrans stops \u22641.5 km; lighter immediate amenity density; limited nearby transit in OSM for this block; limited peer comps nearby",
         "property_type": "Single Family",
         "source": "sample_davis_ca",
-        "listing_url": "https://example.com/listings/sycamore"
+        "listing_url": "https://www.rent.com/california/davis-apartments",
+        "room_type": "private",
+        "dist_km_memorial_union": 4.7801,
+        "dist_km_silo": 5.0246,
+        "convenience_800m_count": 0,
+        "convenience_nearest_km": 1.4454,
+        "unitrans_stops": [
+          {
+            "name": "Unitrans stop",
+            "km": 1.181
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 1.238
+          },
+          {
+            "name": "Unitrans stop",
+            "km": 1.443
+          }
+        ],
+        "listing_rent_trend": [
+          {
+            "year": 2015,
+            "rent_est": 1573.0
+          },
+          {
+            "year": 2016,
+            "rent_est": 1637.0
+          },
+          {
+            "year": 2017,
+            "rent_est": 1718.0
+          },
+          {
+            "year": 2018,
+            "rent_est": 1807.0
+          },
+          {
+            "year": 2019,
+            "rent_est": 1889.0
+          },
+          {
+            "year": 2020,
+            "rent_est": 1954.0
+          },
+          {
+            "year": 2021,
+            "rent_est": 2105.0
+          },
+          {
+            "year": 2022,
+            "rent_est": 2362.0
+          },
+          {
+            "year": 2023,
+            "rent_est": 2507.0
+          },
+          {
+            "year": 2024,
+            "rent_est": 2650.0
+          }
+        ]
       }
     }
   ]

@@ -1,21 +1,21 @@
-address,rent,beds,baths,sqft,latitude,longitude,source,listing_url,property_type
-"720 Alvarado Ave, Davis, CA 95616",1850,2,1.0,850,38.55412,-121.73682,sample_davis_ca,https://example.com/listings/720-alvarado,Apartment
-"425 Russell Blvd, Davis, CA 95616",2400,3,2.0,1150,38.55089,-121.75123,sample_davis_ca,https://example.com/listings/425-russell,Single Family
-"801 L St, Davis, CA 95616",1650,1,1.0,625,38.55134,-121.73988,sample_davis_ca,https://example.com/listings/801-l-st,Condo
-"2500 Da Vinci Ct, Davis, CA 95618",2100,2,2.0,980,38.56201,-121.69452,sample_davis_ca,https://example.com/listings/da-vinci-ct,Townhome
-"1321 Alhambra Dr, Davis, CA 95616",2750,4,2.5,1450,38.55971,-121.72105,sample_davis_ca,https://example.com/listings/alhambra-dr,Single Family
-"303 3rd St, Davis, CA 95616",1550,1,1.0,540,38.54501,-121.74012,sample_davis_ca,https://example.com/listings/303-3rd,Apartment
-"1800 Shasta Dr, Davis, CA 95616",1980,2,1.0,820,38.54765,-121.7619,sample_davis_ca,https://example.com/listings/shasta-dr,Duplex
-"616 Cantrill Dr, Davis, CA 95616",3200,4,3.0,1680,38.5562,-121.7278,sample_davis_ca,https://example.com/listings/cantrill,Single Family
-"500 Pole Line Rd, Davis, CA 95618",1425,1,1.0,590,38.5634,-121.7321,sample_davis_ca,https://example.com/listings/pole-line,Apartment
-"815 Cranbrook Ct, Davis, CA 95616",2280,3,2.0,1080,38.5533,-121.7189,sample_davis_ca,https://example.com/listings/cranbrook,Townhome
-"1 Shields Ave, Davis, CA 95616",1750,2,1.0,760,38.5398,-121.7502,sample_davis_ca,https://example.com/listings/shields-ave,Apartment
-"3500 Sycamore Ln, Davis, CA 95616",2650,3,2.5,1320,38.5671,-121.7054,sample_davis_ca,https://example.com/listings/sycamore,Single Family
-"408 F St, Davis, CA 95616",1895,2,1.0,780,38.5439,-121.7385,sample_davis_ca,https://example.com/listings/408-f-st,Condo
-"2000 Moore Blvd, Davis, CA 95618",1595,1,1.0,610,38.5712,-121.7238,sample_davis_ca,https://example.com/listings/moore-blvd,Apartment
-"450 J St, Davis, CA 95616",2450,3,2.0,1180,38.5441,-121.7423,sample_davis_ca,https://example.com/listings/450-j-st,Single Family
-"812 Sycamore Ln, Davis, CA 95616",1725,2,1.0,745,38.5658,-121.7086,sample_davis_ca,https://example.com/listings/812-sycamore,Duplex
-"1100 Alvarado Ave, Davis, CA 95616",1380,1,1.0,520,38.5525,-121.7342,sample_davis_ca,https://example.com/listings/1100-alvarado,Apartment
-"3333 Alvarado Ave, Davis, CA 95616",3100,4,3.0,1750,38.558,-121.7295,sample_davis_ca,https://example.com/listings/3333-alvarado,Single Family
-"250 Cowell Blvd, Davis, CA 95618",1495,1,1.0,580,38.5695,-121.731,sample_davis_ca,https://example.com/listings/cowell-blvd,Apartment
-"600 Drake Dr, Davis, CA 95616",2200,3,2.0,1040,38.5489,-121.7256,sample_davis_ca,https://example.com/listings/drake-dr,Townhome
+address,rent,beds,baths,sqft,latitude,longitude,source,listing_url,property_type,room_type
+"720 Alvarado Ave, Davis, CA 95616",1850,2,1.0,850,38.55412,-121.73682,sample_davis_ca,https://www.zillow.com/davis-ca/rentals/,Apartment,private
+"425 Russell Blvd, Davis, CA 95616",2400,3,2.0,1150,38.55089,-121.75123,sample_davis_ca,https://www.apartments.com/davis-ca/,Single Family,private
+"801 L St, Davis, CA 95616",1650,1,1.0,625,38.55134,-121.73988,sample_davis_ca,https://www.rent.com/california/davis-apartments,Condo,private
+"2500 Da Vinci Ct, Davis, CA 95618",2100,2,2.0,980,38.56201,-121.69452,sample_davis_ca,https://www.trulia.com/for_rent/Davis_CA/,Townhome,private
+"1321 Alhambra Dr, Davis, CA 95616",2750,4,2.5,1450,38.55971,-121.72105,sample_davis_ca,https://www.apartments.com/davis-ca/,Single Family,private
+"303 3rd St, Davis, CA 95616",1550,1,1.0,540,38.54501,-121.74012,sample_davis_ca,https://www.zillow.com/davis-ca/rentals/,Apartment,private
+"1800 Shasta Dr, Davis, CA 95616",1980,2,1.0,820,38.54765,-121.7619,sample_davis_ca,https://www.rent.com/california/davis-apartments,Duplex,shared
+"616 Cantrill Dr, Davis, CA 95616",3200,4,3.0,1680,38.5562,-121.7278,sample_davis_ca,https://www.apartments.com/davis-ca/,Single Family,private
+"500 Pole Line Rd, Davis, CA 95618",1425,1,1.0,590,38.5634,-121.7321,sample_davis_ca,https://www.zillow.com/davis-ca/rentals/,Apartment,private
+"815 Cranbrook Ct, Davis, CA 95616",2280,3,2.0,1080,38.5533,-121.7189,sample_davis_ca,https://www.trulia.com/for_rent/Davis_CA/,Townhome,private
+"1 Shields Ave, Davis, CA 95616",1750,2,1.0,760,38.5398,-121.7502,sample_davis_ca,https://www.apartments.com/davis-ca/,Apartment,shared
+"3500 Sycamore Ln, Davis, CA 95616",2650,3,2.5,1320,38.5671,-121.7054,sample_davis_ca,https://www.rent.com/california/davis-apartments,Single Family,private
+"408 F St, Davis, CA 95616",1895,2,1.0,780,38.5439,-121.7385,sample_davis_ca,https://www.zillow.com/davis-ca/rentals/,Condo,private
+"2000 Moore Blvd, Davis, CA 95618",1595,1,1.0,610,38.5712,-121.7238,sample_davis_ca,https://www.apartments.com/davis-ca/,Apartment,private
+"450 J St, Davis, CA 95616",2450,3,2.0,1180,38.5441,-121.7423,sample_davis_ca,https://www.trulia.com/for_rent/Davis_CA/,Single Family,private
+"812 Sycamore Ln, Davis, CA 95616",1725,2,1.0,745,38.5658,-121.7086,sample_davis_ca,https://www.rent.com/california/davis-apartments,Duplex,unknown
+"1100 Alvarado Ave, Davis, CA 95616",1380,1,1.0,520,38.5525,-121.7342,sample_davis_ca,https://www.zillow.com/davis-ca/rentals/,Apartment,shared
+"3333 Alvarado Ave, Davis, CA 95616",3100,4,3.0,1750,38.558,-121.7295,sample_davis_ca,https://www.apartments.com/davis-ca/,Single Family,private
+"250 Cowell Blvd, Davis, CA 95618",1495,1,1.0,580,38.5695,-121.731,sample_davis_ca,https://www.rent.com/california/davis-apartments,Apartment,private
+"600 Drake Dr, Davis, CA 95616",2200,3,2.0,1040,38.5489,-121.7256,sample_davis_ca,https://www.trulia.com/for_rent/Davis_CA/,Townhome,private

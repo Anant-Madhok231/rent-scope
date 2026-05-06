@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-"""Run the full rent_scope data pipeline end to end."""
 
 from __future__ import annotations
 
@@ -13,6 +12,7 @@ SCRIPTS = ROOT / "scripts"
 STEPS = [
     "collect_rentals.py",
     "collect_osm_amenities.py",
+    "fetch_rent_trend.py",
     "score_rentals.py",
     "build_geojson.py",
 ]

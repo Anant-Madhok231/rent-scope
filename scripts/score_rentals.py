@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-"""Spatial scoring for rental opportunity index (0-100)."""
 
 from __future__ import annotations
 
@@ -15,13 +14,17 @@ RAW_RENTALS = ROOT / "data" / "raw" / "rentals.csv"
 RAW_AMENITIES = ROOT / "data" / "raw" / "amenities.geojson"
 PROCESSED_DIR = ROOT / "data" / "processed"
 OUT_CSV = PROCESSED_DIR / "scored_rentals.csv"
+ACS_PATH = PROCESSED_DIR / "davis_median_rent_acs.json"
 
 UC_DAVIS = (38.538223, -121.761712)
 DOWNTOWN_DAVIS = (38.544907, -121.740528)
+MEMORIAL_UNION = (38.5414268, -121.7494914)
+SILO = (38.5406379, -121.7522383)
 
 WALK_KM = 0.8
 TRANSIT_KM = 0.65
 PEER_KM = 1.5
+UNITRANS_LIST_KM = 1.5
 
 W_RENT = 0.22
 W_CAMPUS = 0.18
@@ -52,6 +55,16 @@ def percentile_rank_lower_is_better(values: list[float], x: float) -> float:
     return 100.0 * below / len(sorted_v)
 
 
+def load_acs_series() -> list[dict]:
+    if not ACS_PATH.is_file():
+        return []
+    try:
+        data = json.loads(ACS_PATH.read_text(encoding="utf-8"))
+        return data if isinstance(data, list) else []
+    except json.JSONDecodeError:
+        return []
+
+
 def load_amenities(path: Path) -> list[dict]:
     data = json.loads(path.read_text(encoding="utf-8"))
     feats = data.get("features") or []
@@ -65,7 +78,16 @@ def load_amenities(path: Path) -> list[dict]:
             continue
         lon, lat = float(coords[0]), float(coords[1])
         props = f.get("properties") or {}
-        out.append({"lat": lat, "lon": lon, "amenity_type": props.get("amenity_type", "")})
+        out.append(
+            {
+                "lat": lat,
+                "lon": lon,
+                "amenity_type": props.get("amenity_type", ""),
+                "name": props.get("name") or "",
+                "network": props.get("network") or "",
+                "operator": props.get("operator") or "",
+            }
+        )
     return out
 
 
@@ -87,6 +109,50 @@ def count_in_radius(
         if haversine_km(lat, lon, a["lat"], a["lon"]) <= radius_km:
             n += 1
     return n
+
+
+def nearest_convenience_km(lat: float, lon: float, amenities: list[dict]) -> float | None:
+    best = None
+    for a in amenities:
+        if a["amenity_type"] != "convenience":
+            continue
+        d = haversine_km(lat, lon, a["lat"], a["lon"])
+        if best is None or d < best:
+            best = d
+    return best
+
+
+def unitrans_nearby(lat: float, lon: float, amenities: list[dict], limit: int = 14) -> list[dict]:
+    hits = []
+    for a in amenities:
+        if a["amenity_type"] != "unitrans":
+            continue
+        d = haversine_km(lat, lon, a["lat"], a["lon"])
+        if d <= UNITRANS_LIST_KM:
+            label = a["name"] or a["network"] or "Unitrans stop"
+            hits.append({"name": label, "km": round(d, 3)})
+    hits.sort(key=lambda x: x["km"])
+    return hits[:limit]
+
+
+def listing_trend_from_acs(rent: float, acs: list[dict]) -> list[dict]:
+    if not acs:
+        return []
+    vals = [x["median_rent"] for x in acs if x.get("median_rent")]
+    if not vals:
+        return []
+    m_last = float(acs[-1]["median_rent"])
+    if m_last <= 0:
+        return []
+    out = []
+    for row in acs:
+        y = row.get("year")
+        m = row.get("median_rent")
+        if y is None or m is None:
+            continue
+        est = rent * (float(m) / m_last)
+        out.append({"year": int(y), "rent_est": round(est, 0)})
+    return out
 
 
 def peer_adjustment(
@@ -134,6 +200,10 @@ def build_explanation(
     transit_count: int,
     peer_note: str,
     dist_campus_km: float,
+    d_mu: float,
+    d_silo: float,
+    conv_n: int,
+    unitrans_n: int,
 ) -> str:
     parts = []
     if rent_eff >= 72:
@@ -149,6 +219,10 @@ def build_explanation(
         parts.append("a practical distance from campus")
     else:
         parts.append(f"about {dist_campus_km:.1f} km from campus")
+
+    parts.append(
+        f"Memorial Union {d_mu:.2f} km · Silo {d_silo:.2f} km · {conv_n} convenience stores ≤800 m · {unitrans_n} Unitrans stops ≤1.5 km"
+    )
 
     if downtown >= 70:
         parts.append("steps from downtown dining and errands")
@@ -173,15 +247,21 @@ def build_explanation(
         parts.append(peer_note)
 
     text = "; ".join(parts)
-    if len(text) > 420:
-        return text[:417] + "..."
+    if len(text) > 480:
+        return text[:477] + "..."
     return text
 
 
 def main() -> None:
     PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
     df = pd.read_csv(RAW_RENTALS)
+    if "room_type" not in df.columns:
+        df["room_type"] = "unknown"
+    df["room_type"] = df["room_type"].fillna("unknown").astype(str).str.lower()
+    df.loc[~df["room_type"].isin(["shared", "private", "unknown"]), "room_type"] = "unknown"
+
     amenities = load_amenities(RAW_AMENITIES)
+    acs = load_acs_series()
 
     rent_per_sqft = []
     rent_per_bed = []
@@ -191,6 +271,9 @@ def main() -> None:
         rent_per_sqft.append(float(row["rent"]) / sq)
         rent_per_bed.append(float(row["rent"]) / beds)
 
+    non_transit = {"grocery", "cafe", "gym", "park", "library", "restaurant", "pharmacy", "convenience"}
+    transit_types = {"transit", "unitrans"}
+
     scores_rent = []
     scores_campus = []
     scores_dt = []
@@ -199,9 +282,12 @@ def main() -> None:
     scores_peer = []
     explanations = []
     opportunity_scores = []
-
-    non_transit = {"grocery", "cafe", "gym", "park", "library", "restaurant", "pharmacy"}
-    transit_only = {"transit"}
+    dist_mu_col = []
+    dist_silo_col = []
+    conv_count_col = []
+    conv_nearest_col = []
+    unitrans_json_col = []
+    trend_json_col = []
 
     for idx, row in df.iterrows():
         lat, lon = float(row["latitude"]), float(row["longitude"])
@@ -219,6 +305,11 @@ def main() -> None:
 
         d_campus = haversine_km(lat, lon, UC_DAVIS[0], UC_DAVIS[1])
         d_dt = haversine_km(lat, lon, DOWNTOWN_DAVIS[0], DOWNTOWN_DAVIS[1])
+        d_mu = haversine_km(lat, lon, MEMORIAL_UNION[0], MEMORIAL_UNION[1])
+        d_silo = haversine_km(lat, lon, SILO[0], SILO[1])
+        dist_mu_col.append(round(d_mu, 4))
+        dist_silo_col.append(round(d_silo, 4))
+
         sc = decay_score(d_campus, 1.35)
         sd = decay_score(d_dt, 0.95)
         scores_campus.append(sc)
@@ -228,12 +319,21 @@ def main() -> None:
         amenity_score = min(100.0, amenity_n * 3.2 + 8.0)
         scores_amenity.append(amenity_score)
 
-        transit_n = count_in_radius(lat, lon, amenities, TRANSIT_KM, type_filter=transit_only)
+        transit_n = count_in_radius(lat, lon, amenities, TRANSIT_KM, type_filter=transit_types)
         transit_score = min(100.0, 18.0 + transit_n * 16.0)
         scores_transit.append(transit_score)
 
         peer_s, peer_note = peer_adjustment(df, idx, lat, lon, rent, beds)
         scores_peer.append(peer_s)
+
+        conv_n = count_in_radius(lat, lon, amenities, WALK_KM, type_filter={"convenience"})
+        conv_count_col.append(conv_n)
+        cnear = nearest_convenience_km(lat, lon, amenities)
+        conv_nearest_col.append(round(cnear, 4) if cnear is not None else "")
+
+        ulist = unitrans_nearby(lat, lon, amenities)
+        unitrans_json_col.append(json.dumps(ulist))
+        trend_json_col.append(json.dumps(listing_trend_from_acs(rent, acs)))
 
         raw = (
             W_RENT * eff
@@ -254,12 +354,22 @@ def main() -> None:
                 transit_n,
                 peer_note,
                 d_campus,
+                d_mu,
+                d_silo,
+                conv_n,
+                len(ulist),
             )
         )
 
     df = df.copy()
     df["opportunity_score"] = opportunity_scores
     df["score_explanation"] = explanations
+    df["dist_km_memorial_union"] = dist_mu_col
+    df["dist_km_silo"] = dist_silo_col
+    df["convenience_800m_count"] = conv_count_col
+    df["convenience_nearest_km"] = conv_nearest_col
+    df["unitrans_stops_json"] = unitrans_json_col
+    df["listing_rent_trend_json"] = trend_json_col
 
     df = df.sort_values("opportunity_score", ascending=False)
     df.to_csv(OUT_CSV, index=False)

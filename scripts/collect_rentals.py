@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-"""Fetch rental listings for Davis, CA or copy the local sample set."""
 
 from __future__ import annotations
 
@@ -23,6 +22,33 @@ RENTCAST_URL = "https://api.rentcast.io/v1/listings/rental/long-term"
 
 def _ensure_dirs() -> None:
     RAW_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def _infer_room_type(desc: str) -> str:
+    d = desc.lower()
+    if any(
+        w in d
+        for w in (
+            "shared room",
+            "share a room",
+            "shared bedroom",
+            "roommate wanted",
+            "double occupancy room",
+        )
+    ):
+        return "shared"
+    if any(
+        w in d
+        for w in (
+            "private room",
+            "private bedroom",
+            "single room",
+            "your own room",
+            "private bed",
+        )
+    ):
+        return "private"
+    return "unknown"
 
 
 def _geocode_missing(rows: list[dict]) -> None:
@@ -54,6 +80,14 @@ def _from_rentcast(api_key: str) -> pd.DataFrame:
         lat = item.get("latitude")
         lon = item.get("longitude")
         addr = item.get("formattedAddress") or item.get("addressLine1") or ""
+        desc = str(item.get("description") or item.get("remarks") or "")
+        url = str(
+            item.get("url")
+            or item.get("listingUrl")
+            or item.get("listing_url")
+            or item.get("sourceUrl")
+            or ""
+        )
         records.append(
             {
                 "address": addr,
@@ -64,8 +98,9 @@ def _from_rentcast(api_key: str) -> pd.DataFrame:
                 "latitude": float(lat) if lat is not None else None,
                 "longitude": float(lon) if lon is not None else None,
                 "source": "rentcast",
-                "listing_url": "",
+                "listing_url": url,
                 "property_type": str(item.get("propertyType") or "Unknown"),
+                "room_type": _infer_room_type(desc),
             }
         )
     _geocode_missing(records)
@@ -90,6 +125,10 @@ def main() -> None:
         df = _from_sample()
         df["source"] = "sample_davis_ca"
 
+    if "room_type" not in df.columns:
+        df["room_type"] = "unknown"
+    df["room_type"] = df["room_type"].fillna("unknown").astype(str).str.lower()
+
     cols = [
         "address",
         "rent",
@@ -101,6 +140,7 @@ def main() -> None:
         "source",
         "listing_url",
         "property_type",
+        "room_type",
     ]
     df = df[[c for c in cols if c in df.columns]]
     df.to_csv(OUT_PATH, index=False)

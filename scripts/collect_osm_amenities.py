@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-"""Download Davis-area amenities from OpenStreetMap via Overpass."""
 
 from __future__ import annotations
 
@@ -32,6 +31,7 @@ QUERY = f"""
   nwr["leisure"="park"]({BBOX_S},{BBOX_W},{BBOX_N},{BBOX_E});
   nwr["amenity"="library"]({BBOX_S},{BBOX_W},{BBOX_N},{BBOX_E});
   nwr["public_transport"="stop_position"]({BBOX_S},{BBOX_W},{BBOX_N},{BBOX_E});
+  nwr["public_transport"="platform"]({BBOX_S},{BBOX_W},{BBOX_N},{BBOX_E});
   nwr["highway"="bus_stop"]({BBOX_S},{BBOX_W},{BBOX_N},{BBOX_E});
   nwr["railway"="tram_stop"]({BBOX_S},{BBOX_W},{BBOX_N},{BBOX_E});
   nwr["railway"="station"]({BBOX_S},{BBOX_W},{BBOX_N},{BBOX_E});
@@ -44,11 +44,34 @@ out center;
 """
 
 
+def _is_unitrans(tags: dict) -> bool:
+    if not tags:
+        return False
+    net = str(tags.get("network") or "").lower()
+    op = str(tags.get("operator") or "").lower()
+    name = str(tags.get("name") or "").lower()
+    if "unitrans" in net or "unitrans" in op:
+        return True
+    if tags.get("operator") == "ASUCD" and "bus" in name:
+        return True
+    if net == "unitrans":
+        return True
+    return False
+
+
 def _classify(tags: dict) -> str | None:
     if not tags:
         return None
-    if tags.get("shop") in ("supermarket", "convenience"):
+    hw = tags.get("highway")
+    pt = tags.get("public_transport")
+    if hw == "bus_stop" or pt in ("stop_position", "platform"):
+        return "unitrans" if _is_unitrans(tags) else "transit"
+    if tags.get("railway") in ("tram_stop", "station") or tags.get("amenity") == "bus_station":
+        return "transit"
+    if tags.get("shop") == "supermarket":
         return "grocery"
+    if tags.get("shop") == "convenience":
+        return "convenience"
     if tags.get("amenity") == "cafe":
         return "cafe"
     if tags.get("leisure") == "fitness_centre":
@@ -57,10 +80,6 @@ def _classify(tags: dict) -> str | None:
         return "park"
     if tags.get("amenity") == "library":
         return "library"
-    if tags.get("public_transport") == "stop_position" or tags.get("highway") == "bus_stop":
-        return "transit"
-    if tags.get("railway") in ("tram_stop", "station") or tags.get("amenity") == "bus_station":
-        return "transit"
     if tags.get("amenity") in ("restaurant", "fast_food"):
         return "restaurant"
     if tags.get("amenity") == "pharmacy":
@@ -88,6 +107,8 @@ def _element_to_feature(el: dict) -> dict | None:
         "properties": {
             "amenity_type": kind,
             "name": tags.get("name") or "",
+            "network": tags.get("network") or "",
+            "operator": tags.get("operator") or "",
             "osm_type": el.get("type"),
             "osm_id": el.get("id"),
         },

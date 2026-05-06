@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-"""Emit Leaflet-ready GeoJSON for the docs site."""
 
 from __future__ import annotations
 
@@ -14,12 +13,29 @@ SCORED = ROOT / "data" / "processed" / "scored_rentals.csv"
 OUT_PATH = ROOT / "docs" / "rentals.geojson"
 
 
+def _loads_maybe(s: str) -> list | None:
+    if not s or not str(s).strip():
+        return None
+    try:
+        v = json.loads(s)
+        return v if isinstance(v, list) else None
+    except json.JSONDecodeError:
+        return None
+
+
 def main() -> None:
     df = pd.read_csv(SCORED)
     features = []
     for _, row in df.iterrows():
         lat = float(row["latitude"])
         lon = float(row["longitude"])
+        uj = _loads_maybe(str(row.get("unitrans_stops_json") or ""))
+        tj = _loads_maybe(str(row.get("listing_rent_trend_json") or ""))
+        cn = row.get("convenience_nearest_km")
+        try:
+            cnear = float(cn) if cn is not None and str(cn) != "" else None
+        except (TypeError, ValueError):
+            cnear = None
         props = {
             "address": str(row["address"]),
             "rent": float(row["rent"]),
@@ -31,6 +47,13 @@ def main() -> None:
             "property_type": str(row["property_type"]),
             "source": str(row["source"]),
             "listing_url": str(row.get("listing_url") or ""),
+            "room_type": str(row.get("room_type") or "unknown"),
+            "dist_km_memorial_union": float(row["dist_km_memorial_union"]),
+            "dist_km_silo": float(row["dist_km_silo"]),
+            "convenience_800m_count": int(row["convenience_800m_count"]),
+            "convenience_nearest_km": cnear,
+            "unitrans_stops": uj or [],
+            "listing_rent_trend": tj or [],
         }
         features.append(
             {

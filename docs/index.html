@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,7 +31,12 @@
         </div>
       </div>
       <div class="header-meta">
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch color theme" title="Theme">
+          <span class="theme-icon theme-icon-moon" aria-hidden="true"></span>
+          <span class="theme-icon theme-icon-sun" aria-hidden="true"></span>
+        </button>
         <span class="pill"><span class="pill-dot"></span> OpenStreetMap</span>
+        <span class="pill">ACS rent trend</span>
         <span class="pill">GeoJSON · Leaflet</span>
       </div>
     </header>
@@ -59,6 +64,15 @@
       <aside class="sidebar panel">
         <h2 class="panel-title">Filters</h2>
         <div class="filters">
+          <label class="field">
+            <span>Room arrangement</span>
+            <select id="filter-room">
+              <option value="">Any</option>
+              <option value="private">Private room</option>
+              <option value="shared">Shared room (2 per room)</option>
+              <option value="unknown">Not specified</option>
+            </select>
+          </label>
           <label class="field">
             <span>Max rent</span>
             <input type="number" id="filter-rent" min="0" step="50" placeholder="No limit" />
@@ -111,6 +125,7 @@
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" crossorigin="anonymous"></script>
   <script src="./app.js"></script>
 </body>
 </html>

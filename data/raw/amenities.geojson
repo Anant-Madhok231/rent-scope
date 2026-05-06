@@ -13,6 +13,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Davis",
+        "network": "Amtrak",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 95713711
       }
@@ -29,6 +31,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Hill Park",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 358822756
       }
@@ -45,6 +49,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Dewey Halden Field",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 358858699
       }
@@ -61,6 +67,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Del Taco",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 423211019
       }
@@ -77,6 +85,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "KFC",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 423211592
       }
@@ -93,6 +103,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Cargo Coffee",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 518279679
       }
@@ -109,6 +121,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Sodexho Coffee",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 531004701
       }
@@ -125,6 +139,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Bio Brew",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 559255145
       }
@@ -141,6 +157,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Peet's Coffee",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 559255147
       }
@@ -157,6 +175,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Steve's Pizza",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 573904655
       }
@@ -173,6 +193,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Jack in the Box",
+        "network": "",
+        "operator": "Jack in the Box",
         "osm_type": "node",
         "osm_id": 573904656
       }
@@ -189,6 +211,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Taco Bell",
+        "network": "",
+        "operator": "Taco Bell",
         "osm_type": "node",
         "osm_id": 573904657
       }
@@ -205,6 +229,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Peet's Coffee",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 573949853
       }
@@ -221,6 +247,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Chipotle",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 573949856
       }
@@ -237,6 +265,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Cultiv\u00e9 Frozen Yogurt",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 573949861
       }
@@ -253,6 +283,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Crepeville",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 575303926
       }
@@ -269,6 +301,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Burgers and Brew",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 575303927
       }
@@ -285,6 +319,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Silver Dragon",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 575310005
       }
@@ -301,6 +337,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Make Fish",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 575310006
       }
@@ -317,6 +355,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Bistro 33",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 575311635
       }
@@ -333,6 +373,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Woodstock's Pizza",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 575317875
       }
@@ -349,6 +391,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Kathmandu Kitchen",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 575317879
       }
@@ -365,6 +409,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Village Bakery",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 575320248
       }
@@ -381,6 +427,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Davis Noodle City",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 575324530
       }
@@ -397,6 +445,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Davis Creamery",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 575324532
       }
@@ -413,6 +463,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Sophia's Thai Kitchen",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 575324533
       }
@@ -429,6 +481,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Village Pizza & Grill",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 576438970
       }
@@ -445,6 +499,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Redrum Burger",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 596690045
       }
@@ -461,6 +517,8 @@
       "properties": {
         "amenity_type": "grocery",
         "name": "Nugget Markets",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 597045822
       }
@@ -477,6 +535,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Starbucks",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 597045846
       }
@@ -493,6 +553,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Taqueria Guadalajara",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 597502863
       }
@@ -509,6 +571,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Dos Coyotes",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 632005117
       }
@@ -525,6 +589,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Noah's Bagels",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 632005118
       }
@@ -541,6 +607,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Jamba",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 632005119
       }
@@ -557,6 +625,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Arlington Farms",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 632008898
       }
@@ -573,6 +643,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Lake & Portage Bay West",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 632008900
       }
@@ -589,6 +661,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Lake & Salem Ave.",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 632009255
       }
@@ -605,6 +679,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Lake and Westlake Plaza",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 632009258
       }
@@ -621,6 +697,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Arlington & Buckleberry Rd. (Southbound)",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 632011800
       }
@@ -637,6 +715,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Arlington & Westernesse Rd.",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 632011801
       }
@@ -653,6 +733,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Arlington & Cabot St. (Eastbound)",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 632011802
       }
@@ -669,6 +751,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Arlington & Shasta Dr. (Eastbound)",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 632011803
       }
@@ -685,6 +769,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 632012070
       }
@@ -701,6 +787,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 632012076
       }
@@ -717,6 +805,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Arlington & Lake Blvd. (Eastbound)",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 632013167
       }
@@ -733,6 +823,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Russell & Arthur St. (Westbound)",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 632013968
       }
@@ -749,6 +841,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 632013969
       }
@@ -765,6 +859,8 @@
       "properties": {
         "amenity_type": "pharmacy",
         "name": "Rite Aid",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 710828531
       }
@@ -781,6 +877,8 @@
       "properties": {
         "amenity_type": "grocery",
         "name": "Westlake IGA Market",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 711012114
       }
@@ -797,6 +895,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Lamppost Pizza",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 711012118
       }
@@ -813,6 +913,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Shanghai Town",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 711012122
       }
@@ -829,6 +931,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Chuy's Taqueria",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 712375145
       }
@@ -845,6 +949,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Symposium Restaurant & Pizza House",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 721785315
       }
@@ -861,6 +967,8 @@
       "properties": {
         "amenity_type": "pharmacy",
         "name": "CVS Pharmacy",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 721788886
       }
@@ -877,6 +985,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Taste of Thai",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 722618705
       }
@@ -893,6 +1003,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "The Hotdogger",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 722643565
       }
@@ -909,6 +1021,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "The Dumpling House",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 722643566
       }
@@ -925,6 +1039,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Snack Shack",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 722863898
       }
@@ -941,6 +1057,8 @@
       "properties": {
         "amenity_type": "grocery",
         "name": "Trader Joe's",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 1052335476
       }
@@ -957,6 +1075,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Mikuni's",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 1192381864
       }
@@ -971,8 +1091,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 1609432281
       }
@@ -987,8 +1109,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 1609432290
       }
@@ -1003,8 +1127,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 1609432342
       }
@@ -1019,8 +1145,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 1609432344
       }
@@ -1037,6 +1165,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Panera Bread",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 1897714587
       }
@@ -1053,6 +1183,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Shah's Halal Food",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 1899053844
       }
@@ -1069,6 +1201,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Peet's Coffee",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 1899064831
       }
@@ -1085,6 +1219,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "CoHo South Caf\u00e9",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 1899070842
       }
@@ -1101,6 +1237,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Cuarto Dining Commons",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 1899083425
       }
@@ -1117,6 +1255,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Segundo Dining Commons",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 1899083429
       }
@@ -1133,6 +1273,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Tercero Dining Commons",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 1899083432
       }
@@ -1149,6 +1291,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Burger King",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 1899545094
       }
@@ -1165,6 +1309,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Domino's",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 1899545097
       }
@@ -1181,6 +1327,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Konditorei",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 1918194126
       }
@@ -1197,6 +1345,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Silo Terminal",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2145846271
       }
@@ -1213,6 +1363,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "La Rue & Garrod Dr. ",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2145846280
       }
@@ -1227,8 +1379,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "Hutchison & Extension Center Drive",
+        "network": "",
+        "operator": "ASUCD Unitrans",
         "osm_type": "node",
         "osm_id": 2145846285
       }
@@ -1245,6 +1399,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Silo Terminal",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2145846289
       }
@@ -1261,6 +1417,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Dairy Rd. (Tercero South)",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2145846293
       }
@@ -1277,6 +1435,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Silo Terminal",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2145846300
       }
@@ -1293,6 +1453,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Health Science Dr & Lot 56",
+        "network": "Causeway Connection",
+        "operator": "SacRT & Yolobus",
         "osm_type": "node",
         "osm_id": 2145846301
       }
@@ -1309,6 +1471,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Silo Terminal",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2145846303
       }
@@ -1325,6 +1489,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Memorial Union Terminal",
+        "network": "Yolobus",
+        "operator": "Yolobus",
         "osm_type": "node",
         "osm_id": 2145846306
       }
@@ -1341,6 +1507,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Silo Terminal",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2145846307
       }
@@ -1357,6 +1525,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Silo Terminal",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2145846308
       }
@@ -1373,6 +1543,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Silo Terminal",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2145846311
       }
@@ -1389,6 +1561,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Silo Terminal",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2145846323
       }
@@ -1405,6 +1579,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Arlington & Cabot St. (Westbound)",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2152464450
       }
@@ -1421,6 +1597,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Arlington & Shasta Dr. (Westbound)",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2152464451
       }
@@ -1437,6 +1615,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Arlington & Lake Blvd. (Westbound)",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2152464452
       }
@@ -1453,6 +1633,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Arlington & Buckleberry (Northbound)",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2152464453
       }
@@ -1469,6 +1651,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Arlington & Calaveras Ave.",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2152464455
       }
@@ -1485,6 +1669,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Davis",
+        "network": "Amtrak",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2178098851
       }
@@ -1501,6 +1687,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Ding How",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2188177613
       }
@@ -1517,6 +1705,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Papa Murphy's",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2188177614
       }
@@ -1533,6 +1723,8 @@
       "properties": {
         "amenity_type": "grocery",
         "name": "Savemart",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2188177617
       }
@@ -1549,6 +1741,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "I Love Sushi",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2188177618
       }
@@ -1565,6 +1759,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Taqueria Guadalajara",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2188177619
       }
@@ -1581,6 +1777,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Sage Street Cafe",
+        "network": "",
+        "operator": "Sodexo, Inc.",
         "osm_type": "node",
         "osm_id": 2281654805
       }
@@ -1597,6 +1795,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Sage Street Restaurant",
+        "network": "",
+        "operator": "Sodexo, Inc.",
         "osm_type": "node",
         "osm_id": 2281654809
       }
@@ -1611,8 +1811,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "grocery",
+        "amenity_type": "convenience",
         "name": "Sage Street Market",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2281654814
       }
@@ -1629,6 +1831,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Wok of Flame",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2287617318
       }
@@ -1645,6 +1849,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Fluffy Donuts",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2312172449
       }
@@ -1661,6 +1867,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Coffee House",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2320122134
       }
@@ -1675,8 +1883,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "Tilia Loop",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 2493388803
       }
@@ -1691,8 +1901,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 2493388804
       }
@@ -1709,6 +1921,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Natural Food Works and Farmer's Kitchen Cafe",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2522504674
       }
@@ -1725,6 +1939,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Dutch Bros. Coffee",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2588098686
       }
@@ -1741,6 +1957,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "El Toro Bravo",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2588178992
       }
@@ -1757,6 +1975,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Mace Blvd & 2nd St (NB)",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2588614043
       }
@@ -1773,6 +1993,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Subway",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2588614218
       }
@@ -1789,6 +2011,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Round Table Pizza",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2589821399
       }
@@ -1805,6 +2029,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Subway",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2589823921
       }
@@ -1821,6 +2047,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "3rd and U Cafe",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2589920867
       }
@@ -1837,6 +2065,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Subway",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2590576994
       }
@@ -1853,6 +2083,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Ali Baba Cafe",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2616889089
       }
@@ -1869,6 +2101,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Pho King 4 Restaurant",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2616889093
       }
@@ -1885,6 +2119,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Oshio Cafe",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2616889094
       }
@@ -1901,6 +2137,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Raja's Tandoor",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2616889095
       }
@@ -1917,6 +2155,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Manna Korean BBQ",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2618170089
       }
@@ -1933,6 +2173,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Taqueria El Burrito",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2618170090
       }
@@ -1949,6 +2191,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Yeti Restaurant",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2618170093
       }
@@ -1965,6 +2209,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Zia's Delicatessen",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 2618170094
       }
@@ -1981,6 +2227,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Taqueria Davis",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 3104414669
       }
@@ -1997,6 +2245,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Thai Canteen",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 3189150468
       }
@@ -2013,6 +2263,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Pluto's",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 3226037807
       }
@@ -2029,6 +2281,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Yakitori Yuchan",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 3226037809
       }
@@ -2045,6 +2299,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Common Grounds Coffee",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 3385541430
       }
@@ -2061,6 +2317,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Tea List",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 3534205995
       }
@@ -2077,6 +2335,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Sharetea",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 3534205997
       }
@@ -2093,6 +2353,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Barista Brew Cafe",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 3534205998
       }
@@ -2109,6 +2371,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Cafe Bernardo",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 3534205999
       }
@@ -2125,6 +2389,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Cloud Forest Cafe",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 3534206000
       }
@@ -2141,6 +2407,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Starbucks",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 3534206002
       }
@@ -2157,6 +2425,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Peet's Coffee",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 3534206003
       }
@@ -2171,8 +2441,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 4080570766
       }
@@ -2187,8 +2459,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 4080570767
       }
@@ -2203,8 +2477,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 4080570768
       }
@@ -2219,8 +2495,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 4080609603
       }
@@ -2235,8 +2513,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 4080651038
       }
@@ -2251,8 +2531,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 4080651039
       }
@@ -2267,8 +2549,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 4080651040
       }
@@ -2283,8 +2567,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 4080651041
       }
@@ -2299,8 +2585,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 4080651042
       }
@@ -2315,8 +2603,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 4080651043
       }
@@ -2333,6 +2623,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 4093141332
       }
@@ -2349,6 +2641,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 4112840120
       }
@@ -2365,6 +2659,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 4121578230
       }
@@ -2381,6 +2677,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 4121578231
       }
@@ -2397,6 +2695,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Temple Coffee",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 4297142348
       }
@@ -2413,6 +2713,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Jack's Urban Eats",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 4297147359
       }
@@ -2429,6 +2731,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Gong Cha",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 4507142626
       }
@@ -2445,6 +2749,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 4679032387
       }
@@ -2461,6 +2767,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Paesano's",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 5067715922
       }
@@ -2477,6 +2785,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Wingstop",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 5300316847
       }
@@ -2493,6 +2803,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Red 88 Noodle Bar",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 5300335926
       }
@@ -2509,6 +2821,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Fuji Sushi Boat & Buffet",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 5300335927
       }
@@ -2525,6 +2839,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Preethi Indian Cuisine",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 5300335929
       }
@@ -2541,6 +2857,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "The Posh Bagel",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 5300335930
       }
@@ -2557,6 +2875,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Blaze Pizza",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 5300335931
       }
@@ -2573,6 +2893,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Four Seasons Gourmet Chinese",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 5300376122
       }
@@ -2589,6 +2911,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Dos Coyotes Border Cafe",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 5300387851
       }
@@ -2605,6 +2929,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Mr Pickle's Sandwich Shop",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 5300387852
       }
@@ -2621,6 +2947,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Teabo Caf\u00e9",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 5301304718
       }
@@ -2637,6 +2965,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Starbucks",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 5301352991
       }
@@ -2651,8 +2981,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "5th St & Cantrill/Police Station (EB)",
+        "network": "",
+        "operator": "Unitrans;Yolobus",
         "osm_type": "node",
         "osm_id": 5554742279
       }
@@ -2669,6 +3001,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Davis's Pi\u00f1ata Mexican Grill",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 5599541308
       }
@@ -2685,6 +3019,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Fushion Fresh Cafe",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 5599713920
       }
@@ -2701,6 +3037,8 @@
       "properties": {
         "amenity_type": "gym",
         "name": "Get Fit Davis",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 5661761514
       }
@@ -2717,6 +3055,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Philz Coffee",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 5754875821
       }
@@ -2733,6 +3073,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Davis",
+        "network": "Amtrak",
+        "operator": "Amtrak",
         "osm_type": "node",
         "osm_id": 5754924306
       }
@@ -2749,6 +3091,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Domino's",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 5941864978
       }
@@ -2765,6 +3109,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 7091075125
       }
@@ -2781,6 +3127,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Davis (University Mall)",
+        "network": "Flixbus",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 7172996813
       }
@@ -2797,6 +3145,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Davis (Mace Park & Ride)",
+        "network": "Flixbus",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 7172996815
       }
@@ -2813,6 +3163,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Davis (Mace Park & Ride)",
+        "network": "Flixbus",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 7172996816
       }
@@ -2829,6 +3181,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Huku Bistro",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 7229119243
       }
@@ -2845,6 +3199,8 @@
       "properties": {
         "amenity_type": "grocery",
         "name": "Grocery Outlet",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 7352799822
       }
@@ -2861,6 +3217,8 @@
       "properties": {
         "amenity_type": "pharmacy",
         "name": "Rite Aid",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 8069422187
       }
@@ -2877,6 +3235,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 8208026450
       }
@@ -2893,6 +3253,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Subway",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 8208039635
       }
@@ -2909,6 +3271,8 @@
       "properties": {
         "amenity_type": "pharmacy",
         "name": "CVS Pharmacy",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 8208043729
       }
@@ -2925,6 +3289,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Starbucks",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 8939553214
       }
@@ -2941,6 +3307,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Burma Eat",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 9041940996
       }
@@ -2957,6 +3325,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Mountain Mike's",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 9048755707
       }
@@ -2971,8 +3341,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 9048755708
       }
@@ -2987,8 +3359,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "Sycamore Ln & Bucknell Drive (NB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 9200232968
       }
@@ -3005,6 +3379,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Crepe Bistro",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 9936794816
       }
@@ -3021,6 +3397,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Spokes Grill",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 9936806517
       }
@@ -3035,8 +3413,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "grocery",
+        "amenity_type": "convenience",
         "name": "Silo Market",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 10080233615
       }
@@ -3053,6 +3433,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Shah's Halal Food",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 10591061877
       }
@@ -3069,6 +3451,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Latitude Restaurant",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 10735369400
       }
@@ -3085,6 +3469,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 10762241307
       }
@@ -3101,6 +3487,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Mace Blvd & 2nd St (SB)",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 10774590205
       }
@@ -3117,6 +3505,8 @@
       "properties": {
         "amenity_type": "gym",
         "name": "Barefoot Yoga",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 10908975988
       }
@@ -3133,6 +3523,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Hunan Style",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 11473458469
       }
@@ -3149,6 +3541,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Ike's Love and Sandwiches",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 11502448477
       }
@@ -3165,6 +3559,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Pachamama Coffee",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 11502448480
       }
@@ -3181,6 +3577,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Raising Cane's",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 11502448482
       }
@@ -3197,6 +3595,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Sit Lo Saigon",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 11502448483
       }
@@ -3213,6 +3613,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Memorial Union Terminal",
+        "network": "Unitrans",
+        "operator": "City Of Davis",
         "osm_type": "node",
         "osm_id": 12048435681
       }
@@ -3229,6 +3631,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Memorial Union Terminal",
+        "network": "Unitrans",
+        "operator": "City of Davis",
         "osm_type": "node",
         "osm_id": 12048435682
       }
@@ -3245,6 +3649,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Memorial Union Terminal",
+        "network": "Unitrans",
+        "operator": "City of Davis",
         "osm_type": "node",
         "osm_id": 12048435683
       }
@@ -3261,6 +3667,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Memorial Union Terminal",
+        "network": "Unitrans",
+        "operator": "City of Davis",
         "osm_type": "node",
         "osm_id": 12048435684
       }
@@ -3277,6 +3685,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Memorial Union Terminal",
+        "network": "Unitrans",
+        "operator": "City of Davis",
         "osm_type": "node",
         "osm_id": 12048435686
       }
@@ -3293,6 +3703,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Mrak Hall Dr & Old Davis Rd",
+        "network": "Causeway Connection",
+        "operator": "SacRT & Yolobus",
         "osm_type": "node",
         "osm_id": 12123344024
       }
@@ -3309,6 +3721,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Hutchinson Dr & California Way",
+        "network": "Causeway Connection",
+        "operator": "SacRT & Yolobus",
         "osm_type": "node",
         "osm_id": 12123344025
       }
@@ -3325,6 +3739,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Davis, Ca (DAV)",
+        "network": "Amtrak Thruway",
+        "operator": "San Joaquin Joint Powers Authority",
         "osm_type": "node",
         "osm_id": 12154768067
       }
@@ -3341,6 +3757,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Raising Cane's",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 12387173501
       }
@@ -3355,8 +3773,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "grocery",
+        "amenity_type": "convenience",
         "name": "Myu Myu",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 12387173502
       }
@@ -3373,6 +3793,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "El patio",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 12387178201
       }
@@ -3389,6 +3811,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Nick the Greek",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 12387178202
       }
@@ -3403,8 +3827,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "Jade St at Sage St - Drop Off Only (WB)",
+        "network": "Unitrans",
+        "operator": "ASUCD",
         "osm_type": "node",
         "osm_id": 12609027784
       }
@@ -3421,6 +3847,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Tomo Tea House",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 12770913184
       }
@@ -3437,6 +3865,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Bruxie",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 12771031148
       }
@@ -3451,8 +3881,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "Russell & A St (EB)",
+        "network": "",
+        "operator": "Unitrans;Yolobus",
         "osm_type": "node",
         "osm_id": 13095780014
       }
@@ -3467,8 +3899,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "Russell Blvd & A Street/City Hall (WB)",
+        "network": "",
+        "operator": "Unitrans;Yolobus",
         "osm_type": "node",
         "osm_id": 13095780015
       }
@@ -3483,8 +3917,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "B St & 4th St / Central Park (SB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13095780016
       }
@@ -3499,8 +3935,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "B St & 4th St / Central Park (NB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13095780017
       }
@@ -3515,8 +3953,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "2nd St & B St (EB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13095780018
       }
@@ -3531,8 +3971,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "2nd St & E St / Downtown (EB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13095780019
       }
@@ -3547,8 +3989,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "2nd St & E St / Downtown (WB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13095780020
       }
@@ -3563,8 +4007,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "H St & 2nd St / Amtrak (SB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13095780021
       }
@@ -3579,8 +4025,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "H St & 2nd St / Amtrak (NB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13095780022
       }
@@ -3595,8 +4043,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "3rd St & K St (WB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13095780023
       }
@@ -3611,8 +4061,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "3rd St & K St (EB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13095780024
       }
@@ -3627,8 +4079,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "L St & 4th St (NB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13095780025
       }
@@ -3643,8 +4097,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "L St & 425 (SB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13095780026
       }
@@ -3659,8 +4115,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "5th St & Davis Public Works Corp Yard (WB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13095780027
       }
@@ -3675,8 +4133,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "5th St & Pole Line Rd/D.M.V (EB)",
+        "network": "",
+        "operator": "Unitrans;Yolobus",
         "osm_type": "node",
         "osm_id": 13095780028
       }
@@ -3691,8 +4151,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "5th St & Pole Line Rd/D.M.V (WB)",
+        "network": "",
+        "operator": "Unitrans;Yolobus",
         "osm_type": "node",
         "osm_id": 13095780029
       }
@@ -3707,8 +4169,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "5th St & Post Office / Pole Line (EB)",
+        "network": "",
+        "operator": "Unitrans;Yolobus",
         "osm_type": "node",
         "osm_id": 13095780030
       }
@@ -3723,8 +4187,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "5th St & Post Office / Pole Line Rd (WB)",
+        "network": "",
+        "operator": "Unitrans;Yolobus",
         "osm_type": "node",
         "osm_id": 13095780031
       }
@@ -3739,8 +4205,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "5th St & Cantrill/Greystone (WB)",
+        "network": "",
+        "operator": "Unitrans;Yolobus",
         "osm_type": "node",
         "osm_id": 13095780032
       }
@@ -3755,8 +4223,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "5th St & San Rafael St (WB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13095780033
       }
@@ -3771,8 +4241,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "5th St & Pena Drive (EB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13095780034
       }
@@ -3787,8 +4259,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "5th St & Spafford (WB)",
+        "network": "",
+        "operator": "Unitrans;Yolobus",
         "osm_type": "node",
         "osm_id": 13097299493
       }
@@ -3803,8 +4277,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "5th St & Spafford (WB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13097299494
       }
@@ -3821,6 +4297,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "5th St & Windmere Apts. (EB)",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 13097299495
       }
@@ -3837,6 +4315,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "5th St & Pelz Bike Path (WB)",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 13097299496
       }
@@ -3853,6 +4333,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "5th Street & Verona Terrace (EB)",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 13097299497
       }
@@ -3869,6 +4351,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "5th St & Verona Terrace (SB)",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 13097299498
       }
@@ -3885,6 +4369,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Alhambra Drive & 5th St (EB)",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 13097299499
       }
@@ -3901,6 +4387,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Alhambra Drive & Atlantis / Carcia (WB)",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 13097299500
       }
@@ -3917,6 +4405,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Alhambra Dr & Arroyo Ave (EB)",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 13097323001
       }
@@ -3933,6 +4423,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Alhambra & Atlantis / Arroyo (WB)",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 13097323002
       }
@@ -3949,6 +4441,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Alhambra Drive & Mace Blvd (EB)",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 13097323003
       }
@@ -3965,6 +4459,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Alhambra Drive & Mace Blvd (WB)",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 13097323004
       }
@@ -3981,6 +4477,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Chiles Rd & Mace Blvd El Macero/Nugget (EB)",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 13097323005
       }
@@ -3997,6 +4495,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "El Cemonte Ave & Glide Drive (SB)",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 13097323006
       }
@@ -4013,6 +4513,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Cowell Blvd & El Cemonte Ave (WB)",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 13097323007
       }
@@ -4029,6 +4531,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Cowell Blvd & Mace Blvd (WB)",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 13097323008
       }
@@ -4045,6 +4549,8 @@
       "properties": {
         "amenity_type": "transit",
         "name": "Mace Blvd & Cowell Blvd/El Macero/Nugget (NB)",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 13097323009
       }
@@ -4059,8 +4565,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "Sycamore Ln & Russell/Trader Joe's (NB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13099792711
       }
@@ -4075,8 +4583,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "Sycamore Ln & Russell/Trader Joe's (SB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13099792712
       }
@@ -4091,8 +4601,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "Sycamore Ln & 8th St (NB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13099792713
       }
@@ -4107,8 +4619,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "Sycamore & 8th (SB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13099792714
       }
@@ -4123,8 +4637,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "Sycamore Ln & Cornell Drive (SB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13099792715
       }
@@ -4139,8 +4655,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "Sycamore Ln & Cornell Drive (NB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13099792716
       }
@@ -4155,8 +4673,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "Sycamore Ln & Colby Drive (SB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13099792717
       }
@@ -4171,8 +4691,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "Sycamore Ln & Villanova Drive (NB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13099792718
       }
@@ -4187,8 +4709,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "Sycamore Ln & Radcliffe Drive (NB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13099792719
       }
@@ -4203,8 +4727,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "Sycamore Ln & Notre Dame Drive (SB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13099792720
       }
@@ -4219,8 +4745,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "Radcliffe Drive & Apple Ln (NB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13099792721
       }
@@ -4235,8 +4763,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "Drake Drive & Drake Apartments (WB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13099792722
       }
@@ -4251,8 +4781,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "Sycamore Ln & Drake Drive (SB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13099792723
       }
@@ -4269,6 +4801,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Quickly",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 13271137029
       }
@@ -4285,6 +4819,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Domino's",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 13333233912
       }
@@ -4299,8 +4835,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "5th Street & D Street / Downtown (WB)",
+        "network": "",
+        "operator": "Unitrans;Yolobus",
         "osm_type": "node",
         "osm_id": 13337760643
       }
@@ -4315,8 +4853,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "5th Street & D Street / Downtown (EB)",
+        "network": "",
+        "operator": "Unitrans;Yolobus",
         "osm_type": "node",
         "osm_id": 13337760644
       }
@@ -4331,8 +4871,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "F St & 6th Street/Davis Food Co-op (NB)",
+        "network": "",
+        "operator": "Unitrans;Yolobus",
         "osm_type": "node",
         "osm_id": 13337760645
       }
@@ -4347,8 +4889,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "F St & 6th St/Davis Food Co-op (SB)",
+        "network": "",
+        "operator": "Unitrans;Yolobus",
         "osm_type": "node",
         "osm_id": 13337760646
       }
@@ -4363,8 +4907,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "F St & 8th St (NB)",
+        "network": "",
+        "operator": "Unitrans;Yolobus",
         "osm_type": "node",
         "osm_id": 13337760647
       }
@@ -4379,8 +4925,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "F St & 8th St (SB)",
+        "network": "",
+        "operator": "Unitrans;Yolobus",
         "osm_type": "node",
         "osm_id": 13337760648
       }
@@ -4395,8 +4943,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "F St & 12th St (NB)",
+        "network": "",
+        "operator": "Unitrans;Yolobus",
         "osm_type": "node",
         "osm_id": 13337760649
       }
@@ -4411,8 +4961,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "F St & 14th St (NB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13337760650
       }
@@ -4427,8 +4979,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "F St & Covell Blvd (NB)",
+        "network": "",
+        "operator": "Unitrans;Yolobus",
         "osm_type": "node",
         "osm_id": 13337760651
       }
@@ -4443,8 +4997,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "F St & Covell Blvd (SB)",
+        "network": "",
+        "operator": "Unitrans;Yolobus",
         "osm_type": "node",
         "osm_id": 13337760652
       }
@@ -4459,8 +5015,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "J St & Cranbrook Ct (SB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13337760653
       }
@@ -4475,8 +5033,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "J St & Menlo Dr (NB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13337760654
       }
@@ -4491,8 +5051,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "J St & Drexel Dr (NB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13337760655
       }
@@ -4507,8 +5069,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "transit",
+        "amenity_type": "unitrans",
         "name": "J St & Drexel Dr (SB)",
+        "network": "",
+        "operator": "Unitrans",
         "osm_type": "node",
         "osm_id": 13337760656
       }
@@ -4525,6 +5089,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "The Melt",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 13469496001
       }
@@ -4541,6 +5107,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Open Rice",
+        "network": "",
+        "operator": "",
         "osm_type": "node",
         "osm_id": 13515754001
       }
@@ -4557,6 +5125,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Arroyo Community Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 23633618
       }
@@ -4573,6 +5143,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Covell Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 23634487
       }
@@ -4589,6 +5161,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Sandy Motley Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 23647650
       }
@@ -4605,6 +5179,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Willow Creek Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 23647896
       }
@@ -4621,6 +5197,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Mace Ranch Mini Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 23651584
       }
@@ -4637,6 +5215,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "La Playa Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 23651624
       }
@@ -4653,6 +5233,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Northstar Mini Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 24152082
       }
@@ -4669,6 +5251,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "John Barravetto Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 24429303
       }
@@ -4685,6 +5269,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 24429310
       }
@@ -4701,6 +5287,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Mace Ranch Community Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 24513473
       }
@@ -4717,6 +5305,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 24557828
       }
@@ -4733,6 +5323,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Central Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 25001686
       }
@@ -4749,6 +5341,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "N Street Mini Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 25024314
       }
@@ -4765,6 +5359,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Cedar Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 25024394
       }
@@ -4781,6 +5377,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Slide Hill Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 25024595
       }
@@ -4797,6 +5395,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Oak Grove Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 25024637
       }
@@ -4813,6 +5413,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Community Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 25027935
       }
@@ -4829,6 +5431,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 25081571
       }
@@ -4845,6 +5449,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 25155217
       }
@@ -4861,6 +5467,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Pioneer Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 25155296
       }
@@ -4877,6 +5485,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Sycamore Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 25178266
       }
@@ -4893,6 +5503,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Redwood Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 25178298
       }
@@ -4909,6 +5521,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Westwood Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 25195707
       }
@@ -4925,6 +5539,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Walnut Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 25207209
       }
@@ -4941,6 +5557,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Putah Creek Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 25354047
       }
@@ -4957,6 +5575,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "College Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 25366672
       }
@@ -4973,6 +5593,8 @@
       "properties": {
         "amenity_type": "grocery",
         "name": "Davis Food Cooperative",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 25366944
       }
@@ -4989,6 +5611,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Civic Center Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 25400214
       }
@@ -5005,6 +5629,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 25448173
       }
@@ -5021,6 +5647,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "West Quad",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 26338058
       }
@@ -5037,6 +5665,8 @@
       "properties": {
         "amenity_type": "library",
         "name": "Craig Armstrong Library",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 27831653
       }
@@ -5053,6 +5683,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 29426627
       }
@@ -5069,6 +5701,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Carl's Jr.",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 32476165
       }
@@ -5085,6 +5719,8 @@
       "properties": {
         "amenity_type": "library",
         "name": "Mary L. Stevens-Davis Branch (Yolo County Library)",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 32615084
       }
@@ -5101,6 +5737,8 @@
       "properties": {
         "amenity_type": "grocery",
         "name": "Savemart",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 32656558
       }
@@ -5117,6 +5755,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Taco Bell",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 34400780
       }
@@ -5133,6 +5773,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "McDonald's",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 34400810
       }
@@ -5149,6 +5791,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 34405181
       }
@@ -5165,6 +5809,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Caffe Italia",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 36271334
       }
@@ -5181,6 +5827,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Carl's Jr.",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 36921186
       }
@@ -5197,6 +5845,8 @@
       "properties": {
         "amenity_type": "grocery",
         "name": "Nugget Markets",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 36921187
       }
@@ -5213,6 +5863,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "West Manor Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 40056888
       }
@@ -5229,6 +5881,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 41393970
       }
@@ -5245,6 +5899,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Panda Express",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 44459757
       }
@@ -5259,8 +5915,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "grocery",
+        "amenity_type": "convenience",
         "name": "Circle K",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 44468483
       }
@@ -5277,6 +5935,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Chestnut Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 44581550
       }
@@ -5293,6 +5953,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Delta of Venus",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 45208339
       }
@@ -5309,6 +5971,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 45208377
       }
@@ -5325,6 +5989,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Burgers and Brew",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 45208382
       }
@@ -5341,6 +6007,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 45208388
       }
@@ -5357,6 +6025,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Old City Hall",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 45208411
       }
@@ -5373,6 +6043,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Sam's Mediterranean Cuisine",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 45212497
       }
@@ -5389,6 +6061,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Black Bear Diner",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 45212506
       }
@@ -5405,6 +6079,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "In-N-Out Burger",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 46689174
       }
@@ -5421,6 +6097,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Applebee's",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 46699785
       }
@@ -5437,6 +6115,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 46699789
       }
@@ -5453,6 +6133,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "IHOP",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 46699953
       }
@@ -5469,6 +6151,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "Snack Shack",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 58289297
       }
@@ -5485,6 +6169,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 88150395
       }
@@ -5501,6 +6187,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Sunrise Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 106862444
       }
@@ -5515,10 +6203,30 @@
         ]
       },
       "properties": {
-        "amenity_type": "grocery",
+        "amenity_type": "convenience",
         "name": "Extra Mile",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 107138735
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.737317,
+          38.5432844
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "",
+        "network": "Amtrak",
+        "operator": "",
+        "osm_type": "way",
+        "osm_id": 133056020
       }
     },
     {
@@ -5531,8 +6239,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "grocery",
+        "amenity_type": "convenience",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 179561538
       }
@@ -5549,6 +6259,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Hacienda Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 182314353
       }
@@ -5565,6 +6277,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Oxford Circle Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 182315000
       }
@@ -5581,6 +6295,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 183925527
       }
@@ -5595,8 +6311,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "grocery",
+        "amenity_type": "convenience",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 208527818
       }
@@ -5611,8 +6329,10 @@
         ]
       },
       "properties": {
-        "amenity_type": "grocery",
+        "amenity_type": "convenience",
         "name": "ExtraMile",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 208528164
       }
@@ -5629,6 +6349,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Mishka's Cafe",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 220839233
       }
@@ -5645,6 +6367,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Northstar Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 247490849
       }
@@ -5661,6 +6385,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 249239213
       }
@@ -5677,6 +6403,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 249239214
       }
@@ -5693,6 +6421,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "East Quad",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 249314010
       }
@@ -5709,6 +6439,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 252576687
       }
@@ -5725,6 +6457,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 252577023
       }
@@ -5741,6 +6475,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 252961243
       }
@@ -5757,6 +6493,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 252964567
       }
@@ -5773,6 +6511,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 252964568
       }
@@ -5789,6 +6529,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 252964798
       }
@@ -5805,6 +6547,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 252965459
       }
@@ -5821,6 +6565,8 @@
       "properties": {
         "amenity_type": "gym",
         "name": "Toomey Weight Room",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 253117071
       }
@@ -5837,6 +6583,8 @@
       "properties": {
         "amenity_type": "grocery",
         "name": "Safeway",
+        "network": "",
+        "operator": "Safeway",
         "osm_type": "way",
         "osm_id": 253731115
       }
@@ -5853,6 +6601,8 @@
       "properties": {
         "amenity_type": "grocery",
         "name": "Safeway",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 253731412
       }
@@ -5869,6 +6619,8 @@
       "properties": {
         "amenity_type": "library",
         "name": "Marguerite Montgomery Elementary South Davis Satelite Branch (Yolo County Library)",
+        "network": "",
+        "operator": "Yolo County Library & Davis Joint Unified School District",
         "osm_type": "way",
         "osm_id": 256929283
       }
@@ -5885,6 +6637,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 280956408
       }
@@ -5901,6 +6655,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 280956420
       }
@@ -5917,6 +6673,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 328692111
       }
@@ -5933,6 +6691,8 @@
       "properties": {
         "amenity_type": "cafe",
         "name": "Volt Coffee",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 348420952
       }
@@ -5949,6 +6709,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 391697618
       }
@@ -5965,6 +6727,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 391776701
       }
@@ -5981,6 +6745,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Robert Arneson Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 391797141
       }
@@ -5997,6 +6763,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 391936404
       }
@@ -6013,6 +6781,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 391944491
       }
@@ -6029,6 +6799,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 391945970
       }
@@ -6045,6 +6817,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 392328064
       }
@@ -6061,6 +6835,8 @@
       "properties": {
         "amenity_type": "restaurant",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 392538008
       }
@@ -6077,6 +6853,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Davis Greenbelt",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 392543231
       }
@@ -6093,6 +6871,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 392894715
       }
@@ -6109,6 +6889,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Willowbank Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 394956305
       }
@@ -6125,6 +6907,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 396459695
       }
@@ -6141,6 +6925,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 396489312
       }
@@ -6157,6 +6943,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 397000797
       }
@@ -6173,6 +6961,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 397726628
       }
@@ -6189,6 +6979,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 404664547
       }
@@ -6205,6 +6997,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 404664557
       }
@@ -6221,6 +7015,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 405037869
       }
@@ -6237,6 +7033,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 445349259
       }
@@ -6253,6 +7051,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 448899537
       }
@@ -6269,6 +7069,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Willows Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 480128316
       }
@@ -6285,6 +7087,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Cambridge House Dog Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 491450803
       }
@@ -6301,6 +7105,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 493820409
       }
@@ -6317,6 +7123,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Benbow Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 493820411
       }
@@ -6333,6 +7141,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Figgy Park",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 562677682
       }
@@ -6349,6 +7159,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 584766369
       }
@@ -6365,8 +7177,28 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 584766370
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7372826,
+          38.5432323
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "",
+        "network": "Amtrak",
+        "operator": "",
+        "osm_type": "way",
+        "osm_id": 607174962
       }
     },
     {
@@ -6381,6 +7213,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 749649200
       }
@@ -6397,6 +7231,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 752122555
       }
@@ -6413,6 +7249,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 752144065
       }
@@ -6429,6 +7267,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 752900586
       }
@@ -6445,6 +7285,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 753455928
       }
@@ -6461,6 +7303,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 753544509
       }
@@ -6477,6 +7321,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 753544510
       }
@@ -6493,6 +7339,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 753553250
       }
@@ -6509,6 +7357,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 753582210
       }
@@ -6525,6 +7375,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 755028102
       }
@@ -6541,6 +7393,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 755028106
       }
@@ -6557,6 +7411,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 755462604
       }
@@ -6573,6 +7429,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 755462605
       }
@@ -6589,6 +7447,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 755560712
       }
@@ -6605,6 +7465,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 755561644
       }
@@ -6621,6 +7483,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 755561661
       }
@@ -6637,6 +7501,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 757112183
       }
@@ -6653,6 +7519,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 757112186
       }
@@ -6669,6 +7537,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 757112189
       }
@@ -6685,6 +7555,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 757113767
       }
@@ -6701,6 +7573,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 757662997
       }
@@ -6717,6 +7591,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 757662998
       }
@@ -6733,6 +7609,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 757993582
       }
@@ -6749,6 +7627,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 758015520
       }
@@ -6765,6 +7645,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Village Park",
+        "network": "",
+        "operator": "City of Davis, CA",
         "osm_type": "way",
         "osm_id": 790020123
       }
@@ -6781,6 +7663,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 858663718
       }
@@ -6797,6 +7681,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 922280552
       }
@@ -6813,6 +7699,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 922283554
       }
@@ -6829,6 +7717,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 922283557
       }
@@ -6845,6 +7735,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 922304938
       }
@@ -6861,6 +7753,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 922660287
       }
@@ -6877,6 +7771,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 922660288
       }
@@ -6893,6 +7789,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 922660290
       }
@@ -6909,6 +7807,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 922945385
       }
@@ -6925,6 +7825,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 923211452
       }
@@ -6941,6 +7843,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 923211453
       }
@@ -6957,6 +7861,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 923211454
       }
@@ -6973,6 +7879,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 923211455
       }
@@ -6989,6 +7897,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 923211456
       }
@@ -7005,6 +7915,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 923211457
       }
@@ -7021,6 +7933,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 943600895
       }
@@ -7037,6 +7951,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 943701137
       }
@@ -7053,6 +7969,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 944433087
       }
@@ -7069,6 +7987,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 974165622
       }
@@ -7085,6 +8005,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 974165623
       }
@@ -7101,6 +8023,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 978826692
       }
@@ -7117,6 +8041,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 978831115
       }
@@ -7133,6 +8059,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 1010837145
       }
@@ -7149,6 +8077,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 1062629641
       }
@@ -7165,6 +8095,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 1062629642
       }
@@ -7181,6 +8113,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 1062629643
       }
@@ -7197,6 +8131,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 1062629644
       }
@@ -7213,6 +8149,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 1062629645
       }
@@ -7229,6 +8167,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 1062629646
       }
@@ -7245,6 +8185,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 1064086572
       }
@@ -7261,6 +8203,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 1099724575
       }
@@ -7277,6 +8221,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 1154430214
       }
@@ -7293,6 +8239,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 1217806644
       }
@@ -7309,6 +8257,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "Joseph and Emma Lin Biological Orchard and Garden (BOG)",
+        "network": "",
+        "operator": "UC Davis Botanical Conservatory",
         "osm_type": "way",
         "osm_id": 1313678799
       }
@@ -7325,6 +8275,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "South Community Center Playground",
+        "network": "",
+        "operator": "Orchard Park",
         "osm_type": "way",
         "osm_id": 1313685534
       }
@@ -7341,6 +8293,8 @@
       "properties": {
         "amenity_type": "park",
         "name": "West Area Pond Recreational Area",
+        "network": "",
+        "operator": "",
         "osm_type": "way",
         "osm_id": 1434811330
       }
@@ -7357,6 +8311,8 @@
       "properties": {
         "amenity_type": "library",
         "name": "Shields Library",
+        "network": "",
+        "operator": "University Of California-Davis",
         "osm_type": "relation",
         "osm_id": 18189
       }
