@@ -182,6 +182,84 @@
             "date": "Apr 13, 2026",
             "text": "they killed my second cat",
             "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 1,
+            "date": "Apr 13, 2026",
+            "text": "they killed my cat",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 3,
+            "date": "Apr 7, 2026",
+            "text": "Very pretty good living situation",
+            "propertyAddress": "515 Sycamore Ln"
+          },
+          {
+            "rating": 1,
+            "date": "Apr 6, 2026",
+            "text": "My apartment got egged and identity did not do anything to help. Four eggs stained my carpet, and Identity just watched. I feel unsafe entering my own apartment. Do not rent here if you care about your safety.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 3,
+            "date": "Apr 5, 2026",
+            "text": "mid place",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 5,
+            "date": "Apr 2, 2026",
+            "text": "Really good living space i am living with 7 other guys and we renewed all our leases and most probably gonna be living here till senior year",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 4,
+            "date": "Mar 30, 2026",
+            "text": "Pretty good, close to campus",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 4,
+            "date": "Mar 28, 2026",
+            "text": "Make sure to get roommates who are properly clean. Make great use of the roommate search as early as possible.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 5,
+            "date": "Mar 28, 2026",
+            "text": "Best housing in Davis! It\u2019s close to campus, is very secure despite being next to the freeway, and repairs are quick.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 4,
+            "date": "Mar 28, 2026",
+            "text": "The property is clean with safe neighborhood.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 3,
+            "date": "Mar 27, 2026",
+            "text": "Too many homeless people",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 3,
+            "date": "Mar 14, 2026",
+            "text": "when we moved in, everything was messy and dirty. we had to clean everything up.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 4,
+            "date": "Mar 12, 2026",
+            "text": "Too many people take hard drugs here",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 5,
+            "date": "Mar 11, 2026",
+            "text": "Great area. close to campus. next to park but facilities are amazing. check out the billiards table. Game room is lit \ud83d\udd25\ud83d\udd25\ud83d\udd25",
+            "propertyAddress": "525 Oxford Cir"
           }
         ]
       }
@@ -366,6 +444,84 @@
             "rating": 1,
             "date": "Apr 13, 2026",
             "text": "they killed my second cat",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 1,
+            "date": "Apr 13, 2026",
+            "text": "they killed my cat",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 3,
+            "date": "Apr 7, 2026",
+            "text": "Very pretty good living situation",
+            "propertyAddress": "515 Sycamore Ln"
+          },
+          {
+            "rating": 1,
+            "date": "Apr 6, 2026",
+            "text": "My apartment got egged and identity did not do anything to help. Four eggs stained my carpet, and Identity just watched. I feel unsafe entering my own apartment. Do not rent here if you care about your safety.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 3,
+            "date": "Apr 5, 2026",
+            "text": "mid place",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 5,
+            "date": "Apr 2, 2026",
+            "text": "Really good living space i am living with 7 other guys and we renewed all our leases and most probably gonna be living here till senior year",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 4,
+            "date": "Mar 30, 2026",
+            "text": "Pretty good, close to campus",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 4,
+            "date": "Mar 28, 2026",
+            "text": "Make sure to get roommates who are properly clean. Make great use of the roommate search as early as possible.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 5,
+            "date": "Mar 28, 2026",
+            "text": "Best housing in Davis! It\u2019s close to campus, is very secure despite being next to the freeway, and repairs are quick.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 4,
+            "date": "Mar 28, 2026",
+            "text": "The property is clean with safe neighborhood.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 3,
+            "date": "Mar 27, 2026",
+            "text": "Too many homeless people",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 3,
+            "date": "Mar 14, 2026",
+            "text": "when we moved in, everything was messy and dirty. we had to clean everything up.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 4,
+            "date": "Mar 12, 2026",
+            "text": "Too many people take hard drugs here",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 5,
+            "date": "Mar 11, 2026",
+            "text": "Great area. close to campus. next to park but facilities are amazing. check out the billiards table. Game room is lit \ud83d\udd25\ud83d\udd25\ud83d\udd25",
             "propertyAddress": "525 Oxford Cir"
           }
         ]
@@ -552,6 +708,84 @@
             "date": "Apr 13, 2026",
             "text": "they killed my second cat",
             "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 1,
+            "date": "Apr 13, 2026",
+            "text": "they killed my cat",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 3,
+            "date": "Apr 7, 2026",
+            "text": "Very pretty good living situation",
+            "propertyAddress": "515 Sycamore Ln"
+          },
+          {
+            "rating": 1,
+            "date": "Apr 6, 2026",
+            "text": "My apartment got egged and identity did not do anything to help. Four eggs stained my carpet, and Identity just watched. I feel unsafe entering my own apartment. Do not rent here if you care about your safety.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 3,
+            "date": "Apr 5, 2026",
+            "text": "mid place",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 5,
+            "date": "Apr 2, 2026",
+            "text": "Really good living space i am living with 7 other guys and we renewed all our leases and most probably gonna be living here till senior year",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 4,
+            "date": "Mar 30, 2026",
+            "text": "Pretty good, close to campus",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 4,
+            "date": "Mar 28, 2026",
+            "text": "Make sure to get roommates who are properly clean. Make great use of the roommate search as early as possible.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 5,
+            "date": "Mar 28, 2026",
+            "text": "Best housing in Davis! It\u2019s close to campus, is very secure despite being next to the freeway, and repairs are quick.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 4,
+            "date": "Mar 28, 2026",
+            "text": "The property is clean with safe neighborhood.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 3,
+            "date": "Mar 27, 2026",
+            "text": "Too many homeless people",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 3,
+            "date": "Mar 14, 2026",
+            "text": "when we moved in, everything was messy and dirty. we had to clean everything up.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 4,
+            "date": "Mar 12, 2026",
+            "text": "Too many people take hard drugs here",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 5,
+            "date": "Mar 11, 2026",
+            "text": "Great area. close to campus. next to park but facilities are amazing. check out the billiards table. Game room is lit \ud83d\udd25\ud83d\udd25\ud83d\udd25",
+            "propertyAddress": "525 Oxford Cir"
           }
         ]
       }
@@ -737,6 +971,84 @@
             "date": "Apr 13, 2026",
             "text": "they killed my second cat",
             "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 1,
+            "date": "Apr 13, 2026",
+            "text": "they killed my cat",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 3,
+            "date": "Apr 7, 2026",
+            "text": "Very pretty good living situation",
+            "propertyAddress": "515 Sycamore Ln"
+          },
+          {
+            "rating": 1,
+            "date": "Apr 6, 2026",
+            "text": "My apartment got egged and identity did not do anything to help. Four eggs stained my carpet, and Identity just watched. I feel unsafe entering my own apartment. Do not rent here if you care about your safety.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 3,
+            "date": "Apr 5, 2026",
+            "text": "mid place",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 5,
+            "date": "Apr 2, 2026",
+            "text": "Really good living space i am living with 7 other guys and we renewed all our leases and most probably gonna be living here till senior year",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 4,
+            "date": "Mar 30, 2026",
+            "text": "Pretty good, close to campus",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 4,
+            "date": "Mar 28, 2026",
+            "text": "Make sure to get roommates who are properly clean. Make great use of the roommate search as early as possible.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 5,
+            "date": "Mar 28, 2026",
+            "text": "Best housing in Davis! It\u2019s close to campus, is very secure despite being next to the freeway, and repairs are quick.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 4,
+            "date": "Mar 28, 2026",
+            "text": "The property is clean with safe neighborhood.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 3,
+            "date": "Mar 27, 2026",
+            "text": "Too many homeless people",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 3,
+            "date": "Mar 14, 2026",
+            "text": "when we moved in, everything was messy and dirty. we had to clean everything up.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 4,
+            "date": "Mar 12, 2026",
+            "text": "Too many people take hard drugs here",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 5,
+            "date": "Mar 11, 2026",
+            "text": "Great area. close to campus. next to park but facilities are amazing. check out the billiards table. Game room is lit \ud83d\udd25\ud83d\udd25\ud83d\udd25",
+            "propertyAddress": "525 Oxford Cir"
           }
         ]
       }
@@ -921,6 +1233,84 @@
             "rating": 1,
             "date": "Apr 13, 2026",
             "text": "they killed my second cat",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 1,
+            "date": "Apr 13, 2026",
+            "text": "they killed my cat",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 3,
+            "date": "Apr 7, 2026",
+            "text": "Very pretty good living situation",
+            "propertyAddress": "515 Sycamore Ln"
+          },
+          {
+            "rating": 1,
+            "date": "Apr 6, 2026",
+            "text": "My apartment got egged and identity did not do anything to help. Four eggs stained my carpet, and Identity just watched. I feel unsafe entering my own apartment. Do not rent here if you care about your safety.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 3,
+            "date": "Apr 5, 2026",
+            "text": "mid place",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 5,
+            "date": "Apr 2, 2026",
+            "text": "Really good living space i am living with 7 other guys and we renewed all our leases and most probably gonna be living here till senior year",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 4,
+            "date": "Mar 30, 2026",
+            "text": "Pretty good, close to campus",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 4,
+            "date": "Mar 28, 2026",
+            "text": "Make sure to get roommates who are properly clean. Make great use of the roommate search as early as possible.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 5,
+            "date": "Mar 28, 2026",
+            "text": "Best housing in Davis! It\u2019s close to campus, is very secure despite being next to the freeway, and repairs are quick.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 4,
+            "date": "Mar 28, 2026",
+            "text": "The property is clean with safe neighborhood.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 3,
+            "date": "Mar 27, 2026",
+            "text": "Too many homeless people",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 3,
+            "date": "Mar 14, 2026",
+            "text": "when we moved in, everything was messy and dirty. we had to clean everything up.",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 4,
+            "date": "Mar 12, 2026",
+            "text": "Too many people take hard drugs here",
+            "propertyAddress": "525 Oxford Cir"
+          },
+          {
+            "rating": 5,
+            "date": "Mar 11, 2026",
+            "text": "Great area. close to campus. next to park but facilities are amazing. check out the billiards table. Game room is lit \ud83d\udd25\ud83d\udd25\ud83d\udd25",
             "propertyAddress": "525 Oxford Cir"
           }
         ]
@@ -1547,6 +1937,12 @@
             "rating": 4,
             "date": "Apr 7, 2026",
             "text": "Pretty ok place that\u2019s not too far from campus.",
+            "propertyAddress": "301 Citron St"
+          },
+          {
+            "rating": 4,
+            "date": "Mar 10, 2026",
+            "text": "Not bad.",
             "propertyAddress": "301 Citron St"
           }
         ]
@@ -2609,6 +3005,12 @@
             "rating": 4,
             "date": "Apr 7, 2026",
             "text": "Pretty ok place that\u2019s not too far from campus.",
+            "propertyAddress": "301 Citron St"
+          },
+          {
+            "rating": 4,
+            "date": "Mar 10, 2026",
+            "text": "Not bad.",
             "propertyAddress": "301 Citron St"
           }
         ]

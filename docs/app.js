@@ -9,6 +9,7 @@
   let layerGroup;
   let allFeatures = [];
   let markersById = new Map();
+  let propsByFeatureId = new Map();
   let firstSummary = true;
   let marketTrend = [];
   let chartInstance = null;
@@ -76,6 +77,39 @@
     if (r === "private") cls = "room-badge-private";
     if (r === "shared") cls = "room-badge-shared";
     return '<span class="room-badge ' + cls + '">' + escapeHtml(roomLabel(rt)) + "</span>";
+  }
+
+  function ocrMatched(props) {
+    return props.offcampus_match === true || props.offcampus_match === "true";
+  }
+
+  function rentScopeDivIcon(p) {
+    const fill = scoreColor(p.opportunity_score);
+    const matched = ocrMatched(p);
+    const av = p.offcampus_avg_rating;
+    const cnt = Number(p.offcampus_review_count) || 0;
+    let chip = "";
+    if (matched && av != null && Number.isFinite(Number(av))) {
+      chip =
+        '<div class="rs-ocr-chip" title="OffCampusReview"><span class="rs-ocr-num">' +
+        Number(av).toFixed(1) +
+        '</span><span class="rs-ocr-n">' +
+        cnt +
+        "</span></div>";
+    }
+    const html =
+      '<div class="rs-pin"><span class="rs-pin-dot" style="background:' +
+      fill +
+      '"></span>' +
+      chip +
+      "</div>";
+    return L.divIcon({
+      html: html,
+      className: "rs-div-icon",
+      iconSize: [58, 40],
+      iconAnchor: [29, 34],
+      popupAnchor: [0, -30],
+    });
   }
 
   function getChartTickColor() {
@@ -287,6 +321,31 @@
     });
   }
 
+  function rankOcrStrip(p, id) {
+    const matched = ocrMatched(p);
+    const av = p.offcampus_avg_rating;
+    const cnt = Number(p.offcampus_review_count) || 0;
+    if (!matched || av == null || !Number.isFinite(Number(av))) {
+      return (
+        '<div class="rank-ocr rank-ocr--na"><span class="rank-ocr-label">OCR</span> —</div>'
+      );
+    }
+    return (
+      '<div class="rank-ocr">' +
+      '<span class="rank-ocr-label">OCR</span>' +
+      '<span class="rank-ocr-score">' +
+      Number(av).toFixed(1) +
+      "</span>" +
+      '<span class="rank-ocr-count">' +
+      cnt +
+      " reviews</span>" +
+      '<button type="button" class="rank-ocr-btn js-ocr-open" data-fid="' +
+      escapeAttr(id) +
+      '">Read</button>' +
+      "</div>"
+    );
+  }
+
   function renderRanking(features) {
     const list = document.getElementById("ranking-list");
     list.innerHTML = "";
@@ -320,6 +379,7 @@
         '<span class="rank-score">' +
         Number(p.opportunity_score).toFixed(1) +
         "</span></div>" +
+        rankOcrStrip(p, id) +
         '<div class="rank-meta">' +
         formatMoney(p.rent) +
         " · " +
@@ -328,14 +388,14 @@
         escapeHtml(p.property_type || "") +
         "</div>";
 
-      const open = function () {
+      li.addEventListener("click", function (ev) {
+        if (ev.target.closest(".js-ocr-open")) return;
         focusFeature(id);
-      };
-      li.addEventListener("click", open);
+      });
       li.addEventListener("keydown", function (e) {
         if (e.key === "Enter" || e.key === " ") {
           e.preventDefault();
-          open();
+          focusFeature(id);
         }
       });
       list.appendChild(li);
@@ -362,7 +422,111 @@
     }
   }
 
-  function formatOffcampusBlock(props) {
+  function closeOcrModal() {
+    const modal = document.getElementById("ocr-modal");
+    if (!modal) return;
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("modal-open");
+  }
+
+  function openOcrModal(props) {
+    if (!props) return;
+    const modal = document.getElementById("ocr-modal");
+    const titleEl = document.getElementById("ocr-modal-title");
+    const subEl = document.getElementById("ocr-modal-sub");
+    const listEl = document.getElementById("ocr-modal-list");
+    const footEl = document.getElementById("ocr-modal-foot");
+    if (!modal || !titleEl || !subEl || !listEl || !footEl) return;
+
+    const matched = ocrMatched(props);
+    const url = String(props.offcampus_landlord_url || "").trim();
+    const name = props.offcampus_landlord_name || "OffCampusReview";
+    const school = props.offcampus_school_url || "https://www.offcampusreview.com/school/uc-davis";
+    const brand = props.offcampus_brand_url || "https://www.offcampusreview.com/";
+
+    titleEl.textContent = String(props.address || "Listing");
+    if (!matched || !url) {
+      subEl.innerHTML =
+        '<p class="ocr-modal-lead">No landlord profile matched. Browse <a href="' +
+        escapeAttr(school) +
+        '" target="_blank" rel="noopener noreferrer">UC Davis on OffCampusReview</a>.</p>';
+      listEl.innerHTML = "";
+      footEl.innerHTML =
+        '<a class="ocr-modal-cta" href="' +
+        escapeAttr(brand) +
+        '" target="_blank" rel="noopener noreferrer">OffCampusReview home</a>';
+    } else {
+      const av = props.offcampus_avg_rating;
+      const cnt = Number(props.offcampus_review_count) || 0;
+      let lead =
+        '<div class="ocr-modal-hero"><div class="ocr-modal-big">' +
+        (av != null && Number.isFinite(Number(av)) ? Number(av).toFixed(1) : "—") +
+        '</div><div class="ocr-modal-hero-meta"><span class="ocr-modal-stars">student avg</span><span class="ocr-modal-rcount">' +
+        cnt +
+        " reviews on OffCampusReview</span></div></div>";
+      lead +=
+        '<p class="ocr-modal-landlord"><a href="' +
+        escapeAttr(url) +
+        '" target="_blank" rel="noopener noreferrer">' +
+        escapeHtml(name) +
+        "</a> · open full profile for more</p>";
+      subEl.innerHTML = lead;
+
+      const revs = props.offcampus_reviews;
+      let listHtml = "";
+      if (Array.isArray(revs) && revs.length) {
+        revs.forEach(function (rv) {
+          listHtml +=
+            '<article class="ocr-modal-card"><div class="ocr-modal-card-head"><span class="ocr-modal-card-r">' +
+            (rv.rating != null ? String(rv.rating) : "—") +
+            '/5</span><span class="ocr-modal-card-d">' +
+            escapeHtml(rv.date || "") +
+            "</span></div>";
+          if (rv.propertyAddress) {
+            listHtml +=
+              '<div class="ocr-modal-card-addr">' +
+              escapeHtml(rv.propertyAddress) +
+              "</div>";
+          }
+          listHtml +=
+            '<p class="ocr-modal-card-text">' + escapeHtml(rv.text || "") + "</p></article>";
+        });
+      } else {
+        listHtml = "<p class=\"ocr-modal-empty\">No excerpted reviews in this dataset.</p>";
+      }
+      listEl.innerHTML = listHtml;
+      footEl.innerHTML =
+        '<a class="ocr-modal-cta" href="' +
+        escapeAttr(url) +
+        '" target="_blank" rel="noopener noreferrer">All reviews on OffCampusReview</a>';
+    }
+
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("modal-open");
+  }
+
+  function wireOcrModal() {
+    document.body.addEventListener("click", function (ev) {
+      const t = ev.target.closest(".js-ocr-open");
+      if (!t) return;
+      ev.preventDefault();
+      const fid = t.getAttribute("data-fid");
+      if (!fid || !propsByFeatureId.has(fid)) return;
+      destroyActiveChart();
+      if (map) map.closePopup();
+      openOcrModal(propsByFeatureId.get(fid));
+    });
+    document.body.addEventListener("click", function (ev) {
+      if (ev.target.closest("[data-close-modal]")) closeOcrModal();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeOcrModal();
+    });
+  }
+
+  function formatOffcampusBlock(props, fid) {
     const brand = escapeAttr(
       props.offcampus_brand_url || "https://www.offcampusreview.com/"
     );
@@ -370,63 +534,60 @@
       props.offcampus_school_url ||
         "https://www.offcampusreview.com/school/uc-davis"
     );
-    const matched = props.offcampus_match === true || props.offcampus_match === "true";
+    const matched = ocrMatched(props);
     const url = String(props.offcampus_landlord_url || "").trim();
     const name = escapeHtml(props.offcampus_landlord_name || "");
     const avg = props.offcampus_avg_rating;
     const cnt = Number(props.offcampus_review_count) || 0;
-    let html =
-      '<div class="ocr-wrap"><div class="ocr-head"><a href="' +
+    const fidAttr = escapeAttr(fid);
+
+    let html = '<div class="ocr-wrap ocr-wrap--hero">';
+    html +=
+      '<div class="ocr-hero-top"><a href="' +
       brand +
-      '" target="_blank" rel="noopener noreferrer" class="ocr-brand">OffCampusReview</a> <span class="ocr-sub">verified student reviews</span></div>';
+      '" target="_blank" rel="noopener noreferrer" class="ocr-brand-lg">OffCampusReview</a>';
+    html += '<span class="ocr-hero-tag">UC Davis · student housing</span></div>';
+
     if (!matched || !url) {
       html +=
-        '<p class="ocr-note">No landlord profile matched from this address. Open <a href="' +
+        '<p class="ocr-note-lg">No landlord matched to this address. <a href="' +
         school +
-        '" target="_blank" rel="noopener noreferrer">UC Davis on OffCampusReview</a> to search.</p></div>';
+        '" target="_blank" rel="noopener noreferrer">Search UC Davis</a> on OffCampusReview.</p></div>';
       return html;
     }
-    let stars = "";
+
+    html += '<div class="ocr-hero-scoreline">';
     if (avg != null && Number.isFinite(Number(avg))) {
-      stars =
-        '<span class="ocr-stars">' +
+      html +=
+        '<span class="ocr-big-num">' +
         Number(avg).toFixed(1) +
-        " / 5 · " +
+        '</span><span class="ocr-big-denom">/5</span>';
+      html +=
+        '<span class="ocr-big-count">' +
         cnt +
         " reviews</span>";
     }
+    html += "</div>";
+
     html +=
-      '<p class="ocr-landlord"><a href="' +
+      '<p class="ocr-landlord-lg"><a href="' +
       escapeAttr(url) +
       '" target="_blank" rel="noopener noreferrer">' +
       name +
-      "</a> " +
-      stars +
-      "</p>";
-    const revs = props.offcampus_reviews;
-    if (Array.isArray(revs) && revs.length) {
-      html +=
-        '<details class="ocr-details"><summary>Review excerpts</summary><div class="ocr-reviews">';
-      revs.forEach(function (rv) {
-        const rt = escapeHtml(rv.text || "");
-        const ra = rv.rating != null ? String(rv.rating) : "—";
-        const dt = escapeHtml(rv.date || "");
-        const pad = escapeHtml(rv.propertyAddress || "");
-        html +=
-          '<article class="ocr-review"><div class="ocr-rv-head"><span class="ocr-rv-score">' +
-          ra +
-          '/5</span> <span class="ocr-rv-date">' +
-          dt +
-          "</span></div>";
-        if (pad) {
-          html += '<div class="ocr-rv-addr">' + pad + "</div>";
-        }
-        html += '<p class="ocr-rv-text">' + rt + "</p></article>";
-      });
-      html += "</div></details>";
-    }
+      "</a></p>";
+
     html +=
-      '<p class="ocr-disclaim">Content from OffCampusReview; not written by RentScope.</p></div>';
+      '<div class="ocr-hero-actions">' +
+      '<button type="button" class="ocr-btn-primary js-ocr-open" data-fid="' +
+      fidAttr +
+      '">Read reviews here</button>' +
+      '<a class="ocr-btn-secondary" href="' +
+      escapeAttr(url) +
+      '" target="_blank" rel="noopener noreferrer">Open OffCampusReview</a>' +
+      "</div>";
+
+    html +=
+      '<p class="ocr-disclaim-sm">Excerpts from public OffCampusReview data · not authored by RentScope</p></div>';
     return html;
   }
 
@@ -447,6 +608,7 @@
 
   function popupHtml(f) {
     const props = f.properties;
+    const fid = featureId(f);
     const cid = chartDomId(f);
     const beds = props.beds;
     const baths = props.baths;
@@ -464,6 +626,7 @@
       escapeHtml(props.address) +
       roomBadgeHtml(props.room_type) +
       "</div>" +
+      formatOffcampusBlock(props, fid) +
       '<div class="popup-loc-grid">' +
       "<span>Memorial Union</span><strong>" +
       dmu.toFixed(2) +
@@ -509,7 +672,6 @@
       '" target="_blank" rel="noopener noreferrer">Open listings search</a>' +
       '<a href="https://unitrans.ucdavis.edu/routes" target="_blank" rel="noopener noreferrer">Unitrans routes</a>' +
       "</div>" +
-      formatOffcampusBlock(props) +
       '<div class="popup-chart-box">' +
       '<div class="chart-caption">Yolo County median gross rent (U.S. Census ACS B25064) vs this listing rent scaled to that county series. Not the unit lease history.</div>' +
       '<canvas class="js-rent-chart" id="' +
@@ -548,21 +710,23 @@
 
     layerGroup.clearLayers();
     markersById.clear();
+    propsByFeatureId.clear();
 
     visible.forEach(function (f) {
       const p = f.properties;
       const coords = f.geometry.coordinates;
       const latlng = [coords[1], coords[0]];
       const id = featureId(f);
-      const m = L.circleMarker(latlng, {
-        radius: 10,
-        weight: 2,
-        color: "rgba(255,255,255,0.42)",
-        fillColor: scoreColor(p.opportunity_score),
-        fillOpacity: 0.94,
+      propsByFeatureId.set(id, p);
+      const m = L.marker(latlng, {
+        icon: rentScopeDivIcon(p),
         rsProps: p,
       });
-      m.bindPopup(popupHtml(f), { maxWidth: 340 });
+      m.bindPopup(popupHtml(f), {
+        maxWidth: 380,
+        className: "rs-popup-wrap",
+        autoPanPadding: [24, 24],
+      });
       m.addTo(layerGroup);
       markersById.set(id, m);
     });
@@ -612,10 +776,23 @@
   }
 
   function initMap() {
-    map = L.map("map", { scrollWheelZoom: true, zoomControl: true }).setView(
-      DAVIS_CENTER,
-      13
-    );
+    map = L.map("map", {
+      scrollWheelZoom: true,
+      zoomControl: true,
+      gestureHandling: true,
+      zoomSnap: 0.25,
+      zoomDelta: 0.5,
+      wheelPxPerZoomLevel: 110,
+      wheelDebounceTime: 40,
+      tap: true,
+      tapTolerance: 18,
+      inertia: true,
+      inertiaDeceleration: 2600,
+      inertiaMaxSpeed: 2400,
+      worldCopyJump: true,
+      bounceAtZoomLimits: false,
+      preferCanvas: false,
+    }).setView(DAVIS_CENTER, 13);
 
     layerGroup = L.layerGroup().addTo(map);
 
@@ -706,6 +883,7 @@
     });
   }
 
+  wireOcrModal();
   initMap();
   initTheme();
   wireFilters();

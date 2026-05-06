@@ -21,8 +21,8 @@ HEADERS = {
     "User-Agent": "RentScope/rent_scope (https://github.com/Anant-Madhok231/rent-scope; OffCampusReview public API)",
 }
 MIN_AUTO_SCORE = 5.5
-PREVIEW_N = 8
-TEXT_MAX = 220
+PREVIEW_N = 45
+TEXT_MAX = 420
 
 
 def _tok(s: str) -> set[str]:
