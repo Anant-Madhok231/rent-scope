@@ -1,0 +1,7365 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7386404,
+          38.5424779
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Davis",
+        "osm_type": "node",
+        "osm_id": 95713711
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7163497,
+          38.5607395
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Hill Park",
+        "osm_type": "node",
+        "osm_id": 358822756
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7513889,
+          38.5597222
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Dewey Halden Field",
+        "osm_type": "node",
+        "osm_id": 358858699
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7318709,
+          38.5406137
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Del Taco",
+        "osm_type": "node",
+        "osm_id": 423211019
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.732615,
+          38.5401034
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "KFC",
+        "osm_type": "node",
+        "osm_id": 423211592
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7540429,
+          38.5355709
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Cargo Coffee",
+        "osm_type": "node",
+        "osm_id": 518279679
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7502084,
+          38.5362182
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Sodexho Coffee",
+        "osm_type": "node",
+        "osm_id": 531004701
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.755079,
+          38.5401441
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Bio Brew",
+        "osm_type": "node",
+        "osm_id": 559255145
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.759388,
+          38.5425357
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Peet's Coffee",
+        "osm_type": "node",
+        "osm_id": 559255147
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7402534,
+          38.5453563
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Steve's Pizza",
+        "osm_type": "node",
+        "osm_id": 573904655
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7398435,
+          38.5458515
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Jack in the Box",
+        "osm_type": "node",
+        "osm_id": 573904656
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7400795,
+          38.5468573
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Taco Bell",
+        "osm_type": "node",
+        "osm_id": 573904657
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7415972,
+          38.5441778
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Peet's Coffee",
+        "osm_type": "node",
+        "osm_id": 573949853
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7415039,
+          38.5440539
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Chipotle",
+        "osm_type": "node",
+        "osm_id": 573949856
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7415288,
+          38.544296
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Cultiv\u00e9 Frozen Yogurt",
+        "osm_type": "node",
+        "osm_id": 573949861
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7439648,
+          38.5439255
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Crepeville",
+        "osm_type": "node",
+        "osm_id": 575303926
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7435071,
+          38.5444325
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Burgers and Brew",
+        "osm_type": "node",
+        "osm_id": 575303927
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7408329,
+          38.545865
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Silver Dragon",
+        "osm_type": "node",
+        "osm_id": 575310005
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7395109,
+          38.5463737
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Make Fish",
+        "osm_type": "node",
+        "osm_id": 575310006
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7398507,
+          38.5444122
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Bistro 33",
+        "osm_type": "node",
+        "osm_id": 575311635
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7392394,
+          38.5441905
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Woodstock's Pizza",
+        "osm_type": "node",
+        "osm_id": 575317875
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7389677,
+          38.5446259
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Kathmandu Kitchen",
+        "osm_type": "node",
+        "osm_id": 575317879
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.738351,
+          38.543607
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Village Bakery",
+        "osm_type": "node",
+        "osm_id": 575320248
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7414341,
+          38.5426469
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Davis Noodle City",
+        "osm_type": "node",
+        "osm_id": 575324530
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.740975,
+          38.5424125
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Davis Creamery",
+        "osm_type": "node",
+        "osm_id": 575324532
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7413407,
+          38.5427594
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Sophia's Thai Kitchen",
+        "osm_type": "node",
+        "osm_id": 575324533
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.739978,
+          38.5463469
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Village Pizza & Grill",
+        "osm_type": "node",
+        "osm_id": 576438970
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7388877,
+          38.5403753
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Redrum Burger",
+        "osm_type": "node",
+        "osm_id": 596690045
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6960082,
+          38.5501266
+        ]
+      },
+      "properties": {
+        "amenity_type": "grocery",
+        "name": "Nugget Markets",
+        "osm_type": "node",
+        "osm_id": 597045822
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6947587,
+          38.5501286
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Starbucks",
+        "osm_type": "node",
+        "osm_id": 597045846
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6959869,
+          38.5498433
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Taqueria Guadalajara",
+        "osm_type": "node",
+        "osm_id": 597502863
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7656713,
+          38.5624167
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Dos Coyotes",
+        "osm_type": "node",
+        "osm_id": 632005117
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7653126,
+          38.5624149
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Noah's Bagels",
+        "osm_type": "node",
+        "osm_id": 632005118
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7648922,
+          38.5621647
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Jamba",
+        "osm_type": "node",
+        "osm_id": 632005119
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7858581,
+          38.5467363
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Arlington Farms",
+        "osm_type": "node",
+        "osm_id": 632008898
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7887223,
+          38.5487555
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Lake & Portage Bay West",
+        "osm_type": "node",
+        "osm_id": 632008900
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.787302,
+          38.5504921
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Lake & Salem Ave.",
+        "osm_type": "node",
+        "osm_id": 632009255
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7874151,
+          38.5528267
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Lake and Westlake Plaza",
+        "osm_type": "node",
+        "osm_id": 632009258
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7787857,
+          38.5487947
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Arlington & Buckleberry Rd. (Southbound)",
+        "osm_type": "node",
+        "osm_id": 632011800
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7792404,
+          38.5503913
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Arlington & Westernesse Rd.",
+        "osm_type": "node",
+        "osm_id": 632011801
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7847509,
+          38.5536891
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Arlington & Cabot St. (Eastbound)",
+        "osm_type": "node",
+        "osm_id": 632011802
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7814512,
+          38.5534491
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Arlington & Shasta Dr. (Eastbound)",
+        "osm_type": "node",
+        "osm_id": 632011803
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7653129,
+          38.5369898
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "",
+        "osm_type": "node",
+        "osm_id": 632012070
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7639262,
+          38.5375179
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "",
+        "osm_type": "node",
+        "osm_id": 632012076
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7869169,
+          38.5549983
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Arlington & Lake Blvd. (Eastbound)",
+        "osm_type": "node",
+        "osm_id": 632013167
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7710148,
+          38.5465746
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Russell & Arthur St. (Westbound)",
+        "osm_type": "node",
+        "osm_id": 632013968
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7634301,
+          38.5465203
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "",
+        "osm_type": "node",
+        "osm_id": 632013969
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7582631,
+          38.5467233
+        ]
+      },
+      "properties": {
+        "amenity_type": "pharmacy",
+        "name": "Rite Aid",
+        "osm_type": "node",
+        "osm_id": 710828531
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7870207,
+          38.5545359
+        ]
+      },
+      "properties": {
+        "amenity_type": "grocery",
+        "name": "Westlake IGA Market",
+        "osm_type": "node",
+        "osm_id": 711012114
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7866957,
+          38.5537594
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Lamppost Pizza",
+        "osm_type": "node",
+        "osm_id": 711012118
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7866839,
+          38.5539105
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Shanghai Town",
+        "osm_type": "node",
+        "osm_id": 711012122
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7867753,
+          38.5541402
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Chuy's Taqueria",
+        "osm_type": "node",
+        "osm_id": 712375145
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7312411,
+          38.5527527
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Symposium Restaurant & Pizza House",
+        "osm_type": "node",
+        "osm_id": 721785315
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.732032,
+          38.5610687
+        ]
+      },
+      "properties": {
+        "amenity_type": "pharmacy",
+        "name": "CVS Pharmacy",
+        "osm_type": "node",
+        "osm_id": 721788886
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7394732,
+          38.5450234
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Taste of Thai",
+        "osm_type": "node",
+        "osm_id": 722618705
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7411241,
+          38.5427956
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "The Hotdogger",
+        "osm_type": "node",
+        "osm_id": 722643565
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7411315,
+          38.5426503
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "The Dumpling House",
+        "osm_type": "node",
+        "osm_id": 722643566
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7434038,
+          38.5600975
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Snack Shack",
+        "osm_type": "node",
+        "osm_id": 722863898
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7614973,
+          38.5467537
+        ]
+      },
+      "properties": {
+        "amenity_type": "grocery",
+        "name": "Trader Joe's",
+        "osm_type": "node",
+        "osm_id": 1052335476
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.740992,
+          38.5414043
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Mikuni's",
+        "osm_type": "node",
+        "osm_id": 1192381864
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7715977,
+          38.5385763
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "",
+        "osm_type": "node",
+        "osm_id": 1609432281
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7717949,
+          38.5384716
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "",
+        "osm_type": "node",
+        "osm_id": 1609432290
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7716712,
+          38.5407887
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "",
+        "osm_type": "node",
+        "osm_id": 1609432342
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.771505,
+          38.5412876
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "",
+        "osm_type": "node",
+        "osm_id": 1609432344
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7408098,
+          38.5448365
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Panera Bread",
+        "osm_type": "node",
+        "osm_id": 1897714587
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7524534,
+          38.5388121
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Shah's Halal Food",
+        "osm_type": "node",
+        "osm_id": 1899053844
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.752753,
+          38.5387653
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Peet's Coffee",
+        "osm_type": "node",
+        "osm_id": 1899064831
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7516371,
+          38.5393577
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "CoHo South Caf\u00e9",
+        "osm_type": "node",
+        "osm_id": 1899070842
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7633203,
+          38.5472347
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Cuarto Dining Commons",
+        "osm_type": "node",
+        "osm_id": 1899083425
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.758151,
+          38.5438979
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Segundo Dining Commons",
+        "osm_type": "node",
+        "osm_id": 1899083429
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7576164,
+          38.5360511
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Tercero Dining Commons",
+        "osm_type": "node",
+        "osm_id": 1899083432
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.769157,
+          38.5620384
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Burger King",
+        "osm_type": "node",
+        "osm_id": 1899545094
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7689638,
+          38.56248
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Domino's",
+        "osm_type": "node",
+        "osm_id": 1899545097
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7183275,
+          38.5517714
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Konditorei",
+        "osm_type": "node",
+        "osm_id": 1918194126
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7534252,
+          38.5393779
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Silo Terminal",
+        "osm_type": "node",
+        "osm_id": 2145846271
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7593554,
+          38.5342082
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "La Rue & Garrod Dr. ",
+        "osm_type": "node",
+        "osm_id": 2145846280
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7622557,
+          38.5389075
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Hutchison & Extension Center Drive",
+        "osm_type": "node",
+        "osm_id": 2145846285
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7537711,
+          38.5391449
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Silo Terminal",
+        "osm_type": "node",
+        "osm_id": 2145846289
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7588111,
+          38.5356518
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Dairy Rd. (Tercero South)",
+        "osm_type": "node",
+        "osm_id": 2145846293
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7538086,
+          38.5393129
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Silo Terminal",
+        "osm_type": "node",
+        "osm_id": 2145846300
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.764492,
+          38.5349825
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Health Science Dr & Lot 56",
+        "osm_type": "node",
+        "osm_id": 2145846301
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7538678,
+          38.5393024
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Silo Terminal",
+        "osm_type": "node",
+        "osm_id": 2145846303
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7498635,
+          38.5436914
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Memorial Union Terminal",
+        "osm_type": "node",
+        "osm_id": 2145846306
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7534181,
+          38.5391756
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Silo Terminal",
+        "osm_type": "node",
+        "osm_id": 2145846307
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.753106,
+          38.5393108
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Silo Terminal",
+        "osm_type": "node",
+        "osm_id": 2145846308
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7534303,
+          38.5392112
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Silo Terminal",
+        "osm_type": "node",
+        "osm_id": 2145846311
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7538354,
+          38.539145
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Silo Terminal",
+        "osm_type": "node",
+        "osm_id": 2145846323
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.784869,
+          38.5539547
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Arlington & Cabot St. (Westbound)",
+        "osm_type": "node",
+        "osm_id": 2152464450
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7818353,
+          38.5537368
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Arlington & Shasta Dr. (Westbound)",
+        "osm_type": "node",
+        "osm_id": 2152464451
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7870738,
+          38.5552409
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Arlington & Lake Blvd. (Westbound)",
+        "osm_type": "node",
+        "osm_id": 2152464452
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7786412,
+          38.5491266
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Arlington & Buckleberry (Northbound)",
+        "osm_type": "node",
+        "osm_id": 2152464453
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7791562,
+          38.5511404
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Arlington & Calaveras Ave.",
+        "osm_type": "node",
+        "osm_id": 2152464455
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7360637,
+          38.5439243
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Davis",
+        "osm_type": "node",
+        "osm_id": 2178098851
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7567034,
+          38.559882
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Ding How",
+        "osm_type": "node",
+        "osm_id": 2188177613
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.757225,
+          38.5598902
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Papa Murphy's",
+        "osm_type": "node",
+        "osm_id": 2188177614
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7577404,
+          38.559607
+        ]
+      },
+      "properties": {
+        "amenity_type": "grocery",
+        "name": "Savemart",
+        "osm_type": "node",
+        "osm_id": 2188177617
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7567216,
+          38.5603258
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "I Love Sushi",
+        "osm_type": "node",
+        "osm_id": 2188177618
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7569803,
+          38.5598886
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Taqueria Guadalajara",
+        "osm_type": "node",
+        "osm_id": 2188177619
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7717568,
+          38.5411914
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Sage Street Cafe",
+        "osm_type": "node",
+        "osm_id": 2281654805
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.771755,
+          38.5412393
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Sage Street Restaurant",
+        "osm_type": "node",
+        "osm_id": 2281654809
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7717517,
+          38.5412859
+        ]
+      },
+      "properties": {
+        "amenity_type": "grocery",
+        "name": "Sage Street Market",
+        "osm_type": "node",
+        "osm_id": 2281654814
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6960342,
+          38.5493703
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Wok of Flame",
+        "osm_type": "node",
+        "osm_id": 2287617318
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7594716,
+          38.5475996
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Fluffy Donuts",
+        "osm_type": "node",
+        "osm_id": 2312172449
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7498911,
+          38.5421672
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Coffee House",
+        "osm_type": "node",
+        "osm_id": 2320122134
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7762152,
+          38.5419127
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Tilia Loop",
+        "osm_type": "node",
+        "osm_id": 2493388803
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7732643,
+          38.5419353
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "",
+        "osm_type": "node",
+        "osm_id": 2493388804
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7413498,
+          38.5457947
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Natural Food Works and Farmer's Kitchen Cafe",
+        "osm_type": "node",
+        "osm_id": 2522504674
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7385765,
+          38.540504
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Dutch Bros. Coffee",
+        "osm_type": "node",
+        "osm_id": 2588098686
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.742676,
+          38.5441675
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "El Toro Bravo",
+        "osm_type": "node",
+        "osm_id": 2588178992
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6940031,
+          38.5563041
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Mace Blvd & 2nd St (NB)",
+        "osm_type": "node",
+        "osm_id": 2588614043
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7385361,
+          38.5434952
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Subway",
+        "osm_type": "node",
+        "osm_id": 2588614218
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7253036,
+          38.5423604
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Round Table Pizza",
+        "osm_type": "node",
+        "osm_id": 2589821399
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6935776,
+          38.5503117
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Subway",
+        "osm_type": "node",
+        "osm_id": 2589823921
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7463304,
+          38.5438337
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "3rd and U Cafe",
+        "osm_type": "node",
+        "osm_id": 2589920867
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7593509,
+          38.5476226
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Subway",
+        "osm_type": "node",
+        "osm_id": 2590576994
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7463907,
+          38.543549
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Ali Baba Cafe",
+        "osm_type": "node",
+        "osm_id": 2616889089
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7461204,
+          38.5436024
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Pho King 4 Restaurant",
+        "osm_type": "node",
+        "osm_id": 2616889093
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7468936,
+          38.5436814
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Oshio Cafe",
+        "osm_type": "node",
+        "osm_id": 2616889094
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7466232,
+          38.5437545
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Raja's Tandoor",
+        "osm_type": "node",
+        "osm_id": 2616889095
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7406538,
+          38.5445345
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Manna Korean BBQ",
+        "osm_type": "node",
+        "osm_id": 2618170089
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7405605,
+          38.5441139
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Taqueria El Burrito",
+        "osm_type": "node",
+        "osm_id": 2618170090
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7410074,
+          38.5442541
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Yeti Restaurant",
+        "osm_type": "node",
+        "osm_id": 2618170093
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7407938,
+          38.5445095
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Zia's Delicatessen",
+        "osm_type": "node",
+        "osm_id": 2618170094
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7349122,
+          38.5487701
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Taqueria Davis",
+        "osm_type": "node",
+        "osm_id": 3104414669
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7409905,
+          38.5424669
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Thai Canteen",
+        "osm_type": "node",
+        "osm_id": 3189150468
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7410729,
+          38.5415229
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Pluto's",
+        "osm_type": "node",
+        "osm_id": 3226037807
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7409538,
+          38.542355
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Yakitori Yuchan",
+        "osm_type": "node",
+        "osm_id": 3226037809
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7237156,
+          38.5412734
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Common Grounds Coffee",
+        "osm_type": "node",
+        "osm_id": 3385541430
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7421078,
+          38.543661
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Tea List",
+        "osm_type": "node",
+        "osm_id": 3534205995
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.739927,
+          38.543811
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Sharetea",
+        "osm_type": "node",
+        "osm_id": 3534205997
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7402158,
+          38.54716
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Barista Brew Cafe",
+        "osm_type": "node",
+        "osm_id": 3534205998
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7422161,
+          38.5442221
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Cafe Bernardo",
+        "osm_type": "node",
+        "osm_id": 3534205999
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7422031,
+          38.5439265
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Cloud Forest Cafe",
+        "osm_type": "node",
+        "osm_id": 3534206000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.768905,
+          38.562568
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Starbucks",
+        "osm_type": "node",
+        "osm_id": 3534206002
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7652099,
+          38.5623601
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Peet's Coffee",
+        "osm_type": "node",
+        "osm_id": 3534206003
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7390167,
+          38.5518876
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "",
+        "osm_type": "node",
+        "osm_id": 4080570766
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.741068,
+          38.5516452
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "",
+        "osm_type": "node",
+        "osm_id": 4080570767
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7447267,
+          38.550996
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "",
+        "osm_type": "node",
+        "osm_id": 4080570768
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7308474,
+          38.5644013
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "",
+        "osm_type": "node",
+        "osm_id": 4080609603
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7307206,
+          38.5664599
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "",
+        "osm_type": "node",
+        "osm_id": 4080651038
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7266419,
+          38.568464
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "",
+        "osm_type": "node",
+        "osm_id": 4080651039
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7234733,
+          38.5650151
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "",
+        "osm_type": "node",
+        "osm_id": 4080651040
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7192139,
+          38.5643994
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "",
+        "osm_type": "node",
+        "osm_id": 4080651041
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.717286,
+          38.5619535
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "",
+        "osm_type": "node",
+        "osm_id": 4080651042
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.717408,
+          38.5581408
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "",
+        "osm_type": "node",
+        "osm_id": 4080651043
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7489673,
+          38.53929
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "",
+        "osm_type": "node",
+        "osm_id": 4093141332
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.727548,
+          38.5400343
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "",
+        "osm_type": "node",
+        "osm_id": 4112840120
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7270394,
+          38.5576529
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "",
+        "osm_type": "node",
+        "osm_id": 4121578230
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7263227,
+          38.5575117
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "",
+        "osm_type": "node",
+        "osm_id": 4121578231
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7394144,
+          38.5447561
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Temple Coffee",
+        "osm_type": "node",
+        "osm_id": 4297142348
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.764344,
+          38.5616446
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Jack's Urban Eats",
+        "osm_type": "node",
+        "osm_id": 4297147359
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7655019,
+          38.562429
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Gong Cha",
+        "osm_type": "node",
+        "osm_id": 4507142626
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7194096,
+          38.5433926
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "node",
+        "osm_id": 4679032387
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7390029,
+          38.5432969
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Paesano's",
+        "osm_type": "node",
+        "osm_id": 5067715922
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7395532,
+          38.5464971
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Wingstop",
+        "osm_type": "node",
+        "osm_id": 5300316847
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7392843,
+          38.5443313
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Red 88 Noodle Bar",
+        "osm_type": "node",
+        "osm_id": 5300335926
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7392287,
+          38.5441132
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Fuji Sushi Boat & Buffet",
+        "osm_type": "node",
+        "osm_id": 5300335927
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7393439,
+          38.5436795
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Preethi Indian Cuisine",
+        "osm_type": "node",
+        "osm_id": 5300335929
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.739877,
+          38.543756
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "The Posh Bagel",
+        "osm_type": "node",
+        "osm_id": 5300335930
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7399554,
+          38.5439337
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Blaze Pizza",
+        "osm_type": "node",
+        "osm_id": 5300335931
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7320895,
+          38.540339
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Four Seasons Gourmet Chinese",
+        "osm_type": "node",
+        "osm_id": 5300376122
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.723634,
+          38.5410495
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Dos Coyotes Border Cafe",
+        "osm_type": "node",
+        "osm_id": 5300387851
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7238617,
+          38.5408728
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Mr Pickle's Sandwich Shop",
+        "osm_type": "node",
+        "osm_id": 5300387852
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7238086,
+          38.5409226
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Teabo Caf\u00e9",
+        "osm_type": "node",
+        "osm_id": 5301304718
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.725188,
+          38.5413483
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Starbucks",
+        "osm_type": "node",
+        "osm_id": 5301352991
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7190651,
+          38.5517822
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "5th St & Cantrill/Police Station (EB)",
+        "osm_type": "node",
+        "osm_id": 5554742279
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7437224,
+          38.5417644
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Davis's Pi\u00f1ata Mexican Grill",
+        "osm_type": "node",
+        "osm_id": 5599541308
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7487187,
+          38.5348776
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Fushion Fresh Cafe",
+        "osm_type": "node",
+        "osm_id": 5599713920
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7164064,
+          38.5491841
+        ]
+      },
+      "properties": {
+        "amenity_type": "gym",
+        "name": "Get Fit Davis",
+        "osm_type": "node",
+        "osm_id": 5661761514
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.741271,
+          38.5433518
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Philz Coffee",
+        "osm_type": "node",
+        "osm_id": 5754875821
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7377558,
+          38.5434297
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Davis",
+        "osm_type": "node",
+        "osm_id": 5754924306
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7015723,
+          38.5504069
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Domino's",
+        "osm_type": "node",
+        "osm_id": 5941864978
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7320343,
+          38.5621688
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "",
+        "osm_type": "node",
+        "osm_id": 7091075125
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7586058,
+          38.5467368
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Davis (University Mall)",
+        "osm_type": "node",
+        "osm_id": 7172996813
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.693496,
+          38.5547295
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Davis (Mace Park & Ride)",
+        "osm_type": "node",
+        "osm_id": 7172996815
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6934992,
+          38.5546706
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Davis (Mace Park & Ride)",
+        "osm_type": "node",
+        "osm_id": 7172996816
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6959899,
+          38.5496818
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Huku Bistro",
+        "osm_type": "node",
+        "osm_id": 7229119243
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7297074,
+          38.5527092
+        ]
+      },
+      "properties": {
+        "amenity_type": "grocery",
+        "name": "Grocery Outlet",
+        "osm_type": "node",
+        "osm_id": 7352799822
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7254827,
+          38.5418188
+        ]
+      },
+      "properties": {
+        "amenity_type": "pharmacy",
+        "name": "Rite Aid",
+        "osm_type": "node",
+        "osm_id": 8069422187
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.786325,
+          38.5603961
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "",
+        "osm_type": "node",
+        "osm_id": 8208026450
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7693918,
+          38.5616923
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Subway",
+        "osm_type": "node",
+        "osm_id": 8208039635
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7665003,
+          38.5614865
+        ]
+      },
+      "properties": {
+        "amenity_type": "pharmacy",
+        "name": "CVS Pharmacy",
+        "osm_type": "node",
+        "osm_id": 8208043729
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.740234,
+          38.5435347
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Starbucks",
+        "osm_type": "node",
+        "osm_id": 8939553214
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7407672,
+          38.5413269
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Burma Eat",
+        "osm_type": "node",
+        "osm_id": 9041940996
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7654076,
+          38.5624223
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Mountain Mike's",
+        "osm_type": "node",
+        "osm_id": 9048755707
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7646656,
+          38.561022
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "",
+        "osm_type": "node",
+        "osm_id": 9048755708
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7648673,
+          38.5549198
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Sycamore Ln & Bucknell Drive (NB)",
+        "osm_type": "node",
+        "osm_id": 9200232968
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7532003,
+          38.5388615
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Crepe Bistro",
+        "osm_type": "node",
+        "osm_id": 9936794816
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.753214,
+          38.53876
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Spokes Grill",
+        "osm_type": "node",
+        "osm_id": 9936806517
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7527051,
+          38.5382058
+        ]
+      },
+      "properties": {
+        "amenity_type": "grocery",
+        "name": "Silo Market",
+        "osm_type": "node",
+        "osm_id": 10080233615
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7603494,
+          38.546557
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Shah's Halal Food",
+        "osm_type": "node",
+        "osm_id": 10591061877
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.756243,
+          38.5379404
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Latitude Restaurant",
+        "osm_type": "node",
+        "osm_id": 10735369400
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6977029,
+          38.5537747
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "",
+        "osm_type": "node",
+        "osm_id": 10762241307
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.694339,
+          38.5578145
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Mace Blvd & 2nd St (SB)",
+        "osm_type": "node",
+        "osm_id": 10774590205
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7385918,
+          38.5413199
+        ]
+      },
+      "properties": {
+        "amenity_type": "gym",
+        "name": "Barefoot Yoga",
+        "osm_type": "node",
+        "osm_id": 10908975988
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7401545,
+          38.5499773
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Hunan Style",
+        "osm_type": "node",
+        "osm_id": 11473458469
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7399361,
+          38.5438846
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Ike's Love and Sandwiches",
+        "osm_type": "node",
+        "osm_id": 11502448477
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7386878,
+          38.5435224
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Pachamama Coffee",
+        "osm_type": "node",
+        "osm_id": 11502448480
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7413758,
+          38.5435067
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Raising Cane's",
+        "osm_type": "node",
+        "osm_id": 11502448482
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7396664,
+          38.5469038
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Sit Lo Saigon",
+        "osm_type": "node",
+        "osm_id": 11502448483
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7497522,
+          38.543853
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Memorial Union Terminal",
+        "osm_type": "node",
+        "osm_id": 12048435681
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7496779,
+          38.543493
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Memorial Union Terminal",
+        "osm_type": "node",
+        "osm_id": 12048435682
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7497999,
+          38.543451
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Memorial Union Terminal",
+        "osm_type": "node",
+        "osm_id": 12048435683
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7501067,
+          38.5438977
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Memorial Union Terminal",
+        "osm_type": "node",
+        "osm_id": 12048435684
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7499658,
+          38.5434194
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Memorial Union Terminal",
+        "osm_type": "node",
+        "osm_id": 12048435686
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7485941,
+          38.5345663
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Mrak Hall Dr & Old Davis Rd",
+        "osm_type": "node",
+        "osm_id": 12123344024
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7536841,
+          38.5391978
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Hutchinson Dr & California Way",
+        "osm_type": "node",
+        "osm_id": 12123344025
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7381782,
+          38.5434313
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Davis, Ca (DAV)",
+        "osm_type": "node",
+        "osm_id": 12154768067
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7413209,
+          38.5434646
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Raising Cane's",
+        "osm_type": "node",
+        "osm_id": 12387173501
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7410304,
+          38.5435351
+        ]
+      },
+      "properties": {
+        "amenity_type": "grocery",
+        "name": "Myu Myu",
+        "osm_type": "node",
+        "osm_id": 12387173502
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7409709,
+          38.5433867
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "El patio",
+        "osm_type": "node",
+        "osm_id": 12387178201
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7410521,
+          38.5436076
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Nick the Greek",
+        "osm_type": "node",
+        "osm_id": 12387178202
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7717427,
+          38.5411146
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Jade St at Sage St - Drop Off Only (WB)",
+        "osm_type": "node",
+        "osm_id": 12609027784
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7407041,
+          38.5413673
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Tomo Tea House",
+        "osm_type": "node",
+        "osm_id": 12770913184
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7408562,
+          38.5413448
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Bruxie",
+        "osm_type": "node",
+        "osm_id": 12771031148
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.747146,
+          38.5461351
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Russell & A St (EB)",
+        "osm_type": "node",
+        "osm_id": 13095780014
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7469863,
+          38.5463787
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Russell Blvd & A Street/City Hall (WB)",
+        "osm_type": "node",
+        "osm_id": 13095780015
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7451283,
+          38.5450065
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "B St & 4th St / Central Park (SB)",
+        "osm_type": "node",
+        "osm_id": 13095780016
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.744904,
+          38.5449202
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "B St & 4th St / Central Park (NB)",
+        "osm_type": "node",
+        "osm_id": 13095780017
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7440403,
+          38.5426548
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "2nd St & B St (EB)",
+        "osm_type": "node",
+        "osm_id": 13095780018
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7412197,
+          38.5431892
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "2nd St & E St / Downtown (EB)",
+        "osm_type": "node",
+        "osm_id": 13095780019
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7409629,
+          38.5433322
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "2nd St & E St / Downtown (WB)",
+        "osm_type": "node",
+        "osm_id": 13095780020
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7382218,
+          38.5439742
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "H St & 2nd St / Amtrak (SB)",
+        "osm_type": "node",
+        "osm_id": 13095780021
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7380681,
+          38.5439304
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "H St & 2nd St / Amtrak (NB)",
+        "osm_type": "node",
+        "osm_id": 13095780022
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7349924,
+          38.5457496
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "3rd St & K St (WB)",
+        "osm_type": "node",
+        "osm_id": 13095780023
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7346239,
+          38.5456569
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "3rd St & K St (EB)",
+        "osm_type": "node",
+        "osm_id": 13095780024
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7340593,
+          38.547445
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "L St & 4th St (NB)",
+        "osm_type": "node",
+        "osm_id": 13095780025
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7344075,
+          38.5478354
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "L St & 425 (SB)",
+        "osm_type": "node",
+        "osm_id": 13095780026
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7309685,
+          38.5488634
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "5th St & Davis Public Works Corp Yard (WB)",
+        "osm_type": "node",
+        "osm_id": 13095780027
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7274487,
+          38.5486229
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "5th St & Pole Line Rd/D.M.V (EB)",
+        "osm_type": "node",
+        "osm_id": 13095780028
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7278128,
+          38.5488218
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "5th St & Pole Line Rd/D.M.V (WB)",
+        "osm_type": "node",
+        "osm_id": 13095780029
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7244288,
+          38.5491846
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "5th St & Post Office / Pole Line (EB)",
+        "osm_type": "node",
+        "osm_id": 13095780030
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7245995,
+          38.5494365
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "5th St & Post Office / Pole Line Rd (WB)",
+        "osm_type": "node",
+        "osm_id": 13095780031
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7214288,
+          38.5515509
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "5th St & Cantrill/Greystone (WB)",
+        "osm_type": "node",
+        "osm_id": 13095780032
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7165957,
+          38.5526433
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "5th St & San Rafael St (WB)",
+        "osm_type": "node",
+        "osm_id": 13095780033
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7153904,
+          38.5527015
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "5th St & Pena Drive (EB)",
+        "osm_type": "node",
+        "osm_id": 13095780034
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.713575,
+          38.5533368
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "5th St & Spafford (WB)",
+        "osm_type": "node",
+        "osm_id": 13097299493
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7123812,
+          38.5534758
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "5th St & Spafford (WB)",
+        "osm_type": "node",
+        "osm_id": 13097299494
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7092241,
+          38.5546473
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "5th St & Windmere Apts. (EB)",
+        "osm_type": "node",
+        "osm_id": 13097299495
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7094491,
+          38.5548593
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "5th St & Pelz Bike Path (WB)",
+        "osm_type": "node",
+        "osm_id": 13097299496
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7053349,
+          38.5564835
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "5th Street & Verona Terrace (EB)",
+        "osm_type": "node",
+        "osm_id": 13097299497
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.705372,
+          38.556915
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "5th St & Verona Terrace (SB)",
+        "osm_type": "node",
+        "osm_id": 13097299498
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.704006,
+          38.5578362
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Alhambra Drive & 5th St (EB)",
+        "osm_type": "node",
+        "osm_id": 13097299499
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7034803,
+          38.5580412
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Alhambra Drive & Atlantis / Carcia (WB)",
+        "osm_type": "node",
+        "osm_id": 13097299500
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.69976,
+          38.5579123
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Alhambra Dr & Arroyo Ave (EB)",
+        "osm_type": "node",
+        "osm_id": 13097323001
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6990246,
+          38.558107
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Alhambra & Atlantis / Arroyo (WB)",
+        "osm_type": "node",
+        "osm_id": 13097323002
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6966194,
+          38.5586535
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Alhambra Drive & Mace Blvd (EB)",
+        "osm_type": "node",
+        "osm_id": 13097323003
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6972259,
+          38.5587574
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Alhambra Drive & Mace Blvd (WB)",
+        "osm_type": "node",
+        "osm_id": 13097323004
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6933853,
+          38.5508583
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Chiles Rd & Mace Blvd El Macero/Nugget (EB)",
+        "osm_type": "node",
+        "osm_id": 13097323005
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6910339,
+          38.5508492
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "El Cemonte Ave & Glide Drive (SB)",
+        "osm_type": "node",
+        "osm_id": 13097323006
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6903463,
+          38.5489532
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Cowell Blvd & El Cemonte Ave (WB)",
+        "osm_type": "node",
+        "osm_id": 13097323007
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6929961,
+          38.5488511
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Cowell Blvd & Mace Blvd (WB)",
+        "osm_type": "node",
+        "osm_id": 13097323008
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6942063,
+          38.5492916
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Mace Blvd & Cowell Blvd/El Macero/Nugget (NB)",
+        "osm_type": "node",
+        "osm_id": 13097323009
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7617882,
+          38.5476596
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Sycamore Ln & Russell/Trader Joe's (NB)",
+        "osm_type": "node",
+        "osm_id": 13099792711
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7620108,
+          38.5473751
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Sycamore Ln & Russell/Trader Joe's (SB)",
+        "osm_type": "node",
+        "osm_id": 13099792712
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7643788,
+          38.5509292
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Sycamore Ln & 8th St (NB)",
+        "osm_type": "node",
+        "osm_id": 13099792713
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7642661,
+          38.5506074
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Sycamore & 8th (SB)",
+        "osm_type": "node",
+        "osm_id": 13099792714
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.765124,
+          38.5531759
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Sycamore Ln & Cornell Drive (SB)",
+        "osm_type": "node",
+        "osm_id": 13099792715
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7649071,
+          38.5534555
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Sycamore Ln & Cornell Drive (NB)",
+        "osm_type": "node",
+        "osm_id": 13099792716
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7650467,
+          38.5552761
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Sycamore Ln & Colby Drive (SB)",
+        "osm_type": "node",
+        "osm_id": 13099792717
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.764814,
+          38.5564326
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Sycamore Ln & Villanova Drive (NB)",
+        "osm_type": "node",
+        "osm_id": 13099792718
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7647101,
+          38.5582686
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Sycamore Ln & Radcliffe Drive (NB)",
+        "osm_type": "node",
+        "osm_id": 13099792719
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7648503,
+          38.5585073
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Sycamore Ln & Notre Dame Drive (SB)",
+        "osm_type": "node",
+        "osm_id": 13099792720
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7605388,
+          38.5586971
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Radcliffe Drive & Apple Ln (NB)",
+        "osm_type": "node",
+        "osm_id": 13099792721
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7616731,
+          38.5600981
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Drake Drive & Drake Apartments (WB)",
+        "osm_type": "node",
+        "osm_id": 13099792722
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7640145,
+          38.5595987
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "Sycamore Ln & Drake Drive (SB)",
+        "osm_type": "node",
+        "osm_id": 13099792723
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7486888,
+          38.534882
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Quickly",
+        "osm_type": "node",
+        "osm_id": 13271137029
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7403036,
+          38.5505232
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Domino's",
+        "osm_type": "node",
+        "osm_id": 13333233912
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7435636,
+          38.546949
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "5th Street & D Street / Downtown (WB)",
+        "osm_type": "node",
+        "osm_id": 13337760643
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7429889,
+          38.5468981
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "5th Street & D Street / Downtown (EB)",
+        "osm_type": "node",
+        "osm_id": 13337760644
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7414258,
+          38.5488421
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "F St & 6th Street/Davis Food Co-op (NB)",
+        "osm_type": "node",
+        "osm_id": 13337760645
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7414814,
+          38.5483378
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "F St & 6th St/Davis Food Co-op (SB)",
+        "osm_type": "node",
+        "osm_id": 13337760646
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7420422,
+          38.5518048
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "F St & 8th St (NB)",
+        "osm_type": "node",
+        "osm_id": 13337760647
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7421466,
+          38.5509295
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "F St & 8th St (SB)",
+        "osm_type": "node",
+        "osm_id": 13337760648
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7426899,
+          38.5552856
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "F St & 12th St (NB)",
+        "osm_type": "node",
+        "osm_id": 13337760649
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7433633,
+          38.557268
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "F St & 14th St (NB)",
+        "osm_type": "node",
+        "osm_id": 13337760650
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7446841,
+          38.5596647
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "F St & Covell Blvd (NB)",
+        "osm_type": "node",
+        "osm_id": 13337760651
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7450246,
+          38.5600807
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "F St & Covell Blvd (SB)",
+        "osm_type": "node",
+        "osm_id": 13337760652
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7387697,
+          38.5598596
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "J St & Cranbrook Ct (SB)",
+        "osm_type": "node",
+        "osm_id": 13337760653
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7391041,
+          38.5589985
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "J St & Menlo Dr (NB)",
+        "osm_type": "node",
+        "osm_id": 13337760654
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7405834,
+          38.5575037
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "J St & Drexel Dr (NB)",
+        "osm_type": "node",
+        "osm_id": 13337760655
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.740731,
+          38.5567281
+        ]
+      },
+      "properties": {
+        "amenity_type": "transit",
+        "name": "J St & Drexel Dr (SB)",
+        "osm_type": "node",
+        "osm_id": 13337760656
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7598451,
+          38.5469155
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "The Melt",
+        "osm_type": "node",
+        "osm_id": 13469496001
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7387821,
+          38.5439295
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Open Rice",
+        "osm_type": "node",
+        "osm_id": 13515754001
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7742377,
+          38.5544884
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Arroyo Community Park",
+        "osm_type": "way",
+        "osm_id": 23633618
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7490515,
+          38.5639682
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Covell Park",
+        "osm_type": "way",
+        "osm_id": 23634487
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7286072,
+          38.5689636
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Sandy Motley Park",
+        "osm_type": "way",
+        "osm_id": 23647650
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7054577,
+          38.5469329
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Willow Creek Park",
+        "osm_type": "way",
+        "osm_id": 23647896
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6989006,
+          38.5588575
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Mace Ranch Mini Park",
+        "osm_type": "way",
+        "osm_id": 23651584
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7053708,
+          38.5606543
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "La Playa Park",
+        "osm_type": "way",
+        "osm_id": 23651624
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7504087,
+          38.5738534
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Northstar Mini Park",
+        "osm_type": "way",
+        "osm_id": 24152082
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6985421,
+          38.5566256
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "John Barravetto Park",
+        "osm_type": "way",
+        "osm_id": 24429303
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7011368,
+          38.556269
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 24429310
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7121799,
+          38.5568636
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Mace Ranch Community Park",
+        "osm_type": "way",
+        "osm_id": 24513473
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7122306,
+          38.5608831
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 24557828
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7445049,
+          38.545363
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Central Park",
+        "osm_type": "way",
+        "osm_id": 25001686
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7309178,
+          38.5496369
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "N Street Mini Park",
+        "osm_type": "way",
+        "osm_id": 25024314
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7360929,
+          38.5503474
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Cedar Park",
+        "osm_type": "way",
+        "osm_id": 25024394
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7164103,
+          38.5606121
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Slide Hill Park",
+        "osm_type": "way",
+        "osm_id": 25024595
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7285284,
+          38.5654128
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Oak Grove Park",
+        "osm_type": "way",
+        "osm_id": 25024637
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7459811,
+          38.5587847
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Community Park",
+        "osm_type": "way",
+        "osm_id": 25027935
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7544615,
+          38.5649091
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 25081571
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7139261,
+          38.5696771
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 25155217
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6880318,
+          38.551415
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Pioneer Park",
+        "osm_type": "way",
+        "osm_id": 25155296
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7662411,
+          38.5550904
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Sycamore Park",
+        "osm_type": "way",
+        "osm_id": 25178266
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7603515,
+          38.5536343
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Redwood Park",
+        "osm_type": "way",
+        "osm_id": 25178298
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.772593,
+          38.5509101
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Westwood Park",
+        "osm_type": "way",
+        "osm_id": 25195707
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7192903,
+          38.5392677
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Walnut Park",
+        "osm_type": "way",
+        "osm_id": 25207209
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.709513,
+          38.5423843
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Putah Creek Park",
+        "osm_type": "way",
+        "osm_id": 25354047
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.750776,
+          38.5473761
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "College Park",
+        "osm_type": "way",
+        "osm_id": 25366672
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7398534,
+          38.5495605
+        ]
+      },
+      "properties": {
+        "amenity_type": "grocery",
+        "name": "Davis Food Cooperative",
+        "osm_type": "way",
+        "osm_id": 25366944
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7464981,
+          38.5480517
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Civic Center Park",
+        "osm_type": "way",
+        "osm_id": 25400214
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7004575,
+          38.5443275
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 25448173
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7497713,
+          38.541026
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "West Quad",
+        "osm_type": "way",
+        "osm_id": 26338058
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7510219,
+          38.5563264
+        ]
+      },
+      "properties": {
+        "amenity_type": "library",
+        "name": "Craig Armstrong Library",
+        "osm_type": "way",
+        "osm_id": 27831653
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7427634,
+          38.541062
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 29426627
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.730986,
+          38.540323
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Carl's Jr.",
+        "osm_type": "way",
+        "osm_id": 32476165
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.747117,
+          38.5569359
+        ]
+      },
+      "properties": {
+        "amenity_type": "library",
+        "name": "Mary L. Stevens-Davis Branch (Yolo County Library)",
+        "osm_type": "way",
+        "osm_id": 32615084
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7577435,
+          38.559598
+        ]
+      },
+      "properties": {
+        "amenity_type": "grocery",
+        "name": "Savemart",
+        "osm_type": "way",
+        "osm_id": 32656558
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6939305,
+          38.5509497
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Taco Bell",
+        "osm_type": "way",
+        "osm_id": 34400780
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6974152,
+          38.5505256
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "McDonald's",
+        "osm_type": "way",
+        "osm_id": 34400810
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7400858,
+          38.5468521
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 34405181
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7379643,
+          38.540001
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Caffe Italia",
+        "osm_type": "way",
+        "osm_id": 36271334
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7315656,
+          38.5620784
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Carl's Jr.",
+        "osm_type": "way",
+        "osm_id": 36921186
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7331594,
+          38.5609311
+        ]
+      },
+      "properties": {
+        "amenity_type": "grocery",
+        "name": "Nugget Markets",
+        "osm_type": "way",
+        "osm_id": 36921187
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7858731,
+          38.5495943
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "West Manor Park",
+        "osm_type": "way",
+        "osm_id": 40056888
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.75481,
+          38.5693517
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 41393970
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7655193,
+          38.5612384
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Panda Express",
+        "osm_type": "way",
+        "osm_id": 44459757
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7856258,
+          38.560243
+        ]
+      },
+      "properties": {
+        "amenity_type": "grocery",
+        "name": "Circle K",
+        "osm_type": "way",
+        "osm_id": 44468483
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7298421,
+          38.5563048
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Chestnut Park",
+        "osm_type": "way",
+        "osm_id": 44581550
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7438876,
+          38.5421515
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Delta of Venus",
+        "osm_type": "way",
+        "osm_id": 45208339
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7435324,
+          38.5447847
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 45208377
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.743497,
+          38.5444027
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Burgers and Brew",
+        "osm_type": "way",
+        "osm_id": 45208382
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7434479,
+          38.5446491
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 45208388
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7398982,
+          38.544419
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Old City Hall",
+        "osm_type": "way",
+        "osm_id": 45208411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7450585,
+          38.5440523
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Sam's Mediterranean Cuisine",
+        "osm_type": "way",
+        "osm_id": 45212497
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7446978,
+          38.5428103
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Black Bear Diner",
+        "osm_type": "way",
+        "osm_id": 45212506
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7371519,
+          38.5409423
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "In-N-Out Burger",
+        "osm_type": "way",
+        "osm_id": 46689174
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7325812,
+          38.5415415
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Applebee's",
+        "osm_type": "way",
+        "osm_id": 46699785
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7325887,
+          38.5400952
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 46699789
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7302923,
+          38.5402931
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "IHOP",
+        "osm_type": "way",
+        "osm_id": 46699953
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7434117,
+          38.5601068
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "Snack Shack",
+        "osm_type": "way",
+        "osm_id": 58289297
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7181383,
+          38.5566799
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 88150395
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7699727,
+          38.5419263
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Sunrise Park",
+        "osm_type": "way",
+        "osm_id": 106862444
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6949381,
+          38.5569982
+        ]
+      },
+      "properties": {
+        "amenity_type": "grocery",
+        "name": "Extra Mile",
+        "osm_type": "way",
+        "osm_id": 107138735
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7697643,
+          38.561477
+        ]
+      },
+      "properties": {
+        "amenity_type": "grocery",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 179561538
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7602066,
+          38.5660282
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Hacienda Park",
+        "osm_type": "way",
+        "osm_id": 182314353
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7654944,
+          38.547561
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Oxford Circle Park",
+        "osm_type": "way",
+        "osm_id": 182315000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7391247,
+          38.5432794
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 183925527
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7580129,
+          38.5603122
+        ]
+      },
+      "properties": {
+        "amenity_type": "grocery",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 208527818
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7590328,
+          38.5603734
+        ]
+      },
+      "properties": {
+        "amenity_type": "grocery",
+        "name": "ExtraMile",
+        "osm_type": "way",
+        "osm_id": 208528164
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7405215,
+          38.5431548
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Mishka's Cafe",
+        "osm_type": "way",
+        "osm_id": 220839233
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7519227,
+          38.5715363
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Northstar Park",
+        "osm_type": "way",
+        "osm_id": 247490849
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7397941,
+          38.5437966
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 249239213
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7398132,
+          38.5439329
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 249239214
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7489481,
+          38.5411797
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "East Quad",
+        "osm_type": "way",
+        "osm_id": 249314010
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7126412,
+          38.5558882
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 252576687
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7064637,
+          38.5592148
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 252577023
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.712442,
+          38.5589268
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 252961243
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7184988,
+          38.5557806
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 252964567
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7185358,
+          38.5550697
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 252964568
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7135302,
+          38.5539702
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 252964798
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7124832,
+          38.5552992
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 252965459
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7484553,
+          38.5443236
+        ]
+      },
+      "properties": {
+        "amenity_type": "gym",
+        "name": "Toomey Weight Room",
+        "osm_type": "way",
+        "osm_id": 253117071
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7252508,
+          38.5411947
+        ]
+      },
+      "properties": {
+        "amenity_type": "grocery",
+        "name": "Safeway",
+        "osm_type": "way",
+        "osm_id": 253731115
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7664935,
+          38.5620438
+        ]
+      },
+      "properties": {
+        "amenity_type": "grocery",
+        "name": "Safeway",
+        "osm_type": "way",
+        "osm_id": 253731412
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7163213,
+          38.541483
+        ]
+      },
+      "properties": {
+        "amenity_type": "library",
+        "name": "Marguerite Montgomery Elementary South Davis Satelite Branch (Yolo County Library)",
+        "osm_type": "way",
+        "osm_id": 256929283
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6797785,
+          38.5493274
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 280956408
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6796784,
+          38.5510981
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 280956420
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.679852,
+          38.5460644
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 328692111
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7364702,
+          38.5425807
+        ]
+      },
+      "properties": {
+        "amenity_type": "cafe",
+        "name": "Volt Coffee",
+        "osm_type": "way",
+        "osm_id": 348420952
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7396094,
+          38.5436832
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 391697618
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7172793,
+          38.5702889
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 391776701
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.71913,
+          38.5654337
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Robert Arneson Park",
+        "osm_type": "way",
+        "osm_id": 391797141
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7063686,
+          38.5485737
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 391936404
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7094179,
+          38.5467824
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 391944491
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7053743,
+          38.5447963
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 391945970
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7193921,
+          38.5525715
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 392328064
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6935553,
+          38.5511659
+        ]
+      },
+      "properties": {
+        "amenity_type": "restaurant",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 392538008
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7085167,
+          38.5519357
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Davis Greenbelt",
+        "osm_type": "way",
+        "osm_id": 392543231
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7578891,
+          38.5713461
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 392894715
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6963815,
+          38.5424065
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Willowbank Park",
+        "osm_type": "way",
+        "osm_id": 394956305
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7539532,
+          38.5727299
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 396459695
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7027324,
+          38.5591948
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 396489312
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7510362,
+          38.5750176
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 397000797
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7631051,
+          38.5691382
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 397726628
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7794053,
+          38.5539639
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 404664547
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7707166,
+          38.5567958
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 404664557
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7555318,
+          38.5565419
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 405037869
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7124434,
+          38.5624734
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 445349259
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7266436,
+          38.5668845
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 448899537
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7866128,
+          38.559416
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Willows Park",
+        "osm_type": "way",
+        "osm_id": 480128316
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7279601,
+          38.5505589
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Cambridge House Dog Park",
+        "osm_type": "way",
+        "osm_id": 491450803
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7057757,
+          38.5422473
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 493820409
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7165361,
+          38.5467495
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Benbow Park",
+        "osm_type": "way",
+        "osm_id": 493820411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7825017,
+          38.5490616
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Figgy Park",
+        "osm_type": "way",
+        "osm_id": 562677682
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7419825,
+          38.5660176
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 584766369
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7410135,
+          38.562671
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 584766370
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7898118,
+          38.5472946
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 749649200
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7895361,
+          38.5574254
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 752122555
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7839257,
+          38.5559717
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 752144065
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7888061,
+          38.5545155
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 752900586
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7740687,
+          38.5581784
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 753455928
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7694038,
+          38.5598974
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 753544509
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7695456,
+          38.5563177
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 753544510
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7816184,
+          38.5540366
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 753553250
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7779761,
+          38.5574965
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 753582210
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7491991,
+          38.5679166
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 755028102
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7507735,
+          38.5673733
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 755028106
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7536324,
+          38.5744469
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 755462604
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7498175,
+          38.5698581
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 755462605
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7415814,
+          38.5641188
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 755560712
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7424842,
+          38.5674038
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 755561644
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7426236,
+          38.5680699
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 755561661
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7135799,
+          38.5713349
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 757112183
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7168369,
+          38.5691135
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 757112186
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.713546,
+          38.5704524
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 757112189
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7267431,
+          38.5695013
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 757113767
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7156075,
+          38.5640117
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 757662997
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7171091,
+          38.563963
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 757662998
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7247971,
+          38.5664718
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 757993582
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7215302,
+          38.5693933
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 758015520
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7156563,
+          38.5441657
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Village Park",
+        "osm_type": "way",
+        "osm_id": 790020123
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7821547,
+          38.5588723
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 858663718
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7202297,
+          38.5644422
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 922280552
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7203861,
+          38.5639706
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 922283554
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7239707,
+          38.5646098
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 922283557
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7274482,
+          38.5629416
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 922304938
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7258853,
+          38.5686609
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 922660287
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7270184,
+          38.5694276
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 922660288
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7252963,
+          38.5677569
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 922660290
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.722571,
+          38.5651776
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 922945385
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7167715,
+          38.5643875
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 923211452
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7148888,
+          38.5638623
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 923211453
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7137324,
+          38.5639668
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 923211454
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.71256,
+          38.5642677
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 923211455
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.718049,
+          38.5655251
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 923211456
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7177516,
+          38.5676096
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 923211457
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7177119,
+          38.5673527
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 943600895
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7227359,
+          38.567821
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 943701137
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7210398,
+          38.5650484
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 944433087
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7102387,
+          38.5615564
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 974165622
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7098447,
+          38.5616459
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 974165623
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7613733,
+          38.5656376
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 978826692
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7190561,
+          38.5441482
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 978831115
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7034963,
+          38.5623872
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 1010837145
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7557232,
+          38.575151
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 1062629641
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7576845,
+          38.5745939
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 1062629642
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7577852,
+          38.5737392
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 1062629643
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7577521,
+          38.5729845
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 1062629644
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.757808,
+          38.5721592
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 1062629645
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7594128,
+          38.5713243
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 1062629646
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7235914,
+          38.5429984
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 1064086572
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7616502,
+          38.5695141
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 1099724575
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7406972,
+          38.5416082
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 1154430214
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.6973323,
+          38.5408817
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "",
+        "osm_type": "way",
+        "osm_id": 1217806644
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7554859,
+          38.5419747
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "Joseph and Emma Lin Biological Orchard and Garden (BOG)",
+        "osm_type": "way",
+        "osm_id": 1313678799
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7651559,
+          38.5442594
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "South Community Center Playground",
+        "osm_type": "way",
+        "osm_id": 1313685534
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7824832,
+          38.5571091
+        ]
+      },
+      "properties": {
+        "amenity_type": "park",
+        "name": "West Area Pond Recreational Area",
+        "osm_type": "way",
+        "osm_id": 1434811330
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7491019,
+          38.5397313
+        ]
+      },
+      "properties": {
+        "amenity_type": "library",
+        "name": "Shields Library",
+        "osm_type": "relation",
+        "osm_id": 18189
+      }
+    }
+  ]
+}
