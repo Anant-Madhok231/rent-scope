@@ -33,6 +33,8 @@ W_AMENITY = 0.22
 W_TRANSIT = 0.13
 W_PEER = 0.13
 
+KM_TO_MI = 0.621371
+
 
 def haversine_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
     r = 6371.0088
@@ -45,6 +47,117 @@ def haversine_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
 
 def decay_score(distance_km: float, scale_km: float) -> float:
     return 100.0 * math.exp(-max(0.0, distance_km) / scale_km)
+
+
+def nearest_km_among_types(
+    lat: float, lon: float, amenities: list[dict], types: set[str]
+) -> float | None:
+    best = None
+    for a in amenities:
+        if a.get("amenity_type") not in types:
+            continue
+        d = haversine_km(lat, lon, a["lat"], a["lon"])
+        if best is None or d < best:
+            best = d
+    return best
+
+
+def nearest_named_places(
+    lat: float,
+    lon: float,
+    amenities: list[dict],
+    types: set[str],
+    limit: int = 6,
+    max_km: float = 2.5,
+) -> list[dict]:
+    hits = []
+    for a in amenities:
+        t = a.get("amenity_type")
+        if t not in types:
+            continue
+        d = haversine_km(lat, lon, a["lat"], a["lon"])
+        if d > max_km:
+            continue
+        name = (a.get("name") or "").strip() or "(unnamed on OSM)"
+        hits.append({"name": name, "kind": t, "mi": round(d * KM_TO_MI, 2)})
+    hits.sort(key=lambda x: x["mi"])
+    out = []
+    seen = set()
+    for h in hits:
+        key = (h["name"].lower(), h["kind"])
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(h)
+        if len(out) >= limit:
+            break
+    return out
+
+
+def parking_summary_for_listing(
+    lat: float, lon: float, amenities: list[dict], limit: int = 4
+) -> str:
+    hits = []
+    for a in amenities:
+        if a.get("amenity_type") != "parking":
+            continue
+        d = haversine_km(lat, lon, a["lat"], a["lon"])
+        if d > 1.5:
+            continue
+        hits.append((d, a))
+    hits.sort(key=lambda x: x[0])
+    parts = []
+    for d, a in hits[:limit]:
+        fee = (a.get("fee") or "").strip().lower()
+        charge = (a.get("charge") or "").strip()
+        pname = (a.get("name") or "").strip()
+        label = pname or "Parking"
+        bits = []
+        if fee == "yes":
+            bits.append("fee likely")
+        elif fee == "no":
+            bits.append("tagged no fee")
+        if charge:
+            bits.append(charge)
+        mi = round(d * KM_TO_MI, 2)
+        if bits:
+            parts.append(f"{label} ~{mi} mi ({', '.join(bits)})")
+        else:
+            parts.append(f"{label} ~{mi} mi (OSM has no fee/charge tag)")
+    if not parts:
+        return (
+            "No mapped parking with fee data within ~0.9 mi in OpenStreetMap—"
+            "assume paid permits or street rules locally."
+        )
+    return "; ".join(parts)
+
+
+def bike_escooter_index(lat: float, lon: float, amenities: list[dict]) -> float:
+    d_cw = nearest_km_among_types(lat, lon, amenities, {"cycleway"})
+    d_br = nearest_km_among_types(lat, lon, amenities, {"bike_rental"})
+    n_bp = count_in_radius(lat, lon, amenities, 0.45, type_filter={"bike_parking"})
+    n_br_near = count_in_radius(lat, lon, amenities, 0.9, type_filter={"bike_rental"})
+    s = 22.0
+    if d_cw is not None:
+        s += 0.48 * decay_score(d_cw, 0.38)
+    else:
+        s += 18.0
+    s += min(28.0, n_bp * 4.2)
+    s += min(22.0, n_br_near * 11.0)
+    if d_br is not None:
+        s += 0.15 * decay_score(d_br, 0.55)
+    return float(min(100.0, max(0.0, s)))
+
+
+def traffic_calm_index(lat: float, lon: float, amenities: list[dict]) -> float:
+    d_m = nearest_km_among_types(lat, lon, amenities, {"arterial_motorway"})
+    d_t = nearest_km_among_types(lat, lon, amenities, {"arterial_trunk"})
+    d_p = nearest_km_among_types(lat, lon, amenities, {"arterial_primary"})
+    cands = [x for x in (d_m, d_t, d_p) if x is not None]
+    if not cands:
+        return 62.0
+    d_art = min(cands)
+    return float(min(100.0, 22.0 + 78.0 * (1.0 - math.exp(-d_art / 0.42))))
 
 
 def percentile_rank_lower_is_better(values: list[float], x: float) -> float:
@@ -78,16 +191,18 @@ def load_amenities(path: Path) -> list[dict]:
             continue
         lon, lat = float(coords[0]), float(coords[1])
         props = f.get("properties") or {}
-        out.append(
-            {
-                "lat": lat,
-                "lon": lon,
-                "amenity_type": props.get("amenity_type", ""),
-                "name": props.get("name") or "",
-                "network": props.get("network") or "",
-                "operator": props.get("operator") or "",
-            }
-        )
+        rec = {
+            "lat": lat,
+            "lon": lon,
+            "amenity_type": props.get("amenity_type", ""),
+            "name": props.get("name") or "",
+            "network": props.get("network") or "",
+            "operator": props.get("operator") or "",
+        }
+        if props.get("amenity_type") == "parking":
+            rec["fee"] = props.get("fee") or ""
+            rec["charge"] = props.get("charge") or ""
+        out.append(rec)
     return out
 
 
@@ -130,8 +245,8 @@ def unitrans_nearby(lat: float, lon: float, amenities: list[dict], limit: int = 
         d = haversine_km(lat, lon, a["lat"], a["lon"])
         if d <= UNITRANS_LIST_KM:
             label = a["name"] or a["network"] or "Unitrans stop"
-            hits.append({"name": label, "km": round(d, 3)})
-    hits.sort(key=lambda x: x["km"])
+            hits.append({"name": label, "mi": round(d * KM_TO_MI, 2)})
+    hits.sort(key=lambda x: x["mi"])
     return hits[:limit]
 
 
@@ -199,9 +314,9 @@ def build_explanation(
     amenity_count: int,
     transit_count: int,
     peer_note: str,
-    dist_campus_km: float,
-    d_mu: float,
-    d_silo: float,
+    dist_campus_mi: float,
+    d_mu_mi: float,
+    d_silo_mi: float,
     conv_n: int,
     unitrans_n: int,
 ) -> str:
@@ -218,10 +333,11 @@ def build_explanation(
     elif campus >= 55:
         parts.append("a practical distance from campus")
     else:
-        parts.append(f"about {dist_campus_km:.1f} km from campus")
+        parts.append(f"about {dist_campus_mi:.1f} mi straight-line from campus core")
 
     parts.append(
-        f"Memorial Union {d_mu:.2f} km · Silo {d_silo:.2f} km · {conv_n} convenience stores ≤800 m · {unitrans_n} Unitrans stops ≤1.5 km"
+        f"Memorial Union {d_mu_mi:.2f} mi · Silo {d_silo_mi:.2f} mi · "
+        f"{conv_n} convenience stores ≤800 m · {unitrans_n} Unitrans stops ≤~0.9 mi"
     )
 
     if downtown >= 70:
@@ -293,6 +409,16 @@ def main() -> None:
     conv_nearest_col = []
     unitrans_json_col = []
     trend_json_col = []
+    dist_mi_mu_col = []
+    dist_mi_silo_col = []
+    dist_mi_campus_col = []
+    dist_mi_dt_col = []
+    conv_nearest_mi_col = []
+    grocery_json_col = []
+    food_json_col = []
+    bike_idx_col = []
+    traffic_idx_col = []
+    parking_sum_col = []
 
     for idx, row in df.iterrows():
         lat, lon = float(row["latitude"]), float(row["longitude"])
@@ -314,6 +440,10 @@ def main() -> None:
         d_silo = haversine_km(lat, lon, SILO[0], SILO[1])
         dist_mu_col.append(round(d_mu, 4))
         dist_silo_col.append(round(d_silo, 4))
+        dist_mi_mu_col.append(round(d_mu * KM_TO_MI, 4))
+        dist_mi_silo_col.append(round(d_silo * KM_TO_MI, 4))
+        dist_mi_campus_col.append(round(d_campus * KM_TO_MI, 4))
+        dist_mi_dt_col.append(round(d_dt * KM_TO_MI, 4))
 
         sc = decay_score(d_campus, 1.35)
         sd = decay_score(d_dt, 0.95)
@@ -335,10 +465,27 @@ def main() -> None:
         conv_count_col.append(conv_n)
         cnear = nearest_convenience_km(lat, lon, amenities)
         conv_nearest_col.append(round(cnear, 4) if cnear is not None else "")
+        conv_nearest_mi_col.append(
+            round(cnear * KM_TO_MI, 4) if cnear is not None else ""
+        )
 
         ulist = unitrans_nearby(lat, lon, amenities)
         unitrans_json_col.append(json.dumps(ulist))
         trend_json_col.append(json.dumps(listing_trend_from_acs(rent, acs)))
+
+        grocery_json_col.append(
+            json.dumps(
+                nearest_named_places(lat, lon, amenities, {"grocery", "convenience"})
+            )
+        )
+        food_json_col.append(
+            json.dumps(
+                nearest_named_places(lat, lon, amenities, {"restaurant", "cafe"})
+            )
+        )
+        bike_idx_col.append(round(bike_escooter_index(lat, lon, amenities), 2))
+        traffic_idx_col.append(round(traffic_calm_index(lat, lon, amenities), 2))
+        parking_sum_col.append(parking_summary_for_listing(lat, lon, amenities))
 
         raw = (
             W_RENT * eff
@@ -358,9 +505,9 @@ def main() -> None:
                 amenity_n,
                 transit_n,
                 peer_note,
-                d_campus,
-                d_mu,
-                d_silo,
+                d_campus * KM_TO_MI,
+                d_mu * KM_TO_MI,
+                d_silo * KM_TO_MI,
                 conv_n,
                 len(ulist),
             )
@@ -373,6 +520,16 @@ def main() -> None:
     df["dist_km_silo"] = dist_silo_col
     df["convenience_800m_count"] = conv_count_col
     df["convenience_nearest_km"] = conv_nearest_col
+    df["convenience_nearest_mi"] = conv_nearest_mi_col
+    df["dist_mi_memorial_union"] = dist_mi_mu_col
+    df["dist_mi_silo"] = dist_mi_silo_col
+    df["dist_mi_campus"] = dist_mi_campus_col
+    df["dist_mi_downtown"] = dist_mi_dt_col
+    df["nearby_grocery_json"] = grocery_json_col
+    df["nearby_food_json"] = food_json_col
+    df["bike_escooter_index"] = bike_idx_col
+    df["traffic_calm_index"] = traffic_idx_col
+    df["parking_summary"] = parking_sum_col
     df["unitrans_stops_json"] = unitrans_json_col
     df["listing_rent_trend_json"] = trend_json_col
 

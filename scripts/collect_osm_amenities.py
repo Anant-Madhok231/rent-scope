@@ -22,7 +22,7 @@ USER_AGENT = "RentScope/rent_scope (https://github.com/Anant-Madhok231/rent-scop
 BBOX_S, BBOX_W, BBOX_N, BBOX_E = 38.52, -121.79, 38.59, -121.68
 
 QUERY = f"""
-[out:json][timeout:180];
+[out:json][timeout:240];
 (
   nwr["shop"="supermarket"]({BBOX_S},{BBOX_W},{BBOX_N},{BBOX_E});
   nwr["shop"="convenience"]({BBOX_S},{BBOX_W},{BBOX_N},{BBOX_E});
@@ -39,6 +39,13 @@ QUERY = f"""
   nwr["amenity"="restaurant"]({BBOX_S},{BBOX_W},{BBOX_N},{BBOX_E});
   nwr["amenity"="fast_food"]({BBOX_S},{BBOX_W},{BBOX_N},{BBOX_E});
   nwr["amenity"="pharmacy"]({BBOX_S},{BBOX_W},{BBOX_N},{BBOX_E});
+  nwr["amenity"="parking"]({BBOX_S},{BBOX_W},{BBOX_N},{BBOX_E});
+  nwr["amenity"="bicycle_parking"]({BBOX_S},{BBOX_W},{BBOX_N},{BBOX_E});
+  nwr["amenity"="bicycle_rental"]({BBOX_S},{BBOX_W},{BBOX_N},{BBOX_E});
+  nwr["highway"="cycleway"]({BBOX_S},{BBOX_W},{BBOX_N},{BBOX_E});
+  nwr["highway"="motorway"]({BBOX_S},{BBOX_W},{BBOX_N},{BBOX_E});
+  nwr["highway"="trunk"]({BBOX_S},{BBOX_W},{BBOX_N},{BBOX_E});
+  nwr["highway"="primary"]({BBOX_S},{BBOX_W},{BBOX_N},{BBOX_E});
 );
 out center;
 """
@@ -84,6 +91,21 @@ def _classify(tags: dict) -> str | None:
         return "restaurant"
     if tags.get("amenity") == "pharmacy":
         return "pharmacy"
+    if tags.get("amenity") == "parking":
+        return "parking"
+    if tags.get("amenity") == "bicycle_parking":
+        return "bike_parking"
+    if tags.get("amenity") == "bicycle_rental":
+        return "bike_rental"
+    if tags.get("highway") == "cycleway":
+        return "cycleway"
+    hw = tags.get("highway")
+    if hw == "motorway":
+        return "arterial_motorway"
+    if hw == "trunk":
+        return "arterial_trunk"
+    if hw == "primary":
+        return "arterial_primary"
     return None
 
 
@@ -101,17 +123,22 @@ def _element_to_feature(el: dict) -> dict | None:
     else:
         return None
 
+    props = {
+        "amenity_type": kind,
+        "name": tags.get("name") or "",
+        "network": tags.get("network") or "",
+        "operator": tags.get("operator") or "",
+        "osm_type": el.get("type"),
+        "osm_id": el.get("id"),
+    }
+    if kind == "parking":
+        props["fee"] = tags.get("fee") or ""
+        props["charge"] = tags.get("charge") or ""
+        props["parking"] = tags.get("parking") or ""
     return {
         "type": "Feature",
         "geometry": {"type": "Point", "coordinates": [lon, lat]},
-        "properties": {
-            "amenity_type": kind,
-            "name": tags.get("name") or "",
-            "network": tags.get("network") or "",
-            "operator": tags.get("operator") or "",
-            "osm_type": el.get("type"),
-            "osm_id": el.get("id"),
-        },
+        "properties": props,
     }
 
 

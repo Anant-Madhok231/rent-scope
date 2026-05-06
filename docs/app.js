@@ -14,6 +14,10 @@
   let marketTrend = [];
   let chartInstance = null;
   let baseLayer = null;
+  let selectedFid = null;
+
+  const RAIL_EMPTY =
+    '<p class="right-rail-placeholder">Choose a pin on the map or a row under <strong>Top opportunities</strong> for straight-line miles, nearby stores and dining (OpenStreetMap names), bike / traffic indices, parking notes, and OffCampusReview actions.</p>';
 
   function scoreColor(score) {
     const s = Number(score) || 0;
@@ -415,11 +419,168 @@
   }
 
   function focusFeature(id) {
+    selectedFid = id;
     const m = markersById.get(id);
     if (m) {
       map.setView(m.getLatLng(), Math.max(map.getZoom(), 15), { animate: true });
       m.openPopup();
+    } else {
+      updateRightRail(null);
     }
+  }
+
+  function milesFromProps(miProp, kmFallback) {
+    if (miProp != null && miProp !== "" && Number.isFinite(Number(miProp))) {
+      return Number(miProp);
+    }
+    if (
+      kmFallback != null &&
+      kmFallback !== "" &&
+      Number.isFinite(Number(kmFallback))
+    ) {
+      return Number(kmFallback) * 0.621371;
+    }
+    return null;
+  }
+
+  function fmtMiles(miProp, kmFallback) {
+    const m = milesFromProps(miProp, kmFallback);
+    if (m == null) return "—";
+    return m.toFixed(2) + " mi";
+  }
+
+  function fmtIndex100(x) {
+    if (x == null || x === "" || !Number.isFinite(Number(x))) return "—";
+    return Number(x).toFixed(0) + "/100";
+  }
+
+  function offcampusActionUrl(props) {
+    const matched = ocrMatched(props);
+    const landlord = String(props.offcampus_landlord_url || "").trim();
+    if (matched && landlord) return landlord;
+    return (
+      props.offcampus_school_url ||
+      "https://www.offcampusreview.com/school/uc-davis"
+    );
+  }
+
+  function formatNearbyPois(items, title) {
+    if (!Array.isArray(items) || !items.length) {
+      return (
+        '<div class="rail-section-title">' +
+        escapeHtml(title) +
+        '</div><p class="popup-note">No named places mapped in OpenStreetMap within ~1.5 mi.</p>'
+      );
+    }
+    let h =
+      '<div class="rail-section-title">' +
+      escapeHtml(title) +
+      '</div><ul class="rail-poi-list">';
+    items.forEach(function (x) {
+      const mi = Number(x.mi);
+      const dist = Number.isFinite(mi) ? mi.toFixed(2) + " mi" : "—";
+      h +=
+        "<li><strong>" +
+        escapeHtml(x.name || "") +
+        "</strong> · " +
+        dist +
+        '<span class="rail-poi-kind">' +
+        escapeHtml(x.kind || "") +
+        "</span></li>";
+    });
+    h += "</ul>";
+    return h;
+  }
+
+  function listingDetailHtml(props) {
+    const mu = fmtMiles(
+      props.dist_mi_memorial_union,
+      props.dist_km_memorial_union
+    );
+    const silo = fmtMiles(props.dist_mi_silo, props.dist_km_silo);
+    const campus = fmtMiles(props.dist_mi_campus, null);
+    const downtown = fmtMiles(props.dist_mi_downtown, null);
+    const conv = Number(props.convenience_800m_count);
+    const cnear = fmtMiles(
+      props.convenience_nearest_mi,
+      props.convenience_nearest_km
+    );
+    const grocery = props.nearby_grocery;
+    const food = props.nearby_food;
+    let h = '<div class="rail-section-title">Distances (straight-line miles)</div>';
+    h +=
+      '<div class="popup-loc-grid">' +
+      "<span>UC Davis core</span><strong>" +
+      campus +
+      "</strong>" +
+      "<span>Downtown Davis</span><strong>" +
+      downtown +
+      "</strong>" +
+      "<span>Memorial Union</span><strong>" +
+      mu +
+      "</strong>" +
+      "<span>Silo</span><strong>" +
+      silo +
+      "</strong>" +
+      "<span>Conv. stores (≤800 m)</span><strong>" +
+      conv +
+      "</strong>" +
+      "<span>Nearest convenience</span><strong>" +
+      cnear +
+      "</strong>" +
+      "</div>";
+    h +=
+      '<p class="popup-note" style="margin-top:0.45rem">Straight-line (spherical) distance from OpenStreetMap reference points—not driving miles.</p>';
+    h += formatNearbyPois(grocery, "Nearest groceries & convenience (named)");
+    h += formatNearbyPois(food, "Nearest dining & cafés (named)");
+    h += '<div class="rail-section-title">Bike / scooter & traffic (estimated)</div>';
+    h +=
+      '<div class="rail-metric-row"><span>Bike / e-scooter friendliness</span><strong>' +
+      fmtIndex100(props.bike_escooter_index) +
+      "</strong></div>";
+    h +=
+      '<div class="rail-metric-row"><span>Traffic exposure (higher = calmer)</span><strong>' +
+      fmtIndex100(props.traffic_calm_index) +
+      "</strong></div>";
+    h +=
+      '<p class="popup-note">Modeled from OSM cycleways, bike parking, and distance to major roads—not live traffic data.</p>';
+    h += '<div class="rail-section-title">Parking (OpenStreetMap)</div>';
+    h +=
+      '<p class="popup-note">' +
+      escapeHtml(
+        props.parking_summary ||
+          "No fee-tagged parking mapped very close in OSM."
+      ) +
+      "</p>";
+    return h;
+  }
+
+  function formatRightRail(props, fid) {
+    const reviewUrl = escapeAttr(offcampusActionUrl(props));
+    return (
+      '<p class="rail-addr">' +
+      escapeHtml(props.address || "") +
+      roomBadgeHtml(props.room_type) +
+      "</p>" +
+      formatOffcampusBlock(props, fid) +
+      listingDetailHtml(props) +
+      '<div class="right-rail-actions" style="margin-top:0.65rem">' +
+      '<a class="rail-btn rail-btn-primary" href="' +
+      reviewUrl +
+      '" target="_blank" rel="noopener noreferrer">Leave a review / add place on OffCampusReview</a>' +
+      "</div>" +
+      '<p class="rail-disclaimer">POI names and parking fees come from community OpenStreetMap data and may be incomplete. Always verify on site.</p>'
+    );
+  }
+
+  function updateRightRail(fid) {
+    const body = document.getElementById("right-rail-body");
+    if (!body) return;
+    if (!fid || !propsByFeatureId.has(fid)) {
+      body.innerHTML = RAIL_EMPTY;
+      return;
+    }
+    body.innerHTML = formatRightRail(propsByFeatureId.get(fid), fid);
   }
 
   function closeOcrModal() {
@@ -594,13 +755,17 @@
   function formatStops(props) {
     const stops = props.unitrans_stops;
     if (!Array.isArray(stops) || !stops.length) {
-      return "<p class=\"popup-stops-title\">No Unitrans stops in OSM within 1.5 km.</p>";
+      return "<p class=\"popup-stops-title\">No Unitrans stops in OSM within ~0.9 mi.</p>";
     }
-    let html = '<div class="popup-stops-title">Unitrans nearby</div><ul>';
+    let html = '<div class="popup-stops-title">Unitrans nearby (~0.9 mi)</div><ul>';
     stops.forEach(function (s) {
       const name = escapeHtml(s.name || "Stop");
-      const km = Number(s.km);
-      html += "<li><strong>" + name + "</strong> · " + km.toFixed(2) + " km</li>";
+      let mi = Number(s.mi);
+      if (!Number.isFinite(mi) && s.km != null) {
+        mi = Number(s.km) * 0.621371;
+      }
+      const dist = Number.isFinite(mi) ? mi.toFixed(2) + " mi" : "—";
+      html += "<li><strong>" + name + "</strong> · " + dist + "</li>";
     });
     html += "</ul>";
     return html;
@@ -612,35 +777,15 @@
     const cid = chartDomId(f);
     const beds = props.beds;
     const baths = props.baths;
-    const dmu = Number(props.dist_km_memorial_union);
-    const ds = Number(props.dist_km_silo);
-    const conv = Number(props.convenience_800m_count);
-    const cnear = props.convenience_nearest_km;
-    let cnearTxt = "—";
-    if (cnear != null && cnear !== "" && Number.isFinite(Number(cnear))) {
-      cnearTxt = Number(cnear).toFixed(2) + " km";
-    }
     const portal = escapeAttr(listingHref(props));
+    const reviewUrl = escapeAttr(offcampusActionUrl(props));
     return (
       '<div class="popup-title">' +
       escapeHtml(props.address) +
       roomBadgeHtml(props.room_type) +
       "</div>" +
       formatOffcampusBlock(props, fid) +
-      '<div class="popup-loc-grid">' +
-      "<span>Memorial Union</span><strong>" +
-      dmu.toFixed(2) +
-      " km</strong>" +
-      "<span>Silo</span><strong>" +
-      ds.toFixed(2) +
-      " km</strong>" +
-      "<span>Conv. stores (≤800 m)</span><strong>" +
-      conv +
-      "</strong>" +
-      "<span>Nearest conv.</span><strong>" +
-      cnearTxt +
-      "</strong>" +
-      "</div>" +
+      listingDetailHtml(props) +
       '<div class="popup-grid">' +
       "<span>Rent</span><strong>" +
       formatMoney(props.rent) +
@@ -670,6 +815,9 @@
       '<a href="' +
       portal +
       '" target="_blank" rel="noopener noreferrer">Open listings search</a>' +
+      '<a href="' +
+      reviewUrl +
+      '" target="_blank" rel="noopener noreferrer">OffCampusReview · review / add</a>' +
       '<a href="https://unitrans.ucdavis.edu/routes" target="_blank" rel="noopener noreferrer">Unitrans routes</a>' +
       "</div>" +
       '<div class="popup-chart-box">' +
@@ -707,6 +855,7 @@
     const visible = allFeatures.filter(function (f) {
       return passesFilters(f.properties, filters);
     });
+    const prevSel = selectedFid;
 
     layerGroup.clearLayers();
     markersById.clear();
@@ -721,15 +870,24 @@
       const m = L.marker(latlng, {
         icon: rentScopeDivIcon(p),
         rsProps: p,
+        rsFid: id,
       });
       m.bindPopup(popupHtml(f), {
-        maxWidth: 380,
+        maxWidth: 420,
         className: "rs-popup-wrap",
         autoPanPadding: [24, 24],
       });
       m.addTo(layerGroup);
       markersById.set(id, m);
     });
+
+    if (prevSel && propsByFeatureId.has(prevSel)) {
+      selectedFid = prevSel;
+      updateRightRail(prevSel);
+    } else {
+      selectedFid = null;
+      updateRightRail(null);
+    }
 
     updateSummary(visible);
     renderRanking(visible);
@@ -798,6 +956,11 @@
     map.on("popupopen", function (e) {
       const src = e.popup._source;
       const p = src && src.options ? src.options.rsProps : null;
+      const fid = src && src.options ? src.options.rsFid : null;
+      if (fid) {
+        selectedFid = fid;
+        updateRightRail(fid);
+      }
       const el = e.popup.getElement();
       if (!el) return;
       const canvas = el.querySelector("canvas.js-rent-chart");
