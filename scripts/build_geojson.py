@@ -48,6 +48,16 @@ def _bool_val(row: pd.Series, key: str) -> bool:
     return s in ("true", "1", "yes")
 
 
+def _str_cell(row: pd.Series, key: str, default: str = "") -> str:
+    v = row.get(key)
+    if v is None or (isinstance(v, float) and math.isnan(v)):
+        return default
+    s = str(v).strip()
+    if not s or s.lower() == "nan":
+        return default
+    return s
+
+
 def main() -> None:
     df = pd.read_csv(SCORED)
     features = []
@@ -121,11 +131,13 @@ def main() -> None:
             "unitrans_stops": uj or [],
             "listing_rent_trend": tj or [],
             "offcampus_match": _bool_val(row, "offcampus_match"),
-            "offcampus_brand_url": str(row.get("offcampus_brand_url") or "https://www.offcampusreview.com/"),
-            "offcampus_school_url": str(row.get("offcampus_school_url") or "https://www.offcampusreview.com/school/uc-davis"),
-            "offcampus_landlord_url": str(row.get("offcampus_landlord_url") or ""),
-            "offcampus_landlord_name": str(row.get("offcampus_landlord_name") or ""),
-            "offcampus_landlord_slug": str(row.get("offcampus_landlord_slug") or ""),
+            "offcampus_brand_url": _str_cell(row, "offcampus_brand_url", "https://www.offcampusreview.com/"),
+            "offcampus_school_url": _str_cell(
+                row, "offcampus_school_url", "https://www.offcampusreview.com/school/uc-davis"
+            ),
+            "offcampus_landlord_url": _str_cell(row, "offcampus_landlord_url"),
+            "offcampus_landlord_name": _str_cell(row, "offcampus_landlord_name"),
+            "offcampus_landlord_slug": _str_cell(row, "offcampus_landlord_slug"),
             "offcampus_avg_rating": oavg,
             "offcampus_review_count": orc_i,
             "offcampus_reviews": oj or [],

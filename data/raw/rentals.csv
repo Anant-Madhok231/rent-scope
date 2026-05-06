@@ -6,7 +6,7 @@ address,listing_name,rent,beds,baths,sqft,latitude,longitude,source,listing_url,
 "1321 Alhambra Dr, Davis, CA 95616",1321 Alhambra Dr (sample),2750,4,2.5,1450,38.55971,-121.72105,sample_davis_ca,https://www.apartments.com/davis-ca/,Single Family,private,
 "525 Oxford Cir, Davis, CA 95616",Identity Davis,1550,1,1.0,540,38.5474396,-121.765011,sample_davis_ca,https://www.zillow.com/davis-ca/rentals/,Apartment,private,identity-davis
 "1800 Shasta Dr, Davis, CA 95616",1800 Shasta Dr (sample),1980,2,1.0,820,38.54765,-121.7619,sample_davis_ca,https://www.rent.com/california/davis-apartments,Duplex,shared,
-"616 Cantrill Dr, Davis, CA 95616",Orchard Park,3200,4,3.0,1680,38.5562,-121.7278,sample_davis_ca,https://www.apartments.com/davis-ca/,Single Family,private,
+"5019 Orchard Park Cir, Davis, CA 95616",Orchard Park,3200,4,3.0,1680,38.5445,-121.7652,sample_davis_ca,https://www.apartments.com/davis-ca/,Single Family,private,orchard-park
 "2555 Research Park Dr, Davis, CA 95618",Axis at Davis,1425,1,1.0,590,38.5453369,-121.7238281,sample_davis_ca,https://www.zillow.com/davis-ca/rentals/,Apartment,private,axis-at-davis
 "815 Cranbrook Ct, Davis, CA 95616",815 Cranbrook Ct (sample),2280,3,2.0,1080,38.5533,-121.7189,sample_davis_ca,https://www.trulia.com/for_rent/Davis_CA/,Townhome,private,
 "1 Shields Ave, Davis, CA 95616",1 Shields Ave (sample),1750,2,1.0,760,38.5398,-121.7502,sample_davis_ca,https://www.apartments.com/davis-ca/,Apartment,shared,
