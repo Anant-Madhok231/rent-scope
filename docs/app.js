@@ -69,13 +69,36 @@
     return "https://www.google.com/search?q=" + encodeURIComponent(q);
   }
 
-  /** Building / community name and street address for display */
+  /** Single-line label for tooltips / accessibility (name + address) */
   function listingTitle(props) {
     const name = String(props.listing_name || "").trim();
     const addr = String(props.address || "").trim();
     if (name && addr) return name + " — " + addr;
     if (addr) return addr;
     return name || "Listing";
+  }
+
+  /**
+   * Two-line HTML: housing / complex name, then full street address (always show both when present).
+   */
+  function listingHeadHtml(props) {
+    const name = String(props.listing_name || "").trim();
+    const addr = String(props.address || "").trim();
+    if (name && addr) {
+      return (
+        '<span class="listing-head-name">' +
+        escapeHtml(name) +
+        '</span><span class="listing-head-addr">' +
+        escapeHtml(addr) +
+        "</span>"
+      );
+    }
+    if (addr) {
+      return '<span class="listing-head-addr">' + escapeHtml(addr) + "</span>";
+    }
+    return (
+      '<span class="listing-head-name">' + escapeHtml(name || "Listing") + "</span>"
+    );
   }
 
   function roomLabel(rt) {
@@ -384,12 +407,14 @@
       li.style.setProperty("--ri", String(idx));
       li.innerHTML =
         '<div class="rank-row-top">' +
-        '<span class="rank-addr" title="' +
+        '<div class="rank-addr" title="' +
         escapeAttr(listingTitle(p)) +
         '">' +
-        escapeHtml(listingTitle(p)) +
+        '<div class="listing-head listing-head--rank">' +
+        listingHeadHtml(p) +
+        "</div>" +
         roomBadgeHtml(p.room_type) +
-        "</span>" +
+        "</div>" +
         '<span class="rank-score">' +
         Number(p.opportunity_score).toFixed(1) +
         "</span></div>" +
@@ -568,10 +593,12 @@
   function formatRightRail(props, fid) {
     const reviewUrl = escapeAttr(offcampusActionUrl(props));
     return (
-      '<p class="rail-addr">' +
-      escapeHtml(listingTitle(props)) +
+      '<div class="rail-addr">' +
+      '<div class="listing-head listing-head--rail">' +
+      listingHeadHtml(props) +
+      "</div>" +
       roomBadgeHtml(props.room_type) +
-      "</p>" +
+      "</div>" +
       formatOffcampusBlock(props, fid) +
       listingDetailHtml(props) +
       '<div class="right-rail-actions" style="margin-top:0.65rem">' +
@@ -616,7 +643,7 @@
     const school = props.offcampus_school_url || "https://www.offcampusreview.com/school/uc-davis";
     const brand = props.offcampus_brand_url || "https://www.offcampusreview.com/";
 
-    titleEl.textContent = listingTitle(props);
+    titleEl.innerHTML = listingHeadHtml(props);
     if (!matched || !url) {
       subEl.innerHTML =
         '<p class="ocr-modal-lead">No OffCampusReview profile is linked to this listing yet, so there are no student reviews to show here.</p>' +
@@ -805,8 +832,10 @@
     const portal = escapeAttr(listingHref(props));
     const reviewUrl = escapeAttr(offcampusActionUrl(props));
     return (
-      '<div class="popup-title">' +
-      escapeHtml(listingTitle(props)) +
+      '<div class="popup-title-wrap">' +
+      '<div class="listing-head listing-head--popup">' +
+      listingHeadHtml(props) +
+      "</div>" +
       roomBadgeHtml(props.room_type) +
       "</div>" +
       formatOffcampusBlock(props, fid) +

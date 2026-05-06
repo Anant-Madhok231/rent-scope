@@ -546,11 +546,52 @@ body.app-ready .card.metric:nth-child(4) {
 }
 
 .rail-addr {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.45rem 0.6rem;
+  margin: 0 0 0.5rem;
+  line-height: 1.35;
+}
+
+.listing-head {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.listing-head-name {
   font-weight: 700;
   font-size: 0.88rem;
   color: var(--text);
-  margin: 0 0 0.5rem;
-  line-height: 1.35;
+  line-height: 1.3;
+  font-family: var(--display);
+}
+
+.listing-head-addr {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--muted);
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.listing-head--rank .listing-head-name {
+  font-size: 0.84rem;
+  font-family: var(--font);
+}
+
+.listing-head--rank .listing-head-addr {
+  font-size: 0.74rem;
+}
+
+.listing-head--popup .listing-head-name {
+  font-size: 0.95rem;
+}
+
+.listing-head--popup .listing-head-addr {
+  font-size: 0.8rem;
 }
 
 .panel {
@@ -675,19 +716,17 @@ body.app-ready .card.metric:nth-child(4) {
 .rank-row-top {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-start;
   gap: 0.5rem;
 }
 
 .rank-addr {
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--text);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.35rem 0.5rem;
   flex: 1;
   min-width: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .rank-score {
@@ -930,6 +969,14 @@ body.modal-open {
 .leaflet-popup-content {
   margin: 0.85rem 1.05rem;
   min-width: 230px;
+}
+
+.popup-title-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.4rem 0.55rem;
+  margin: 0 0 0.45rem;
 }
 
 .popup-title {
@@ -1504,6 +1551,22 @@ a:hover {
   font-family: var(--display);
   line-height: 1.35;
   padding-right: 0.5rem;
+}
+
+.ocr-modal-title .listing-head {
+  gap: 0.28rem;
+}
+
+.ocr-modal-title .listing-head-name {
+  font-size: 1.02rem;
+  font-family: var(--display);
+}
+
+.ocr-modal-title .listing-head-addr {
+  font-size: 0.84rem;
+  font-weight: 500;
+  font-family: var(--font);
+  color: var(--muted);
 }
 
 .ocr-modal-x {
