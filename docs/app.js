@@ -14,10 +14,11 @@
   let marketTrend = [];
   let chartInstance = null;
   let baseLayer = null;
+  let campusLayer = null;
   let selectedFid = null;
 
   const RAIL_EMPTY =
-    '<p class="right-rail-placeholder">Choose a pin on the map or a row under <strong>Top opportunities</strong> for straight-line miles, nearby stores and dining (OpenStreetMap names), bike / traffic indices, parking notes, and OffCampusReview actions.</p>';
+    '<p class="right-rail-placeholder">Every rental in the dataset appears on the map (sample CSV, RentCast, etc.). Choose a pin or a <strong>Top opportunities</strong> row for miles, nearby places, and scores. <strong>OffCampusReview</strong> is only an extra layer for student-written reviews when we can match a landlord—it never decides which listings exist.</p>';
 
   function scoreColor(score) {
     const s = Number(score) || 0;
@@ -69,36 +70,41 @@
     return "https://www.google.com/search?q=" + encodeURIComponent(q);
   }
 
-  /** Single-line label for tooltips / accessibility (name + address) */
+  /** Single-line label for tooltips / native marker title (name - address) */
   function listingTitle(props) {
     const name = String(props.listing_name || "").trim();
     const addr = String(props.address || "").trim();
-    if (name && addr) return name + " — " + addr;
+    if (name && addr) return name + " - " + addr;
     if (addr) return addr;
     return name || "Listing";
   }
 
   /**
-   * Two-line HTML: housing / complex name, then full street address (always show both when present).
+   * One line: "Complex name - full address" plus room badge (every rental listing, not OffCampus-only).
    */
-  function listingHeadHtml(props) {
+  function listingRowHtml(props, variant) {
     const name = String(props.listing_name || "").trim();
     const addr = String(props.address || "").trim();
+    let line = "";
     if (name && addr) {
+      line = escapeHtml(name) + " - " + escapeHtml(addr);
+    } else if (addr) {
+      line = escapeHtml(addr);
+    } else {
+      line = escapeHtml(name || "Listing");
+    }
+    const vcls = variant ? " listing-row--" + variant : "";
+    const inner =
+      '<span class="listing-line">' +
+      line +
+      "</span>" +
+      roomBadgeHtml(props.room_type);
+    if (variant === "modal") {
       return (
-        '<span class="listing-head-name">' +
-        escapeHtml(name) +
-        '</span><span class="listing-head-addr">' +
-        escapeHtml(addr) +
-        "</span>"
+        '<span class="listing-row listing-row--modal">' + inner + "</span>"
       );
     }
-    if (addr) {
-      return '<span class="listing-head-addr">' + escapeHtml(addr) + "</span>";
-    }
-    return (
-      '<span class="listing-head-name">' + escapeHtml(name || "Listing") + "</span>"
-    );
+    return '<div class="listing-row' + vcls + '">' + inner + "</div>";
   }
 
   function roomLabel(rt) {
@@ -126,13 +132,21 @@
     const av = p.offcampus_avg_rating;
     const cnt = Number(p.offcampus_review_count) || 0;
     let chip = "";
-    if (matched && av != null && Number.isFinite(Number(av))) {
-      chip =
-        '<div class="rs-ocr-chip" title="OffCampusReview"><span class="rs-ocr-num">' +
-        Number(av).toFixed(1) +
-        '</span><span class="rs-ocr-n">' +
-        cnt +
-        "</span></div>";
+    if (matched) {
+      if (av != null && Number.isFinite(Number(av))) {
+        chip =
+          '<div class="rs-ocr-chip" title="OffCampusReview rating"><span class="rs-ocr-num">' +
+          Number(av).toFixed(1) +
+          '</span><span class="rs-ocr-n">' +
+          cnt +
+          "</span></div>";
+      } else if (cnt > 0) {
+        chip =
+          '<div class="rs-ocr-chip rs-ocr-chip--lite" title="OffCampusReview reviews">' +
+          '<span class="rs-ocr-lite">' +
+          cnt +
+          " rev</span></div>";
+      }
     }
     const html =
       '<div class="rs-pin"><span class="rs-pin-dot" style="background:' +
@@ -410,10 +424,7 @@
         '<div class="rank-addr" title="' +
         escapeAttr(listingTitle(p)) +
         '">' +
-        '<div class="listing-head listing-head--rank">' +
-        listingHeadHtml(p) +
-        "</div>" +
-        roomBadgeHtml(p.room_type) +
+        listingRowHtml(p, "rank") +
         "</div>" +
         '<span class="rank-score">' +
         Number(p.opportunity_score).toFixed(1) +
@@ -593,12 +604,7 @@
   function formatRightRail(props, fid) {
     const reviewUrl = escapeAttr(offcampusActionUrl(props));
     return (
-      '<div class="rail-addr">' +
-      '<div class="listing-head listing-head--rail">' +
-      listingHeadHtml(props) +
-      "</div>" +
-      roomBadgeHtml(props.room_type) +
-      "</div>" +
+      '<div class="rail-addr">' + listingRowHtml(props, "rail") + "</div>" +
       formatOffcampusBlock(props, fid) +
       listingDetailHtml(props) +
       '<div class="right-rail-actions" style="margin-top:0.65rem">' +
@@ -643,7 +649,7 @@
     const school = props.offcampus_school_url || "https://www.offcampusreview.com/school/uc-davis";
     const brand = props.offcampus_brand_url || "https://www.offcampusreview.com/";
 
-    titleEl.innerHTML = listingHeadHtml(props);
+    titleEl.innerHTML = listingRowHtml(props, "modal");
     if (!matched || !url) {
       subEl.innerHTML =
         '<p class="ocr-modal-lead">No OffCampusReview profile is linked to this listing yet, so there are no student reviews to show here.</p>' +
@@ -749,7 +755,8 @@
       '<div class="ocr-hero-top"><a href="' +
       brand +
       '" target="_blank" rel="noopener noreferrer" class="ocr-brand-lg">OffCampusReview</a>';
-    html += '<span class="ocr-hero-tag">UC Davis · student housing</span></div>';
+    html +=
+      '<span class="ocr-hero-tag">Optional · student reviews (not the listing source)</span></div>';
 
     if (!matched || !url) {
       html +=
@@ -832,12 +839,7 @@
     const portal = escapeAttr(listingHref(props));
     const reviewUrl = escapeAttr(offcampusActionUrl(props));
     return (
-      '<div class="popup-title-wrap">' +
-      '<div class="listing-head listing-head--popup">' +
-      listingHeadHtml(props) +
-      "</div>" +
-      roomBadgeHtml(props.room_type) +
-      "</div>" +
+      '<div class="popup-title-wrap">' + listingRowHtml(props, "popup") + "</div>" +
       formatOffcampusBlock(props, fid) +
       listingDetailHtml(props) +
       '<div class="popup-grid">' +
@@ -923,6 +925,7 @@
       propsByFeatureId.set(id, p);
       const m = L.marker(latlng, {
         icon: rentScopeDivIcon(p),
+        title: listingTitle(p),
         rsProps: p,
         rsFid: id,
       });
@@ -945,6 +948,9 @@
 
     updateSummary(visible);
     renderRanking(visible);
+    if (layerGroup) {
+      layerGroup.bringToFront();
+    }
   }
 
   function syncMapBasemap() {
@@ -952,6 +958,10 @@
     if (baseLayer) {
       map.removeLayer(baseLayer);
       baseLayer = null;
+    }
+    if (campusLayer) {
+      map.removeLayer(campusLayer);
+      campusLayer = null;
     }
     const isLight =
       document.documentElement.getAttribute("data-theme") === "light";
@@ -977,6 +987,21 @@
           }
         );
     baseLayer.addTo(map);
+
+    if (typeof L !== "undefined" && L.esri && L.esri.dynamicMapLayer) {
+      campusLayer = L.esri.dynamicMapLayer({
+        url:
+          "https://gis.ucdavis.edu/server/rest/services/Base_UC_Davis_Basemap/MapServer",
+        opacity: isLight ? 0.74 : 0.66,
+        attribution:
+          'Campus map © <a href="https://campusmap.ucdavis.edu/">UC Davis</a>',
+      });
+      campusLayer.addTo(map);
+    }
+
+    if (layerGroup) {
+      layerGroup.bringToFront();
+    }
   }
 
   function setDocumentTheme(t) {

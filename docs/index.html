@@ -35,9 +35,9 @@
           <span class="theme-icon theme-icon-moon" aria-hidden="true"></span>
           <span class="theme-icon theme-icon-sun" aria-hidden="true"></span>
         </button>
-        <span class="pill"><span class="pill-dot"></span> OpenStreetMap</span>
-        <span class="pill">ACS rent trend</span>
-        <span class="pill">GeoJSON · Leaflet</span>
+        <span class="pill"><span class="pill-dot"></span> All listings in data</span>
+        <span class="pill">UC Davis campus map</span>
+        <span class="pill">OffCampus = reviews only</span>
       </div>
     </header>
 
@@ -100,13 +100,13 @@
         </div>
 
         <h2 class="panel-title spaced">Top opportunities</h2>
-        <p class="hint">Ranked by opportunity score (0–100)</p>
+        <p class="hint">Ranked by opportunity score (0–100). Every row is a real listing from the feed—not filtered by OffCampusReview.</p>
         <ol class="ranking" id="ranking-list"></ol>
       </aside>
 
       <section class="map-wrap panel">
         <div class="map-chrome" aria-hidden="true"></div>
-        <p class="map-hint" id="map-hint">Map: scroll wheel to zoom · drag to pan · pinch on phones</p>
+        <p class="map-hint" id="map-hint">UC Davis buildings &amp; roads overlay · scroll to zoom · pinch on phones · every pin is a rental listing</p>
         <div id="map" role="application" aria-label="Interactive map of rental listings"></div>
         <div class="legend">
           <span class="legend-title">Score</span>
@@ -116,6 +116,7 @@
             <span>50</span>
             <span>100</span>
           </div>
+          <p class="legend-caption">Colored dot = listing. Small badge = OffCampusReview score/reviews when matched.</p>
         </div>
       </section>
 
@@ -123,13 +124,13 @@
         <h2 class="panel-title">Listing detail</h2>
         <div id="right-rail-body" class="right-rail-body">
           <p class="right-rail-placeholder">
-            Choose a pin on the map or a row under <strong>Top opportunities</strong> for straight-line miles,
-            nearby stores and dining (OpenStreetMap names), bike / traffic indices, parking notes, and OffCampusReview actions.
+            Every rental in the dataset is on the map. Pick a pin or a <strong>Top opportunities</strong> row for details.
+            OffCampusReview is only for matched student reviews—not which homes appear.
           </p>
         </div>
         <div class="right-rail-oc">
           <h3 class="panel-title spaced">OffCampusReview</h3>
-          <p class="hint">Student-run housing reviews for UC Davis. RentScope only links out—reviews are not stored here.</p>
+          <p class="hint">Optional student reviews (not where listings come from). Listings are from your rental feed; we only link to OffCampusReview when a landlord matches.</p>
           <div class="right-rail-actions">
             <a class="rail-btn rail-btn-primary" href="https://www.offcampusreview.com/school/uc-davis" target="_blank" rel="noopener noreferrer">UC Davis school hub</a>
             <a class="rail-btn" href="https://www.offcampusreview.com/" target="_blank" rel="noopener noreferrer">OffCampusReview home</a>
@@ -160,6 +161,7 @@
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://unpkg.com/esri-leaflet@3.0.10/dist/esri-leaflet.js" crossorigin=""></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" crossorigin="anonymous"></script>
   <script src="./app.js"></script>
 </body>
