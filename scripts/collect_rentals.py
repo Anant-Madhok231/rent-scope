@@ -101,6 +101,7 @@ def _from_rentcast(api_key: str) -> pd.DataFrame:
                 "listing_url": url,
                 "property_type": str(item.get("propertyType") or "Unknown"),
                 "room_type": _infer_room_type(desc),
+                "offcampus_slug": "",
             }
         )
     _geocode_missing(records)
@@ -128,6 +129,9 @@ def main() -> None:
     if "room_type" not in df.columns:
         df["room_type"] = "unknown"
     df["room_type"] = df["room_type"].fillna("unknown").astype(str).str.lower()
+    if "offcampus_slug" not in df.columns:
+        df["offcampus_slug"] = ""
+    df["offcampus_slug"] = df["offcampus_slug"].fillna("").astype(str)
 
     cols = [
         "address",
@@ -141,6 +145,7 @@ def main() -> None:
         "listing_url",
         "property_type",
         "room_type",
+        "offcampus_slug",
     ]
     df = df[[c for c in cols if c in df.columns]]
     df.to_csv(OUT_PATH, index=False)

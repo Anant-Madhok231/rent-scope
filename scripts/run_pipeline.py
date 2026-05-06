@@ -14,6 +14,7 @@ STEPS = [
     "collect_osm_amenities.py",
     "fetch_rent_trend.py",
     "score_rentals.py",
+    "merge_offcampus.py",
     "build_geojson.py",
 ]
 

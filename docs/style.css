@@ -825,6 +825,115 @@ a:hover {
   max-height: 160px;
 }
 
+.ocr-wrap {
+  margin-top: 0.55rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(124, 158, 255, 0.06);
+}
+
+.ocr-head {
+  margin-bottom: 0.4rem;
+}
+
+.ocr-brand {
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: var(--accent-2);
+  text-decoration: none;
+}
+
+.ocr-brand:hover {
+  text-decoration: underline;
+}
+
+.ocr-sub {
+  font-size: 0.68rem;
+  color: var(--muted);
+  margin-left: 0.35rem;
+}
+
+.ocr-note,
+.ocr-disclaim {
+  font-size: 0.72rem;
+  color: var(--muted);
+  line-height: 1.45;
+  margin: 0.35rem 0 0;
+}
+
+.ocr-landlord {
+  margin: 0.25rem 0 0;
+  font-size: 0.84rem;
+}
+
+.ocr-landlord a {
+  font-weight: 600;
+}
+
+.ocr-stars {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-left: 0.35rem;
+}
+
+.ocr-details {
+  margin-top: 0.45rem;
+}
+
+.ocr-details summary {
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  list-style: none;
+}
+
+.ocr-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.ocr-reviews {
+  margin-top: 0.45rem;
+  max-height: 200px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ocr-review {
+  padding: 0.45rem 0.5rem;
+  border-radius: 8px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+}
+
+.ocr-rv-head {
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.ocr-rv-score {
+  font-family: var(--mono);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.ocr-rv-addr {
+  font-size: 0.68rem;
+  color: var(--muted);
+  margin-top: 0.15rem;
+}
+
+.ocr-rv-text {
+  margin: 0.3rem 0 0;
+  font-size: 0.76rem;
+  color: var(--text);
+  line-height: 1.45;
+}
+
 html[data-theme="light"] {
   --bg-deep: #f0f3f9;
   --bg-panel: rgba(255, 255, 255, 0.88);

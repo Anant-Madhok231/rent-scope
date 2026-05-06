@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import math
 import sys
 from pathlib import Path
 
@@ -23,6 +24,30 @@ def _loads_maybe(s: str) -> list | None:
         return None
 
 
+def _float_or_none(row: pd.Series, key: str) -> float | None:
+    v = row.get(key)
+    if v is None:
+        return None
+    if isinstance(v, float) and math.isnan(v):
+        return None
+    if isinstance(v, str) and v.strip() == "":
+        return None
+    try:
+        return float(v)
+    except (TypeError, ValueError):
+        return None
+
+
+def _bool_val(row: pd.Series, key: str) -> bool:
+    v = row.get(key)
+    if v is None or (isinstance(v, float) and math.isnan(v)):
+        return False
+    if isinstance(v, bool):
+        return v
+    s = str(v).strip().lower()
+    return s in ("true", "1", "yes")
+
+
 def main() -> None:
     df = pd.read_csv(SCORED)
     features = []
@@ -36,6 +61,13 @@ def main() -> None:
             cnear = float(cn) if cn is not None and str(cn) != "" else None
         except (TypeError, ValueError):
             cnear = None
+        oj = _loads_maybe(str(row.get("offcampus_reviews_json") or ""))
+        oavg = _float_or_none(row, "offcampus_avg_rating")
+        orc = row.get("offcampus_review_count")
+        try:
+            orc_i = int(orc) if orc is not None and str(orc) not in ("", "nan") else 0
+        except (TypeError, ValueError):
+            orc_i = 0
         props = {
             "address": str(row["address"]),
             "rent": float(row["rent"]),
@@ -54,6 +86,15 @@ def main() -> None:
             "convenience_nearest_km": cnear,
             "unitrans_stops": uj or [],
             "listing_rent_trend": tj or [],
+            "offcampus_match": _bool_val(row, "offcampus_match"),
+            "offcampus_brand_url": str(row.get("offcampus_brand_url") or "https://www.offcampusreview.com/"),
+            "offcampus_school_url": str(row.get("offcampus_school_url") or "https://www.offcampusreview.com/school/uc-davis"),
+            "offcampus_landlord_url": str(row.get("offcampus_landlord_url") or ""),
+            "offcampus_landlord_name": str(row.get("offcampus_landlord_name") or ""),
+            "offcampus_landlord_slug": str(row.get("offcampus_landlord_slug") or ""),
+            "offcampus_avg_rating": oavg,
+            "offcampus_review_count": orc_i,
+            "offcampus_reviews": oj or [],
         }
         features.append(
             {

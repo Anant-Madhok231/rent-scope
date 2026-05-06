@@ -362,6 +362,74 @@
     }
   }
 
+  function formatOffcampusBlock(props) {
+    const brand = escapeAttr(
+      props.offcampus_brand_url || "https://www.offcampusreview.com/"
+    );
+    const school = escapeAttr(
+      props.offcampus_school_url ||
+        "https://www.offcampusreview.com/school/uc-davis"
+    );
+    const matched = props.offcampus_match === true || props.offcampus_match === "true";
+    const url = String(props.offcampus_landlord_url || "").trim();
+    const name = escapeHtml(props.offcampus_landlord_name || "");
+    const avg = props.offcampus_avg_rating;
+    const cnt = Number(props.offcampus_review_count) || 0;
+    let html =
+      '<div class="ocr-wrap"><div class="ocr-head"><a href="' +
+      brand +
+      '" target="_blank" rel="noopener noreferrer" class="ocr-brand">OffCampusReview</a> <span class="ocr-sub">verified student reviews</span></div>';
+    if (!matched || !url) {
+      html +=
+        '<p class="ocr-note">No landlord profile matched from this address. Open <a href="' +
+        school +
+        '" target="_blank" rel="noopener noreferrer">UC Davis on OffCampusReview</a> to search.</p></div>';
+      return html;
+    }
+    let stars = "";
+    if (avg != null && Number.isFinite(Number(avg))) {
+      stars =
+        '<span class="ocr-stars">' +
+        Number(avg).toFixed(1) +
+        " / 5 · " +
+        cnt +
+        " reviews</span>";
+    }
+    html +=
+      '<p class="ocr-landlord"><a href="' +
+      escapeAttr(url) +
+      '" target="_blank" rel="noopener noreferrer">' +
+      name +
+      "</a> " +
+      stars +
+      "</p>";
+    const revs = props.offcampus_reviews;
+    if (Array.isArray(revs) && revs.length) {
+      html +=
+        '<details class="ocr-details"><summary>Review excerpts</summary><div class="ocr-reviews">';
+      revs.forEach(function (rv) {
+        const rt = escapeHtml(rv.text || "");
+        const ra = rv.rating != null ? String(rv.rating) : "—";
+        const dt = escapeHtml(rv.date || "");
+        const pad = escapeHtml(rv.propertyAddress || "");
+        html +=
+          '<article class="ocr-review"><div class="ocr-rv-head"><span class="ocr-rv-score">' +
+          ra +
+          '/5</span> <span class="ocr-rv-date">' +
+          dt +
+          "</span></div>";
+        if (pad) {
+          html += '<div class="ocr-rv-addr">' + pad + "</div>";
+        }
+        html += '<p class="ocr-rv-text">' + rt + "</p></article>";
+      });
+      html += "</div></details>";
+    }
+    html +=
+      '<p class="ocr-disclaim">Content from OffCampusReview; not written by RentScope.</p></div>';
+    return html;
+  }
+
   function formatStops(props) {
     const stops = props.unitrans_stops;
     if (!Array.isArray(stops) || !stops.length) {
@@ -441,6 +509,7 @@
       '" target="_blank" rel="noopener noreferrer">Open listings search</a>' +
       '<a href="https://unitrans.ucdavis.edu/routes" target="_blank" rel="noopener noreferrer">Unitrans routes</a>' +
       "</div>" +
+      formatOffcampusBlock(props) +
       '<div class="popup-chart-box">' +
       '<div class="chart-caption">Yolo County median gross rent (U.S. Census ACS B25064) vs this listing rent scaled to that county series. Not the unit lease history.</div>' +
       '<canvas class="js-rent-chart" id="' +
