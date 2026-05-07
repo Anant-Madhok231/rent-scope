@@ -64,5 +64,9 @@
   "515 sycamore ln, davis, ca, usa": {
     "lat": 38.5466208,
     "lon": -121.7618965
+  },
+  "orchard park, davis, ca, usa": {
+    "lat": 38.5445925,
+    "lon": -121.7652752
   }
 }
