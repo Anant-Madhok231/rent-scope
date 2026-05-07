@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import math
 import os
 import sys
 from pathlib import Path
@@ -22,6 +23,31 @@ OUT_PATH = RAW_DIR / "rentals.csv"
 def _norm_addr_key(addr: str) -> str:
     line = (addr or "").split(",")[0].strip().lower()
     return " ".join(line.split())
+
+
+def _haversine_m(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
+    r = 6371000.0
+    p1, p2 = math.radians(lat1), math.radians(lat2)
+    dphi = math.radians(lat2 - lat1)
+    dl = math.radians(lon2 - lon1)
+    a = math.sin(dphi / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(dl / 2) ** 2
+    return 2 * r * math.asin(min(1.0, math.sqrt(a)))
+
+
+def _drop_nearby_duplicate_pins(df: pd.DataFrame, max_m: float = 85.0) -> pd.DataFrame:
+    """Keep row order; drop later rows whose coords fall within max_m of an already-kept pin."""
+    kept: list[pd.Series] = []
+    centers: list[tuple[float, float]] = []
+    for _, row in df.iterrows():
+        lat, lon = float(row["latitude"]), float(row["longitude"])
+        if any(_haversine_m(lat, lon, la, lo) < max_m for la, lo in centers):
+            continue
+        centers.append((lat, lon))
+        kept.append(row)
+    if not kept:
+        return df.iloc[0:0].copy()
+    return pd.DataFrame(kept).reset_index(drop=True)
+
 
 RENTCAST_URL = "https://api.rentcast.io/v1/listings/rental/long-term"
 
@@ -184,11 +210,10 @@ def main() -> None:
                     else:
                         ocr[col] = ""
             df = pd.concat([df, ocr], ignore_index=True)
-            slug_key = df["offcampus_slug"].fillna("").astype(str).str.strip().str.lower()
-            slug_key = slug_key.replace("", "__sample__")
-            df["_dedupe"] = df["address"].map(_norm_addr_key) + "|" + slug_key
-            df = df.drop_duplicates(subset=["_dedupe"], keep="first")
-            df = df.drop(columns=["_dedupe"])
+            df["_dedupe_addr"] = df["address"].map(_norm_addr_key)
+            df = df.drop_duplicates(subset=["_dedupe_addr"], keep="first")
+            df = df.drop(columns=["_dedupe_addr"])
+            df = _drop_nearby_duplicate_pins(df, max_m=85.0)
 
     if "room_type" not in df.columns:
         df["room_type"] = "unknown"
