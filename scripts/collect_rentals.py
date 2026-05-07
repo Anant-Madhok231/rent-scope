@@ -38,6 +38,8 @@ def _haversine_m(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
 _SLUG_BUCKET: dict[str, str] = {
     "the-green": "__west_village_green__",
     "greens-at-west-village": "__west_village_green__",
+    # Same La Rue / Parkway student housing cluster as Tandem in practice
+    "living-groups": "tandem",
 }
 
 

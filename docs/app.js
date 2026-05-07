@@ -130,7 +130,8 @@
   function featureId(f) {
     const p = f.properties || {};
     const c = f.geometry.coordinates || [];
-    return `${p.address || ""}|${p.rent}|${c[0]}|${c[1]}`;
+    const src = String(p.source || "");
+    return `${p.address || ""}|${p.rent}|${c[0]}|${c[1]}|${src}`;
   }
 
   function chartDomId(f) {
@@ -1079,7 +1080,12 @@
       inertia: true,
       inertiaDeceleration: 2600,
       inertiaMaxSpeed: 2400,
-      worldCopyJump: true,
+      worldCopyJump: false,
+      maxBounds: [
+        [38.48, -121.88],
+        [38.62, -121.64],
+      ],
+      maxBoundsViscosity: 1.0,
       bounceAtZoomLimits: false,
       preferCanvas: false,
     }).setView(DAVIS_CENTER, 13);

@@ -29,6 +29,5 @@ address,listing_name,rent,beds,baths,sqft,latitude,longitude,source,listing_url,
 "704 Anderson Rd, Davis, CA 95616",Anderson Place,2280,3,2.0,1050,38.5490932,-121.7586071,sample_davis_ca,https://www.tandemproperties.com/communities/anderson-place/,Single Family,private,
 "400 Russell Park, Davis, CA 95616",Russell Park (Tandem),1805,2,1.0,885,38.54525,-121.76355,sample_davis_ca,https://www.tandemproperties.com/communities/russell-park/,Apartment,private,tandem
 "1512 Beach Rd, Davis, CA 95618",The Greens at West Village,2150,2,2.0,920,38.5382,-121.7712,sample_davis_ca,https://housing.ucdavis.edu/apply/the-green/,Townhome,private,greens-at-west-village
-"310 Parkway, Davis, CA",Living Groups @ 310 Parkway,1857,2,1.0,800,38.5401761,-121.7416032,offcampus_review,https://www.offcampusreview.com/landlord/uc-davis/living-groups,Apartment,unknown,living-groups
 "1100 Olive Dr, Davis, CA",Hallmark Properties @ 1100 Olive Dr,1857,2,1.0,800,38.5416209,-121.7372429,offcampus_review,https://www.offcampusreview.com/landlord/uc-davis/hallmark-properties,Apartment,unknown,hallmark-properties
 "1512 Drexel Dr, Davis, CA",Aharon Kanevsky @ 1512 Drexel Dr,1857,2,1.0,800,38.5571675,-121.7323758,offcampus_review,https://www.offcampusreview.com/landlord/uc-davis/aharon-kanevsky,Apartment,unknown,aharon-kanevsky
