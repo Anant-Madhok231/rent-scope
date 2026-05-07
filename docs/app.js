@@ -162,21 +162,44 @@
   }
 
   /**
-   * When we don't have a direct listing URL, send users to Zillow "for rent" search for this
-   * address so they see priced listings (not the UC marketplace homepage).
+   * Zillow Davis rentals view (region 51659, for-rent filters, map bounds) + this pin's address as
+   * the search term so results show priced units; each card links to Zillow's listing/apply flow.
+   * When `listing_url` is already set (e.g. RentCast), `housingPortalHref` uses that direct URL instead.
    */
   function zillowRentSearchHref(props) {
     const addr = String(props.address || "").trim();
     const name = String(props.listing_name || "").trim();
     const term = addr || name || "Davis, CA";
-    const searchQueryState = encodeURIComponent(
-      JSON.stringify({
-        usersSearchTerm: term,
-        filterState: { fr: { value: true } },
-      })
-    );
+    const searchQueryState = {
+      pagination: {},
+      isMapVisible: true,
+      mapBounds: {
+        west: -121.80135699026381,
+        east: -121.70745821707045,
+        south: 38.52792944470182,
+        north: 38.58357173339328,
+      },
+      regionSelection: [{ regionId: 51659, regionType: 6 }],
+      filterState: {
+        sort: { value: "priorityscore" },
+        fr: { value: true },
+        fsba: { value: false },
+        fsbo: { value: false },
+        nc: { value: false },
+        cmsn: { value: false },
+        auc: { value: false },
+        fore: { value: false },
+        mf: { value: false },
+        land: { value: false },
+        manu: { value: false },
+      },
+      isListVisible: true,
+      mapZoom: 14,
+      usersSearchTerm: term,
+    };
     return (
-      "https://www.zillow.com/davis-ca/rentals/?searchQueryState=" + searchQueryState
+      "https://www.zillow.com/davis-ca/rentals/?searchQueryState=" +
+      encodeURIComponent(JSON.stringify(searchQueryState))
     );
   }
 
@@ -213,7 +236,7 @@
     if (raw && isGoogleMapsUrl(raw)) raw = "";
     if (raw && isChlMarketplaceUrl(raw)) raw = "";
     if (raw) return "Lease / contact (listing site)";
-    return "Find listings & rent on Zillow (search)";
+    return "Zillow: this address (rentals — open a listing to lease)";
   }
 
   /** Single-line label for tooltips / native marker title (name - address) */
