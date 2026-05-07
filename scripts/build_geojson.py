@@ -110,7 +110,7 @@ def main() -> None:
             "score_explanation": str(row["score_explanation"]),
             "property_type": str(row["property_type"]),
             "source": str(row["source"]),
-            "listing_url": str(row.get("listing_url") or ""),
+            "listing_url": _str_cell(row, "listing_url"),
             "room_type": str(row.get("room_type") or "unknown"),
             "dist_km_memorial_union": float(row["dist_km_memorial_union"]),
             "dist_km_silo": float(row["dist_km_silo"]),

@@ -137,13 +137,18 @@
   }
 
   function listingHref(props) {
-    const u = String(props.listing_url || "").trim();
+    let u = String(props.listing_url || "").trim();
+    const ul = u.toLowerCase();
+    if (!u || ul === "nan" || ul === "undefined" || ul === "null") u = "";
+    if (u && !/^https?:\/\//i.test(u)) u = "";
     if (u) return u;
     const name = String(props.listing_name || "").trim();
     const addr = String(props.address || "").trim();
-    const q =
-      (name ? name + " " : "") + addr + " Davis CA apartments for rent";
-    return "https://www.google.com/search?q=" + encodeURIComponent(q);
+    const q = name && addr ? name + ", " + addr : addr || name;
+    return (
+      "https://www.google.com/maps/search/?api=1&query=" +
+      encodeURIComponent(q || "Davis, CA")
+    );
   }
 
   /** Single-line label for tooltips / native marker title (name - address) */
