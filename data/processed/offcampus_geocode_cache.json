@@ -1,0 +1,68 @@
+{
+  "310 parkway cir, davis, ca, usa": {
+    "lat": null,
+    "lon": null,
+    "skip": true
+  },
+  "400 parkway cir, davis, ca, usa": {
+    "lat": null,
+    "lon": null,
+    "skip": true
+  },
+  "310 parkway, davis, ca, usa": {
+    "lat": 38.5401761,
+    "lon": -121.7416032
+  },
+  "320 parkway cir, davis, ca, usa": {
+    "lat": null,
+    "lon": null,
+    "skip": true
+  },
+  "1100 olive dr, davis, ca, usa": {
+    "lat": 38.5416209,
+    "lon": -121.7372429
+  },
+  "1659 drew cir, davis, ca, usa": {
+    "lat": 38.53789,
+    "lon": -121.7269721
+  },
+  "152 orchard park dr, davis, ca, usa": {
+    "lat": 38.5462685,
+    "lon": -121.7640555
+  },
+  "2228 tilia st, davis, ca, usa": {
+    "lat": null,
+    "lon": null,
+    "skip": true
+  },
+  "301 citron st, davis, ca, usa": {
+    "lat": null,
+    "lon": null,
+    "skip": true
+  },
+  "184 horizon st, davis, ca, usa": {
+    "lat": null,
+    "lon": null,
+    "skip": true
+  },
+  "1512 drexel dr, davis, ca, usa": {
+    "lat": 38.5571675,
+    "lon": -121.7323758
+  },
+  "1133 olive dr, davis, ca, usa": {
+    "lat": 38.5427203,
+    "lon": -121.7359354
+  },
+  "2555 research park dr, davis, ca, usa": {
+    "lat": 38.5453369,
+    "lon": -121.7238281
+  },
+  "525 oxford cir, davis, ca, usa": {
+    "lat": 38.5474396,
+    "lon": -121.765011
+  },
+  "515 sycamore ln, davis, ca, usa": {
+    "lat": 38.5466208,
+    "lon": -121.7618965
+  }
+}

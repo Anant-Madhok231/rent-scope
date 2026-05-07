@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import math
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 import pandas as pd
@@ -12,6 +13,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parent.parent
 SCORED = ROOT / "data" / "processed" / "scored_rentals.csv"
 OUT_PATH = ROOT / "docs" / "rentals.geojson"
+SYNC_META_PATH = ROOT / "docs" / "data_sync.json"
 
 
 def _loads_maybe(s: str) -> list | None:
@@ -153,6 +155,12 @@ def main() -> None:
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     collection = {"type": "FeatureCollection", "features": features}
     OUT_PATH.write_text(json.dumps(collection, indent=2), encoding="utf-8")
+    sync = {
+        "updated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "listing_count": len(features),
+        "area_note": "Includes curated sample listings plus OffCampus-derived addresses within 5 mi of Memorial Union when ingest has been run.",
+    }
+    SYNC_META_PATH.write_text(json.dumps(sync, indent=2), encoding="utf-8")
     print(f"Wrote {len(features)} features to {OUT_PATH.relative_to(ROOT)}")
 
 

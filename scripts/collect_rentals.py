@@ -15,7 +15,13 @@ from geopy.geocoders import Nominatim
 ROOT = Path(__file__).resolve().parent.parent
 RAW_DIR = ROOT / "data" / "raw"
 SAMPLE_PATH = ROOT / "data" / "sample_rentals.csv"
+OFFCAMPUS_PINS_PATH = RAW_DIR / "offcampus_pins.csv"
 OUT_PATH = RAW_DIR / "rentals.csv"
+
+
+def _norm_addr_key(addr: str) -> str:
+    line = (addr or "").split(",")[0].strip().lower()
+    return " ".join(line.split())
 
 RENTCAST_URL = "https://api.rentcast.io/v1/listings/rental/long-term"
 
@@ -144,6 +150,45 @@ def main() -> None:
     else:
         df = _from_sample()
         df["source"] = "sample_davis_ca"
+
+    if OFFCAMPUS_PINS_PATH.is_file():
+        try:
+            ocr = pd.read_csv(OFFCAMPUS_PINS_PATH)
+        except (pd.errors.EmptyDataError, FileNotFoundError):
+            ocr = pd.DataFrame()
+        if len(ocr) > 0:
+            for col in (
+                "address",
+                "listing_name",
+                "rent",
+                "beds",
+                "baths",
+                "sqft",
+                "latitude",
+                "longitude",
+                "source",
+                "listing_url",
+                "property_type",
+                "room_type",
+                "offcampus_slug",
+            ):
+                if col not in ocr.columns:
+                    if col == "offcampus_slug":
+                        ocr[col] = ""
+                    elif col == "room_type":
+                        ocr[col] = "unknown"
+                    elif col in ("beds",):
+                        ocr[col] = 2
+                    elif col in ("baths", "sqft", "rent"):
+                        ocr[col] = 0
+                    else:
+                        ocr[col] = ""
+            df = pd.concat([df, ocr], ignore_index=True)
+            slug_key = df["offcampus_slug"].fillna("").astype(str).str.strip().str.lower()
+            slug_key = slug_key.replace("", "__sample__")
+            df["_dedupe"] = df["address"].map(_norm_addr_key) + "|" + slug_key
+            df = df.drop_duplicates(subset=["_dedupe"], keep="first")
+            df = df.drop(columns=["_dedupe"])
 
     if "room_type" not in df.columns:
         df["room_type"] = "unknown"

@@ -4,6 +4,7 @@
   const DAVIS_CENTER = [38.5449, -121.749];
   const GEOJSON_URL = new URL("rentals.geojson", window.location.href).href;
   const MARKET_URL = new URL("market_trend.json", window.location.href).href;
+  const SYNC_URL = new URL("data_sync.json", window.location.href).href;
 
   let map;
   let layerGroup;
@@ -1180,6 +1181,22 @@
     }, 450);
 
     document.body.classList.add("app-ready");
+
+    fetch(SYNC_URL)
+      .then(function (r) {
+        return r.ok ? r.json() : null;
+      })
+      .then(function (meta) {
+        var el = document.getElementById("data-sync-meta");
+        if (!el || !meta || !meta.updated_utc) return;
+        el.textContent =
+          "Dataset: " +
+          (meta.listing_count != null ? meta.listing_count : "—") +
+          " pins · last build " +
+          meta.updated_utc +
+          " UTC";
+      })
+      .catch(function () {});
   }
 
   function wireFilters() {

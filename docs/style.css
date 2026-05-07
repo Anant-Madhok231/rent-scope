@@ -1157,6 +1157,12 @@ a:hover {
   margin: 0;
 }
 
+.footer-sync {
+  margin-top: 0.4rem;
+  font-size: 0.72rem;
+  opacity: 0.88;
+}
+
 .room-badge {
   display: inline-block;
   font-size: 0.62rem;
