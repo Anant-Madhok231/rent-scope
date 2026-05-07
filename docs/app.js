@@ -23,7 +23,10 @@
   };
 
   const RAIL_EMPTY =
-    '<p class="right-rail-placeholder">Each pin links to a <strong>property listing site</strong> when we have one, or a <strong>Zillow Davis rentals</strong> search (~5 mi of campus) — not CHL. Choose a pin or <strong>Top opportunities</strong> for details. <strong>OffCampusReview</strong> is an extra reviews layer when matched.</p>';
+    '<p class="right-rail-placeholder">Each pin has a <strong>listing / Zillow</strong> link (~5 mi of campus) and <strong>Redfin</strong> (Davis city or your ZIP). Not CHL. <strong>OffCampusReview</strong> is an extra reviews layer when matched.</p>';
+
+  const REDFIN_DAVIS_CITY_RENTALS =
+    "https://www.redfin.com/city/4690/CA/Davis/rentals";
 
   const MU_LAT = 38.5414268;
   const MU_LON = -121.7494914;
@@ -77,6 +80,16 @@
       "https://www.zillow.com/davis-ca/rentals/?searchQueryState=" +
       encodeURIComponent(JSON.stringify(searchQueryState))
     );
+  }
+
+  /** Redfin: ZIP rentals when address has 95xxx; else official Davis city rentals page. */
+  function redfinRentBrowseHref(props) {
+    const fromData = String((props && props.redfin_browse_url) || "").trim();
+    if (fromData && /^https?:\/\//i.test(fromData)) return fromData;
+    const addr = String((props && props.address) || "").trim();
+    const zip = addr.match(/\b(95\d{3})\b/);
+    if (zip) return "https://www.redfin.com/zipcode/" + zip[1] + "/rentals";
+    return REDFIN_DAVIS_CITY_RENTALS;
   }
 
   function scoreColor(score) {
@@ -793,12 +806,16 @@
           escapeHtml(leaseLinkLabel(props)) +
           "</a>"
         : "";
+    const redfinUrl = escapeAttr(redfinRentBrowseHref(props));
     return (
       '<div class="rail-addr">' + listingRowHtml(props, "rail") + "</div>" +
       formatOffcampusBlock(props, fid) +
       listingDetailHtml(props) +
       '<div class="right-rail-actions" style="margin-top:0.65rem">' +
       leaseBtn +
+      '<a class="rail-btn" href="' +
+      redfinUrl +
+      '" target="_blank" rel="noopener noreferrer">Redfin rentals (ZIP or Davis)</a>' +
       '<a class="rail-btn" href="' +
       mapsUrl +
       '" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>' +
@@ -1041,6 +1058,7 @@
         : "";
     const mapsLink = escapeAttr(googleMapsSearchHref(props));
     const reviewUrl = escapeAttr(offcampusActionUrl(props));
+    const redfinLink = escapeAttr(redfinRentBrowseHref(props));
     return (
       '<div class="popup-title-wrap">' + listingRowHtml(props, "popup") + "</div>" +
       formatOffcampusBlock(props, fid) +
@@ -1072,6 +1090,9 @@
       "</div>" +
       '<div class="popup-actions">' +
       leaseLink +
+      '<a href="' +
+      redfinLink +
+      '" target="_blank" rel="noopener noreferrer">Redfin rentals (ZIP or Davis)</a>' +
       '<a href="' +
       mapsLink +
       '" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>' +

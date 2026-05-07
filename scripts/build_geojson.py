@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import math
+import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -33,6 +34,15 @@ def _is_direct_listing_url(url: str) -> bool:
     if "goo.gl/maps" in ul or "maps.app.goo.gl" in ul:
         return False
     return True
+
+
+def _redfin_browse_url(address: str, listing_name: str) -> str:
+    """Redfin rentals: ZIP-scoped when address includes 95xxx; else official Davis city rentals."""
+    addr = str(address or "").strip()
+    m = re.search(r"\b(95\d{3})\b", addr)
+    if m:
+        return f"https://www.redfin.com/zipcode/{m.group(1)}/rentals"
+    return "https://www.redfin.com/city/4690/CA/Davis/rentals"
 
 
 def _loads_maybe(s: str) -> list | None:
@@ -140,6 +150,9 @@ def main() -> None:
             "property_type": str(row["property_type"]),
             "source": str(row["source"]),
             "listing_url": _str_cell(row, "listing_url"),
+            "redfin_browse_url": _redfin_browse_url(
+                str(row["address"]), str(row.get("listing_name") or "")
+            ),
             "room_type": str(row.get("room_type") or "unknown"),
             "dist_km_memorial_union": float(row["dist_km_memorial_union"]),
             "dist_km_silo": float(row["dist_km_silo"]),
