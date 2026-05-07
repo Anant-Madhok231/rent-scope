@@ -138,9 +138,6 @@
     return "c" + featureId(f).replace(/[^a-zA-Z0-9]/g, "").slice(0, 56);
   }
 
-  /** UC Davis off-campus housing listing service — used when `listing_url` is missing or only a Maps search link. */
-  const UC_CHL_HOUSING = "https://chl.ucdavis.edu/";
-
   function isGoogleMapsUrl(u) {
     try {
       const x = new URL(u);
@@ -155,6 +152,34 @@
     }
   }
 
+  function isChlMarketplaceUrl(u) {
+    try {
+      const h = new URL(u).hostname.replace(/^www\./i, "");
+      return h === "chl.ucdavis.edu";
+    } catch (err) {
+      return false;
+    }
+  }
+
+  /**
+   * When we don't have a direct listing URL, send users to Zillow "for rent" search for this
+   * address so they see priced listings (not the UC marketplace homepage).
+   */
+  function zillowRentSearchHref(props) {
+    const addr = String(props.address || "").trim();
+    const name = String(props.listing_name || "").trim();
+    const term = addr || name || "Davis, CA";
+    const searchQueryState = encodeURIComponent(
+      JSON.stringify({
+        usersSearchTerm: term,
+        filterState: { fr: { value: true } },
+      })
+    );
+    return (
+      "https://www.zillow.com/davis-ca/rentals/?searchQueryState=" + searchQueryState
+    );
+  }
+
   /** Maps search from address / name (never pretend this is a lease portal). */
   function googleMapsSearchHref(props) {
     const name = String(props.listing_name || "").trim();
@@ -167,7 +192,7 @@
   }
 
   /**
-   * Listing site for rent/contact: real `listing_url`, or CHL if the CSV only had a Maps placeholder.
+   * Direct listing URL when we have one; otherwise Zillow rent search for this address (priced results).
    */
   function housingPortalHref(props) {
     let u = String(props.listing_url || "").trim();
@@ -175,8 +200,9 @@
     if (!u || ul === "nan" || ul === "undefined" || ul === "null") u = "";
     if (u && !/^https?:\/\//i.test(u)) u = "";
     if (u && isGoogleMapsUrl(u)) u = "";
+    if (u && isChlMarketplaceUrl(u)) u = "";
     if (u) return u;
-    return UC_CHL_HOUSING;
+    return zillowRentSearchHref(props);
   }
 
   function housingPortalLinkLabel(props) {
@@ -185,14 +211,9 @@
     if (!raw || ul === "nan" || ul === "undefined" || ul === "null") raw = "";
     if (raw && !/^https?:\/\//i.test(raw)) raw = "";
     if (raw && isGoogleMapsUrl(raw)) raw = "";
-    if (raw) {
-      try {
-        const host = new URL(raw).hostname.replace(/^www\./i, "");
-        if (host === "chl.ucdavis.edu") return "Browse off-campus listings (UC Davis CHL)";
-      } catch (err) {}
-      return "Lease / contact (listing site)";
-    }
-    return "Browse off-campus listings (UC Davis CHL)";
+    if (raw && isChlMarketplaceUrl(raw)) raw = "";
+    if (raw) return "Lease / contact (listing site)";
+    return "Find listings & rent on Zillow (search)";
   }
 
   /** Single-line label for tooltips / native marker title (name - address) */

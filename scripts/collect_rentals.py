@@ -89,6 +89,8 @@ def _is_placeholder_listing_url(url: str) -> bool:
         return True
     if "goo.gl/maps" in u or "maps.app.goo.gl" in u:
         return True
+    if "chl.ucdavis.edu" in u:
+        return True
     return False
 
 

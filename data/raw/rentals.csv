@@ -1,31 +1,31 @@
 address,listing_name,rent,beds,baths,sqft,latitude,longitude,source,listing_url,property_type,room_type,offcampus_slug
-"720 Alvarado Ave, Davis, CA 95616",720 Alvarado Ave (sample),1850,2,1.0,850,38.5620178,-121.7589363,sample_davis_ca,https://chl.ucdavis.edu/,Apartment,private,
+"720 Alvarado Ave, Davis, CA 95616",720 Alvarado Ave (sample),1850,2,1.0,850,38.5620178,-121.7589363,sample_davis_ca,,Apartment,private,
 "1659 Drew Cir, Davis, CA 95618",Octave Apartments,2400,3,2.0,1150,38.53789,-121.7269721,sample_davis_ca,https://www.liveatoctave.com/floor-plans,Single Family,private,octave-apartments
-"801 L St, Davis, CA 95616",801 L St (sample),1650,1,1.0,625,38.552867,-121.734944,sample_davis_ca,https://chl.ucdavis.edu/,Condo,private,
+"801 L St, Davis, CA 95616",801 L St (sample),1650,1,1.0,625,38.552867,-121.734944,sample_davis_ca,,Condo,private,
 "1580 Jade St, Davis, CA 95618",Sol at West Village,2100,2,2.0,980,38.5408288,-121.771163,sample_davis_ca,https://www.solatwestvillage.com/apply,Townhome,private,sol-at-west-village
-"1321 Alhambra Dr, Davis, CA 95616",1321 Alhambra Dr (sample),2750,4,2.5,1450,38.5600216,-121.7089018,sample_davis_ca,https://chl.ucdavis.edu/,Single Family,private,
+"1321 Alhambra Dr, Davis, CA 95616",1321 Alhambra Dr (sample),2750,4,2.5,1450,38.5600216,-121.7089018,sample_davis_ca,,Single Family,private,
 "525 Oxford Cir, Davis, CA 95616",Identity Davis,1550,1,1.0,540,38.5474396,-121.765011,sample_davis_ca,https://www.identitydavis.com/availability,Apartment,private,identity-davis
-"1800 Shasta Dr, Davis, CA 95616",1800 Shasta Dr (sample),1980,2,1.0,820,38.5563775,-121.7714757,sample_davis_ca,https://chl.ucdavis.edu/,Duplex,shared,
+"1800 Shasta Dr, Davis, CA 95616",1800 Shasta Dr (sample),1980,2,1.0,820,38.5563775,-121.7714757,sample_davis_ca,,Duplex,shared,
 "5019 Orchard Park Cir, Davis, CA 95616",Orchard Park,3200,4,3.0,1680,38.5445,-121.7652,sample_davis_ca,https://housing.ucdavis.edu/how-to-apply/orchard-park-and-primero-grove/,Single Family,private,orchard-park
 "2555 Research Park Dr, Davis, CA 95618",Axis at Davis,1425,1,1.0,590,38.5453369,-121.7238281,sample_davis_ca,https://www.axisdavis.com/floor-plans,Apartment,private,axis-at-davis
 "815 Cranbrook Ct, Davis, CA 95616",815 Cranbrook Ct (sample),2280,3,2.0,1080,38.5593313,-121.7407914,sample_davis_ca,https://www.tandemproperties.com/apartments/,Townhome,private,
-"1 Shields Ave, Davis, CA 95616",1 Shields Ave (sample),1750,2,1.0,760,38.5402343,-121.749142,sample_davis_ca,https://chl.ucdavis.edu/,Apartment,shared,
-"3500 Sycamore Ln, Davis, CA 95616",3500 Sycamore Ln (sample),2650,3,2.5,1320,38.5701442,-121.7671776,sample_davis_ca,https://chl.ucdavis.edu/,Single Family,private,
-"408 F St, Davis, CA 95616",408 F St (sample),1895,2,1.0,780,38.5462578,-121.7406729,sample_davis_ca,https://chl.ucdavis.edu/,Condo,private,
+"1 Shields Ave, Davis, CA 95616",1 Shields Ave (sample),1750,2,1.0,760,38.5402343,-121.749142,sample_davis_ca,,Apartment,shared,
+"3500 Sycamore Ln, Davis, CA 95616",3500 Sycamore Ln (sample),2650,3,2.5,1320,38.5701442,-121.7671776,sample_davis_ca,,Single Family,private,
+"408 F St, Davis, CA 95616",408 F St (sample),1895,2,1.0,780,38.5462578,-121.7406729,sample_davis_ca,,Condo,private,
 "1133 Olive Dr, Davis, CA 95616",Ryder on Olive,1595,1,1.0,610,38.5427203,-121.7359354,sample_davis_ca,https://www.ryderonolive.com/floor-plans,Apartment,private,ryder-on-olive
 "450 J St, Davis, CA 95616",450 J St (sample),2450,3,2.0,1180,38.5474673,-121.7363273,sample_davis_ca,https://www.jstapts.com/,Single Family,private,
 "812 Sycamore Ln, Davis, CA 95616",812 Sycamore Ln (sample),1725,2,1.0,745,38.5509749,-121.7644205,sample_davis_ca,https://www.sycamorelanedavis.com/,Duplex,unknown,
-"1100 Alvarado Ave, Davis, CA 95616",1100 Alvarado Ave (sample),1380,1,1.0,520,38.5622021,-121.7623971,sample_davis_ca,https://chl.ucdavis.edu/,Apartment,shared,
-"3333 Alvarado Ave, Davis, CA 95616",3333 Alvarado Ave (sample),3100,4,3.0,1750,38.5621383,-121.7582254,sample_davis_ca,https://chl.ucdavis.edu/,Single Family,private,
+"1100 Alvarado Ave, Davis, CA 95616",1100 Alvarado Ave (sample),1380,1,1.0,520,38.5622021,-121.7623971,sample_davis_ca,,Apartment,shared,
+"3333 Alvarado Ave, Davis, CA 95616",3333 Alvarado Ave (sample),3100,4,3.0,1750,38.5621383,-121.7582254,sample_davis_ca,,Single Family,private,
 "250 Cowell Blvd, Davis, CA 95618",250 Cowell Blvd (sample),1495,1,1.0,580,38.5474693,-121.7055382,sample_davis_ca,https://www.oakshadecommons.com/,Apartment,private,
 "152 Orchard Park Dr, Davis, CA 95616",Colleges at La Rue,2200,3,2.0,1040,38.5462685,-121.7640555,sample_davis_ca,https://www.tandemproperties.com/communities/the-colleges-at-la-rue/,Townhome,private,colleges-at-la-rue
 "1001 Richards Blvd, Davis, CA 95616",Richards Court,1695,2,1.0,720,38.5407376,-121.7384237,sample_davis_ca,https://richardscourtcoa.com/,Apartment,private,
-"1520 Olive Dr, Davis, CA 95616",Olive Row Townhomes,1980,2,1.5,880,38.5443227,-121.7332604,sample_davis_ca,https://chl.ucdavis.edu/,Townhome,private,
+"1520 Olive Dr, Davis, CA 95616",Olive Row Townhomes,1980,2,1.5,880,38.5443227,-121.7332604,sample_davis_ca,,Townhome,private,
 "2750 5th St, Davis, CA 95616",East Fifth Flats,1525,1,1.0,560,38.552303,-121.717042,sample_davis_ca,https://sterling5thstreet.com/,Apartment,private,
-"901 Alhambra Dr, Davis, CA 95616",Alhambra Walk,2350,3,2.0,1100,38.5600216,-121.7089018,sample_davis_ca,https://chl.ucdavis.edu/,Single Family,private,
-"1400 Glacier Dr, Davis, CA 95616",Glacier Court,1780,2,1.0,790,38.5595646,-121.777861,sample_davis_ca,https://chl.ucdavis.edu/,Condo,shared,
-"805 Miller Dr, Davis, CA 95616",Miller Park Apts,1620,1,1.0,600,38.5508575,-121.7490002,sample_davis_ca,https://chl.ucdavis.edu/,Apartment,private,
-"1632 Tulip Ln, Davis, CA 95616",Tulip Lane Duplex,1890,2,1.0,750,38.5613851,-121.7174365,sample_davis_ca,https://chl.ucdavis.edu/,Duplex,unknown,
+"901 Alhambra Dr, Davis, CA 95616",Alhambra Walk,2350,3,2.0,1100,38.5600216,-121.7089018,sample_davis_ca,,Single Family,private,
+"1400 Glacier Dr, Davis, CA 95616",Glacier Court,1780,2,1.0,790,38.5595646,-121.777861,sample_davis_ca,,Condo,shared,
+"805 Miller Dr, Davis, CA 95616",Miller Park Apts,1620,1,1.0,600,38.5508575,-121.7490002,sample_davis_ca,,Apartment,private,
+"1632 Tulip Ln, Davis, CA 95616",Tulip Lane Duplex,1890,2,1.0,750,38.5613851,-121.7174365,sample_davis_ca,,Duplex,unknown,
 "2340 Sycamore Ln, Davis, CA 95616",Sycamore North,2140,2,2.0,950,38.562841,-121.7651847,sample_davis_ca,https://www.sycamorelanedavis.com/,Townhome,private,
 "1800 Cowell Blvd, Davis, CA 95618",Cowell Commons,1455,1,1.0,575,38.539841,-121.731206,sample_davis_ca,https://www.tanglewooddavisliving.com/,Apartment,private,
 "704 Anderson Rd, Davis, CA 95616",Anderson Place,2280,3,2.0,1050,38.5490932,-121.7586071,sample_davis_ca,https://www.tandemproperties.com/communities/anderson-place/,Single Family,private,
