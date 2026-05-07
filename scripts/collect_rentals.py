@@ -2,7 +2,9 @@
 
 from __future__ import annotations
 
+import math
 import os
+import re
 import sys
 from pathlib import Path
 
@@ -18,6 +20,10 @@ SAMPLE_PATH = ROOT / "data" / "sample_rentals.csv"
 OUT_PATH = RAW_DIR / "rentals.csv"
 
 RENTCAST_URL = "https://api.rentcast.io/v1/listings/rental/long-term"
+
+# Match RentCast rows to a curated sample pin within this radius (meters) when
+# street addresses don't line up exactly (geocode / formatting differences).
+_NEAR_MATCH_MAX_M = 160.0
 
 
 def _ensure_dirs() -> None:
@@ -66,6 +72,126 @@ def _geocode_missing(rows: list[dict]) -> None:
             rec["longitude"] = float(loc.longitude)
 
 
+def _haversine_m(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
+    r = 6371000.0
+    p1, p2 = math.radians(lat1), math.radians(lat2)
+    dphi = math.radians(lat2 - lat1)
+    dlmb = math.radians(lon2 - lon1)
+    a = math.sin(dphi / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(dlmb / 2) ** 2
+    return 2 * r * math.asin(min(1.0, math.sqrt(a)))
+
+
+def _is_placeholder_listing_url(url: str) -> bool:
+    u = str(url or "").strip().lower()
+    if not u:
+        return True
+    if "google.com/maps" in u or "maps.google.com" in u:
+        return True
+    if "goo.gl/maps" in u or "maps.app.goo.gl" in u:
+        return True
+    return False
+
+
+def _street_compact(addr: str) -> str:
+    """Normalize street portion for comparison (Davis rentals)."""
+    s = str(addr or "").lower().strip()
+    s = re.sub(r",\s*davis.*$", "", s, flags=re.I)
+    s = re.sub(r"\b(street|str\.?)\b", "st", s)
+    s = re.sub(r"\b(avenue|ave\.?)\b", "ave", s)
+    s = re.sub(r"\b(boulevard|blvd\.?)\b", "blvd", s)
+    s = re.sub(r"\b(drive|dr\.?)\b", "dr", s)
+    s = re.sub(r"\b(lane|ln\.?)\b", "ln", s)
+    s = re.sub(r"\b(court|ct\.?)\b", "ct", s)
+    s = re.sub(r"\b(road|rd\.?)\b", "rd", s)
+    s = re.sub(r"\b(circle|cir\.?)\b", "cir", s)
+    s = re.sub(r"[^a-z0-9]+", "", s)
+    return s
+
+
+def _match_rentcast_row(sample: pd.Series, rc: pd.DataFrame) -> pd.Series | None:
+    sig = _street_compact(sample.get("address", ""))
+    try:
+        s_lat = float(sample["latitude"])
+        s_lon = float(sample["longitude"])
+    except (TypeError, ValueError):
+        return None
+    try:
+        s_beds = int(sample["beds"])
+    except (TypeError, ValueError):
+        s_beds = -1
+
+    exact: list[tuple[float, int, pd.Series]] = []
+    for _, r in rc.iterrows():
+        if sig and _street_compact(r.get("address", "")) == sig:
+            d = _haversine_m(s_lat, s_lon, float(r["latitude"]), float(r["longitude"]))
+            bed_pen = abs(int(r["beds"]) - s_beds) if s_beds >= 0 else 0
+            exact.append((d, bed_pen, r))
+
+    if exact:
+        exact.sort(key=lambda t: (t[1], t[0]))
+        return exact[0][2]
+
+    near: list[tuple[float, int, pd.Series]] = []
+    for _, r in rc.iterrows():
+        d = _haversine_m(s_lat, s_lon, float(r["latitude"]), float(r["longitude"]))
+        if d <= _NEAR_MATCH_MAX_M:
+            try:
+                bed_pen = abs(int(r["beds"]) - s_beds) if s_beds >= 0 else 0
+            except (TypeError, ValueError):
+                bed_pen = 0
+            near.append((d, bed_pen, r))
+
+    if not near:
+        return None
+    near.sort(key=lambda t: (t[1], t[0]))
+    return near[0][2]
+
+
+def _enrich_sample_with_rentcast(df_sample: pd.DataFrame, api_key: str) -> pd.DataFrame:
+    """Keep curated sample coordinates/addresses; overlay live URL/rent from RentCast when matched."""
+    rc = _from_rentcast(api_key)
+    out = df_sample.copy()
+    n_hit = 0
+    n_url = 0
+    for i in out.index:
+        sample_row = out.loc[i]
+        hit = _match_rentcast_row(sample_row, rc)
+        if hit is None:
+            continue
+        n_hit += 1
+        u = str(hit.get("listing_url") or "").strip()
+        if u and not _is_placeholder_listing_url(u):
+            out.loc[i, "listing_url"] = u
+            n_url += 1
+        try:
+            rnt = float(hit.get("rent") or 0)
+            if rnt > 0:
+                out.loc[i, "rent"] = rnt
+        except (TypeError, ValueError):
+            pass
+        try:
+            out.loc[i, "beds"] = int(hit["beds"])
+            out.loc[i, "baths"] = float(hit["baths"])
+            sf = float(hit.get("sqft") or 0)
+            if sf > 0:
+                out.loc[i, "sqft"] = sf
+        except (TypeError, ValueError):
+            pass
+        pt = str(hit.get("property_type") or "").strip()
+        if pt and pt.lower() not in ("unknown", "nan"):
+            out.loc[i, "property_type"] = pt
+        ln = str(hit.get("listing_name") or "").strip()
+        if ln:
+            cur = str(out.loc[i].get("listing_name") or "").strip()
+            if not cur or "(sample)" in cur.lower():
+                out.loc[i, "listing_name"] = ln
+    print(
+        f"RentCast enrich: matched {n_hit}/{len(out)} sample rows; "
+        f"{n_url} got a non-placeholder listing URL"
+    )
+    return out
+
+
 def _slug_to_listing_label(slug: str) -> str:
     s = str(slug or "").strip()
     if not s:
@@ -93,8 +219,12 @@ def _from_rentcast(api_key: str) -> pd.DataFrame:
             or item.get("listingUrl")
             or item.get("listing_url")
             or item.get("sourceUrl")
+            or item.get("applicationUrl")
+            or item.get("detailUrl")
             or ""
         )
+        if _is_placeholder_listing_url(url):
+            url = ""
         listing_name = (
             item.get("propertyName")
             or item.get("communityName")
@@ -139,11 +269,10 @@ def main() -> None:
     load_dotenv(ROOT / ".env")
     _ensure_dirs()
     key = os.environ.get("RENTCAST_API_KEY", "").strip()
+    df = _from_sample()
     if key:
-        df = _from_rentcast(key)
-    else:
-        df = _from_sample()
-        df["source"] = "sample_davis_ca"
+        df = _enrich_sample_with_rentcast(df, key)
+    df["source"] = "sample_davis_ca"
 
     # OffCampusReview: reviews attach in merge_offcampus.py to existing rows only — do not add
     # extra map pins from review propertyAddress (duplicates curated listings).
