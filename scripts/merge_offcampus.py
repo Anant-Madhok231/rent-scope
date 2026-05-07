@@ -249,6 +249,9 @@ def address_aligns_with_landlord(street_line: str, L: dict) -> bool:
     line = (street_line or "").strip()
     if not line:
         return False
+    # Tandem reviews often use "Parkway Cir" while the mailing address is 400 Russell Park.
+    if str(L.get("slug") or "") == "tandem" and "russell" in line.lower():
+        return True
     for pa in _review_property_addresses(L):
         if _pair_compatible(line, pa):
             return True
