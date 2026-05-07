@@ -23,7 +23,7 @@
   };
 
   const RAIL_EMPTY =
-    '<p class="right-rail-placeholder">Every rental in the dataset appears on the map (sample CSV, RentCast, etc.). Choose a pin or a <strong>Top opportunities</strong> row for miles, nearby places, and scores. <strong>OffCampusReview</strong> is only an extra layer for student-written reviews when we can match a landlord—it never decides which listings exist.</p>';
+    '<p class="right-rail-placeholder">Only rentals with a <strong>direct listing / lease URL</strong> appear on the map (no CHL or map-search placeholders). Choose a pin or a <strong>Top opportunities</strong> row for details. <strong>OffCampusReview</strong> is an extra layer when we can match a landlord.</p>';
 
   function scoreColor(score) {
     const s = Number(score) || 0;
@@ -152,55 +152,18 @@
     }
   }
 
-  function isChlMarketplaceUrl(u) {
-    try {
-      const h = new URL(u).hostname.replace(/^www\./i, "");
-      return h === "chl.ucdavis.edu";
-    } catch (err) {
-      return false;
-    }
-  }
-
-  /**
-   * Zillow Davis rentals view (region 51659, for-rent filters, map bounds) + this pin's address as
-   * the search term so results show priced units; each card links to Zillow's listing/apply flow.
-   * When `listing_url` is already set (e.g. RentCast), `housingPortalHref` uses that direct URL instead.
-   */
-  function zillowRentSearchHref(props) {
-    const addr = String(props.address || "").trim();
-    const name = String(props.listing_name || "").trim();
-    const term = addr || name || "Davis, CA";
-    const searchQueryState = {
-      pagination: {},
-      isMapVisible: true,
-      mapBounds: {
-        west: -121.80135699026381,
-        east: -121.70745821707045,
-        south: 38.52792944470182,
-        north: 38.58357173339328,
-      },
-      regionSelection: [{ regionId: 51659, regionType: 6 }],
-      filterState: {
-        sort: { value: "priorityscore" },
-        fr: { value: true },
-        fsba: { value: false },
-        fsbo: { value: false },
-        nc: { value: false },
-        cmsn: { value: false },
-        auc: { value: false },
-        fore: { value: false },
-        mf: { value: false },
-        land: { value: false },
-        manu: { value: false },
-      },
-      isListVisible: true,
-      mapZoom: 14,
-      usersSearchTerm: term,
-    };
-    return (
-      "https://www.zillow.com/davis-ca/rentals/?searchQueryState=" +
-      encodeURIComponent(JSON.stringify(searchQueryState))
-    );
+  /** Same rules as build_geojson._is_direct_listing_url — pins without this are excluded from the map. */
+  function isDirectListingUrl(props) {
+    let u = String((props && props.listing_url) || "").trim();
+    const ul = u.toLowerCase();
+    if (!u || ul === "nan" || ul === "undefined" || ul === "null") return false;
+    if (!/^https?:\/\//i.test(u)) return false;
+    if (isGoogleMapsUrl(u)) return false;
+    if (ul.includes("google.com/maps") || ul.includes("maps.google.com")) return false;
+    if (ul.includes("goo.gl/maps") || ul.includes("maps.app.goo.gl")) return false;
+    if (ul.includes("chl.ucdavis.edu")) return false;
+    if (ul.includes("zillow.com") && ul.includes("searchquerystate")) return false;
+    return true;
   }
 
   /** Maps search from address / name (never pretend this is a lease portal). */
@@ -214,29 +177,10 @@
     );
   }
 
-  /**
-   * Direct listing URL when we have one; otherwise Zillow rent search for this address (priced results).
-   */
+  /** Direct listing/lease URL only (no fallbacks). */
   function housingPortalHref(props) {
-    let u = String(props.listing_url || "").trim();
-    const ul = u.toLowerCase();
-    if (!u || ul === "nan" || ul === "undefined" || ul === "null") u = "";
-    if (u && !/^https?:\/\//i.test(u)) u = "";
-    if (u && isGoogleMapsUrl(u)) u = "";
-    if (u && isChlMarketplaceUrl(u)) u = "";
-    if (u) return u;
-    return zillowRentSearchHref(props);
-  }
-
-  function housingPortalLinkLabel(props) {
-    let raw = String(props.listing_url || "").trim();
-    const ul = raw.toLowerCase();
-    if (!raw || ul === "nan" || ul === "undefined" || ul === "null") raw = "";
-    if (raw && !/^https?:\/\//i.test(raw)) raw = "";
-    if (raw && isGoogleMapsUrl(raw)) raw = "";
-    if (raw && isChlMarketplaceUrl(raw)) raw = "";
-    if (raw) return "Lease / contact (listing site)";
-    return "Zillow: this address (rentals — open a listing to lease)";
+    if (!isDirectListingUrl(props)) return "";
+    return String(props.listing_url || "").trim();
   }
 
   /** Single-line label for tooltips / native marker title (name - address) */
@@ -772,19 +716,21 @@
 
   function formatRightRail(props, fid) {
     const reviewUrl = escapeAttr(offcampusActionUrl(props));
-    const portalUrl = escapeAttr(housingPortalHref(props));
-    const portalLabel = housingPortalLinkLabel(props);
+    const lease = housingPortalHref(props);
+    const leaseUrl = escapeAttr(lease);
     const mapsUrl = escapeAttr(googleMapsSearchHref(props));
+    const leaseBtn =
+      lease
+        ? '<a class="rail-btn rail-btn-primary" href="' +
+          leaseUrl +
+          '" target="_blank" rel="noopener noreferrer">Lease / contact (listing site)</a>'
+        : "";
     return (
       '<div class="rail-addr">' + listingRowHtml(props, "rail") + "</div>" +
       formatOffcampusBlock(props, fid) +
       listingDetailHtml(props) +
       '<div class="right-rail-actions" style="margin-top:0.65rem">' +
-      '<a class="rail-btn rail-btn-primary" href="' +
-      portalUrl +
-      '" target="_blank" rel="noopener noreferrer">' +
-      escapeHtml(portalLabel) +
-      "</a>" +
+      leaseBtn +
       '<a class="rail-btn" href="' +
       mapsUrl +
       '" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>' +
@@ -1016,8 +962,13 @@
     const cid = chartDomId(f);
     const beds = props.beds;
     const baths = props.baths;
-    const portal = escapeAttr(housingPortalHref(props));
-    const portalLabel = housingPortalLinkLabel(props);
+    const lease = housingPortalHref(props);
+    const leaseLink =
+      lease
+        ? '<a href="' +
+          escapeAttr(lease) +
+          '" target="_blank" rel="noopener noreferrer">Lease / contact (listing site)</a>'
+        : "";
     const mapsLink = escapeAttr(googleMapsSearchHref(props));
     const reviewUrl = escapeAttr(offcampusActionUrl(props));
     return (
@@ -1050,11 +1001,7 @@
       formatStops(props) +
       "</div>" +
       '<div class="popup-actions">' +
-      '<a href="' +
-      portal +
-      '" target="_blank" rel="noopener noreferrer">' +
-      escapeHtml(portalLabel) +
-      "</a>" +
+      leaseLink +
       '<a href="' +
       mapsLink +
       '" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>' +
@@ -1259,7 +1206,9 @@
     ]);
     if (!resRent.ok) throw new Error("Could not load rentals.geojson");
     const data = await resRent.json();
-    allFeatures = data.features || [];
+    allFeatures = (data.features || []).filter(function (feat) {
+      return isDirectListingUrl(feat.properties || {});
+    });
     if (resMkt.ok) {
       try {
         marketTrend = await resMkt.json();

@@ -16,6 +16,27 @@ OUT_PATH = ROOT / "docs" / "rentals.geojson"
 SYNC_META_PATH = ROOT / "docs" / "data_sync.json"
 
 
+def _is_direct_listing_url(url: str) -> bool:
+    """Only map pins with a real lease/listing page — not CHL, Maps, or Zillow search URLs."""
+    if url is None or (isinstance(url, float) and math.isnan(url)):
+        return False
+    u = str(url).strip()
+    if not u or u.lower() in ("nan", "none"):
+        return False
+    ul = u.lower()
+    if not ul.startswith(("http://", "https://")):
+        return False
+    if "google.com/maps" in ul or "maps.google.com" in ul:
+        return False
+    if "chl.ucdavis.edu" in ul:
+        return False
+    if "goo.gl/maps" in ul or "maps.app.goo.gl" in ul:
+        return False
+    if "zillow.com" in ul and "searchquerystate" in ul:
+        return False
+    return True
+
+
 def _loads_maybe(s: str) -> list | None:
     if not s or not str(s).strip():
         return None
@@ -62,6 +83,14 @@ def _str_cell(row: pd.Series, key: str, default: str = "") -> str:
 
 def main() -> None:
     df = pd.read_csv(SCORED)
+    n_before = len(df)
+    url_col = df["listing_url"].fillna("").astype(str).str.strip()
+    url_col = url_col.replace({"nan": "", "None": ""})
+    mask = url_col.map(_is_direct_listing_url)
+    df = df.loc[mask].reset_index(drop=True)
+    n_skip = n_before - len(df)
+    if n_skip:
+        print(f"Skipped {n_skip} rows without a direct listing_url (see build_geojson._is_direct_listing_url)")
     features = []
     for _, row in df.iterrows():
         lat = float(row["latitude"])
@@ -158,7 +187,7 @@ def main() -> None:
     sync = {
         "updated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "listing_count": len(features),
-        "area_note": "Includes curated sample listings plus OffCampus-derived addresses within 5 mi of Memorial Union when ingest has been run.",
+        "area_note": "Map pins require a direct listing/lease URL (no CHL or map-search placeholders).",
     }
     SYNC_META_PATH.write_text(json.dumps(sync, indent=2), encoding="utf-8")
     print(f"Wrote {len(features)} features to {OUT_PATH.relative_to(ROOT)}")
