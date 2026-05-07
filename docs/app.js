@@ -23,7 +23,61 @@
   };
 
   const RAIL_EMPTY =
-    '<p class="right-rail-placeholder">Only rentals with a <strong>direct listing / lease URL</strong> appear on the map (no CHL or map-search placeholders). Choose a pin or a <strong>Top opportunities</strong> row for details. <strong>OffCampusReview</strong> is an extra layer when we can match a landlord.</p>';
+    '<p class="right-rail-placeholder">Each pin links to a <strong>property listing site</strong> when we have one, or a <strong>Zillow Davis rentals</strong> search (~5 mi of campus) — not CHL. Choose a pin or <strong>Top opportunities</strong> for details. <strong>OffCampusReview</strong> is an extra reviews layer when matched.</p>';
+
+  const MU_LAT = 38.5414268;
+  const MU_LON = -121.7494914;
+  const ZILLOW_DAVIS_REGION_ID = 51659;
+  const MI_TO_LAT_DEG = 1 / 69;
+  const MI_TO_LON_DEG = 1 / (69 * Math.cos((MU_LAT * Math.PI) / 180));
+
+  function zillowMapBounds5mi() {
+    const d = 5;
+    return {
+      west: MU_LON - d * MI_TO_LON_DEG,
+      east: MU_LON + d * MI_TO_LON_DEG,
+      south: MU_LAT - d * MI_TO_LAT_DEG,
+      north: MU_LAT + d * MI_TO_LAT_DEG,
+    };
+  }
+
+  function zillowRentSearchHref(props) {
+    const addr = String(props.address || "").trim();
+    const name = String(props.listing_name || "").trim();
+    const term = addr || name || "Davis, CA";
+    const b = zillowMapBounds5mi();
+    const searchQueryState = {
+      pagination: {},
+      isMapVisible: true,
+      mapBounds: {
+        west: b.west,
+        east: b.east,
+        south: b.south,
+        north: b.north,
+      },
+      regionSelection: [{ regionId: ZILLOW_DAVIS_REGION_ID, regionType: 6 }],
+      filterState: {
+        sort: { value: "priorityscore" },
+        fr: { value: true },
+        fsba: { value: false },
+        fsbo: { value: false },
+        nc: { value: false },
+        cmsn: { value: false },
+        auc: { value: false },
+        fore: { value: false },
+        mf: { value: false },
+        land: { value: false },
+        manu: { value: false },
+      },
+      isListVisible: true,
+      mapZoom: 12,
+      usersSearchTerm: term,
+    };
+    return (
+      "https://www.zillow.com/davis-ca/rentals/?searchQueryState=" +
+      encodeURIComponent(JSON.stringify(searchQueryState))
+    );
+  }
 
   function scoreColor(score) {
     const s = Number(score) || 0;
@@ -152,7 +206,7 @@
     }
   }
 
-  /** Same rules as build_geojson._is_direct_listing_url — pins without this are excluded from the map. */
+  /** Same rules as build_geojson._is_direct_listing_url (property URL or Zillow search; never CHL/Maps). */
   function isDirectListingUrl(props) {
     let u = String((props && props.listing_url) || "").trim();
     const ul = u.toLowerCase();
@@ -162,7 +216,6 @@
     if (ul.includes("google.com/maps") || ul.includes("maps.google.com")) return false;
     if (ul.includes("goo.gl/maps") || ul.includes("maps.app.goo.gl")) return false;
     if (ul.includes("chl.ucdavis.edu")) return false;
-    if (ul.includes("zillow.com") && ul.includes("searchquerystate")) return false;
     return true;
   }
 
@@ -177,10 +230,23 @@
     );
   }
 
-  /** Direct listing/lease URL only (no fallbacks). */
+  function leaseLinkLabel(props) {
+    const raw = String(props.listing_url || "").trim().toLowerCase();
+    const href = housingPortalHref(props).toLowerCase();
+    if (
+      (raw.includes("zillow.com") && raw.includes("searchquerystate")) ||
+      (href.includes("zillow.com") && href.includes("searchquerystate"))
+    ) {
+      return "Find rentals on Zillow (≤5 mi of campus)";
+    }
+    return "Lease / contact (listing site)";
+  }
+
+  /** Property listing URL, Zillow search from data, or generated Zillow fallback (never CHL). */
   function housingPortalHref(props) {
-    if (!isDirectListingUrl(props)) return "";
-    return String(props.listing_url || "").trim();
+    let u = String(props.listing_url || "").trim();
+    if (isDirectListingUrl(props)) return u;
+    return zillowRentSearchHref(props);
   }
 
   /** Single-line label for tooltips / native marker title (name - address) */
@@ -723,7 +789,9 @@
       lease
         ? '<a class="rail-btn rail-btn-primary" href="' +
           leaseUrl +
-          '" target="_blank" rel="noopener noreferrer">Lease / contact (listing site)</a>'
+          '" target="_blank" rel="noopener noreferrer">' +
+          escapeHtml(leaseLinkLabel(props)) +
+          "</a>"
         : "";
     return (
       '<div class="rail-addr">' + listingRowHtml(props, "rail") + "</div>" +
@@ -967,7 +1035,9 @@
       lease
         ? '<a href="' +
           escapeAttr(lease) +
-          '" target="_blank" rel="noopener noreferrer">Lease / contact (listing site)</a>'
+          '" target="_blank" rel="noopener noreferrer">' +
+          escapeHtml(leaseLinkLabel(props)) +
+          "</a>"
         : "";
     const mapsLink = escapeAttr(googleMapsSearchHref(props));
     const reviewUrl = escapeAttr(offcampusActionUrl(props));

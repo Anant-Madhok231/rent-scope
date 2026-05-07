@@ -17,7 +17,7 @@ SYNC_META_PATH = ROOT / "docs" / "data_sync.json"
 
 
 def _is_direct_listing_url(url: str) -> bool:
-    """Only map pins with a real lease/listing page — not CHL, Maps, or Zillow search URLs."""
+    """Property listing URL or Zillow Davis rental search — never CHL or Google Maps."""
     if url is None or (isinstance(url, float) and math.isnan(url)):
         return False
     u = str(url).strip()
@@ -31,8 +31,6 @@ def _is_direct_listing_url(url: str) -> bool:
     if "chl.ucdavis.edu" in ul:
         return False
     if "goo.gl/maps" in ul or "maps.app.goo.gl" in ul:
-        return False
-    if "zillow.com" in ul and "searchquerystate" in ul:
         return False
     return True
 
@@ -187,7 +185,7 @@ def main() -> None:
     sync = {
         "updated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "listing_count": len(features),
-        "area_note": "Map pins require a direct listing/lease URL (no CHL or map-search placeholders).",
+        "area_note": "Pins use a property URL when known; otherwise Zillow Davis rentals search (~5 mi of campus). No CHL.",
     }
     SYNC_META_PATH.write_text(json.dumps(sync, indent=2), encoding="utf-8")
     print(f"Wrote {len(features)} features to {OUT_PATH.relative_to(ROOT)}")

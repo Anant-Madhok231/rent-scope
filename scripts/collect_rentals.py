@@ -2,11 +2,13 @@
 
 from __future__ import annotations
 
+import json
 import math
 import os
 import re
 import sys
 from pathlib import Path
+from urllib.parse import quote
 
 import pandas as pd
 import requests
@@ -24,6 +26,75 @@ RENTCAST_URL = "https://api.rentcast.io/v1/listings/rental/long-term"
 # Match RentCast rows to a curated sample pin within this radius (meters) when
 # street addresses don't line up exactly (geocode / formatting differences).
 _NEAR_MATCH_MAX_M = 160.0
+
+# Zillow Davis rental search: ~5 statute miles around Memorial Union (not CHL).
+_MU_LAT = 38.5414268
+_MU_LON = -121.7494914
+_ZILLOW_DAVIS_REGION_ID = 51659
+_MI_TO_LAT_DEG = 1.0 / 69.0
+_MI_TO_LON_DEG = 1.0 / (69.0 * math.cos(math.radians(_MU_LAT)))
+
+
+def _zillow_map_bounds_5mi() -> dict[str, float]:
+    d = 5.0
+    return {
+        "west": _MU_LON - d * _MI_TO_LON_DEG,
+        "east": _MU_LON + d * _MI_TO_LON_DEG,
+        "south": _MU_LAT - d * _MI_TO_LAT_DEG,
+        "north": _MU_LAT + d * _MI_TO_LAT_DEG,
+    }
+
+
+def zillow_davis_rent_search_url(address: str, listing_name: str) -> str:
+    """Zillow for-rent search scoped to Davis + ~5 mi window; search term = this pin's address."""
+    term = str(address or "").strip() or str(listing_name or "").strip() or "Davis, CA"
+    b = _zillow_map_bounds_5mi()
+    search_query_state = {
+        "pagination": {},
+        "isMapVisible": True,
+        "mapBounds": {
+            "west": b["west"],
+            "east": b["east"],
+            "south": b["south"],
+            "north": b["north"],
+        },
+        "regionSelection": [{"regionId": _ZILLOW_DAVIS_REGION_ID, "regionType": 6}],
+        "filterState": {
+            "sort": {"value": "priorityscore"},
+            "fr": {"value": True},
+            "fsba": {"value": False},
+            "fsbo": {"value": False},
+            "nc": {"value": False},
+            "cmsn": {"value": False},
+            "auc": {"value": False},
+            "fore": {"value": False},
+            "mf": {"value": False},
+            "land": {"value": False},
+            "manu": {"value": False},
+        },
+        "isListVisible": True,
+        "mapZoom": 12,
+        "usersSearchTerm": term,
+    }
+    payload = json.dumps(search_query_state, separators=(",", ":"))
+    return (
+        "https://www.zillow.com/davis-ca/rentals/?searchQueryState="
+        + quote(payload, safe="")
+    )
+
+
+def _apply_zillow_when_no_direct_link(df: pd.DataFrame) -> pd.DataFrame:
+    """Fill placeholder/empty listing_url with Zillow search (never CHL)."""
+    out = df.copy()
+    if "listing_url" not in out.columns:
+        out["listing_url"] = ""
+    for i in out.index:
+        u = str(out.loc[i, "listing_url"] if pd.notna(out.loc[i, "listing_url"]) else "").strip()
+        if _is_placeholder_listing_url(u):
+            addr = str(out.loc[i, "address"] if pd.notna(out.loc[i, "address"]) else "")
+            name = str(out.loc[i, "listing_name"] if pd.notna(out.loc[i, "listing_name"]) else "")
+            out.loc[i, "listing_url"] = zillow_davis_rent_search_url(addr, name)
+    return out
 
 
 def _ensure_dirs() -> None:
@@ -297,6 +368,8 @@ def main() -> None:
         df.loc[empty_name, "listing_name"] = df.loc[empty_name, "offcampus_slug"].map(
             _slug_to_listing_label
         )
+
+    df = _apply_zillow_when_no_direct_link(df)
 
     cols = [
         "address",
