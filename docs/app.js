@@ -185,7 +185,13 @@
     if (!raw || ul === "nan" || ul === "undefined" || ul === "null") raw = "";
     if (raw && !/^https?:\/\//i.test(raw)) raw = "";
     if (raw && isGoogleMapsUrl(raw)) raw = "";
-    if (raw) return "Lease / contact (listing site)";
+    if (raw) {
+      try {
+        const host = new URL(raw).hostname.replace(/^www\./i, "");
+        if (host === "chl.ucdavis.edu") return "Browse off-campus listings (UC Davis CHL)";
+      } catch (err) {}
+      return "Lease / contact (listing site)";
+    }
     return "Browse off-campus listings (UC Davis CHL)";
   }
 
