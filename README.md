@@ -18,7 +18,7 @@ Geospatial rental analysis for **Davis, California**: listings (RentCast or `dat
 - Sidebar: top 10 by score for the active filter set.
 - Filters: max rent, bedrooms, min score, property type.
 - Summary: count, mean rent, max score, min rent over filtered features.
-- Static HTML/CSS/JS; `app.js` fetches `rentals.geojson` beside `index.html`.
+- Static HTML/CSS/JS; main page is `docs/rent-scope.html` (`index.html` redirects there); `app.js` fetches `rentals.geojson` from the same folder.
 
 **Pipeline**
 

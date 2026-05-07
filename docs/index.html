@@ -1,178 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="RentScope — geospatial rental opportunity analysis for Davis, California." />
-  <title>RentScope · Davis rental map</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-  <link rel="stylesheet" href="./style.css" />
+  <title>RentScope · Redirect</title>
+  <link rel="canonical" href="rent-scope.html" />
+  <meta http-equiv="refresh" content="0; url=rent-scope.html" />
+  <script>
+    window.location.replace(
+      new URL("rent-scope.html", window.location.href).href
+    );
+  </script>
 </head>
 <body>
-  <div class="ambient" aria-hidden="true">
-    <div class="orb orb-a"></div>
-    <div class="orb orb-b"></div>
-    <div class="orb orb-c"></div>
-    <div class="grid-lines"></div>
-  </div>
-
-  <div class="app">
-    <header class="top-bar">
-      <div class="brand">
-        <span class="brand-mark" aria-hidden="true">
-          <span class="brand-mark-inner"></span>
-        </span>
-        <div>
-          <h1>RentScope</h1>
-          <p class="tagline">Spatial scoring for Davis rentals</p>
-        </div>
-      </div>
-      <div class="header-meta">
-        <div class="header-map-tools" title="Map pins use opportunity score unless you pick one color">
-          <label class="pin-tool">
-            <span class="pin-tool-label">Pin color</span>
-            <select id="pin-palette" aria-label="How to color map pins">
-              <option value="score">By score (default)</option>
-              <option value="solid">Custom</option>
-            </select>
-            <input type="color" id="pin-color" value="#2a9d8f" aria-label="Custom pin color" title="Used when Pin color is Custom" />
-          </label>
-        </div>
-        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch color theme" title="Theme: dark (default) or light">
-          <span class="theme-icon theme-icon-moon" aria-hidden="true"></span>
-          <span class="theme-icon theme-icon-sun" aria-hidden="true"></span>
-        </button>
-        <span class="pill"><span class="pill-dot"></span> All listings in data</span>
-        <span class="pill">Road map (Esri, Google-style)</span>
-        <span class="pill">OffCampus = reviews only</span>
-      </div>
-    </header>
-
-    <section class="summary" id="summary-cards" aria-live="polite">
-      <article class="card metric">
-        <h2>Listings</h2>
-        <p class="value" id="metric-count">—</p>
-      </article>
-      <article class="card metric">
-        <h2>Avg rent</h2>
-        <p class="value" id="metric-avg-rent">—</p>
-      </article>
-      <article class="card metric">
-        <h2>Best score</h2>
-        <p class="value" id="metric-best">—</p>
-      </article>
-      <article class="card metric">
-        <h2>Lowest rent</h2>
-        <p class="value" id="metric-cheapest">—</p>
-      </article>
-    </section>
-
-    <div class="main-grid">
-      <aside class="sidebar panel">
-        <h2 class="panel-title">Filters</h2>
-        <div class="filters">
-          <label class="field">
-            <span>Room arrangement</span>
-            <select id="filter-room">
-              <option value="">Any</option>
-              <option value="private">Private room</option>
-              <option value="shared">Shared room (2 per room)</option>
-              <option value="unknown">Not specified</option>
-            </select>
-          </label>
-          <label class="field">
-            <span>Max rent</span>
-            <input type="number" id="filter-rent" min="0" step="50" placeholder="No limit" />
-          </label>
-          <label class="field">
-            <span>Bedrooms</span>
-            <select id="filter-beds">
-              <option value="">Any</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4+</option>
-            </select>
-          </label>
-          <label class="field">
-            <span>Min score</span>
-            <input type="number" id="filter-score" min="0" max="100" step="1" placeholder="0" />
-          </label>
-          <label class="field">
-            <span>Property type</span>
-            <select id="filter-type">
-              <option value="">Any</option>
-            </select>
-          </label>
-        </div>
-
-        <h2 class="panel-title spaced">Top opportunities</h2>
-        <p class="hint">Ranked by opportunity score (0–100). Every row is a real listing from the feed—not filtered by OffCampusReview.</p>
-        <ol class="ranking" id="ranking-list"></ol>
-      </aside>
-
-      <section class="map-wrap panel">
-        <div class="map-chrome" aria-hidden="true"></div>
-        <p class="map-hint" id="map-hint">Pins use geocoded addresses · <a href="https://campusmap.ucdavis.edu/" target="_blank" rel="noopener noreferrer">Campus map</a> for dorms &amp; dining halls</p>
-        <div id="map" role="application" aria-label="Interactive map of rental listings"></div>
-        <div class="legend">
-          <span class="legend-title">Score</span>
-          <div class="legend-bar" id="legend-bar"></div>
-          <div class="legend-labels">
-            <span>0</span>
-            <span>50</span>
-            <span>100</span>
-          </div>
-          <p class="legend-caption" id="legend-caption">Colored dot = opportunity score. Small badge = OffCampusReview when matched.</p>
-        </div>
-      </section>
-
-      <aside class="right-rail panel" id="right-rail" aria-label="Listing detail and OffCampusReview">
-        <h2 class="panel-title">Listing detail</h2>
-        <div id="right-rail-body" class="right-rail-body">
-          <p class="right-rail-placeholder">
-            Every rental in the dataset is on the map. Pick a pin or a <strong>Top opportunities</strong> row for details.
-            OffCampusReview is only for matched student reviews—not which homes appear.
-          </p>
-        </div>
-        <div class="right-rail-oc">
-          <h3 class="panel-title spaced">OffCampusReview</h3>
-          <p class="hint">Optional student reviews (not where listings come from). Listings are from your rental feed; we only link to OffCampusReview when a landlord matches.</p>
-          <div class="right-rail-actions">
-            <a class="rail-btn rail-btn-primary" href="https://www.offcampusreview.com/school/uc-davis" target="_blank" rel="noopener noreferrer">UC Davis school hub</a>
-            <a class="rail-btn" href="https://www.offcampusreview.com/" target="_blank" rel="noopener noreferrer">OffCampusReview home</a>
-          </div>
-          <p class="right-rail-micro">
-            To <strong>post a review</strong>, <strong>add a landlord or place</strong>, or <strong>report rent you pay</strong>, use the forms on OffCampusReview (landlord profile or school page)—that keeps one community directory accurate.
-          </p>
-        </div>
-      </aside>
-    </div>
-
-    <footer class="footer">
-      <p>© 2026 Anant Madhok · <a href="https://github.com/Anant-Madhok231/rent-scope">rent_scope</a> · MIT License · Student reviews: <a href="https://www.offcampusreview.com/school/uc-davis" target="_blank" rel="noopener noreferrer">OffCampusReview</a></p>
-      <p class="footer-sync" id="data-sync-meta" aria-live="polite"></p>
-    </footer>
-  </div>
-
-  <div id="ocr-modal" class="ocr-modal" aria-hidden="true">
-    <div class="ocr-modal-backdrop" data-close-modal="1"></div>
-    <div class="ocr-modal-sheet" role="dialog" aria-modal="true" aria-labelledby="ocr-modal-title">
-      <header class="ocr-modal-head">
-        <h2 id="ocr-modal-title" class="ocr-modal-title"></h2>
-        <button type="button" class="ocr-modal-x" data-close-modal="1" aria-label="Close">&times;</button>
-      </header>
-      <div class="ocr-modal-sub" id="ocr-modal-sub"></div>
-      <div class="ocr-modal-list" id="ocr-modal-list"></div>
-      <footer class="ocr-modal-foot" id="ocr-modal-foot"></footer>
-    </div>
-  </div>
-
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" crossorigin="anonymous"></script>
-  <script src="./app.js"></script>
+  <p>
+    <a href="rent-scope.html">Continue to RentScope</a>
+  </p>
 </body>
 </html>
