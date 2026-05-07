@@ -679,11 +679,15 @@
 
   function formatRightRail(props, fid) {
     const reviewUrl = escapeAttr(offcampusActionUrl(props));
+    const leaseUrl = escapeAttr(listingHref(props));
     return (
       '<div class="rail-addr">' + listingRowHtml(props, "rail") + "</div>" +
       formatOffcampusBlock(props, fid) +
       listingDetailHtml(props) +
       '<div class="right-rail-actions" style="margin-top:0.65rem">' +
+      '<a class="rail-btn" href="' +
+      leaseUrl +
+      '" target="_blank" rel="noopener noreferrer">Lease / contact (property website)</a>' +
       '<a class="rail-btn rail-btn-primary" href="' +
       reviewUrl +
       '" target="_blank" rel="noopener noreferrer">Leave a review / add place on OffCampusReview</a>' +
