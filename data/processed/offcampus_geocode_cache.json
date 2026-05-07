@@ -68,5 +68,44 @@
   "orchard park, davis, ca, usa": {
     "lat": 38.5445925,
     "lon": -121.7652752
+  },
+  "5019 orchard park cir, davis, ca, usa": {
+    "lat": null,
+    "lon": null,
+    "skip": true
+  },
+  "1512 beach rd, davis, ca, usa": {
+    "lat": null,
+    "lon": null,
+    "skip": true
+  },
+  "511 s main st, davis, ca, usa": {
+    "lat": null,
+    "lon": null,
+    "skip": true
+  },
+  "298 celadon st, davis, ca, usa": {
+    "lat": null,
+    "lon": null,
+    "skip": true
+  },
+  "298 horizon st, davis, ca, usa": {
+    "lat": null,
+    "lon": null,
+    "skip": true
+  },
+  "298 citron st, davis, ca, usa": {
+    "lat": null,
+    "lon": null,
+    "skip": true
+  },
+  "1580 jade st, davis, ca, usa": {
+    "lat": 38.5408288,
+    "lon": -121.771163
+  },
+  "1545 jade st, davis, ca, usa": {
+    "lat": null,
+    "lon": null,
+    "skip": true
   }
 }
