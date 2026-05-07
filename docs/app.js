@@ -946,7 +946,7 @@
       '<div class="popup-actions">' +
       '<a href="' +
       portal +
-      '" target="_blank" rel="noopener noreferrer">Open listings search</a>' +
+      '" target="_blank" rel="noopener noreferrer">Lease / contact (property website)</a>' +
       '<a href="' +
       reviewUrl +
       '" target="_blank" rel="noopener noreferrer">OffCampusReview · review / add</a>' +
