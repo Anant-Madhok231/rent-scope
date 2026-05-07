@@ -149,7 +149,11 @@ def _match_rentcast_row(sample: pd.Series, rc: pd.DataFrame) -> pd.Series | None
 
 def _enrich_sample_with_rentcast(df_sample: pd.DataFrame, api_key: str) -> pd.DataFrame:
     """Keep curated sample coordinates/addresses; overlay live URL/rent from RentCast when matched."""
-    rc = _from_rentcast(api_key)
+    try:
+        rc = _from_rentcast(api_key)
+    except Exception as exc:
+        print(f"RentCast enrich skipped (using sample CSV only): {exc}", file=sys.stderr)
+        return df_sample
     out = df_sample.copy()
     n_hit = 0
     n_url = 0
