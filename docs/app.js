@@ -219,7 +219,16 @@
     }
   }
 
-  /** Same rules as build_geojson._is_direct_listing_url (property URL or Zillow search; never CHL/Maps). */
+  function isZillowRentalsMapSearchUrl(u) {
+    const s = String(u || "").trim().toLowerCase();
+    if (!s.includes("zillow.com")) return false;
+    if (s.includes("searchquerystate")) return true;
+    if (s.includes("/homedetails/") || s.includes("/apartments/")) return false;
+    if (s.includes("/davis-ca/rentals")) return true;
+    return false;
+  }
+
+  /** True for a real listing URL. Empty or Zillow map search is false — UI uses zillowRentSearchHref. */
   function isDirectListingUrl(props) {
     let u = String((props && props.listing_url) || "").trim();
     const ul = u.toLowerCase();
@@ -229,6 +238,7 @@
     if (ul.includes("google.com/maps") || ul.includes("maps.google.com")) return false;
     if (ul.includes("goo.gl/maps") || ul.includes("maps.app.goo.gl")) return false;
     if (ul.includes("chl.ucdavis.edu")) return false;
+    if (isZillowRentalsMapSearchUrl(u)) return false;
     return true;
   }
 

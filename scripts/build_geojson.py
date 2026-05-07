@@ -17,8 +17,21 @@ OUT_PATH = ROOT / "docs" / "rentals.geojson"
 SYNC_META_PATH = ROOT / "docs" / "data_sync.json"
 
 
-def _is_direct_listing_url(url: str) -> bool:
-    """Property listing URL or Zillow Davis rental search — never CHL or Google Maps."""
+def _is_zillow_rentals_search_url(url: str) -> bool:
+    u = str(url or "").strip().lower()
+    if "zillow.com" not in u:
+        return False
+    if "searchquerystate" in u:
+        return True
+    if "/homedetails/" in u or "/apartments/" in u:
+        return False
+    if "/davis-ca/rentals" in u:
+        return True
+    return False
+
+
+def _should_drop_geojson_row(url: str) -> bool:
+    """Omit pins only when listing_url is a known bad placeholder (Maps/CHL), not when empty."""
     if url is None or (isinstance(url, float) and math.isnan(url)):
         return False
     u = str(url).strip()
@@ -26,14 +39,24 @@ def _is_direct_listing_url(url: str) -> bool:
         return False
     ul = u.lower()
     if not ul.startswith(("http://", "https://")):
-        return False
+        return True
     if "google.com/maps" in ul or "maps.google.com" in ul:
-        return False
+        return True
     if "chl.ucdavis.edu" in ul:
-        return False
+        return True
     if "goo.gl/maps" in ul or "maps.app.goo.gl" in ul:
-        return False
-    return True
+        return True
+    return False
+
+
+def _listing_url_for_geojson(url: str) -> str:
+    """Never embed Zillow map search in GeoJSON; the app builds that link when empty."""
+    u = str(url or "").strip()
+    if not u or u.lower() in ("nan", "none"):
+        return ""
+    if _is_zillow_rentals_search_url(u):
+        return ""
+    return u
 
 
 def _redfin_browse_url(address: str, listing_name: str) -> str:
@@ -94,11 +117,11 @@ def main() -> None:
     n_before = len(df)
     url_col = df["listing_url"].fillna("").astype(str).str.strip()
     url_col = url_col.replace({"nan": "", "None": ""})
-    mask = url_col.map(_is_direct_listing_url)
-    df = df.loc[mask].reset_index(drop=True)
+    drop = url_col.map(_should_drop_geojson_row)
+    df = df.loc[~drop].reset_index(drop=True)
     n_skip = n_before - len(df)
     if n_skip:
-        print(f"Skipped {n_skip} rows without a direct listing_url (see build_geojson._is_direct_listing_url)")
+        print(f"Skipped {n_skip} rows with Maps/CHL listing_url placeholders")
     features = []
     for _, row in df.iterrows():
         lat = float(row["latitude"])
@@ -149,7 +172,7 @@ def main() -> None:
             "score_explanation": str(row["score_explanation"]),
             "property_type": str(row["property_type"]),
             "source": str(row["source"]),
-            "listing_url": _str_cell(row, "listing_url"),
+            "listing_url": _listing_url_for_geojson(_str_cell(row, "listing_url")),
             "redfin_browse_url": _redfin_browse_url(
                 str(row["address"]), str(row.get("listing_name") or "")
             ),
