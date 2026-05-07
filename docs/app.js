@@ -252,6 +252,12 @@
     ) {
       return "Find rentals on Zillow (≤5 mi of campus)";
     }
+    if (
+      raw.includes("zillow.com") &&
+      (raw.includes("/homedetails/") || raw.includes("/apartments/"))
+    ) {
+      return "View on Zillow";
+    }
     return "Lease / contact (listing site)";
   }
 

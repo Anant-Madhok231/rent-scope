@@ -20,6 +20,7 @@ ROOT = Path(__file__).resolve().parent.parent
 RAW_DIR = ROOT / "data" / "raw"
 SAMPLE_PATH = ROOT / "data" / "sample_rentals.csv"
 OUT_PATH = RAW_DIR / "rentals.csv"
+ZILLOW_DIRECT_OVERRIDES_PATH = RAW_DIR / "zillow_direct_urls.csv"
 
 RENTCAST_URL = "https://api.rentcast.io/v1/listings/rental/long-term"
 
@@ -83,14 +84,138 @@ def zillow_davis_rent_search_url(address: str, listing_name: str) -> str:
     )
 
 
+def _normalize_zillow_host(url: str) -> str:
+    u = str(url or "").strip()
+    if not u:
+        return ""
+    for host in (
+        "zillow.industry-data-nonprod.zg-int.net",
+        "zillow.industry-data-prod.zg-int.net",
+    ):
+        u = u.replace(f"https://{host}", "https://www.zillow.com")
+        u = u.replace(f"http://{host}", "https://www.zillow.com")
+    return u
+
+
+def _is_zillow_rentals_search_url(url: str) -> bool:
+    """True for Zillow map/search rentals URLs, not /homedetails/ or /apartments/ building pages."""
+    u = str(url or "").strip().lower()
+    if "zillow.com" not in u:
+        return False
+    if "searchquerystate" in u:
+        return True
+    if "/homedetails/" in u or "/apartments/" in u:
+        return False
+    if "/davis-ca/rentals" in u:
+        return True
+    return False
+
+
+def _collect_http_urls_from_object(obj: object) -> list[str]:
+    found: list[str] = []
+    seen: set[str] = set()
+
+    def walk(x: object) -> None:
+        if isinstance(x, dict):
+            for v in x.values():
+                walk(v)
+        elif isinstance(x, list):
+            for v in x:
+                walk(v)
+        elif isinstance(x, str):
+            s = x.strip()
+            if s.startswith("http://") or s.startswith("https://"):
+                if s not in seen:
+                    seen.add(s)
+                    found.append(s)
+
+    walk(obj)
+    return found
+
+
+def _score_listing_url_candidate(url: str) -> int:
+    """Prefer Zillow property/building pages over generic search or non-Zillow links."""
+    u = _normalize_zillow_host(str(url or "").strip())
+    if not u:
+        return -10_000
+    if _is_placeholder_listing_url(u):
+        return -9000
+    if _is_zillow_rentals_search_url(u):
+        return -8000
+    ul = u.lower()
+    if "zillow.com" in ul:
+        if "/homedetails/" in ul:
+            return 1000
+        if "/apartments/" in ul:
+            return 900
+        if "/b/" in ul:
+            return 850
+        return 800
+    return 500
+
+
+def _pick_best_listing_url_from_candidates(candidates: list[str]) -> str:
+    best = ""
+    best_score = -10_000_000
+    for c in candidates:
+        c2 = _normalize_zillow_host(c)
+        sc = _score_listing_url_candidate(c2)
+        if sc > best_score:
+            best_score = sc
+            best = c2
+    return best if best_score > 0 else ""
+
+
+def _listing_url_from_rentcast_item(item: dict) -> str:
+    keys = (
+        "url",
+        "listingUrl",
+        "listing_url",
+        "sourceUrl",
+        "applicationUrl",
+        "detailUrl",
+        "providerUrl",
+        "listingProviderUrl",
+        "listingDetailUrl",
+    )
+    field_urls: list[str] = []
+    for k in keys:
+        v = item.get(k)
+        if v is not None and str(v).strip():
+            field_urls.append(str(v).strip())
+    all_urls = field_urls + _collect_http_urls_from_object(item)
+    dedup: list[str] = []
+    seen: set[str] = set()
+    for u in all_urls:
+        nu = _normalize_zillow_host(u)
+        if nu and nu not in seen:
+            seen.add(nu)
+            dedup.append(nu)
+    picked = _pick_best_listing_url_from_candidates(dedup)
+    if _is_placeholder_listing_url(picked) or _is_zillow_rentals_search_url(picked):
+        return ""
+    return picked
+
+
+def _needs_listing_url_backfill(url: str) -> bool:
+    u = str(url or "").strip()
+    if _is_placeholder_listing_url(u):
+        return True
+    if _is_zillow_rentals_search_url(u):
+        return True
+    return False
+
+
 def _apply_zillow_when_no_direct_link(df: pd.DataFrame) -> pd.DataFrame:
-    """Fill placeholder/empty listing_url with Zillow search (never CHL)."""
+    """Fill empty/placeholder listing_url or Zillow *search* URLs with scoped Zillow search (never CHL)."""
     out = df.copy()
     if "listing_url" not in out.columns:
         out["listing_url"] = ""
     for i in out.index:
         u = str(out.loc[i, "listing_url"] if pd.notna(out.loc[i, "listing_url"]) else "").strip()
-        if _is_placeholder_listing_url(u):
+        u = _normalize_zillow_host(u)
+        out.loc[i, "listing_url"] = u
+        if _needs_listing_url_backfill(u):
             addr = str(out.loc[i, "address"] if pd.notna(out.loc[i, "address"]) else "")
             name = str(out.loc[i, "listing_name"] if pd.notna(out.loc[i, "listing_name"]) else "")
             out.loc[i, "listing_url"] = zillow_davis_rent_search_url(addr, name)
@@ -181,6 +306,51 @@ def _street_compact(addr: str) -> str:
     return s
 
 
+def _load_zillow_direct_overrides() -> dict[str, str]:
+    """Optional CSV: columns address, zillow_url — curated homedetails / apartments links."""
+    path = ZILLOW_DIRECT_OVERRIDES_PATH
+    if not path.is_file():
+        return {}
+    try:
+        sub = pd.read_csv(path, dtype=str)
+    except (OSError, ValueError, pd.errors.EmptyDataError):
+        return {}
+    out: dict[str, str] = {}
+    for _, row in sub.iterrows():
+        addr = str(row.get("address") or "").strip()
+        zu = _normalize_zillow_host(str(row.get("zillow_url") or "").strip())
+        if (
+            not addr
+            or not zu
+            or not zu.lower().startswith("http")
+            or _is_zillow_rentals_search_url(zu)
+        ):
+            continue
+        out[_street_compact(addr)] = zu
+        out[addr.lower().strip()] = zu
+    return out
+
+
+def _merge_zillow_direct_urls(df: pd.DataFrame, overrides: dict[str, str]) -> pd.DataFrame:
+    """Apply curated Zillow URLs where the row still has no real listing link or only a Zillow search URL."""
+    if not overrides:
+        return df
+    out = df.copy()
+    for i in out.index:
+        addr = str(out.loc[i, "address"] if pd.notna(out.loc[i, "address"]) else "")
+        if not addr.strip():
+            continue
+        zu = overrides.get(_street_compact(addr)) or overrides.get(addr.strip().lower())
+        if not zu or _is_placeholder_listing_url(zu) or _is_zillow_rentals_search_url(zu):
+            continue
+        cur = _normalize_zillow_host(
+            str(out.loc[i, "listing_url"] if pd.notna(out.loc[i, "listing_url"]) else "").strip()
+        )
+        if _is_placeholder_listing_url(cur) or _is_zillow_rentals_search_url(cur):
+            out.loc[i, "listing_url"] = zu
+    return out
+
+
 def _match_rentcast_row(sample: pd.Series, rc: pd.DataFrame) -> pd.Series | None:
     sig = _street_compact(sample.get("address", ""))
     try:
@@ -236,8 +406,8 @@ def _enrich_sample_with_rentcast(df_sample: pd.DataFrame, api_key: str) -> pd.Da
         if hit is None:
             continue
         n_hit += 1
-        u = str(hit.get("listing_url") or "").strip()
-        if u and not _is_placeholder_listing_url(u):
+        u = _normalize_zillow_host(str(hit.get("listing_url") or "").strip())
+        if u and not _is_placeholder_listing_url(u) and not _is_zillow_rentals_search_url(u):
             out.loc[i, "listing_url"] = u
             n_url += 1
         try:
@@ -291,17 +461,7 @@ def _from_rentcast(api_key: str) -> pd.DataFrame:
         lon = item.get("longitude")
         addr = item.get("formattedAddress") or item.get("addressLine1") or ""
         desc = str(item.get("description") or item.get("remarks") or "")
-        url = str(
-            item.get("url")
-            or item.get("listingUrl")
-            or item.get("listing_url")
-            or item.get("sourceUrl")
-            or item.get("applicationUrl")
-            or item.get("detailUrl")
-            or ""
-        )
-        if _is_placeholder_listing_url(url):
-            url = ""
+        url = _listing_url_from_rentcast_item(item) if isinstance(item, dict) else ""
         listing_name = (
             item.get("propertyName")
             or item.get("communityName")
@@ -346,9 +506,11 @@ def main() -> None:
     load_dotenv(ROOT / ".env")
     _ensure_dirs()
     key = os.environ.get("RENTCAST_API_KEY", "").strip()
+    zillow_overrides = _load_zillow_direct_overrides()
     df = _from_sample()
     if key:
         df = _enrich_sample_with_rentcast(df, key)
+    df = _merge_zillow_direct_urls(df, zillow_overrides)
     df["source"] = "sample_davis_ca"
 
     # OffCampusReview: reviews attach in merge_offcampus.py to existing rows only — do not add
