@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import math
 import os
 import sys
 from pathlib import Path
@@ -16,75 +15,7 @@ from geopy.geocoders import Nominatim
 ROOT = Path(__file__).resolve().parent.parent
 RAW_DIR = ROOT / "data" / "raw"
 SAMPLE_PATH = ROOT / "data" / "sample_rentals.csv"
-OFFCAMPUS_PINS_PATH = RAW_DIR / "offcampus_pins.csv"
 OUT_PATH = RAW_DIR / "rentals.csv"
-
-
-def _norm_addr_key(addr: str) -> str:
-    line = (addr or "").split(",")[0].strip().lower()
-    return " ".join(line.split())
-
-
-def _haversine_m(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
-    r = 6371000.0
-    p1, p2 = math.radians(lat1), math.radians(lat2)
-    dphi = math.radians(lat2 - lat1)
-    dl = math.radians(lon2 - lon1)
-    a = math.sin(dphi / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(dl / 2) ** 2
-    return 2 * r * math.asin(min(1.0, math.sqrt(a)))
-
-
-# Map distinct API slugs that refer to the same operator or housing program so we keep one pin.
-_SLUG_BUCKET: dict[str, str] = {
-    "the-green": "__west_village_green__",
-    "greens-at-west-village": "__west_village_green__",
-    # Same La Rue / Parkway student housing cluster as Tandem in practice
-    "living-groups": "tandem",
-}
-
-
-def _slug_bucket(slug: str) -> str:
-    s = (slug or "").strip().lower()
-    if not s:
-        return ""
-    return _SLUG_BUCKET.get(s, s)
-
-
-def _drop_duplicate_operator_slugs(df: pd.DataFrame) -> pd.DataFrame:
-    """Keep first row per non-empty OffCampus landlord slug (sample is always first)."""
-    seen: set[str] = set()
-    kept: list[pd.Series] = []
-    for _, row in df.iterrows():
-        raw = row.get("offcampus_slug")
-        if pd.isna(raw) or raw is None:
-            raw = ""
-        else:
-            raw = str(raw).strip()
-        b = _slug_bucket(raw)
-        if b:
-            if b in seen:
-                continue
-            seen.add(b)
-        kept.append(row)
-    if not kept:
-        return df.iloc[0:0].copy()
-    return pd.DataFrame(kept).reset_index(drop=True)
-
-
-def _drop_nearby_duplicate_pins(df: pd.DataFrame, max_m: float = 85.0) -> pd.DataFrame:
-    """Keep row order; drop later rows whose coords fall within max_m of an already-kept pin."""
-    kept: list[pd.Series] = []
-    centers: list[tuple[float, float]] = []
-    for _, row in df.iterrows():
-        lat, lon = float(row["latitude"]), float(row["longitude"])
-        if any(_haversine_m(lat, lon, la, lo) < max_m for la, lo in centers):
-            continue
-        centers.append((lat, lon))
-        kept.append(row)
-    if not kept:
-        return df.iloc[0:0].copy()
-    return pd.DataFrame(kept).reset_index(drop=True)
-
 
 RENTCAST_URL = "https://api.rentcast.io/v1/listings/rental/long-term"
 
@@ -214,45 +145,8 @@ def main() -> None:
         df = _from_sample()
         df["source"] = "sample_davis_ca"
 
-    if OFFCAMPUS_PINS_PATH.is_file():
-        try:
-            ocr = pd.read_csv(OFFCAMPUS_PINS_PATH)
-        except (pd.errors.EmptyDataError, FileNotFoundError):
-            ocr = pd.DataFrame()
-        if len(ocr) > 0:
-            for col in (
-                "address",
-                "listing_name",
-                "rent",
-                "beds",
-                "baths",
-                "sqft",
-                "latitude",
-                "longitude",
-                "source",
-                "listing_url",
-                "property_type",
-                "room_type",
-                "offcampus_slug",
-            ):
-                if col not in ocr.columns:
-                    if col == "offcampus_slug":
-                        ocr[col] = ""
-                    elif col == "room_type":
-                        ocr[col] = "unknown"
-                    elif col in ("beds",):
-                        ocr[col] = 2
-                    elif col in ("baths", "sqft", "rent"):
-                        ocr[col] = 0
-                    else:
-                        ocr[col] = ""
-            df = pd.concat([df, ocr], ignore_index=True)
-            df["offcampus_slug"] = df["offcampus_slug"].fillna("").astype(str)
-            df = _drop_duplicate_operator_slugs(df)
-            df["_dedupe_addr"] = df["address"].map(_norm_addr_key)
-            df = df.drop_duplicates(subset=["_dedupe_addr"], keep="first")
-            df = df.drop(columns=["_dedupe_addr"])
-            df = _drop_nearby_duplicate_pins(df, max_m=85.0)
+    # OffCampusReview: reviews attach in merge_offcampus.py to existing rows only — do not add
+    # extra map pins from review propertyAddress (duplicates curated listings).
 
     if "room_type" not in df.columns:
         df["room_type"] = "unknown"
