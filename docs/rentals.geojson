@@ -1832,7 +1832,7 @@
       },
       "properties": {
         "address": "310 Parkway Cir, Davis, CA 95616",
-        "listing_name": "Tandem",
+        "listing_name": "Tandem at Parkway Circle",
         "rent": 1780.0,
         "beds": 2,
         "baths": 1.0,
@@ -1841,7 +1841,7 @@
         "score_explanation": "Rent is reasonable on a per-bedroom basis; about 0.7 mi straight-line from campus core; Memorial Union 0.92 mi \u00b7 Silo 0.83 mi \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u2264~0.9 mi; 14 walkable amenities in the corridor; several transit stops within a short walk; versus median $2100 for 2br nearby",
         "property_type": "Apartment",
         "source": "sample_davis_ca",
-        "listing_url": "https://www.tandemproperties.com/apartments/",
+        "listing_url": "https://www.tandemproperties.com/apartments/rental-concierge/",
         "room_type": "private",
         "dist_km_memorial_union": 1.4874,
         "dist_km_silo": 1.3375,
