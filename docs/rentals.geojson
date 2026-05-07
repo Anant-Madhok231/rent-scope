@@ -1826,246 +1826,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.76435,
-          38.54805
-        ]
-      },
-      "properties": {
-        "address": "310 Parkway Cir, Davis, CA 95616",
-        "listing_name": "Tandem at Parkway Circle",
-        "rent": 1780.0,
-        "beds": 2,
-        "baths": 1.0,
-        "sqft": 720.0,
-        "opportunity_score": 57.86,
-        "score_explanation": "Rent is reasonable on a per-bedroom basis; about 0.7 mi straight-line from campus core; Memorial Union 0.92 mi \u00b7 Silo 0.83 mi \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u2264~0.9 mi; 14 walkable amenities in the corridor; several transit stops within a short walk; versus median $2100 for 2br nearby",
-        "property_type": "Apartment",
-        "source": "sample_davis_ca",
-        "listing_url": "https://www.tandemproperties.com/apartments/rental-concierge/",
-        "room_type": "private",
-        "dist_km_memorial_union": 1.4874,
-        "dist_km_silo": 1.3375,
-        "dist_mi_memorial_union": 0.9242,
-        "dist_mi_silo": 0.8311,
-        "dist_mi_campus": 0.6938,
-        "dist_mi_downtown": 1.3055,
-        "convenience_800m_count": 0,
-        "convenience_nearest_km": 0.99,
-        "convenience_nearest_mi": 0.6151,
-        "nearby_grocery": [
-          {
-            "name": "Trader Joe's",
-            "kind": "grocery",
-            "mi": 0.18
-          },
-          {
-            "name": "Sage Street Market",
-            "kind": "convenience",
-            "mi": 0.62
-          },
-          {
-            "name": "Savemart",
-            "kind": "grocery",
-            "mi": 0.87
-          },
-          {
-            "name": "ExtraMile",
-            "kind": "convenience",
-            "mi": 0.9
-          },
-          {
-            "name": "(unnamed on OSM)",
-            "kind": "convenience",
-            "mi": 0.91
-          },
-          {
-            "name": "Silo Market",
-            "kind": "convenience",
-            "mi": 0.93
-          }
-        ],
-        "nearby_food": [
-          {
-            "name": "Cuarto Dining Commons",
-            "kind": "restaurant",
-            "mi": 0.08
-          },
-          {
-            "name": "Shah's Halal Food",
-            "kind": "restaurant",
-            "mi": 0.24
-          },
-          {
-            "name": "The Melt",
-            "kind": "restaurant",
-            "mi": 0.26
-          },
-          {
-            "name": "Fluffy Donuts",
-            "kind": "cafe",
-            "mi": 0.27
-          },
-          {
-            "name": "Subway",
-            "kind": "restaurant",
-            "mi": 0.27
-          },
-          {
-            "name": "Segundo Dining Commons",
-            "kind": "restaurant",
-            "mi": 0.44
-          }
-        ],
-        "bike_escooter_index": 85.31,
-        "traffic_calm_index": 64.71,
-        "parking_summary": "Parking ~0.06 mi (OSM has no fee/charge tag); Parking ~0.06 mi (OSM has no fee/charge tag); Parking ~0.1 mi (tagged no fee); Parking ~0.1 mi (tagged no fee)",
-        "unitrans_stops": [
-          {
-            "name": "Unitrans stop",
-            "mi": 0.12
-          },
-          {
-            "name": "Sycamore Ln & Russell/Trader Joe's (SB)",
-            "mi": 0.13
-          },
-          {
-            "name": "Sycamore Ln & Russell/Trader Joe's (NB)",
-            "mi": 0.14
-          },
-          {
-            "name": "Sycamore & 8th (SB)",
-            "mi": 0.18
-          },
-          {
-            "name": "Sycamore Ln & 8th St (NB)",
-            "mi": 0.2
-          },
-          {
-            "name": "Davis (University Mall)",
-            "mi": 0.32
-          },
-          {
-            "name": "Sycamore Ln & Cornell Drive (SB)",
-            "mi": 0.36
-          },
-          {
-            "name": "Russell & Arthur St. (Westbound)",
-            "mi": 0.37
-          },
-          {
-            "name": "Sycamore Ln & Cornell Drive (NB)",
-            "mi": 0.37
-          },
-          {
-            "name": "Sycamore Ln & Bucknell Drive (NB)",
-            "mi": 0.48
-          },
-          {
-            "name": "Sycamore Ln & Colby Drive (SB)",
-            "mi": 0.5
-          },
-          {
-            "name": "Sycamore Ln & Villanova Drive (NB)",
-            "mi": 0.58
-          },
-          {
-            "name": "Unitrans stop",
-            "mi": 0.61
-          },
-          {
-            "name": "Jade St at Sage St - Drop Off Only (WB)",
-            "mi": 0.62
-          }
-        ],
-        "listing_rent_trend": [
-          {
-            "year": 2015,
-            "rent_est": 1056.0
-          },
-          {
-            "year": 2016,
-            "rent_est": 1099.0
-          },
-          {
-            "year": 2017,
-            "rent_est": 1154.0
-          },
-          {
-            "year": 2018,
-            "rent_est": 1214.0
-          },
-          {
-            "year": 2019,
-            "rent_est": 1269.0
-          },
-          {
-            "year": 2020,
-            "rent_est": 1312.0
-          },
-          {
-            "year": 2021,
-            "rent_est": 1414.0
-          },
-          {
-            "year": 2022,
-            "rent_est": 1586.0
-          },
-          {
-            "year": 2023,
-            "rent_est": 1684.0
-          },
-          {
-            "year": 2024,
-            "rent_est": 1780.0
-          }
-        ],
-        "offcampus_match": true,
-        "offcampus_brand_url": "https://www.offcampusreview.com/",
-        "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
-        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/tandem",
-        "offcampus_landlord_name": "Tandem",
-        "offcampus_landlord_slug": "tandem",
-        "offcampus_avg_rating": 3.6,
-        "offcampus_review_count": 5,
-        "offcampus_reviews": [
-          {
-            "rating": 3,
-            "date": "Apr 13, 2026",
-            "text": "Alright but don't care about concerns",
-            "propertyAddress": "310 Parkway Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 6, 2026",
-            "text": "chill landlord. chill roomies. chill year.",
-            "propertyAddress": "400 Parkway Cir"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 6, 2026",
-            "text": "He is amazing",
-            "propertyAddress": "310 Pkwy"
-          },
-          {
-            "rating": 4,
-            "date": "Apr 6, 2026",
-            "text": "kinda dirty tbh but it's what it's",
-            "propertyAddress": "320 Parkway Cir"
-          },
-          {
-            "rating": 3,
-            "date": "Apr 6, 2026",
-            "text": "solid",
-            "propertyAddress": "310 Parkway Cir"
-          }
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -121.7490002,
           38.5508575
         ]
@@ -2686,6 +2446,246 @@
         "offcampus_avg_rating": null,
         "offcampus_review_count": 0,
         "offcampus_reviews": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.7614,
+          38.54835
+        ]
+      },
+      "properties": {
+        "address": "310 Parkway Cir, Davis, CA 95616",
+        "listing_name": "Tandem at Parkway Circle",
+        "rent": 1780.0,
+        "beds": 2,
+        "baths": 1.0,
+        "sqft": 720.0,
+        "opportunity_score": 55.81,
+        "score_explanation": "Rent is reasonable on a per-bedroom basis; about 0.7 mi straight-line from campus core; Memorial Union 0.80 mi \u00b7 Silo 0.73 mi \u00b7 0 convenience stores \u2264800 m \u00b7 14 Unitrans stops \u2264~0.9 mi; 12 walkable amenities in the corridor; several transit stops within a short walk; versus median $1980 for 2br nearby",
+        "property_type": "Apartment",
+        "source": "sample_davis_ca",
+        "listing_url": "https://www.tandemproperties.com/communities/russell-park/",
+        "room_type": "private",
+        "dist_km_memorial_union": 1.2904,
+        "dist_km_silo": 1.1706,
+        "dist_mi_memorial_union": 0.8018,
+        "dist_mi_silo": 0.7274,
+        "dist_mi_campus": 0.6999,
+        "dist_mi_downtown": 1.1527,
+        "convenience_800m_count": 0,
+        "convenience_nearest_km": 1.1948,
+        "convenience_nearest_mi": 0.7424,
+        "nearby_grocery": [
+          {
+            "name": "Trader Joe's",
+            "kind": "grocery",
+            "mi": 0.11
+          },
+          {
+            "name": "Sage Street Market",
+            "kind": "convenience",
+            "mi": 0.74
+          },
+          {
+            "name": "Savemart",
+            "kind": "grocery",
+            "mi": 0.8
+          },
+          {
+            "name": "Silo Market",
+            "kind": "convenience",
+            "mi": 0.84
+          },
+          {
+            "name": "ExtraMile",
+            "kind": "convenience",
+            "mi": 0.84
+          },
+          {
+            "name": "(unnamed on OSM)",
+            "kind": "convenience",
+            "mi": 0.85
+          }
+        ],
+        "nearby_food": [
+          {
+            "name": "Fluffy Donuts",
+            "kind": "cafe",
+            "mi": 0.12
+          },
+          {
+            "name": "Subway",
+            "kind": "restaurant",
+            "mi": 0.12
+          },
+          {
+            "name": "Cuarto Dining Commons",
+            "kind": "restaurant",
+            "mi": 0.13
+          },
+          {
+            "name": "The Melt",
+            "kind": "restaurant",
+            "mi": 0.13
+          },
+          {
+            "name": "Shah's Halal Food",
+            "kind": "restaurant",
+            "mi": 0.14
+          },
+          {
+            "name": "Segundo Dining Commons",
+            "kind": "restaurant",
+            "mi": 0.35
+          }
+        ],
+        "bike_escooter_index": 86.03,
+        "traffic_calm_index": 80.79,
+        "parking_summary": "Parking ~0.06 mi (tagged no fee); Parking ~0.12 mi (tagged no fee); Parking ~0.13 mi (OSM has no fee/charge tag); Parking ~0.16 mi (OSM has no fee/charge tag)",
+        "unitrans_stops": [
+          {
+            "name": "Sycamore Ln & Russell/Trader Joe's (NB)",
+            "mi": 0.05
+          },
+          {
+            "name": "Sycamore Ln & Russell/Trader Joe's (SB)",
+            "mi": 0.08
+          },
+          {
+            "name": "Unitrans stop",
+            "mi": 0.17
+          },
+          {
+            "name": "Davis (University Mall)",
+            "mi": 0.19
+          },
+          {
+            "name": "Sycamore & 8th (SB)",
+            "mi": 0.22
+          },
+          {
+            "name": "Sycamore Ln & 8th St (NB)",
+            "mi": 0.24
+          },
+          {
+            "name": "Sycamore Ln & Cornell Drive (SB)",
+            "mi": 0.39
+          },
+          {
+            "name": "Sycamore Ln & Cornell Drive (NB)",
+            "mi": 0.4
+          },
+          {
+            "name": "Sycamore Ln & Bucknell Drive (NB)",
+            "mi": 0.49
+          },
+          {
+            "name": "Sycamore Ln & Colby Drive (SB)",
+            "mi": 0.52
+          },
+          {
+            "name": "Russell & Arthur St. (Westbound)",
+            "mi": 0.53
+          },
+          {
+            "name": "Sycamore Ln & Villanova Drive (NB)",
+            "mi": 0.59
+          },
+          {
+            "name": "Hutchison & Extension Center Drive",
+            "mi": 0.65
+          },
+          {
+            "name": "Memorial Union Terminal",
+            "mi": 0.68
+          }
+        ],
+        "listing_rent_trend": [
+          {
+            "year": 2015,
+            "rent_est": 1056.0
+          },
+          {
+            "year": 2016,
+            "rent_est": 1099.0
+          },
+          {
+            "year": 2017,
+            "rent_est": 1154.0
+          },
+          {
+            "year": 2018,
+            "rent_est": 1214.0
+          },
+          {
+            "year": 2019,
+            "rent_est": 1269.0
+          },
+          {
+            "year": 2020,
+            "rent_est": 1312.0
+          },
+          {
+            "year": 2021,
+            "rent_est": 1414.0
+          },
+          {
+            "year": 2022,
+            "rent_est": 1586.0
+          },
+          {
+            "year": 2023,
+            "rent_est": 1684.0
+          },
+          {
+            "year": 2024,
+            "rent_est": 1780.0
+          }
+        ],
+        "offcampus_match": true,
+        "offcampus_brand_url": "https://www.offcampusreview.com/",
+        "offcampus_school_url": "https://www.offcampusreview.com/school/uc-davis",
+        "offcampus_landlord_url": "https://www.offcampusreview.com/landlord/uc-davis/tandem",
+        "offcampus_landlord_name": "Tandem",
+        "offcampus_landlord_slug": "tandem",
+        "offcampus_avg_rating": 3.6,
+        "offcampus_review_count": 5,
+        "offcampus_reviews": [
+          {
+            "rating": 3,
+            "date": "Apr 13, 2026",
+            "text": "Alright but don't care about concerns",
+            "propertyAddress": "310 Parkway Cir"
+          },
+          {
+            "rating": 4,
+            "date": "Apr 6, 2026",
+            "text": "chill landlord. chill roomies. chill year.",
+            "propertyAddress": "400 Parkway Cir"
+          },
+          {
+            "rating": 4,
+            "date": "Apr 6, 2026",
+            "text": "He is amazing",
+            "propertyAddress": "310 Pkwy"
+          },
+          {
+            "rating": 4,
+            "date": "Apr 6, 2026",
+            "text": "kinda dirty tbh but it's what it's",
+            "propertyAddress": "320 Parkway Cir"
+          },
+          {
+            "rating": 3,
+            "date": "Apr 6, 2026",
+            "text": "solid",
+            "propertyAddress": "310 Parkway Cir"
+          }
+        ]
       }
     },
     {

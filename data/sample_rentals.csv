@@ -29,5 +29,5 @@ address,listing_name,rent,beds,baths,sqft,latitude,longitude,source,listing_url,
 "2340 Sycamore Ln, Davis, CA 95616",Sycamore North,2140,2,2,950,38.562841,-121.7651847,sample,https://www.google.com/maps/search/?api=1&query=2340%20Sycamore%20Ln%2C%20Davis%2C%20CA%2095616,Townhome,private,
 "1800 Cowell Blvd, Davis, CA 95618",Cowell Commons,1455,1,1,575,38.539841,-121.731206,sample,https://www.google.com/maps/search/?api=1&query=1800%20Cowell%20Blvd%2C%20Davis%2C%20CA%2095618,Apartment,private,
 "704 Anderson Rd, Davis, CA 95616",Anderson Place,2280,3,2,1050,38.5490932,-121.7586071,sample,https://www.tandemproperties.com/communities/anderson-place/,Single Family,private,
-"310 Parkway Cir, Davis, CA 95616",Tandem at Parkway Circle,1780,2,1,720,38.54805,-121.76435,sample,https://www.tandemproperties.com/apartments/rental-concierge/,Apartment,private,tandem
+"310 Parkway Cir, Davis, CA 95616",Tandem at Parkway Circle,1780,2,1,720,38.54835,-121.7614,sample,https://www.tandemproperties.com/communities/russell-park/,Apartment,private,tandem
 "1512 Beach Rd, Davis, CA 95618",The Greens at West Village,2150,2,2,920,38.5382,-121.7712,sample,https://housing.ucdavis.edu/apply/the-green/,Townhome,private,greens-at-west-village
