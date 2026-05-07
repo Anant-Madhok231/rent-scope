@@ -138,12 +138,25 @@
     return "c" + featureId(f).replace(/[^a-zA-Z0-9]/g, "").slice(0, 56);
   }
 
-  function listingHref(props) {
-    let u = String(props.listing_url || "").trim();
-    const ul = u.toLowerCase();
-    if (!u || ul === "nan" || ul === "undefined" || ul === "null") u = "";
-    if (u && !/^https?:\/\//i.test(u)) u = "";
-    if (u) return u;
+  /** UC Davis off-campus housing listing service — used when `listing_url` is missing or only a Maps search link. */
+  const UC_CHL_HOUSING = "https://chl.ucdavis.edu/";
+
+  function isGoogleMapsUrl(u) {
+    try {
+      const x = new URL(u);
+      const host = x.hostname.replace(/^www\./i, "");
+      if (host === "maps.google.com") return true;
+      if (host === "google.com" && String(x.pathname).toLowerCase().startsWith("/maps"))
+        return true;
+      if (host === "goo.gl") return true;
+      return false;
+    } catch (err) {
+      return false;
+    }
+  }
+
+  /** Maps search from address / name (never pretend this is a lease portal). */
+  function googleMapsSearchHref(props) {
     const name = String(props.listing_name || "").trim();
     const addr = String(props.address || "").trim();
     const q = name && addr ? name + ", " + addr : addr || name;
@@ -151,6 +164,29 @@
       "https://www.google.com/maps/search/?api=1&query=" +
       encodeURIComponent(q || "Davis, CA")
     );
+  }
+
+  /**
+   * Listing site for rent/contact: real `listing_url`, or CHL if the CSV only had a Maps placeholder.
+   */
+  function housingPortalHref(props) {
+    let u = String(props.listing_url || "").trim();
+    const ul = u.toLowerCase();
+    if (!u || ul === "nan" || ul === "undefined" || ul === "null") u = "";
+    if (u && !/^https?:\/\//i.test(u)) u = "";
+    if (u && isGoogleMapsUrl(u)) u = "";
+    if (u) return u;
+    return UC_CHL_HOUSING;
+  }
+
+  function housingPortalLinkLabel(props) {
+    let raw = String(props.listing_url || "").trim();
+    const ul = raw.toLowerCase();
+    if (!raw || ul === "nan" || ul === "undefined" || ul === "null") raw = "";
+    if (raw && !/^https?:\/\//i.test(raw)) raw = "";
+    if (raw && isGoogleMapsUrl(raw)) raw = "";
+    if (raw) return "Lease / contact (listing site)";
+    return "Browse off-campus listings (UC Davis CHL)";
   }
 
   /** Single-line label for tooltips / native marker title (name - address) */
@@ -686,16 +722,23 @@
 
   function formatRightRail(props, fid) {
     const reviewUrl = escapeAttr(offcampusActionUrl(props));
-    const leaseUrl = escapeAttr(listingHref(props));
+    const portalUrl = escapeAttr(housingPortalHref(props));
+    const portalLabel = housingPortalLinkLabel(props);
+    const mapsUrl = escapeAttr(googleMapsSearchHref(props));
     return (
       '<div class="rail-addr">' + listingRowHtml(props, "rail") + "</div>" +
       formatOffcampusBlock(props, fid) +
       listingDetailHtml(props) +
       '<div class="right-rail-actions" style="margin-top:0.65rem">' +
-      '<a class="rail-btn" href="' +
-      leaseUrl +
-      '" target="_blank" rel="noopener noreferrer">Lease / contact (property website)</a>' +
       '<a class="rail-btn rail-btn-primary" href="' +
+      portalUrl +
+      '" target="_blank" rel="noopener noreferrer">' +
+      escapeHtml(portalLabel) +
+      "</a>" +
+      '<a class="rail-btn" href="' +
+      mapsUrl +
+      '" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>' +
+      '<a class="rail-btn" href="' +
       reviewUrl +
       '" target="_blank" rel="noopener noreferrer">Leave a review / add place on OffCampusReview</a>' +
       "</div>" +
@@ -923,7 +966,9 @@
     const cid = chartDomId(f);
     const beds = props.beds;
     const baths = props.baths;
-    const portal = escapeAttr(listingHref(props));
+    const portal = escapeAttr(housingPortalHref(props));
+    const portalLabel = housingPortalLinkLabel(props);
+    const mapsLink = escapeAttr(googleMapsSearchHref(props));
     const reviewUrl = escapeAttr(offcampusActionUrl(props));
     return (
       '<div class="popup-title-wrap">' + listingRowHtml(props, "popup") + "</div>" +
@@ -957,7 +1002,12 @@
       '<div class="popup-actions">' +
       '<a href="' +
       portal +
-      '" target="_blank" rel="noopener noreferrer">Lease / contact (property website)</a>' +
+      '" target="_blank" rel="noopener noreferrer">' +
+      escapeHtml(portalLabel) +
+      "</a>" +
+      '<a href="' +
+      mapsLink +
+      '" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>' +
       '<a href="' +
       reviewUrl +
       '" target="_blank" rel="noopener noreferrer">OffCampusReview · review / add</a>' +
